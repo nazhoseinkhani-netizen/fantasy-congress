@@ -177,4 +177,31 @@ describe('scorePolitician()', () => {
     expect(result.avgReturn).toBe(0)
     expect(result.weeklyPoints).toEqual([0, 0, 0, 0, 0, 0])
   })
+
+  it('includes activityBonus (5 * tradeCount) in seasonPoints', () => {
+    const trade3: Trade = { ...baseTrade, id: 'trade-p3', returnVsSP500: 5, absoluteReturn: 8, amountRange: '$1k-$15k', tradeDate: '2025-11-05' }
+    // 3 trades: trade1 scores 20, trade2 scores -9, trade3 scores 20
+    // tradeTotal = 20 + (-9) + 20 = 31
+    // activityBonus = 3 * 5 = 15
+    // seasonPoints = 31 + 15 = 46
+    const result = scorePolitician([trade1, trade2, trade3], {
+      isCommitteeChair: false,
+      isLeadership: false,
+      tradeContexts: {},
+    })
+    const tradeTotal = result.tradeScores.reduce((s, ts) => s + ts.total, 0)
+    const expectedActivityBonus = 3 * 5
+    expect(result.seasonPoints).toBeCloseTo(tradeTotal + expectedActivityBonus)
+    expect(result.seasonPoints).toBeCloseTo(46) // 20 + (-9) + 20 + 15
+  })
+
+  it('does not add activityBonus when trade list is empty', () => {
+    const result = scorePolitician([], {
+      isCommitteeChair: false,
+      isLeadership: false,
+      tradeContexts: {},
+    })
+    // 0 trades: activityBonus = 0 * 5 = 0, seasonPoints = 0
+    expect(result.seasonPoints).toBe(0)
+  })
 })
