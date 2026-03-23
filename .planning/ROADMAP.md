@@ -75,7 +75,7 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 02.1-01-PLAN.md — Rewrite fetch-trades.ts with Alva API integration, mapping layer, and stock price lookups
+- [x] 02.1-01-PLAN.md — Rewrite fetch-trades.ts with Alva API integration, mapping layer, and stock price lookups
 - [ ] 02.1-02-PLAN.md — Dynamic season window, pipeline orchestration update, and end-to-end verification
 
 ### Phase 3: Game Experience
@@ -117,7 +117,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 |-------|----------------|--------|-----------|
 | 1. Foundation | 6/7 | In Progress|  |
 | 2. Discovery | 4/7 | In Progress|  |
-| 2.1 Real Data Pipeline | 0/2 | Not started | - |
+| 2.1 Real Data Pipeline | 1/2 | In Progress|  |
 | 3. Game Experience | 0/TBD | Not started | - |
 | 4. Draft Room | 0/TBD | Not started | - |
 | 5. Polish and Viral | 0/TBD | Not started | - |

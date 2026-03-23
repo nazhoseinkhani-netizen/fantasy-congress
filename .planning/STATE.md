@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: Ready to execute
-stopped_at: Phase 2.1 context gathered
-last_updated: "2026-03-23T19:24:14.759Z"
+stopped_at: Completed 02.1-01-PLAN.md
+last_updated: "2026-03-23T20:05:11.394Z"
 progress:
   total_phases: 6
   completed_phases: 1
-  total_plans: 14
-  completed_plans: 13
+  total_plans: 16
+  completed_plans: 14
 ---
 
 # Project State
@@ -19,12 +19,12 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-23)
 
 **Core value:** Fantasy football mechanics applied to Congressional stock trading — making political corruption data accessible, entertaining, and viral through gamification.
-**Current focus:** Phase 02 — discovery
+**Current focus:** Phase 02.1 — real-data-pipeline
 
 ## Current Position
 
-Phase: 02 (discovery) — EXECUTING
-Plan: 6 of 7
+Phase: 02.1 (real-data-pipeline) — EXECUTING
+Plan: 2 of 2
 
 ## Performance Metrics
 
@@ -58,6 +58,7 @@ Plan: 6 of 7
 | Phase 02-discovery P05 | 1 | 2 tasks | 5 files |
 | Phase 02-discovery P03 | 366 | 3 tasks | 7 files |
 | Phase 02-discovery P06 | 3 | 2 tasks | 6 files |
+| Phase 02.1-real-data-pipeline P01 | 239 | 1 tasks | 1 files |
 
 ## Accumulated Context
 
@@ -95,6 +96,9 @@ Recent decisions affecting current work:
 - [Phase 02-discovery]: Server page delegates to client component for generateStaticParams + interactivity split
 - [Phase 02-discovery]: Recharts tooltip formatters use any cast where strict PieLabelRenderProps conflicts with custom data
 - [Phase 02-discovery]: MetricTooltip wraps each TooltipProvider individually for isolation — avoids global provider conflicts
+- [Phase 02.1-01]: Alva V8 sandbox: require('@arrays/...') goes inside code strings passed to POST /api/v1/run — not importable in Node.js script scope
+- [Phase 02.1-01]: Defensive Alva response field mapping: try resp.result, resp.output, then raw — multiple container shapes handled
+- [Phase 02.1-01]: Set price returns to 0 (not null) for missing Alva price data — score-all.ts existing NaN exclusion handles 0-return trades per D-06
 
 ### Pending Todos
 
@@ -107,6 +111,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-23T19:24:14.755Z
-Stopped at: Phase 2.1 context gathered
-Resume file: .planning/phases/02.1-real-data-pipeline/02.1-CONTEXT.md
+Last session: 2026-03-23T20:05:11.391Z
+Stopped at: Completed 02.1-01-PLAN.md
+Resume file: None
