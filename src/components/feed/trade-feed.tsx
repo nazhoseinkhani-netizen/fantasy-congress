@@ -11,6 +11,10 @@ import { TradeCard } from './trade-card'
 import { FeedFilters, DEFAULT_FEED_FILTERS } from './feed-filters'
 import type { FeedFilterState } from './feed-filters'
 import { TrendingSidebar } from './trending-sidebar'
+import { Skeleton } from '@/components/ui/skeleton'
+import { EmptyState } from '@/components/ui/empty-state'
+import { MetricTooltip } from '@/components/ui/metric-tooltip'
+import { Activity } from 'lucide-react'
 
 const PAGE_SIZE = 50
 
@@ -153,9 +157,12 @@ export function TradeFeed() {
           {!loading && (
             <div className="space-y-3">
               {visibleTrades.length === 0 ? (
-                <div className="text-center py-12 text-muted-foreground">
-                  No trades match your filters.
-                </div>
+                <EmptyState
+                  icon={<Activity className="size-12" />}
+                  heading="No trades match your filters"
+                  description="Try broadening your filter criteria to see more trades."
+                  action={{ label: 'Clear Filters', onClick: () => setFilters(DEFAULT_FEED_FILTERS) }}
+                />
               ) : (
                 visibleTrades.map((trade) => (
                   <TradeCard

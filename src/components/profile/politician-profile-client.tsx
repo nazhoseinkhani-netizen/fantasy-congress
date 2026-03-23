@@ -10,6 +10,9 @@ import { TradingProfileTab } from './trading-profile-tab'
 import { CorruptionDossierTab } from './corruption-dossier-tab'
 import { NewsDisclosuresTab } from './news-disclosures-tab'
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
+import { Skeleton } from '@/components/ui/skeleton'
+import { EmptyState } from '@/components/ui/empty-state'
+import { MetricTooltip } from '@/components/ui/metric-tooltip'
 
 interface PoliticianProfileClientProps {
   bioguideId: string
@@ -17,10 +20,28 @@ interface PoliticianProfileClientProps {
 
 function ProfileSkeleton() {
   return (
-    <div className="animate-pulse space-y-6">
-      <div className="h-48 bg-muted rounded-lg" />
-      <div className="h-10 bg-muted rounded-lg w-3/4" />
-      <div className="h-64 bg-muted rounded-lg" />
+    <div className="space-y-6">
+      {/* Hero skeleton */}
+      <div className="flex gap-4 items-start">
+        <Skeleton className="size-24 rounded-full shrink-0" />
+        <div className="flex-1 space-y-3">
+          <Skeleton className="h-6 w-48" />
+          <Skeleton className="h-4 w-32" />
+          <div className="flex gap-4 mt-4">
+            <Skeleton className="h-16 w-24" />
+            <Skeleton className="h-16 w-24" />
+            <Skeleton className="h-16 w-24" />
+            <Skeleton className="h-16 w-24" />
+          </div>
+        </div>
+      </div>
+      {/* Tabs skeleton */}
+      <Skeleton className="h-10 w-full rounded-lg" />
+      {/* Tab content skeleton */}
+      <div className="space-y-3">
+        <Skeleton className="h-64 w-full rounded-lg" />
+        <Skeleton className="h-32 w-full rounded-lg" />
+      </div>
     </div>
   )
 }
@@ -57,10 +78,10 @@ export function PoliticianProfileClient({ bioguideId }: PoliticianProfileClientP
 
   if (!politician) {
     return (
-      <div className="flex flex-col items-center justify-center py-20 text-muted-foreground">
-        <p className="text-lg font-medium">Politician not found</p>
-        <p className="text-sm mt-1">No data available for ID: {bioguideId}</p>
-      </div>
+      <EmptyState
+        heading="Politician not found"
+        description="This politician may not be in our database. Try browsing the directory."
+      />
     )
   }
 
