@@ -187,8 +187,14 @@ function simulateSnakeDraft(
   const teamNames = TEAM_NAMES_BY_LEAGUE[leagueIndex]
   const owners = OWNERS_BY_LEAGUE[leagueIndex]
 
-  // Sort pool by seasonPoints descending — best players drafted first
-  const available = [...pool].sort((a, b) => b.seasonPoints - a.seasonPoints)
+  // Sort pool by seasonPoints descending — best players drafted first.
+  // NOTE: pool has fewer politicians than total picks needed (8 teams × 12 = 96 > pool size).
+  // When the shared available pool is exhausted, we fall back to allowing a politician to appear
+  // on multiple teams in the same league (same player can be drafted by different managers),
+  // which mirrors the "same politician allowed across leagues" decision and is acceptable
+  // for a demo prototype.
+  const sortedPool = [...pool].sort((a, b) => b.seasonPoints - a.seasonPoints)
+  const available = [...sortedPool]
 
   // Initialize teams
   const teams: Array<{
@@ -223,6 +229,13 @@ function simulateSnakeDraft(
       const picksRemaining = TOTAL_PICKS - team.picks.length - 1
       const reservePerPick = team.picks.length >= ACTIVE_SLOTS ? 200 : 644
       const salaryReserve = picksRemaining * reservePerPick
+
+      // If available pool is exhausted, refill it (excluding this team's own picks) so that
+      // a politician can appear on multiple teams in the same league when pool < 96 total picks.
+      if (available.length === 0) {
+        const myPickIds = new Set(team.picks.map((p) => p.bioguideId))
+        available.push(...sortedPool.filter((p) => !myPickIds.has(p.bioguideId)))
+      }
 
       const pick = available.find(
         (p) =>
