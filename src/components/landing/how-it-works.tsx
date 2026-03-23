@@ -1,4 +1,4 @@
-import { Users, TrendingUp, Trophy } from 'lucide-react'
+import { Users, TrendingUp, Trophy, Zap, AlertTriangle, Award } from 'lucide-react'
 
 const steps = [
   {
@@ -58,6 +58,92 @@ export function HowItWorks() {
             </div>
           )
         })}
+      </div>
+
+      {/* Scoring Breakdown */}
+      <div className="mt-16 rounded-xl border border-border bg-card p-8">
+        <h3 className="text-2xl font-bold text-center mb-2">How Points Are Calculated</h3>
+        <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto text-sm">
+          Every Congressional stock trade is scored based on real financial performance.
+          Your team&apos;s total points compete head-to-head each week — just like fantasy football.
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {/* Base Points */}
+          <div className="space-y-3">
+            <div className="flex items-center gap-2">
+              <TrendingUp className="size-5 text-primary" />
+              <h4 className="font-bold">Base Points</h4>
+            </div>
+            <ul className="space-y-2 text-sm text-muted-foreground">
+              <li className="flex justify-between">
+                <span>Trade beats S&P 500</span>
+                <span className="font-mono text-green-400">+10 to +40</span>
+              </li>
+              <li className="flex justify-between">
+                <span>Trade lags S&P 500</span>
+                <span className="font-mono text-red-400">+1 to +5</span>
+              </li>
+              <li className="flex justify-between">
+                <span>Per trade activity</span>
+                <span className="font-mono text-green-400">+5 each</span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Bonuses */}
+          <div className="space-y-3">
+            <div className="flex items-center gap-2">
+              <Award className="size-5 text-yellow-400" />
+              <h4 className="font-bold">Bonuses</h4>
+            </div>
+            <ul className="space-y-2 text-sm text-muted-foreground">
+              <li className="flex justify-between">
+                <span>Big Mover (&gt;20% return)</span>
+                <span className="font-mono text-yellow-400">+20</span>
+              </li>
+              <li className="flex justify-between">
+                <span>Bipartisan Bet</span>
+                <span className="font-mono text-yellow-400">+25</span>
+              </li>
+              <li className="flex justify-between">
+                <span>Insider Timing</span>
+                <span className="font-mono text-yellow-400">+15</span>
+              </li>
+              <li className="flex justify-between">
+                <span>Donor Darling</span>
+                <span className="font-mono text-yellow-400">+10</span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Penalties */}
+          <div className="space-y-3">
+            <div className="flex items-center gap-2">
+              <AlertTriangle className="size-5 text-red-400" />
+              <h4 className="font-bold">Penalties</h4>
+            </div>
+            <ul className="space-y-2 text-sm text-muted-foreground">
+              <li className="flex justify-between">
+                <span>Paper Hands (&lt;30 days)</span>
+                <span className="font-mono text-red-400">-15</span>
+              </li>
+              <li className="flex justify-between">
+                <span>Late Disclosure</span>
+                <span className="font-mono text-red-400">-10</span>
+              </li>
+              <li className="flex justify-between">
+                <span>Wash Sale</span>
+                <span className="font-mono text-red-400">-5</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <p className="text-center text-xs text-muted-foreground mt-6 border-t border-border pt-4">
+          Weekly matchups: Your roster&apos;s total points vs your opponent&apos;s — highest score wins.
+          Season standings determine league champions.
+        </p>
       </div>
     </section>
   )
