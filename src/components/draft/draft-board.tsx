@@ -1,0 +1,248 @@
+'use client'
+
+import { useEffect, useRef, useState } from 'react'
+import type { Politician } from '@/types'
+import { useDraftStore } from '@/store/draft-store'
+import { DRAFT_CONFIG } from '@/types/draft'
+import { selectAIPick } from '@/lib/draft/ai-engine'
+import { PoliticianPool } from './politician-pool'
+import { OnTheClock } from './on-the-clock'
+import { DraftRoster } from './draft-roster'
+import { PickTicker } from './pick-ticker'
+import { cn } from '@/lib/utils'
+
+interface DraftBoardProps {
+  politicians: Politician[]
+  politicianMap: Map<string, Politician>
+}
+
+export function DraftBoard({ politicians, politicianMap }: DraftBoardProps) {
+  const phase = useDraftStore((s) => s.phase)
+  const teams = useDraftStore((s) => s.teams)
+  const picks = useDraftStore((s) => s.picks)
+  const availablePool = useDraftStore((s) => s.availablePool)
+  const currentPickIndex = useDraftStore((s) => s.currentPickIndex)
+  const userTeamIndex = useDraftStore((s) => s.userTeamIndex)
+  const userPickTimer = useDraftStore((s) => s.userPickTimer)
+  const isAITurnPending = useDraftStore((s) => s.isAITurnPending)
+  const recordPick = useDraftStore((s) => s.recordPick)
+  const setAITurnPending = useDraftStore((s) => s.setAITurnPending)
+  const setUserPickTimer = useDraftStore((s) => s.setUserPickTimer)
+  const getCurrentTeamIndex = useDraftStore((s) => s.getCurrentTeamIndex)
+
+  const [mobileTab, setMobileTab] = useState<'pool' | 'roster'>('pool')
+  const aiTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+  const userTimerIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null)
+
+  // AI turn orchestration
+  useEffect(() => {
+    if (phase !== 'drafting' || isAITurnPending) return
+
+    const sessionId = useDraftStore.getState().draftSessionId
+
+    setAITurnPending(true)
+
+    const delay =
+      DRAFT_CONFIG.AI_DELAY_MIN_MS +
+      Math.random() * (DRAFT_CONFIG.AI_DELAY_MAX_MS - DRAFT_CONFIG.AI_DELAY_MIN_MS)
+
+    aiTimeoutRef.current = setTimeout(() => {
+      // Stale session check
+      if (useDraftStore.getState().draftSessionId !== sessionId) return
+
+      const currentState = useDraftStore.getState()
+      const teamIndex = getCurrentTeamIndex()
+      const team = currentState.teams[teamIndex]
+      if (!team) return
+
+      const salaryRemaining = DRAFT_CONFIG.SALARY_CAP - team.salaryUsed
+      const bioguideId = selectAIPick(
+        team.archetype === 'human' ? 'balanced' : team.archetype,
+        currentState.availablePool,
+        team.roster,
+        salaryRemaining,
+        politicianMap
+      )
+
+      const politician = politicianMap.get(bioguideId)
+      if (!politician) return
+
+      recordPick(bioguideId, politician.salaryCap)
+    }, delay)
+
+    return () => {
+      if (aiTimeoutRef.current) clearTimeout(aiTimeoutRef.current)
+    }
+  }, [phase, isAITurnPending, currentPickIndex]) // eslint-disable-line react-hooks/exhaustive-deps
+
+  // User pick timer
+  useEffect(() => {
+    if (phase !== 'user-turn') {
+      if (userTimerIntervalRef.current) {
+        clearInterval(userTimerIntervalRef.current)
+        userTimerIntervalRef.current = null
+      }
+      return
+    }
+
+    userTimerIntervalRef.current = setInterval(() => {
+      const currentTimer = useDraftStore.getState().userPickTimer
+      if (currentTimer <= 1) {
+        clearInterval(userTimerIntervalRef.current!)
+        userTimerIntervalRef.current = null
+
+        // Auto-pick best available
+        const currentState = useDraftStore.getState()
+        const teamIndex = currentState.userTeamIndex
+        const team = currentState.teams[teamIndex]
+        if (!team) return
+
+        const salaryRemaining = DRAFT_CONFIG.SALARY_CAP - team.salaryUsed
+        const available = currentState.availablePool
+          .map((id) => politicianMap.get(id))
+          .filter((p): p is Politician => p !== undefined && p.salaryCap <= salaryRemaining)
+          .sort((a, b) => b.seasonPoints - a.seasonPoints)
+
+        const best = available[0]
+        if (best) {
+          recordPick(best.bioguideId, best.salaryCap)
+        }
+      } else {
+        setUserPickTimer(currentTimer - 1)
+      }
+    }, 1000)
+
+    return () => {
+      if (userTimerIntervalRef.current) {
+        clearInterval(userTimerIntervalRef.current)
+        userTimerIntervalRef.current = null
+      }
+    }
+  }, [phase]) // eslint-disable-line react-hooks/exhaustive-deps
+
+  const userTeam = teams[userTeamIndex]
+  const currentTeamIndex = getCurrentTeamIndex()
+  const currentTeam = teams[currentTeamIndex]
+  const isUserTurn = phase === 'user-turn'
+
+  function handleUserPick(bioguideId: string) {
+    const politician = politicianMap.get(bioguideId)
+    if (!politician) return
+    recordPick(bioguideId, politician.salaryCap)
+  }
+
+  const salaryRemaining = userTeam
+    ? DRAFT_CONFIG.SALARY_CAP - userTeam.salaryUsed
+    : DRAFT_CONFIG.SALARY_CAP
+
+  return (
+    <div className="min-h-screen bg-background flex flex-col">
+      {/* 3-panel layout — desktop */}
+      <div className="flex-1 hidden lg:grid grid-cols-[1fr_320px_300px] gap-0 overflow-hidden">
+        {/* Left: Politician Pool */}
+        <div className="overflow-hidden border-r border-border">
+          <PoliticianPool
+            politicians={politicians}
+            availablePool={availablePool}
+            salaryRemaining={salaryRemaining}
+            isUserTurn={isUserTurn}
+            onPick={handleUserPick}
+          />
+        </div>
+
+        {/* Center: On The Clock */}
+        <div className="border-r border-border overflow-hidden">
+          {currentTeam && (
+            <OnTheClock
+              currentTeam={currentTeam}
+              isUserTurn={isUserTurn}
+              userPickTimer={userPickTimer}
+              currentPickNumber={currentPickIndex}
+              totalPicks={DRAFT_CONFIG.TOTAL_PICKS}
+            />
+          )}
+        </div>
+
+        {/* Right: Draft Roster */}
+        <div className="overflow-hidden">
+          {userTeam && (
+            <DraftRoster
+              team={userTeam}
+              politicians={politicianMap}
+              totalCap={DRAFT_CONFIG.SALARY_CAP}
+            />
+          )}
+        </div>
+      </div>
+
+      {/* Mobile layout */}
+      <div className="lg:hidden flex-1 flex flex-col">
+        {/* On The Clock pinned at top */}
+        <div className="sticky top-0 z-10 border-b border-border bg-background">
+          {currentTeam && (
+            <OnTheClock
+              currentTeam={currentTeam}
+              isUserTurn={isUserTurn}
+              userPickTimer={userPickTimer}
+              currentPickNumber={currentPickIndex}
+              totalPicks={DRAFT_CONFIG.TOTAL_PICKS}
+            />
+          )}
+        </div>
+
+        {/* Tab switcher */}
+        <div className="flex border-b border-border">
+          <button
+            onClick={() => setMobileTab('pool')}
+            className={cn(
+              'flex-1 py-2.5 text-sm font-medium transition-colors',
+              mobileTab === 'pool'
+                ? 'text-foreground border-b-2 border-primary'
+                : 'text-muted-foreground'
+            )}
+          >
+            Available
+          </button>
+          <button
+            onClick={() => setMobileTab('roster')}
+            className={cn(
+              'flex-1 py-2.5 text-sm font-medium transition-colors',
+              mobileTab === 'roster'
+                ? 'text-foreground border-b-2 border-primary'
+                : 'text-muted-foreground'
+            )}
+          >
+            My Roster
+          </button>
+        </div>
+
+        {/* Tab content */}
+        <div className="flex-1 overflow-hidden">
+          {mobileTab === 'pool' && (
+            <PoliticianPool
+              politicians={politicians}
+              availablePool={availablePool}
+              salaryRemaining={salaryRemaining}
+              isUserTurn={isUserTurn}
+              onPick={handleUserPick}
+            />
+          )}
+          {mobileTab === 'roster' && userTeam && (
+            <DraftRoster
+              team={userTeam}
+              politicians={politicianMap}
+              totalCap={DRAFT_CONFIG.SALARY_CAP}
+            />
+          )}
+        </div>
+      </div>
+
+      {/* Pick Ticker — full width */}
+      <PickTicker
+        picks={picks}
+        teams={teams}
+        politicians={politicianMap}
+      />
+    </div>
+  )
+}
