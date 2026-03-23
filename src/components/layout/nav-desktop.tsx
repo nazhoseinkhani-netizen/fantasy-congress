@@ -6,11 +6,12 @@ import { Avatar, AvatarFallback } from '@/components/ui/avatar'
 import { cn } from '@/lib/utils'
 
 const navLinks = [
-  { href: '/', label: 'Dashboard' },
+  { href: '/dashboard', label: 'Dashboard' },
   { href: '/politicians', label: 'Politicians' },
   { href: '/feed', label: 'Trade Feed' },
   { href: '/leaderboard', label: 'Leaderboard' },
   { href: '/team', label: 'My Team' },
+  { href: '/league', label: 'League' },
 ]
 
 export function NavDesktop() {
@@ -29,10 +30,7 @@ export function NavDesktop() {
         {/* Nav links */}
         <nav className="flex items-center gap-1">
           {navLinks.map((link) => {
-            const isActive =
-              link.href === '/'
-                ? pathname === '/'
-                : pathname.startsWith(link.href)
+            const isActive = pathname.startsWith(link.href)
             return (
               <Link
                 key={link.href}

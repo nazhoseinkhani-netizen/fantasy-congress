@@ -8,15 +8,17 @@ import {
   Activity,
   Trophy,
   Shield,
+  Medal,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 const navItems = [
-  { href: '/', label: 'Home', icon: LayoutDashboard },
+  { href: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
   { href: '/politicians', label: 'Politicians', icon: Users },
   { href: '/feed', label: 'Feed', icon: Activity },
-  { href: '/leaderboard', label: 'Leaderboard', icon: Trophy },
+  { href: '/leaderboard', label: 'Leaders', icon: Trophy },
   { href: '/team', label: 'Team', icon: Shield },
+  { href: '/league', label: 'League', icon: Medal },
 ]
 
 export function NavMobile() {
@@ -26,10 +28,7 @@ export function NavMobile() {
     <nav className="flex lg:hidden fixed bottom-0 left-0 right-0 z-50 h-16 border-t border-border bg-background/95 backdrop-blur-sm">
       <div className="flex w-full items-center justify-around px-2">
         {navItems.map((item) => {
-          const isActive =
-            item.href === '/'
-              ? pathname === '/'
-              : pathname.startsWith(item.href)
+          const isActive = pathname.startsWith(item.href)
           const Icon = item.icon
           return (
             <Link
