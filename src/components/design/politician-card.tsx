@@ -1,6 +1,7 @@
 'use client'
 
 import { cn } from '@/lib/utils'
+import { PARTY_COLORS, PARTY_FULL_LABELS } from '@/lib/party-colors'
 import type { Politician } from '@/types'
 import { RiskBadge } from './risk-badge'
 import { StatCell } from './stat-cell'
@@ -11,18 +12,6 @@ interface PoliticianCardProps {
   variant?: 'full' | 'compact' | 'mini'
   onClick?: () => void
   className?: string
-}
-
-const partyColorVars: Record<string, string> = {
-  D: 'var(--party-dem)',
-  R: 'var(--party-rep)',
-  I: 'var(--party-ind)',
-}
-
-const partyLabels: Record<string, string> = {
-  D: 'D',
-  R: 'R',
-  I: 'I',
 }
 
 function PoliticianPhoto({
@@ -62,8 +51,8 @@ export function PoliticianCard({
   onClick,
   className,
 }: PoliticianCardProps) {
-  const partyColor = partyColorVars[politician.party] ?? partyColorVars['I']
-  const partyLabel = partyLabels[politician.party] ?? 'I'
+  const partyColor = PARTY_COLORS[politician.party] ?? PARTY_COLORS['I']
+  const partyLabel = politician.party
 
   if (variant === 'mini') {
     return (
@@ -164,7 +153,7 @@ export function PoliticianCard({
                 <p className="text-xs text-muted-foreground mt-0.5">
                   {politician.chamber === 'senate' ? 'Senator' : 'Representative'} &middot;{' '}
                   <span style={{ color: partyColor }} className="font-medium">
-                    {partyLabel === 'D' ? 'Democrat' : partyLabel === 'R' ? 'Republican' : 'Independent'}
+                    {PARTY_FULL_LABELS[politician.party] ?? 'Independent'}
                   </span>{' '}
                   &middot; {politician.state}
                 </p>
@@ -173,8 +162,8 @@ export function PoliticianCard({
                 className="shrink-0 text-sm font-bold px-2 py-0.5 rounded border"
                 style={{
                   color: partyColor,
-                  borderColor: `color-mix(in oklch, ${partyColor} 40%, transparent)`,
-                  backgroundColor: `color-mix(in oklch, ${partyColor} 15%, transparent)`,
+                  borderColor: `${partyColor}66`,
+                  backgroundColor: `${partyColor}26`,
                 }}
               >
                 {partyLabel}

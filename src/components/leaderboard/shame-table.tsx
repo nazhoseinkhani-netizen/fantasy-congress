@@ -10,18 +10,14 @@ interface ShameTableProps {
   startRank: number
 }
 
-const partyColorVars: Record<string, string> = {
-  D: 'var(--party-dem)',
-  R: 'var(--party-rep)',
-  I: 'var(--party-ind)',
-}
+import { PARTY_COLORS } from '@/lib/party-colors'
 
 const tierColorVars: Record<InsiderRiskTier, string> = {
-  'clean-record': 'var(--risk-clean)',
-  'minor-concerns': 'var(--risk-minor)',
-  'raised-eyebrows': 'var(--risk-raised)',
-  'seriously-suspicious': 'var(--risk-suspicious)',
-  'peak-swamp': 'var(--risk-swamp)',
+  'clean-record': '#4AAF6E',
+  'minor-concerns': '#B8A846',
+  'raised-eyebrows': '#C9944A',
+  'seriously-suspicious': '#D46A3A',
+  'peak-swamp': '#D94A4A',
 }
 
 function FeatureCard({
@@ -37,11 +33,11 @@ function FeatureCard({
 }) {
   const tierColor = tierColorVars[politician.insiderRiskTier]
   const bgTint = variant === 'swampiest'
-    ? 'color-mix(in oklch, var(--risk-swamp) 10%, transparent)'
-    : 'color-mix(in oklch, var(--risk-clean) 10%, transparent)'
+    ? '#D94A4A1A'
+    : '#4AAF6E1A'
   const borderTint = variant === 'swampiest'
-    ? 'color-mix(in oklch, var(--risk-swamp) 30%, transparent)'
-    : 'color-mix(in oklch, var(--risk-clean) 30%, transparent)'
+    ? '#D94A4A4D'
+    : '#4AAF6E4D'
 
   return (
     <Link
@@ -68,14 +64,14 @@ function FeatureCard({
       <div className="flex-1 min-w-0">
         <p className="text-sm font-semibold truncate">{politician.name}</p>
         <p className="text-xs text-muted-foreground">
-          <span style={{ color: partyColorVars[politician.party] ?? partyColorVars['I'] }} className="font-semibold">{politician.party}</span> &middot; {politician.state}
+          <span style={{ color: PARTY_COLORS[politician.party] ?? PARTY_COLORS['I'] }} className="font-semibold">{politician.party}</span> &middot; {politician.state}
         </p>
       </div>
       <span
         className="inline-flex items-center justify-center min-w-[2rem] px-1.5 py-0.5 rounded text-xs font-bold tabular-nums shrink-0"
         style={{
           color: tierColor,
-          backgroundColor: `color-mix(in oklch, ${tierColor} 15%, transparent)`,
+          backgroundColor: `${tierColor}26`,
         }}
       >
         {politician.insiderRiskScore}
@@ -108,7 +104,7 @@ export function ShameTable({ politicians, rankBy, startRank }: ShameTableProps) 
           <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-3 flex items-center gap-2">
             <span
               className="size-2 rounded-full"
-              style={{ backgroundColor: 'var(--risk-swamp)' }}
+              style={{ backgroundColor: '#D94A4A' }}
             />
             Swampiest
           </h3>
@@ -146,7 +142,7 @@ export function ShameTable({ politicians, rankBy, startRank }: ShameTableProps) 
             <tbody>
               {sortedPoliticians.map((politician, index) => {
                 const rank = startRank + index
-                const partyColor = partyColorVars[politician.party] ?? partyColorVars['I']
+                const partyColor = PARTY_COLORS[politician.party] ?? PARTY_COLORS['I']
                 const tierColor = tierColorVars[politician.insiderRiskTier]
                 const isOdd = index % 2 === 0
 
@@ -198,8 +194,8 @@ export function ShameTable({ politicians, rankBy, startRank }: ShameTableProps) 
                           className="inline-flex items-center px-2 py-0.5 rounded text-xs font-bold border"
                           style={{
                             color: partyColor,
-                            borderColor: `color-mix(in oklch, ${partyColor} 40%, transparent)`,
-                            backgroundColor: `color-mix(in oklch, ${partyColor} 15%, transparent)`,
+                            borderColor: `${partyColor}66`,
+                            backgroundColor: `${partyColor}26`,
                           }}
                         >
                           {politician.party}
@@ -257,7 +253,7 @@ export function ShameTable({ politicians, rankBy, startRank }: ShameTableProps) 
                           className="inline-flex items-center justify-center min-w-[2rem] px-1.5 py-0.5 rounded text-xs font-bold tabular-nums"
                           style={{
                             color: tierColor,
-                            backgroundColor: `color-mix(in oklch, ${tierColor} 15%, transparent)`,
+                            backgroundColor: `${tierColor}26`,
                           }}
                         >
                           {politician.insiderRiskScore}
@@ -278,7 +274,7 @@ export function ShameTable({ politicians, rankBy, startRank }: ShameTableProps) 
           <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-3 flex items-center gap-2">
             <span
               className="size-2 rounded-full"
-              style={{ backgroundColor: 'var(--risk-clean)' }}
+              style={{ backgroundColor: '#4AAF6E' }}
             />
             Cleanest
           </h3>

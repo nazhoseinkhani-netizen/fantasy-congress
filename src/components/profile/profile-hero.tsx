@@ -9,17 +9,7 @@ interface ProfileHeroProps {
   politician: Politician
 }
 
-const partyColors: Record<string, string> = {
-  D: 'var(--color-party-dem)',
-  R: 'var(--color-party-rep)',
-  I: 'var(--color-party-ind)',
-}
-
-const partyLabels: Record<string, string> = {
-  D: 'Democrat',
-  R: 'Republican',
-  I: 'Independent',
-}
+import { PARTY_COLORS, PARTY_FULL_LABELS } from '@/lib/party-colors'
 
 const chamberLabels: Record<string, string> = {
   senate: 'Senator',
@@ -27,8 +17,8 @@ const chamberLabels: Record<string, string> = {
 }
 
 export function ProfileHero({ politician }: ProfileHeroProps) {
-  const partyColor = partyColors[politician.party] ?? 'var(--color-foreground)'
-  const partyLabel = partyLabels[politician.party] ?? politician.party
+  const partyColor = PARTY_COLORS[politician.party] ?? '#FFFFFF'
+  const partyLabel = PARTY_FULL_LABELS[politician.party] ?? politician.party
   const chamberLabel = chamberLabels[politician.chamber] ?? politician.chamber
 
   return (

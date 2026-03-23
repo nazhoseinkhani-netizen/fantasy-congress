@@ -3,23 +3,11 @@
 import Link from 'next/link'
 import { formatDistanceToNow } from 'date-fns'
 import type { Trade } from '@/types/trade'
-import type { Party } from '@/types/politician'
+import { PARTY_COLORS } from '@/lib/party-colors'
 
 interface TradeCardProps {
   trade: Trade
   politicianPhotoUrl?: string
-}
-
-const partyColorVars: Record<Party, string> = {
-  D: 'var(--party-dem)',
-  R: 'var(--party-rep)',
-  I: 'var(--party-ind)',
-}
-
-const partyLabels: Record<Party, string> = {
-  D: 'D',
-  R: 'R',
-  I: 'I',
 }
 
 function getInitials(name: string): string {
@@ -71,8 +59,8 @@ function PenaltyBadge({ type }: { type: string }) {
 }
 
 export function TradeCard({ trade, politicianPhotoUrl }: TradeCardProps) {
-  const partyColor = partyColorVars[trade.party] ?? partyColorVars['I']
-  const partyLabel = partyLabels[trade.party] ?? 'I'
+  const partyColor = PARTY_COLORS[trade.party] ?? PARTY_COLORS['I']
+  const partyLabel = trade.party
 
   const returnPositive = trade.returnVsSP500 >= 0
   const returnColor = returnPositive ? 'text-green-400' : 'text-red-400'
@@ -129,7 +117,7 @@ export function TradeCard({ trade, politicianPhotoUrl }: TradeCardProps) {
               className="text-xs font-bold px-1.5 py-0.5 rounded shrink-0"
               style={{
                 color: partyColor,
-                backgroundColor: `color-mix(in oklch, ${partyColor} 15%, transparent)`,
+                backgroundColor: `${partyColor}26`,
               }}
             >
               {partyLabel}

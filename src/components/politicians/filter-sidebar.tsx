@@ -42,11 +42,7 @@ export const DEFAULT_FILTERS: FilterState = {
   view: 'grid',
 }
 
-const partyColorVars: Record<string, string> = {
-  D: 'var(--party-dem)',
-  R: 'var(--party-rep)',
-  I: 'var(--party-ind)',
-}
+import { PARTY_COLORS } from '@/lib/party-colors'
 
 const riskTierRanges: { label: string; range: [number, number]; tier: InsiderRiskTier }[] = [
   { label: 'Clean', range: [0, 14], tier: 'clean-record' },
@@ -57,11 +53,11 @@ const riskTierRanges: { label: string; range: [number, number]; tier: InsiderRis
 ]
 
 const tierColorVars: Record<string, string> = {
-  'clean-record': 'var(--risk-clean)',
-  'minor-concerns': 'var(--risk-minor)',
-  'raised-eyebrows': 'var(--risk-raised)',
-  'seriously-suspicious': 'var(--risk-suspicious)',
-  'peak-swamp': 'var(--risk-swamp)',
+  'clean-record': '#4AAF6E',
+  'minor-concerns': '#B8A846',
+  'raised-eyebrows': '#C9944A',
+  'seriously-suspicious': '#D46A3A',
+  'peak-swamp': '#D94A4A',
 }
 
 const salaryTierLabels: SalaryTier[] = ['elite', 'starter', 'mid-tier', 'bench', 'sleeper', 'unranked']
@@ -150,7 +146,7 @@ function FilterContent({ filters, onFilterChange, politicians }: FilterSidebarPr
         <div className="flex gap-2">
           {(['D', 'R', 'I'] as Party[]).map((party) => {
             const isActive = filters.party === party
-            const color = partyColorVars[party]
+            const color = PARTY_COLORS[party]
             const label = party === 'D' ? 'Democrat' : party === 'R' ? 'Republican' : 'Independent'
             return (
               <button
@@ -160,9 +156,9 @@ function FilterContent({ filters, onFilterChange, politicians }: FilterSidebarPr
                 style={
                   isActive
                     ? {
-                        backgroundColor: `color-mix(in oklch, ${color} 20%, transparent)`,
+                        backgroundColor: `${color}33`,
                         color,
-                        borderColor: `color-mix(in oklch, ${color} 50%, transparent)`,
+                        borderColor: `${color}80`,
                       }
                     : {
                         color: 'var(--muted-foreground)',
@@ -191,9 +187,9 @@ function FilterContent({ filters, onFilterChange, politicians }: FilterSidebarPr
                 style={
                   isActive
                     ? {
-                        backgroundColor: `color-mix(in oklch, var(--primary) 20%, transparent)`,
-                        color: 'var(--primary)',
-                        borderColor: `color-mix(in oklch, var(--primary) 50%, transparent)`,
+                        backgroundColor: '#C9A84C33',
+                        color: '#C9A84C',
+                        borderColor: '#C9A84C80',
                       }
                     : {
                         color: 'var(--muted-foreground)',
@@ -243,9 +239,9 @@ function FilterContent({ filters, onFilterChange, politicians }: FilterSidebarPr
                 style={
                   isActive
                     ? {
-                        backgroundColor: `color-mix(in oklch, var(--primary) 20%, transparent)`,
-                        color: 'var(--primary)',
-                        borderColor: `color-mix(in oklch, var(--primary) 50%, transparent)`,
+                        backgroundColor: '#C9A84C33',
+                        color: '#C9A84C',
+                        borderColor: '#C9A84C80',
                       }
                     : {
                         color: 'var(--muted-foreground)',
@@ -280,9 +276,9 @@ function FilterContent({ filters, onFilterChange, politicians }: FilterSidebarPr
                 style={
                   isActive
                     ? {
-                        backgroundColor: `color-mix(in oklch, ${color} 20%, transparent)`,
+                        backgroundColor: `${color}33`,
                         color,
-                        borderColor: `color-mix(in oklch, ${color} 50%, transparent)`,
+                        borderColor: `${color}80`,
                       }
                     : {
                         color: 'var(--muted-foreground)',
@@ -322,9 +318,9 @@ function FilterContent({ filters, onFilterChange, politicians }: FilterSidebarPr
                 style={
                   isActive
                     ? {
-                        backgroundColor: `color-mix(in oklch, var(--primary) 20%, transparent)`,
-                        color: 'var(--primary)',
-                        borderColor: `color-mix(in oklch, var(--primary) 50%, transparent)`,
+                        backgroundColor: '#C9A84C33',
+                        color: '#C9A84C',
+                        borderColor: '#C9A84C80',
                       }
                     : {
                         color: 'var(--muted-foreground)',

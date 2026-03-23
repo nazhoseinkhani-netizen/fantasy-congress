@@ -11,15 +11,11 @@ interface PodiumProps {
 }
 
 // Medal colors
-const goldColor = 'var(--gold)' // same as var(--color-primary)
-const silverColor = 'oklch(0.75 0.01 250)'
-const bronzeColor = 'oklch(0.6 0.1 60)'
+const goldColor = '#C9A84C'
+const silverColor = '#A8A8B8'
+const bronzeColor = '#B87333'
 
-const partyColorVars: Record<string, string> = {
-  D: 'var(--party-dem)',
-  R: 'var(--party-rep)',
-  I: 'var(--party-ind)',
-}
+import { PARTY_COLORS } from '@/lib/party-colors'
 
 interface PodiumPosition {
   rank: 1 | 2 | 3
@@ -62,7 +58,7 @@ function PodiumCard({
   position: PodiumPosition
   rankBy: 'seasonPoints' | 'insiderRiskScore'
 }) {
-  const partyColor = partyColorVars[politician.party] ?? partyColorVars['I']
+  const partyColor = PARTY_COLORS[politician.party] ?? PARTY_COLORS['I']
   const isFirst = position.rank === 1
 
   const rankingValue =
@@ -80,16 +76,16 @@ function PodiumCard({
         position.orderClass
       )}
       style={isFirst ? {
-        background: `linear-gradient(135deg, color-mix(in oklch, ${goldColor} 15%, var(--card)) 0%, var(--card) 100%)`,
+        background: `linear-gradient(135deg, ${goldColor}26 0%, transparent 100%)`,
         borderColor: goldColor,
-        boxShadow: `0 0 24px color-mix(in oklch, ${goldColor} 25%, transparent)`,
+        boxShadow: `0 0 24px ${goldColor}40`,
       } : undefined}
     >
       {/* Rank medal */}
       <div
         className="size-9 rounded-full flex items-center justify-center text-base font-bold shrink-0"
         style={{
-          backgroundColor: `color-mix(in oklch, ${position.medalColor} 25%, transparent)`,
+          backgroundColor: `${position.medalColor}40`,
           color: position.medalColor,
           border: `2px solid ${position.medalColor}`,
         }}
@@ -128,7 +124,7 @@ function PodiumCard({
       <div className="text-center">
         <p
           className="text-2xl font-bold tabular-nums"
-          style={rankBy === 'insiderRiskScore' ? { color: `var(--risk-swamp)` } : { color: goldColor }}
+          style={rankBy === 'insiderRiskScore' ? { color: '#D94A4A' } : { color: goldColor }}
         >
           {rankingValue}
         </p>
