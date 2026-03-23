@@ -80,23 +80,23 @@ export function CorruptionDossierTab({ politician }: CorruptionDossierTabProps) 
           </div>
           <ResponsiveContainer width="100%" height={320}>
             <RadarChart data={radarData} cx="50%" cy="50%" outerRadius="75%">
-              <PolarGrid stroke="var(--color-border)" />
+              <PolarGrid stroke="oklch(0.22 0.008 265)" />
               <PolarAngleAxis
                 dataKey="label"
-                tick={{ fill: 'var(--color-muted-foreground)', fontSize: 11 }}
+                tick={{ fill: 'oklch(0.62 0.01 265)', fontSize: 11 }}
               />
               <PolarRadiusAxis
                 angle={90}
                 domain={[0, 100]}
-                tick={{ fill: 'var(--color-muted-foreground)', fontSize: 9 }}
+                tick={{ fill: 'oklch(0.62 0.01 265)', fontSize: 9 }}
               />
               <Tooltip contentStyle={CHART_TOOLTIP_STYLE} />
               <Radar
                 name="Risk Score"
                 dataKey="value"
-                stroke="var(--color-risk-swamp)"
-                fill="var(--color-risk-swamp)"
-                fillOpacity={0.25}
+                stroke="oklch(0.6 0.23 25)"
+                fill="oklch(0.6 0.23 25)"
+                fillOpacity={0.3}
               />
             </RadarChart>
           </ResponsiveContainer>

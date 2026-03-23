@@ -31,25 +31,25 @@ interface PodiumPosition {
 
 const positions: PodiumPosition[] = [
   {
-    rank: 2,
-    medalColor: silverColor,
-    medalLabel: '2',
-    heightClass: 'mt-10',
-    orderClass: 'order-1 md:order-1',
-  },
-  {
     rank: 1,
     medalColor: goldColor,
     medalLabel: '1',
-    heightClass: 'mt-0',
-    orderClass: 'order-first md:order-2',
+    heightClass: '',
+    orderClass: 'order-1',
+  },
+  {
+    rank: 2,
+    medalColor: silverColor,
+    medalLabel: '2',
+    heightClass: '',
+    orderClass: 'order-2',
   },
   {
     rank: 3,
     medalColor: bronzeColor,
     medalLabel: '3',
-    heightClass: 'mt-14',
-    orderClass: 'order-last md:order-3',
+    heightClass: '',
+    orderClass: 'order-3',
   },
 ]
 
@@ -74,13 +74,16 @@ function PodiumCard({
     <Link
       href={`/politicians/${politician.bioguideId}`}
       className={cn(
-        'flex flex-col items-center gap-2 p-4 rounded-xl border transition-transform hover:scale-105',
-        isFirst && 'ring-2 bg-card border-transparent',
+        'flex flex-col items-center gap-3 p-5 rounded-xl border transition-transform hover:scale-105',
         !isFirst && 'bg-card border-border',
         position.heightClass,
         position.orderClass
       )}
-      style={isFirst ? { boxShadow: `0 0 20px color-mix(in oklch, ${goldColor} 30%, transparent), inset 0 0 0 2px ${goldColor}`, borderColor: goldColor } : undefined}
+      style={isFirst ? {
+        background: `linear-gradient(135deg, color-mix(in oklch, ${goldColor} 15%, var(--card)) 0%, var(--card) 100%)`,
+        borderColor: goldColor,
+        boxShadow: `0 0 24px color-mix(in oklch, ${goldColor} 25%, transparent)`,
+      } : undefined}
     >
       {/* Rank medal */}
       <div

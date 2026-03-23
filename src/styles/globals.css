@@ -126,10 +126,10 @@
   --border: oklch(0.22 0.008 265);
   --input: oklch(0.18 0.008 265);
   --ring: oklch(0.78 0.165 85);
-  /* Party colors — same in dark mode */
-  --party-dem: oklch(0.55 0.2 260);
-  --party-rep: oklch(0.55 0.22 25);
-  --party-ind: oklch(0.6 0.15 145);
+  /* Party colors — brighter in dark mode for visibility */
+  --party-dem: oklch(0.7 0.2 260);
+  --party-rep: oklch(0.7 0.22 25);
+  --party-ind: oklch(0.7 0.15 145);
   /* Risk tier colors — same in dark mode */
   --risk-clean: oklch(0.65 0.18 145);
   --risk-minor: oklch(0.72 0.19 95);
