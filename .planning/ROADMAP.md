@@ -38,7 +38,7 @@ Plans:
 - [x] 01-03-PLAN.md — Premium dark design system: theme CSS, global navigation, PoliticianCard/RiskBadge/StatCell components
 - [x] 01-04-PLAN.md — Data pipeline: fetch politicians, generate trades, validate photos, compute scores, output JSON
 - [x] 01-05-PLAN.md — Demo data: generate 3 leagues with rosters and 6 weeks of matchup results, plus data loader functions
-- [ ] 01-06-PLAN.md — Gap closure: Activity Bonus (+5/trade) scoring fix and pipeline regeneration (SCORE-03)
+- [x] 01-06-PLAN.md — Gap closure: Activity Bonus (+5/trade) scoring fix and pipeline regeneration (SCORE-03)
 - [x] 01-07-PLAN.md — Gap closure: Fix bench roster underfill in demo data generation (DEMO-01)
 
 ### Phase 2: Discovery
