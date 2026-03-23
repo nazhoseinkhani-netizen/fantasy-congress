@@ -51,7 +51,16 @@ Plans:
   3. Clicking a politician opens a profile with four working tabs — Fantasy Stats, Trading Profile, Corruption Dossier, and News — each showing real data from the build-time pipeline
   4. The trade feed shows recent Congressional stock disclosures with bonus badges, return vs S&P 500, and fantasy points — filterable by party, chamber, and trade type
   5. The Hall of Shame leaderboard ranks politicians by fantasy points and by Insider Trading Risk Score with tier colors and methodology visible on score cards
-**Plans**: TBD
+**Plans:** 7 plans
+
+Plans:
+- [ ] 02-01-PLAN.md — Install Recharts, shared chart config, skeleton component, and complete landing page
+- [ ] 02-02-PLAN.md — Politician directory with filters, search, sort, and grid/list toggle
+- [ ] 02-03-PLAN.md — Politician profiles with generateStaticParams, hero banner, and 4 chart-rich tabs
+- [ ] 02-04-PLAN.md — Trade feed with Twitter-style cards, filters, My Roster Only, and trending sidebar
+- [ ] 02-05-PLAN.md — Leaderboard with Hall of Shame podium, corruption rankings, and Swamp Lords
+- [ ] 02-06-PLAN.md — UI polish: skeleton loading, metric tooltips, and empty states across all pages
+- [ ] 02-07-PLAN.md — Visual verification checkpoint for complete P1 demo
 
 ### Phase 3: Game Experience
 **Goal**: Users can experience the full fantasy sports product loop — check their weekly matchup, manage their roster, see league standings — all powered by pre-populated demo data that feels like a live season
@@ -91,7 +100,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 6/7 | In Progress|  |
-| 2. Discovery | 0/TBD | Not started | - |
+| 2. Discovery | 0/7 | Not started | - |
 | 3. Game Experience | 0/TBD | Not started | - |
 | 4. Draft Room | 0/TBD | Not started | - |
 | 5. Polish and Viral | 0/TBD | Not started | - |
