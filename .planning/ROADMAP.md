@@ -51,7 +51,7 @@ Plans:
   3. Clicking a politician opens a profile with four working tabs — Fantasy Stats, Trading Profile, Corruption Dossier, and News — each showing real data from the build-time pipeline
   4. The trade feed shows recent Congressional stock disclosures with bonus badges, return vs S&P 500, and fantasy points — filterable by party, chamber, and trade type
   5. The Hall of Shame leaderboard ranks politicians by fantasy points and by Insider Trading Risk Score with tier colors and methodology visible on score cards
-**Plans:** 2/7 plans executed
+**Plans:** 4/7 plans executed
 
 Plans:
 - [x] 02-01-PLAN.md — Install Recharts, shared chart config, skeleton component, and complete landing page
@@ -100,7 +100,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 6/7 | In Progress|  |
-| 2. Discovery | 2/7 | In Progress|  |
+| 2. Discovery | 4/7 | In Progress|  |
 | 3. Game Experience | 0/TBD | Not started | - |
 | 4. Draft Room | 0/TBD | Not started | - |
 | 5. Polish and Viral | 0/TBD | Not started | - |

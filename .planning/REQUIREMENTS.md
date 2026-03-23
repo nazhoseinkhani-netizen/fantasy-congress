@@ -61,9 +61,9 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Leaderboard
 
-- [ ] **LEAD-01**: "Hall of Shame" — politicians ranked by total fantasy points with photo, party, stats, corruption index
-- [ ] **LEAD-02**: "Swamp Lords" — top fantasy managers ranked by record and total points (weekly/season/all-time tabs)
-- [ ] **LEAD-03**: "Corruption Leaderboard" — politicians ranked by corruption index with tier colors, cleanest/swampiest featured sections
+- [x] **LEAD-01**: "Hall of Shame" — politicians ranked by total fantasy points with photo, party, stats, corruption index
+- [x] **LEAD-02**: "Swamp Lords" — top fantasy managers ranked by record and total points (weekly/season/all-time tabs)
+- [x] **LEAD-03**: "Corruption Leaderboard" — politicians ranked by corruption index with tier colors, cleanest/swampiest featured sections
 
 ### Dashboard
 
@@ -207,9 +207,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | FEED-02 | Phase 2 | Complete |
 | FEED-03 | Phase 2 | Complete |
 | FEED-04 | Phase 2 | Complete |
-| LEAD-01 | Phase 2 | Pending |
-| LEAD-02 | Phase 2 | Pending |
-| LEAD-03 | Phase 2 | Pending |
+| LEAD-01 | Phase 2 | Complete |
+| LEAD-02 | Phase 2 | Complete |
+| LEAD-03 | Phase 2 | Complete |
 | UI-04 | Phase 2 | Pending |
 | UI-05 | Phase 2 | Pending |
 | UI-06 | Phase 2 | Pending |
