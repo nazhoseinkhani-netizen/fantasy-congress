@@ -94,13 +94,14 @@ export function TradingProfileTab({ politician, trades }: TradingProfileTabProps
               </Pie>
               <Tooltip
                 contentStyle={CHART_TOOLTIP_STYLE}
-                formatter={(value: unknown, _name: unknown, props: Record<string, unknown>) => {
-                  const payload = (props as { payload?: SectorData }).payload
+                // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                formatter={((value: any, _name: any, props: any) => {
+                  const payload = props?.payload as SectorData | undefined
                   return [
                     `${value} trades, ${payload?.points ?? 0} pts`,
                     payload?.sector ?? '',
                   ]
-                }}
+                }) as any}
               />
               <Legend />
             </PieChart>
