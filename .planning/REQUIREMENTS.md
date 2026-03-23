@@ -67,11 +67,11 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Dashboard
 
-- [ ] **DASH-01**: Season KPIs row — team points this week, league rank, W-L-T record, next matchup opponent
-- [ ] **DASH-02**: This Week's Action — roster as horizontal politician mini-cards with points, trade cards below each, MVP highlight
-- [ ] **DASH-03**: Matchup scoreboard — your team vs opponent with visual score display
-- [ ] **DASH-04**: Live Trade Feed sidebar (compact version with "See Full Feed" link)
-- [ ] **DASH-05**: League Standings compact table with your row highlighted
+- [x] **DASH-01**: Season KPIs row — team points this week, league rank, W-L-T record, next matchup opponent
+- [x] **DASH-02**: This Week's Action — roster as horizontal politician mini-cards with points, trade cards below each, MVP highlight
+- [x] **DASH-03**: Matchup scoreboard — your team vs opponent with visual score display
+- [x] **DASH-04**: Live Trade Feed sidebar (compact version with "See Full Feed" link)
+- [x] **DASH-05**: League Standings compact table with your row highlighted
 
 ### My Team
 
@@ -213,11 +213,11 @@ Which phases cover which requirements. Updated during roadmap creation.
 | UI-04 | Phase 2 | Complete |
 | UI-05 | Phase 2 | Complete |
 | UI-06 | Phase 2 | Complete |
-| DASH-01 | Phase 3 | Pending |
-| DASH-02 | Phase 3 | Pending |
-| DASH-03 | Phase 3 | Pending |
-| DASH-04 | Phase 3 | Pending |
-| DASH-05 | Phase 3 | Pending |
+| DASH-01 | Phase 3 | Complete |
+| DASH-02 | Phase 3 | Complete |
+| DASH-03 | Phase 3 | Complete |
+| DASH-04 | Phase 3 | Complete |
+| DASH-05 | Phase 3 | Complete |
 | TEAM-01 | Phase 3 | Complete |
 | TEAM-02 | Phase 3 | Complete |
 | TEAM-03 | Phase 3 | Complete |
