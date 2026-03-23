@@ -89,10 +89,10 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Draft Room
 
-- [ ] **DRAFT-01**: Pre-draft view with draft order (snake format), countdown timer, and sortable/filterable politician board
-- [ ] **DRAFT-02**: During-draft full-screen board with available politicians, current roster + salary cap, "On The Clock" banner, and pick ticker
-- [ ] **DRAFT-03**: AI-controlled opponent picks with realistic selection logic
-- [ ] **DRAFT-04**: Post-draft results showing every pick, draft grades (A+ to F), sleeper picks, and team summary
+- [x] **DRAFT-01**: Pre-draft view with draft order (snake format), countdown timer, and sortable/filterable politician board
+- [x] **DRAFT-02**: During-draft full-screen board with available politicians, current roster + salary cap, "On The Clock" banner, and pick ticker
+- [x] **DRAFT-03**: AI-controlled opponent picks with realistic selection logic
+- [x] **DRAFT-04**: Post-draft results showing every pick, draft grades (A+ to F), sleeper picks, and team summary
 
 ### Demo Data
 
@@ -226,10 +226,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | LEAG-01 | Phase 3 | Complete |
 | LEAG-02 | Phase 3 | Complete |
 | LEAG-03 | Phase 3 | Complete |
-| DRAFT-01 | Phase 4 | Pending |
-| DRAFT-02 | Phase 4 | Pending |
-| DRAFT-03 | Phase 4 | Pending |
-| DRAFT-04 | Phase 4 | Pending |
+| DRAFT-01 | Phase 4 | Complete |
+| DRAFT-02 | Phase 4 | Complete |
+| DRAFT-03 | Phase 4 | Complete |
+| DRAFT-04 | Phase 4 | Complete |
 | ANIM-01 | Phase 5 | Pending |
 | ANIM-02 | Phase 5 | Pending |
 | ANIM-03 | Phase 5 | Pending |
