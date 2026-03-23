@@ -1,0 +1,6444 @@
+{
+  "schedules": [
+    {
+      "week": 1,
+      "matchups": [
+        {
+          "week": 1,
+          "leagueId": "league-beltway",
+          "homeTeamId": "league-beltway-team-1",
+          "awayTeamId": "league-beltway-team-8",
+          "homeScore": -248.6,
+          "awayScore": 102.16,
+          "completed": true
+        },
+        {
+          "week": 1,
+          "leagueId": "league-beltway",
+          "homeTeamId": "league-beltway-team-2",
+          "awayTeamId": "league-beltway-team-7",
+          "homeScore": 195.79,
+          "awayScore": -270.8,
+          "completed": true
+        },
+        {
+          "week": 1,
+          "leagueId": "league-beltway",
+          "homeTeamId": "league-beltway-team-3",
+          "awayTeamId": "league-beltway-team-6",
+          "homeScore": 507.48,
+          "awayScore": -120.74,
+          "completed": true
+        },
+        {
+          "week": 1,
+          "leagueId": "league-beltway",
+          "homeTeamId": "league-beltway-team-4",
+          "awayTeamId": "league-beltway-team-5",
+          "homeScore": -63.2,
+          "awayScore": 146.02,
+          "completed": true
+        },
+        {
+          "week": 1,
+          "leagueId": "league-capitol",
+          "homeTeamId": "league-capitol-team-1",
+          "awayTeamId": "league-capitol-team-8",
+          "homeScore": -248.6,
+          "awayScore": 102.16,
+          "completed": true
+        },
+        {
+          "week": 1,
+          "leagueId": "league-capitol",
+          "homeTeamId": "league-capitol-team-2",
+          "awayTeamId": "league-capitol-team-7",
+          "homeScore": 195.79,
+          "awayScore": -270.8,
+          "completed": true
+        },
+        {
+          "week": 1,
+          "leagueId": "league-capitol",
+          "homeTeamId": "league-capitol-team-3",
+          "awayTeamId": "league-capitol-team-6",
+          "homeScore": 507.48,
+          "awayScore": -120.74,
+          "completed": true
+        },
+        {
+          "week": 1,
+          "leagueId": "league-capitol",
+          "homeTeamId": "league-capitol-team-4",
+          "awayTeamId": "league-capitol-team-5",
+          "homeScore": -63.2,
+          "awayScore": 146.02,
+          "completed": true
+        },
+        {
+          "week": 1,
+          "leagueId": "league-swamp",
+          "homeTeamId": "league-swamp-team-1",
+          "awayTeamId": "league-swamp-team-8",
+          "homeScore": -248.6,
+          "awayScore": 102.16,
+          "completed": true
+        },
+        {
+          "week": 1,
+          "leagueId": "league-swamp",
+          "homeTeamId": "league-swamp-team-2",
+          "awayTeamId": "league-swamp-team-7",
+          "homeScore": 195.79,
+          "awayScore": -270.8,
+          "completed": true
+        },
+        {
+          "week": 1,
+          "leagueId": "league-swamp",
+          "homeTeamId": "league-swamp-team-3",
+          "awayTeamId": "league-swamp-team-6",
+          "homeScore": 507.48,
+          "awayScore": -120.74,
+          "completed": true
+        },
+        {
+          "week": 1,
+          "leagueId": "league-swamp",
+          "homeTeamId": "league-swamp-team-4",
+          "awayTeamId": "league-swamp-team-5",
+          "homeScore": -63.2,
+          "awayScore": 146.02,
+          "completed": true
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "matchups": [
+        {
+          "week": 2,
+          "leagueId": "league-beltway",
+          "homeTeamId": "league-beltway-team-1",
+          "awayTeamId": "league-beltway-team-2",
+          "homeScore": -223.55,
+          "awayScore": 132.32,
+          "completed": true
+        },
+        {
+          "week": 2,
+          "leagueId": "league-beltway",
+          "homeTeamId": "league-beltway-team-3",
+          "awayTeamId": "league-beltway-team-8",
+          "homeScore": 38.38,
+          "awayScore": -83.03,
+          "completed": true
+        },
+        {
+          "week": 2,
+          "leagueId": "league-beltway",
+          "homeTeamId": "league-beltway-team-4",
+          "awayTeamId": "league-beltway-team-7",
+          "homeScore": -63.37,
+          "awayScore": -25.08,
+          "completed": true
+        },
+        {
+          "week": 2,
+          "leagueId": "league-beltway",
+          "homeTeamId": "league-beltway-team-5",
+          "awayTeamId": "league-beltway-team-6",
+          "homeScore": -207.19,
+          "awayScore": 405.83,
+          "completed": true
+        },
+        {
+          "week": 2,
+          "leagueId": "league-capitol",
+          "homeTeamId": "league-capitol-team-1",
+          "awayTeamId": "league-capitol-team-2",
+          "homeScore": -223.55,
+          "awayScore": 132.32,
+          "completed": true
+        },
+        {
+          "week": 2,
+          "leagueId": "league-capitol",
+          "homeTeamId": "league-capitol-team-3",
+          "awayTeamId": "league-capitol-team-8",
+          "homeScore": 38.38,
+          "awayScore": -83.03,
+          "completed": true
+        },
+        {
+          "week": 2,
+          "leagueId": "league-capitol",
+          "homeTeamId": "league-capitol-team-4",
+          "awayTeamId": "league-capitol-team-7",
+          "homeScore": -63.37,
+          "awayScore": -25.08,
+          "completed": true
+        },
+        {
+          "week": 2,
+          "leagueId": "league-capitol",
+          "homeTeamId": "league-capitol-team-5",
+          "awayTeamId": "league-capitol-team-6",
+          "homeScore": -207.19,
+          "awayScore": 405.83,
+          "completed": true
+        },
+        {
+          "week": 2,
+          "leagueId": "league-swamp",
+          "homeTeamId": "league-swamp-team-1",
+          "awayTeamId": "league-swamp-team-2",
+          "homeScore": -223.55,
+          "awayScore": 132.32,
+          "completed": true
+        },
+        {
+          "week": 2,
+          "leagueId": "league-swamp",
+          "homeTeamId": "league-swamp-team-3",
+          "awayTeamId": "league-swamp-team-8",
+          "homeScore": 38.38,
+          "awayScore": -83.03,
+          "completed": true
+        },
+        {
+          "week": 2,
+          "leagueId": "league-swamp",
+          "homeTeamId": "league-swamp-team-4",
+          "awayTeamId": "league-swamp-team-7",
+          "homeScore": -63.37,
+          "awayScore": -25.08,
+          "completed": true
+        },
+        {
+          "week": 2,
+          "leagueId": "league-swamp",
+          "homeTeamId": "league-swamp-team-5",
+          "awayTeamId": "league-swamp-team-6",
+          "homeScore": -207.19,
+          "awayScore": 405.83,
+          "completed": true
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "matchups": [
+        {
+          "week": 3,
+          "leagueId": "league-beltway",
+          "homeTeamId": "league-beltway-team-1",
+          "awayTeamId": "league-beltway-team-3",
+          "homeScore": 204.03,
+          "awayScore": 8.76,
+          "completed": true
+        },
+        {
+          "week": 3,
+          "leagueId": "league-beltway",
+          "homeTeamId": "league-beltway-team-4",
+          "awayTeamId": "league-beltway-team-2",
+          "homeScore": 329.61,
+          "awayScore": 167.54,
+          "completed": true
+        },
+        {
+          "week": 3,
+          "leagueId": "league-beltway",
+          "homeTeamId": "league-beltway-team-5",
+          "awayTeamId": "league-beltway-team-8",
+          "homeScore": -114.22,
+          "awayScore": -211.79,
+          "completed": true
+        },
+        {
+          "week": 3,
+          "leagueId": "league-beltway",
+          "homeTeamId": "league-beltway-team-6",
+          "awayTeamId": "league-beltway-team-7",
+          "homeScore": 77.12,
+          "awayScore": 495.58,
+          "completed": true
+        },
+        {
+          "week": 3,
+          "leagueId": "league-capitol",
+          "homeTeamId": "league-capitol-team-1",
+          "awayTeamId": "league-capitol-team-3",
+          "homeScore": 204.03,
+          "awayScore": 8.76,
+          "completed": true
+        },
+        {
+          "week": 3,
+          "leagueId": "league-capitol",
+          "homeTeamId": "league-capitol-team-4",
+          "awayTeamId": "league-capitol-team-2",
+          "homeScore": 329.61,
+          "awayScore": 167.54,
+          "completed": true
+        },
+        {
+          "week": 3,
+          "leagueId": "league-capitol",
+          "homeTeamId": "league-capitol-team-5",
+          "awayTeamId": "league-capitol-team-8",
+          "homeScore": -114.22,
+          "awayScore": -211.79,
+          "completed": true
+        },
+        {
+          "week": 3,
+          "leagueId": "league-capitol",
+          "homeTeamId": "league-capitol-team-6",
+          "awayTeamId": "league-capitol-team-7",
+          "homeScore": 77.12,
+          "awayScore": 495.58,
+          "completed": true
+        },
+        {
+          "week": 3,
+          "leagueId": "league-swamp",
+          "homeTeamId": "league-swamp-team-1",
+          "awayTeamId": "league-swamp-team-3",
+          "homeScore": 204.03,
+          "awayScore": 8.76,
+          "completed": true
+        },
+        {
+          "week": 3,
+          "leagueId": "league-swamp",
+          "homeTeamId": "league-swamp-team-4",
+          "awayTeamId": "league-swamp-team-2",
+          "homeScore": 329.61,
+          "awayScore": 167.54,
+          "completed": true
+        },
+        {
+          "week": 3,
+          "leagueId": "league-swamp",
+          "homeTeamId": "league-swamp-team-5",
+          "awayTeamId": "league-swamp-team-8",
+          "homeScore": -114.22,
+          "awayScore": -211.79,
+          "completed": true
+        },
+        {
+          "week": 3,
+          "leagueId": "league-swamp",
+          "homeTeamId": "league-swamp-team-6",
+          "awayTeamId": "league-swamp-team-7",
+          "homeScore": 77.12,
+          "awayScore": 495.58,
+          "completed": true
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "matchups": [
+        {
+          "week": 4,
+          "leagueId": "league-beltway",
+          "homeTeamId": "league-beltway-team-1",
+          "awayTeamId": "league-beltway-team-4",
+          "homeScore": 537.02,
+          "awayScore": -7.58,
+          "completed": true
+        },
+        {
+          "week": 4,
+          "leagueId": "league-beltway",
+          "homeTeamId": "league-beltway-team-5",
+          "awayTeamId": "league-beltway-team-3",
+          "homeScore": 243.19,
+          "awayScore": 91.58,
+          "completed": true
+        },
+        {
+          "week": 4,
+          "leagueId": "league-beltway",
+          "homeTeamId": "league-beltway-team-6",
+          "awayTeamId": "league-beltway-team-2",
+          "homeScore": -111.75,
+          "awayScore": 405.35,
+          "completed": true
+        },
+        {
+          "week": 4,
+          "leagueId": "league-beltway",
+          "homeTeamId": "league-beltway-team-7",
+          "awayTeamId": "league-beltway-team-8",
+          "homeScore": -278.61,
+          "awayScore": 127.29,
+          "completed": true
+        },
+        {
+          "week": 4,
+          "leagueId": "league-capitol",
+          "homeTeamId": "league-capitol-team-1",
+          "awayTeamId": "league-capitol-team-4",
+          "homeScore": 537.02,
+          "awayScore": -7.58,
+          "completed": true
+        },
+        {
+          "week": 4,
+          "leagueId": "league-capitol",
+          "homeTeamId": "league-capitol-team-5",
+          "awayTeamId": "league-capitol-team-3",
+          "homeScore": 243.19,
+          "awayScore": 91.58,
+          "completed": true
+        },
+        {
+          "week": 4,
+          "leagueId": "league-capitol",
+          "homeTeamId": "league-capitol-team-6",
+          "awayTeamId": "league-capitol-team-2",
+          "homeScore": -111.75,
+          "awayScore": 405.35,
+          "completed": true
+        },
+        {
+          "week": 4,
+          "leagueId": "league-capitol",
+          "homeTeamId": "league-capitol-team-7",
+          "awayTeamId": "league-capitol-team-8",
+          "homeScore": -278.61,
+          "awayScore": 127.29,
+          "completed": true
+        },
+        {
+          "week": 4,
+          "leagueId": "league-swamp",
+          "homeTeamId": "league-swamp-team-1",
+          "awayTeamId": "league-swamp-team-4",
+          "homeScore": 537.02,
+          "awayScore": -7.58,
+          "completed": true
+        },
+        {
+          "week": 4,
+          "leagueId": "league-swamp",
+          "homeTeamId": "league-swamp-team-5",
+          "awayTeamId": "league-swamp-team-3",
+          "homeScore": 243.19,
+          "awayScore": 91.58,
+          "completed": true
+        },
+        {
+          "week": 4,
+          "leagueId": "league-swamp",
+          "homeTeamId": "league-swamp-team-6",
+          "awayTeamId": "league-swamp-team-2",
+          "homeScore": -111.75,
+          "awayScore": 405.35,
+          "completed": true
+        },
+        {
+          "week": 4,
+          "leagueId": "league-swamp",
+          "homeTeamId": "league-swamp-team-7",
+          "awayTeamId": "league-swamp-team-8",
+          "homeScore": -278.61,
+          "awayScore": 127.29,
+          "completed": true
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "matchups": [
+        {
+          "week": 5,
+          "leagueId": "league-beltway",
+          "homeTeamId": "league-beltway-team-1",
+          "awayTeamId": "league-beltway-team-5",
+          "homeScore": 244.15,
+          "awayScore": 338.2,
+          "completed": true
+        },
+        {
+          "week": 5,
+          "leagueId": "league-beltway",
+          "homeTeamId": "league-beltway-team-6",
+          "awayTeamId": "league-beltway-team-4",
+          "homeScore": 189,
+          "awayScore": 3.97,
+          "completed": true
+        },
+        {
+          "week": 5,
+          "leagueId": "league-beltway",
+          "homeTeamId": "league-beltway-team-7",
+          "awayTeamId": "league-beltway-team-3",
+          "homeScore": 545.61,
+          "awayScore": -43.9,
+          "completed": true
+        },
+        {
+          "week": 5,
+          "leagueId": "league-beltway",
+          "homeTeamId": "league-beltway-team-8",
+          "awayTeamId": "league-beltway-team-2",
+          "homeScore": 210.38,
+          "awayScore": -499.03,
+          "completed": true
+        },
+        {
+          "week": 5,
+          "leagueId": "league-capitol",
+          "homeTeamId": "league-capitol-team-1",
+          "awayTeamId": "league-capitol-team-5",
+          "homeScore": 244.15,
+          "awayScore": 338.2,
+          "completed": true
+        },
+        {
+          "week": 5,
+          "leagueId": "league-capitol",
+          "homeTeamId": "league-capitol-team-6",
+          "awayTeamId": "league-capitol-team-4",
+          "homeScore": 189,
+          "awayScore": 3.97,
+          "completed": true
+        },
+        {
+          "week": 5,
+          "leagueId": "league-capitol",
+          "homeTeamId": "league-capitol-team-7",
+          "awayTeamId": "league-capitol-team-3",
+          "homeScore": 545.61,
+          "awayScore": -43.9,
+          "completed": true
+        },
+        {
+          "week": 5,
+          "leagueId": "league-capitol",
+          "homeTeamId": "league-capitol-team-8",
+          "awayTeamId": "league-capitol-team-2",
+          "homeScore": 210.38,
+          "awayScore": -499.03,
+          "completed": true
+        },
+        {
+          "week": 5,
+          "leagueId": "league-swamp",
+          "homeTeamId": "league-swamp-team-1",
+          "awayTeamId": "league-swamp-team-5",
+          "homeScore": 244.15,
+          "awayScore": 338.2,
+          "completed": true
+        },
+        {
+          "week": 5,
+          "leagueId": "league-swamp",
+          "homeTeamId": "league-swamp-team-6",
+          "awayTeamId": "league-swamp-team-4",
+          "homeScore": 189,
+          "awayScore": 3.97,
+          "completed": true
+        },
+        {
+          "week": 5,
+          "leagueId": "league-swamp",
+          "homeTeamId": "league-swamp-team-7",
+          "awayTeamId": "league-swamp-team-3",
+          "homeScore": 545.61,
+          "awayScore": -43.9,
+          "completed": true
+        },
+        {
+          "week": 5,
+          "leagueId": "league-swamp",
+          "homeTeamId": "league-swamp-team-8",
+          "awayTeamId": "league-swamp-team-2",
+          "homeScore": 210.38,
+          "awayScore": -499.03,
+          "completed": true
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "matchups": [
+        {
+          "week": 6,
+          "leagueId": "league-beltway",
+          "homeTeamId": "league-beltway-team-1",
+          "awayTeamId": "league-beltway-team-6",
+          "homeScore": 123.4,
+          "awayScore": 38.41,
+          "completed": true
+        },
+        {
+          "week": 6,
+          "leagueId": "league-beltway",
+          "homeTeamId": "league-beltway-team-7",
+          "awayTeamId": "league-beltway-team-5",
+          "homeScore": 5.27,
+          "awayScore": 97.92,
+          "completed": true
+        },
+        {
+          "week": 6,
+          "leagueId": "league-beltway",
+          "homeTeamId": "league-beltway-team-8",
+          "awayTeamId": "league-beltway-team-4",
+          "homeScore": 334.61,
+          "awayScore": 372.52,
+          "completed": true
+        },
+        {
+          "week": 6,
+          "leagueId": "league-beltway",
+          "homeTeamId": "league-beltway-team-2",
+          "awayTeamId": "league-beltway-team-3",
+          "homeScore": 234.55,
+          "awayScore": -44.79,
+          "completed": true
+        },
+        {
+          "week": 6,
+          "leagueId": "league-capitol",
+          "homeTeamId": "league-capitol-team-1",
+          "awayTeamId": "league-capitol-team-6",
+          "homeScore": 123.4,
+          "awayScore": 38.41,
+          "completed": true
+        },
+        {
+          "week": 6,
+          "leagueId": "league-capitol",
+          "homeTeamId": "league-capitol-team-7",
+          "awayTeamId": "league-capitol-team-5",
+          "homeScore": 5.27,
+          "awayScore": 97.92,
+          "completed": true
+        },
+        {
+          "week": 6,
+          "leagueId": "league-capitol",
+          "homeTeamId": "league-capitol-team-8",
+          "awayTeamId": "league-capitol-team-4",
+          "homeScore": 334.61,
+          "awayScore": 372.52,
+          "completed": true
+        },
+        {
+          "week": 6,
+          "leagueId": "league-capitol",
+          "homeTeamId": "league-capitol-team-2",
+          "awayTeamId": "league-capitol-team-3",
+          "homeScore": 234.55,
+          "awayScore": -44.79,
+          "completed": true
+        },
+        {
+          "week": 6,
+          "leagueId": "league-swamp",
+          "homeTeamId": "league-swamp-team-1",
+          "awayTeamId": "league-swamp-team-6",
+          "homeScore": 123.4,
+          "awayScore": 38.41,
+          "completed": true
+        },
+        {
+          "week": 6,
+          "leagueId": "league-swamp",
+          "homeTeamId": "league-swamp-team-7",
+          "awayTeamId": "league-swamp-team-5",
+          "homeScore": 5.27,
+          "awayScore": 97.92,
+          "completed": true
+        },
+        {
+          "week": 6,
+          "leagueId": "league-swamp",
+          "homeTeamId": "league-swamp-team-8",
+          "awayTeamId": "league-swamp-team-4",
+          "homeScore": 334.61,
+          "awayScore": 372.52,
+          "completed": true
+        },
+        {
+          "week": 6,
+          "leagueId": "league-swamp",
+          "homeTeamId": "league-swamp-team-2",
+          "awayTeamId": "league-swamp-team-3",
+          "homeScore": 234.55,
+          "awayScore": -44.79,
+          "completed": true
+        }
+      ]
+    }
+  ],
+  "weekResults": [
+    {
+      "week": 1,
+      "teamId": "league-beltway-team-1",
+      "points": -248.6,
+      "politicianPoints": [
+        {
+          "bioguideId": "G000386",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001211",
+          "points": -305.9
+        },
+        {
+          "bioguideId": "R000595",
+          "points": 1.32
+        },
+        {
+          "bioguideId": "F000475",
+          "points": 0
+        },
+        {
+          "bioguideId": "L000590",
+          "points": 0
+        },
+        {
+          "bioguideId": "G000596",
+          "points": 66.93
+        },
+        {
+          "bioguideId": "W000826",
+          "points": -10.95
+        },
+        {
+          "bioguideId": "P000621",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "G000596"
+    },
+    {
+      "week": 1,
+      "teamId": "league-beltway-team-2",
+      "points": 195.79,
+      "politicianPoints": [
+        {
+          "bioguideId": "P000197",
+          "points": -45.9
+        },
+        {
+          "bioguideId": "M001166",
+          "points": 0
+        },
+        {
+          "bioguideId": "Y000033",
+          "points": 270.03
+        },
+        {
+          "bioguideId": "C000174",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001127",
+          "points": 101
+        },
+        {
+          "bioguideId": "R000614",
+          "points": -83.91
+        },
+        {
+          "bioguideId": "S001148",
+          "points": 108.5
+        },
+        {
+          "bioguideId": "H001074",
+          "points": -153.93
+        }
+      ],
+      "mvpBioguideId": "Y000033"
+    },
+    {
+      "week": 1,
+      "teamId": "league-beltway-team-3",
+      "points": 507.48,
+      "politicianPoints": [
+        {
+          "bioguideId": "K000367",
+          "points": 298.64
+        },
+        {
+          "bioguideId": "M001193",
+          "points": 206
+        },
+        {
+          "bioguideId": "B001291",
+          "points": 34.92
+        },
+        {
+          "bioguideId": "B001313",
+          "points": 0
+        },
+        {
+          "bioguideId": "S001190",
+          "points": 0
+        },
+        {
+          "bioguideId": "S001215",
+          "points": 0
+        },
+        {
+          "bioguideId": "G000591",
+          "points": 53.88
+        },
+        {
+          "bioguideId": "O000173",
+          "points": -85.96
+        }
+      ],
+      "mvpBioguideId": "K000367"
+    },
+    {
+      "week": 1,
+      "teamId": "league-beltway-team-4",
+      "points": -63.2,
+      "politicianPoints": [
+        {
+          "bioguideId": "W000805",
+          "points": 31.66
+        },
+        {
+          "bioguideId": "H001064",
+          "points": 43.42
+        },
+        {
+          "bioguideId": "C001047",
+          "points": 0
+        },
+        {
+          "bioguideId": "C000880",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001117",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001131",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001121",
+          "points": -0.24
+        },
+        {
+          "bioguideId": "H001082",
+          "points": -138.04
+        }
+      ],
+      "mvpBioguideId": "H001064"
+    },
+    {
+      "week": 1,
+      "teamId": "league-beltway-team-5",
+      "points": 146.02,
+      "politicianPoints": [
+        {
+          "bioguideId": "T000484",
+          "points": -42.26
+        },
+        {
+          "bioguideId": "D000627",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001207",
+          "points": -31.71
+        },
+        {
+          "bioguideId": "V000133",
+          "points": 31.61
+        },
+        {
+          "bioguideId": "N000191",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001130",
+          "points": 72.24
+        },
+        {
+          "bioguideId": "P000608",
+          "points": 55.76
+        },
+        {
+          "bioguideId": "M001212",
+          "points": 60.38
+        }
+      ],
+      "mvpBioguideId": "C001130"
+    },
+    {
+      "week": 1,
+      "teamId": "league-beltway-team-6",
+      "points": -120.74,
+      "politicianPoints": [
+        {
+          "bioguideId": "A000376",
+          "points": 0
+        },
+        {
+          "bioguideId": "B001287",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001106",
+          "points": 0
+        },
+        {
+          "bioguideId": "W000827",
+          "points": -31.85
+        },
+        {
+          "bioguideId": "G000565",
+          "points": -72.72
+        },
+        {
+          "bioguideId": "O000172",
+          "points": 0
+        },
+        {
+          "bioguideId": "T000486",
+          "points": -16.17
+        },
+        {
+          "bioguideId": "P000622",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "A000376"
+    },
+    {
+      "week": 1,
+      "teamId": "league-beltway-team-7",
+      "points": -270.8,
+      "politicianPoints": [
+        {
+          "bioguideId": "K000375",
+          "points": 27.78
+        },
+        {
+          "bioguideId": "R000608",
+          "points": 0
+        },
+        {
+          "bioguideId": "L000591",
+          "points": -4.73
+        },
+        {
+          "bioguideId": "F000462",
+          "points": -118.39
+        },
+        {
+          "bioguideId": "M001215",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001196",
+          "points": -92.46
+        },
+        {
+          "bioguideId": "P000449",
+          "points": -83
+        },
+        {
+          "bioguideId": "B001295",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "K000375"
+    },
+    {
+      "week": 1,
+      "teamId": "league-beltway-team-8",
+      "points": 102.16,
+      "politicianPoints": [
+        {
+          "bioguideId": "W000817",
+          "points": 54.44
+        },
+        {
+          "bioguideId": "S001200",
+          "points": -35.52
+        },
+        {
+          "bioguideId": "P000603",
+          "points": -37.76
+        },
+        {
+          "bioguideId": "B001230",
+          "points": 31.14
+        },
+        {
+          "bioguideId": "J000293",
+          "points": 64.78
+        },
+        {
+          "bioguideId": "M000133",
+          "points": 25.08
+        },
+        {
+          "bioguideId": "M001111",
+          "points": 0
+        },
+        {
+          "bioguideId": "S001216",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "J000293"
+    },
+    {
+      "week": 2,
+      "teamId": "league-beltway-team-1",
+      "points": -223.55,
+      "politicianPoints": [
+        {
+          "bioguideId": "G000386",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001211",
+          "points": -188.92
+        },
+        {
+          "bioguideId": "R000595",
+          "points": 0
+        },
+        {
+          "bioguideId": "F000475",
+          "points": 11.03
+        },
+        {
+          "bioguideId": "L000590",
+          "points": 0
+        },
+        {
+          "bioguideId": "G000596",
+          "points": 0
+        },
+        {
+          "bioguideId": "W000826",
+          "points": -45.66
+        },
+        {
+          "bioguideId": "P000621",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "F000475"
+    },
+    {
+      "week": 2,
+      "teamId": "league-beltway-team-2",
+      "points": 132.32,
+      "politicianPoints": [
+        {
+          "bioguideId": "P000197",
+          "points": 64.41
+        },
+        {
+          "bioguideId": "M001166",
+          "points": 0
+        },
+        {
+          "bioguideId": "Y000033",
+          "points": 0
+        },
+        {
+          "bioguideId": "C000174",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001127",
+          "points": 0
+        },
+        {
+          "bioguideId": "R000614",
+          "points": -72.42
+        },
+        {
+          "bioguideId": "S001148",
+          "points": 94.37
+        },
+        {
+          "bioguideId": "H001074",
+          "points": 45.96
+        }
+      ],
+      "mvpBioguideId": "S001148"
+    },
+    {
+      "week": 2,
+      "teamId": "league-beltway-team-3",
+      "points": 38.38,
+      "politicianPoints": [
+        {
+          "bioguideId": "K000367",
+          "points": 86.38
+        },
+        {
+          "bioguideId": "M001193",
+          "points": 0
+        },
+        {
+          "bioguideId": "B001291",
+          "points": 0
+        },
+        {
+          "bioguideId": "B001313",
+          "points": -65.22
+        },
+        {
+          "bioguideId": "S001190",
+          "points": 0
+        },
+        {
+          "bioguideId": "S001215",
+          "points": 0
+        },
+        {
+          "bioguideId": "G000591",
+          "points": 17.22
+        },
+        {
+          "bioguideId": "O000173",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "K000367"
+    },
+    {
+      "week": 2,
+      "teamId": "league-beltway-team-4",
+      "points": -63.37,
+      "politicianPoints": [
+        {
+          "bioguideId": "W000805",
+          "points": 124.98
+        },
+        {
+          "bioguideId": "H001064",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001047",
+          "points": -0.69
+        },
+        {
+          "bioguideId": "C000880",
+          "points": -104.7
+        },
+        {
+          "bioguideId": "C001117",
+          "points": -15.09
+        },
+        {
+          "bioguideId": "C001131",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001121",
+          "points": -233.14
+        },
+        {
+          "bioguideId": "H001082",
+          "points": 165.27
+        }
+      ],
+      "mvpBioguideId": "H001082"
+    },
+    {
+      "week": 2,
+      "teamId": "league-beltway-team-5",
+      "points": -207.19,
+      "politicianPoints": [
+        {
+          "bioguideId": "T000484",
+          "points": -126.22
+        },
+        {
+          "bioguideId": "D000627",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001207",
+          "points": 33.81
+        },
+        {
+          "bioguideId": "V000133",
+          "points": -189.74
+        },
+        {
+          "bioguideId": "N000191",
+          "points": 74.96
+        },
+        {
+          "bioguideId": "C001130",
+          "points": 0
+        },
+        {
+          "bioguideId": "P000608",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001212",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "N000191"
+    },
+    {
+      "week": 2,
+      "teamId": "league-beltway-team-6",
+      "points": 405.83,
+      "politicianPoints": [
+        {
+          "bioguideId": "A000376",
+          "points": 219.77
+        },
+        {
+          "bioguideId": "B001287",
+          "points": -42.22
+        },
+        {
+          "bioguideId": "C001106",
+          "points": 75.92
+        },
+        {
+          "bioguideId": "W000827",
+          "points": 0
+        },
+        {
+          "bioguideId": "G000565",
+          "points": 0
+        },
+        {
+          "bioguideId": "O000172",
+          "points": 141.3
+        },
+        {
+          "bioguideId": "T000486",
+          "points": 11.06
+        },
+        {
+          "bioguideId": "P000622",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "A000376"
+    },
+    {
+      "week": 2,
+      "teamId": "league-beltway-team-7",
+      "points": -25.08,
+      "politicianPoints": [
+        {
+          "bioguideId": "K000375",
+          "points": 160.53
+        },
+        {
+          "bioguideId": "R000608",
+          "points": 20.25
+        },
+        {
+          "bioguideId": "L000591",
+          "points": 125.48
+        },
+        {
+          "bioguideId": "F000462",
+          "points": -26.71
+        },
+        {
+          "bioguideId": "M001215",
+          "points": -121.89
+        },
+        {
+          "bioguideId": "M001196",
+          "points": -165.22
+        },
+        {
+          "bioguideId": "P000449",
+          "points": -17.52
+        },
+        {
+          "bioguideId": "B001295",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "K000375"
+    },
+    {
+      "week": 2,
+      "teamId": "league-beltway-team-8",
+      "points": -83.03,
+      "politicianPoints": [
+        {
+          "bioguideId": "W000817",
+          "points": -19.18
+        },
+        {
+          "bioguideId": "S001200",
+          "points": -35.98
+        },
+        {
+          "bioguideId": "P000603",
+          "points": 31
+        },
+        {
+          "bioguideId": "B001230",
+          "points": -38.68
+        },
+        {
+          "bioguideId": "J000293",
+          "points": 0
+        },
+        {
+          "bioguideId": "M000133",
+          "points": -26.02
+        },
+        {
+          "bioguideId": "M001111",
+          "points": 55.59
+        },
+        {
+          "bioguideId": "S001216",
+          "points": -49.76
+        }
+      ],
+      "mvpBioguideId": "M001111"
+    },
+    {
+      "week": 3,
+      "teamId": "league-beltway-team-1",
+      "points": 204.03,
+      "politicianPoints": [
+        {
+          "bioguideId": "G000386",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001211",
+          "points": 352.65
+        },
+        {
+          "bioguideId": "R000595",
+          "points": -46.65
+        },
+        {
+          "bioguideId": "F000475",
+          "points": 41.71
+        },
+        {
+          "bioguideId": "L000590",
+          "points": 68.07
+        },
+        {
+          "bioguideId": "G000596",
+          "points": 0
+        },
+        {
+          "bioguideId": "W000826",
+          "points": -69.55
+        },
+        {
+          "bioguideId": "P000621",
+          "points": -142.2
+        }
+      ],
+      "mvpBioguideId": "M001211"
+    },
+    {
+      "week": 3,
+      "teamId": "league-beltway-team-2",
+      "points": 167.54,
+      "politicianPoints": [
+        {
+          "bioguideId": "P000197",
+          "points": -79.72
+        },
+        {
+          "bioguideId": "M001166",
+          "points": 74.08
+        },
+        {
+          "bioguideId": "Y000033",
+          "points": -27.6
+        },
+        {
+          "bioguideId": "C000174",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001127",
+          "points": 47.91
+        },
+        {
+          "bioguideId": "R000614",
+          "points": 52.24
+        },
+        {
+          "bioguideId": "S001148",
+          "points": 98.83
+        },
+        {
+          "bioguideId": "H001074",
+          "points": 1.8
+        }
+      ],
+      "mvpBioguideId": "S001148"
+    },
+    {
+      "week": 3,
+      "teamId": "league-beltway-team-3",
+      "points": 8.76,
+      "politicianPoints": [
+        {
+          "bioguideId": "K000367",
+          "points": -31.47
+        },
+        {
+          "bioguideId": "M001193",
+          "points": 0
+        },
+        {
+          "bioguideId": "B001291",
+          "points": 44.97
+        },
+        {
+          "bioguideId": "B001313",
+          "points": 124.1
+        },
+        {
+          "bioguideId": "S001190",
+          "points": 0
+        },
+        {
+          "bioguideId": "S001215",
+          "points": -54.72
+        },
+        {
+          "bioguideId": "G000591",
+          "points": -74.12
+        },
+        {
+          "bioguideId": "O000173",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "B001313"
+    },
+    {
+      "week": 3,
+      "teamId": "league-beltway-team-4",
+      "points": 329.61,
+      "politicianPoints": [
+        {
+          "bioguideId": "W000805",
+          "points": -24.6
+        },
+        {
+          "bioguideId": "H001064",
+          "points": -41.86
+        },
+        {
+          "bioguideId": "C001047",
+          "points": 122.1
+        },
+        {
+          "bioguideId": "C000880",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001117",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001131",
+          "points": 89.65
+        },
+        {
+          "bioguideId": "C001121",
+          "points": 184.32
+        },
+        {
+          "bioguideId": "H001082",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "C001121"
+    },
+    {
+      "week": 3,
+      "teamId": "league-beltway-team-5",
+      "points": -114.22,
+      "politicianPoints": [
+        {
+          "bioguideId": "T000484",
+          "points": 44.1
+        },
+        {
+          "bioguideId": "D000627",
+          "points": 36.3
+        },
+        {
+          "bioguideId": "M001207",
+          "points": 117.86
+        },
+        {
+          "bioguideId": "V000133",
+          "points": -24.78
+        },
+        {
+          "bioguideId": "N000191",
+          "points": -49.64
+        },
+        {
+          "bioguideId": "C001130",
+          "points": 0
+        },
+        {
+          "bioguideId": "P000608",
+          "points": -65.96
+        },
+        {
+          "bioguideId": "M001212",
+          "points": -172.1
+        }
+      ],
+      "mvpBioguideId": "M001207"
+    },
+    {
+      "week": 3,
+      "teamId": "league-beltway-team-6",
+      "points": 77.12,
+      "politicianPoints": [
+        {
+          "bioguideId": "A000376",
+          "points": 72.79
+        },
+        {
+          "bioguideId": "B001287",
+          "points": 76.72
+        },
+        {
+          "bioguideId": "C001106",
+          "points": 0
+        },
+        {
+          "bioguideId": "W000827",
+          "points": 14.55
+        },
+        {
+          "bioguideId": "G000565",
+          "points": -36.6
+        },
+        {
+          "bioguideId": "O000172",
+          "points": -50.34
+        },
+        {
+          "bioguideId": "T000486",
+          "points": 0
+        },
+        {
+          "bioguideId": "P000622",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "B001287"
+    },
+    {
+      "week": 3,
+      "teamId": "league-beltway-team-7",
+      "points": 495.58,
+      "politicianPoints": [
+        {
+          "bioguideId": "K000375",
+          "points": -2.88
+        },
+        {
+          "bioguideId": "R000608",
+          "points": 0
+        },
+        {
+          "bioguideId": "L000591",
+          "points": -19.59
+        },
+        {
+          "bioguideId": "F000462",
+          "points": 225.74
+        },
+        {
+          "bioguideId": "M001215",
+          "points": 122.58
+        },
+        {
+          "bioguideId": "M001196",
+          "points": 224.13
+        },
+        {
+          "bioguideId": "P000449",
+          "points": 41
+        },
+        {
+          "bioguideId": "B001295",
+          "points": -95.4
+        }
+      ],
+      "mvpBioguideId": "F000462"
+    },
+    {
+      "week": 3,
+      "teamId": "league-beltway-team-8",
+      "points": -211.79,
+      "politicianPoints": [
+        {
+          "bioguideId": "W000817",
+          "points": 149.99
+        },
+        {
+          "bioguideId": "S001200",
+          "points": -144.3
+        },
+        {
+          "bioguideId": "P000603",
+          "points": -125.37
+        },
+        {
+          "bioguideId": "B001230",
+          "points": 130.04
+        },
+        {
+          "bioguideId": "J000293",
+          "points": 34.7
+        },
+        {
+          "bioguideId": "M000133",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001111",
+          "points": -141.53
+        },
+        {
+          "bioguideId": "S001216",
+          "points": -115.32
+        }
+      ],
+      "mvpBioguideId": "W000817"
+    },
+    {
+      "week": 4,
+      "teamId": "league-beltway-team-1",
+      "points": 537.02,
+      "politicianPoints": [
+        {
+          "bioguideId": "G000386",
+          "points": 247.34
+        },
+        {
+          "bioguideId": "M001211",
+          "points": 238.61
+        },
+        {
+          "bioguideId": "R000595",
+          "points": 138.36
+        },
+        {
+          "bioguideId": "F000475",
+          "points": -67.37
+        },
+        {
+          "bioguideId": "L000590",
+          "points": -59.44
+        },
+        {
+          "bioguideId": "G000596",
+          "points": -40.48
+        },
+        {
+          "bioguideId": "W000826",
+          "points": 80
+        },
+        {
+          "bioguideId": "P000621",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "G000386"
+    },
+    {
+      "week": 4,
+      "teamId": "league-beltway-team-2",
+      "points": 405.35,
+      "politicianPoints": [
+        {
+          "bioguideId": "P000197",
+          "points": 141.28
+        },
+        {
+          "bioguideId": "M001166",
+          "points": 0
+        },
+        {
+          "bioguideId": "Y000033",
+          "points": 181.96
+        },
+        {
+          "bioguideId": "C000174",
+          "points": 56.48
+        },
+        {
+          "bioguideId": "C001127",
+          "points": 0
+        },
+        {
+          "bioguideId": "R000614",
+          "points": -5.12
+        },
+        {
+          "bioguideId": "S001148",
+          "points": -170.26
+        },
+        {
+          "bioguideId": "H001074",
+          "points": 201.01
+        }
+      ],
+      "mvpBioguideId": "H001074"
+    },
+    {
+      "week": 4,
+      "teamId": "league-beltway-team-3",
+      "points": 91.58,
+      "politicianPoints": [
+        {
+          "bioguideId": "K000367",
+          "points": 58.17
+        },
+        {
+          "bioguideId": "M001193",
+          "points": -44.8
+        },
+        {
+          "bioguideId": "B001291",
+          "points": 0
+        },
+        {
+          "bioguideId": "B001313",
+          "points": 0
+        },
+        {
+          "bioguideId": "S001190",
+          "points": 111.09
+        },
+        {
+          "bioguideId": "S001215",
+          "points": 0
+        },
+        {
+          "bioguideId": "G000591",
+          "points": -20.88
+        },
+        {
+          "bioguideId": "O000173",
+          "points": -12
+        }
+      ],
+      "mvpBioguideId": "S001190"
+    },
+    {
+      "week": 4,
+      "teamId": "league-beltway-team-4",
+      "points": -7.58,
+      "politicianPoints": [
+        {
+          "bioguideId": "W000805",
+          "points": 0
+        },
+        {
+          "bioguideId": "H001064",
+          "points": -55.3
+        },
+        {
+          "bioguideId": "C001047",
+          "points": -12.84
+        },
+        {
+          "bioguideId": "C000880",
+          "points": 168.66
+        },
+        {
+          "bioguideId": "C001117",
+          "points": 9.19
+        },
+        {
+          "bioguideId": "C001131",
+          "points": -27.94
+        },
+        {
+          "bioguideId": "C001121",
+          "points": 0
+        },
+        {
+          "bioguideId": "H001082",
+          "points": -89.35
+        }
+      ],
+      "mvpBioguideId": "C000880"
+    },
+    {
+      "week": 4,
+      "teamId": "league-beltway-team-5",
+      "points": 243.19,
+      "politicianPoints": [
+        {
+          "bioguideId": "T000484",
+          "points": 349.24
+        },
+        {
+          "bioguideId": "D000627",
+          "points": 65.72
+        },
+        {
+          "bioguideId": "M001207",
+          "points": 0
+        },
+        {
+          "bioguideId": "V000133",
+          "points": -43.18
+        },
+        {
+          "bioguideId": "N000191",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001130",
+          "points": -83.13
+        },
+        {
+          "bioguideId": "P000608",
+          "points": -45.46
+        },
+        {
+          "bioguideId": "M001212",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "T000484"
+    },
+    {
+      "week": 4,
+      "teamId": "league-beltway-team-6",
+      "points": -111.75,
+      "politicianPoints": [
+        {
+          "bioguideId": "A000376",
+          "points": -14.95
+        },
+        {
+          "bioguideId": "B001287",
+          "points": 34.29
+        },
+        {
+          "bioguideId": "C001106",
+          "points": 0
+        },
+        {
+          "bioguideId": "W000827",
+          "points": 157.01
+        },
+        {
+          "bioguideId": "G000565",
+          "points": 36.74
+        },
+        {
+          "bioguideId": "O000172",
+          "points": -74.6
+        },
+        {
+          "bioguideId": "T000486",
+          "points": -139.98
+        },
+        {
+          "bioguideId": "P000622",
+          "points": -110.26
+        }
+      ],
+      "mvpBioguideId": "W000827"
+    },
+    {
+      "week": 4,
+      "teamId": "league-beltway-team-7",
+      "points": -278.61,
+      "politicianPoints": [
+        {
+          "bioguideId": "K000375",
+          "points": 63.67
+        },
+        {
+          "bioguideId": "R000608",
+          "points": 0
+        },
+        {
+          "bioguideId": "L000591",
+          "points": -197.47
+        },
+        {
+          "bioguideId": "F000462",
+          "points": 19.53
+        },
+        {
+          "bioguideId": "M001215",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001196",
+          "points": -164.34
+        },
+        {
+          "bioguideId": "P000449",
+          "points": 0
+        },
+        {
+          "bioguideId": "B001295",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "K000375"
+    },
+    {
+      "week": 4,
+      "teamId": "league-beltway-team-8",
+      "points": 127.29,
+      "politicianPoints": [
+        {
+          "bioguideId": "W000817",
+          "points": -242.79
+        },
+        {
+          "bioguideId": "S001200",
+          "points": 130.52
+        },
+        {
+          "bioguideId": "P000603",
+          "points": 314.05
+        },
+        {
+          "bioguideId": "B001230",
+          "points": 0
+        },
+        {
+          "bioguideId": "J000293",
+          "points": -74.49
+        },
+        {
+          "bioguideId": "M000133",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001111",
+          "points": 0
+        },
+        {
+          "bioguideId": "S001216",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "P000603"
+    },
+    {
+      "week": 5,
+      "teamId": "league-beltway-team-1",
+      "points": 244.15,
+      "politicianPoints": [
+        {
+          "bioguideId": "G000386",
+          "points": 132.16
+        },
+        {
+          "bioguideId": "M001211",
+          "points": 18.62
+        },
+        {
+          "bioguideId": "R000595",
+          "points": 104.03
+        },
+        {
+          "bioguideId": "F000475",
+          "points": 8.9
+        },
+        {
+          "bioguideId": "L000590",
+          "points": 45.48
+        },
+        {
+          "bioguideId": "G000596",
+          "points": -53.28
+        },
+        {
+          "bioguideId": "W000826",
+          "points": 0
+        },
+        {
+          "bioguideId": "P000621",
+          "points": -11.76
+        }
+      ],
+      "mvpBioguideId": "G000386"
+    },
+    {
+      "week": 5,
+      "teamId": "league-beltway-team-2",
+      "points": -499.03,
+      "politicianPoints": [
+        {
+          "bioguideId": "P000197",
+          "points": -95.34
+        },
+        {
+          "bioguideId": "M001166",
+          "points": 121.92
+        },
+        {
+          "bioguideId": "Y000033",
+          "points": -315.24
+        },
+        {
+          "bioguideId": "C000174",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001127",
+          "points": -26.68
+        },
+        {
+          "bioguideId": "R000614",
+          "points": 0
+        },
+        {
+          "bioguideId": "S001148",
+          "points": -96.3
+        },
+        {
+          "bioguideId": "H001074",
+          "points": -87.39
+        }
+      ],
+      "mvpBioguideId": "M001166"
+    },
+    {
+      "week": 5,
+      "teamId": "league-beltway-team-3",
+      "points": -43.9,
+      "politicianPoints": [
+        {
+          "bioguideId": "K000367",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001193",
+          "points": 35.22
+        },
+        {
+          "bioguideId": "B001291",
+          "points": 29.85
+        },
+        {
+          "bioguideId": "B001313",
+          "points": 0
+        },
+        {
+          "bioguideId": "S001190",
+          "points": 0
+        },
+        {
+          "bioguideId": "S001215",
+          "points": 34.41
+        },
+        {
+          "bioguideId": "G000591",
+          "points": -24.58
+        },
+        {
+          "bioguideId": "O000173",
+          "points": -118.8
+        }
+      ],
+      "mvpBioguideId": "M001193"
+    },
+    {
+      "week": 5,
+      "teamId": "league-beltway-team-4",
+      "points": 3.97,
+      "politicianPoints": [
+        {
+          "bioguideId": "W000805",
+          "points": 59.47
+        },
+        {
+          "bioguideId": "H001064",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001047",
+          "points": 0
+        },
+        {
+          "bioguideId": "C000880",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001117",
+          "points": 37.3
+        },
+        {
+          "bioguideId": "C001131",
+          "points": -42.96
+        },
+        {
+          "bioguideId": "C001121",
+          "points": 0
+        },
+        {
+          "bioguideId": "H001082",
+          "points": -49.84
+        }
+      ],
+      "mvpBioguideId": "W000805"
+    },
+    {
+      "week": 5,
+      "teamId": "league-beltway-team-5",
+      "points": 338.2,
+      "politicianPoints": [
+        {
+          "bioguideId": "T000484",
+          "points": 66.94
+        },
+        {
+          "bioguideId": "D000627",
+          "points": 97.38
+        },
+        {
+          "bioguideId": "M001207",
+          "points": 0
+        },
+        {
+          "bioguideId": "V000133",
+          "points": 173.88
+        },
+        {
+          "bioguideId": "N000191",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001130",
+          "points": 0
+        },
+        {
+          "bioguideId": "P000608",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001212",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "V000133"
+    },
+    {
+      "week": 5,
+      "teamId": "league-beltway-team-6",
+      "points": 189,
+      "politicianPoints": [
+        {
+          "bioguideId": "A000376",
+          "points": -23.66
+        },
+        {
+          "bioguideId": "B001287",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001106",
+          "points": 24.28
+        },
+        {
+          "bioguideId": "W000827",
+          "points": -42.98
+        },
+        {
+          "bioguideId": "G000565",
+          "points": 0
+        },
+        {
+          "bioguideId": "O000172",
+          "points": -23.66
+        },
+        {
+          "bioguideId": "T000486",
+          "points": 255.02
+        },
+        {
+          "bioguideId": "P000622",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "T000486"
+    },
+    {
+      "week": 5,
+      "teamId": "league-beltway-team-7",
+      "points": 545.61,
+      "politicianPoints": [
+        {
+          "bioguideId": "K000375",
+          "points": 0
+        },
+        {
+          "bioguideId": "R000608",
+          "points": 198.8
+        },
+        {
+          "bioguideId": "L000591",
+          "points": 29.44
+        },
+        {
+          "bioguideId": "F000462",
+          "points": -5.65
+        },
+        {
+          "bioguideId": "M001215",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001196",
+          "points": 298.78
+        },
+        {
+          "bioguideId": "P000449",
+          "points": 24.24
+        },
+        {
+          "bioguideId": "B001295",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "M001196"
+    },
+    {
+      "week": 5,
+      "teamId": "league-beltway-team-8",
+      "points": 210.38,
+      "politicianPoints": [
+        {
+          "bioguideId": "W000817",
+          "points": 235.3
+        },
+        {
+          "bioguideId": "S001200",
+          "points": 122.56
+        },
+        {
+          "bioguideId": "P000603",
+          "points": 8.78
+        },
+        {
+          "bioguideId": "B001230",
+          "points": -40.06
+        },
+        {
+          "bioguideId": "J000293",
+          "points": -61.56
+        },
+        {
+          "bioguideId": "M000133",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001111",
+          "points": 0
+        },
+        {
+          "bioguideId": "S001216",
+          "points": -54.64
+        }
+      ],
+      "mvpBioguideId": "W000817"
+    },
+    {
+      "week": 6,
+      "teamId": "league-beltway-team-1",
+      "points": 123.4,
+      "politicianPoints": [
+        {
+          "bioguideId": "G000386",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001211",
+          "points": 74.14
+        },
+        {
+          "bioguideId": "R000595",
+          "points": -9.36
+        },
+        {
+          "bioguideId": "F000475",
+          "points": 61.86
+        },
+        {
+          "bioguideId": "L000590",
+          "points": -3.24
+        },
+        {
+          "bioguideId": "G000596",
+          "points": 0
+        },
+        {
+          "bioguideId": "W000826",
+          "points": 0
+        },
+        {
+          "bioguideId": "P000621",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "M001211"
+    },
+    {
+      "week": 6,
+      "teamId": "league-beltway-team-2",
+      "points": 234.55,
+      "politicianPoints": [
+        {
+          "bioguideId": "P000197",
+          "points": 380.26
+        },
+        {
+          "bioguideId": "M001166",
+          "points": 0
+        },
+        {
+          "bioguideId": "Y000033",
+          "points": 71.16
+        },
+        {
+          "bioguideId": "C000174",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001127",
+          "points": -71.52
+        },
+        {
+          "bioguideId": "R000614",
+          "points": 88.1
+        },
+        {
+          "bioguideId": "S001148",
+          "points": -83.16
+        },
+        {
+          "bioguideId": "H001074",
+          "points": -150.29
+        }
+      ],
+      "mvpBioguideId": "P000197"
+    },
+    {
+      "week": 6,
+      "teamId": "league-beltway-team-3",
+      "points": -44.79,
+      "politicianPoints": [
+        {
+          "bioguideId": "K000367",
+          "points": -65.04
+        },
+        {
+          "bioguideId": "M001193",
+          "points": 0
+        },
+        {
+          "bioguideId": "B001291",
+          "points": 0
+        },
+        {
+          "bioguideId": "B001313",
+          "points": 0
+        },
+        {
+          "bioguideId": "S001190",
+          "points": -61.92
+        },
+        {
+          "bioguideId": "S001215",
+          "points": 0
+        },
+        {
+          "bioguideId": "G000591",
+          "points": 0
+        },
+        {
+          "bioguideId": "O000173",
+          "points": 82.17
+        }
+      ],
+      "mvpBioguideId": "O000173"
+    },
+    {
+      "week": 6,
+      "teamId": "league-beltway-team-4",
+      "points": 372.52,
+      "politicianPoints": [
+        {
+          "bioguideId": "W000805",
+          "points": 153.08
+        },
+        {
+          "bioguideId": "H001064",
+          "points": 250.61
+        },
+        {
+          "bioguideId": "C001047",
+          "points": 0
+        },
+        {
+          "bioguideId": "C000880",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001117",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001131",
+          "points": -31.17
+        },
+        {
+          "bioguideId": "C001121",
+          "points": 0
+        },
+        {
+          "bioguideId": "H001082",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "H001064"
+    },
+    {
+      "week": 6,
+      "teamId": "league-beltway-team-5",
+      "points": 97.92,
+      "politicianPoints": [
+        {
+          "bioguideId": "T000484",
+          "points": 0
+        },
+        {
+          "bioguideId": "D000627",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001207",
+          "points": -18.66
+        },
+        {
+          "bioguideId": "V000133",
+          "points": 116.58
+        },
+        {
+          "bioguideId": "N000191",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001130",
+          "points": 0
+        },
+        {
+          "bioguideId": "P000608",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001212",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "V000133"
+    },
+    {
+      "week": 6,
+      "teamId": "league-beltway-team-6",
+      "points": 38.41,
+      "politicianPoints": [
+        {
+          "bioguideId": "A000376",
+          "points": 0
+        },
+        {
+          "bioguideId": "B001287",
+          "points": 145.23
+        },
+        {
+          "bioguideId": "C001106",
+          "points": 0
+        },
+        {
+          "bioguideId": "W000827",
+          "points": -29.01
+        },
+        {
+          "bioguideId": "G000565",
+          "points": 89.16
+        },
+        {
+          "bioguideId": "O000172",
+          "points": 0
+        },
+        {
+          "bioguideId": "T000486",
+          "points": -166.97
+        },
+        {
+          "bioguideId": "P000622",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "B001287"
+    },
+    {
+      "week": 6,
+      "teamId": "league-beltway-team-7",
+      "points": 5.27,
+      "politicianPoints": [
+        {
+          "bioguideId": "K000375",
+          "points": 0
+        },
+        {
+          "bioguideId": "R000608",
+          "points": 0
+        },
+        {
+          "bioguideId": "L000591",
+          "points": 164.81
+        },
+        {
+          "bioguideId": "F000462",
+          "points": -23.24
+        },
+        {
+          "bioguideId": "M001215",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001196",
+          "points": -107.4
+        },
+        {
+          "bioguideId": "P000449",
+          "points": -28.9
+        },
+        {
+          "bioguideId": "B001295",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "L000591"
+    },
+    {
+      "week": 6,
+      "teamId": "league-beltway-team-8",
+      "points": 334.61,
+      "politicianPoints": [
+        {
+          "bioguideId": "W000817",
+          "points": 68.44
+        },
+        {
+          "bioguideId": "S001200",
+          "points": 200.46
+        },
+        {
+          "bioguideId": "P000603",
+          "points": -97.89
+        },
+        {
+          "bioguideId": "B001230",
+          "points": 0
+        },
+        {
+          "bioguideId": "J000293",
+          "points": 35.67
+        },
+        {
+          "bioguideId": "M000133",
+          "points": -2.82
+        },
+        {
+          "bioguideId": "M001111",
+          "points": 0
+        },
+        {
+          "bioguideId": "S001216",
+          "points": 130.75
+        }
+      ],
+      "mvpBioguideId": "S001200"
+    },
+    {
+      "week": 1,
+      "teamId": "league-capitol-team-1",
+      "points": -248.6,
+      "politicianPoints": [
+        {
+          "bioguideId": "G000386",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001211",
+          "points": -305.9
+        },
+        {
+          "bioguideId": "R000595",
+          "points": 1.32
+        },
+        {
+          "bioguideId": "F000475",
+          "points": 0
+        },
+        {
+          "bioguideId": "L000590",
+          "points": 0
+        },
+        {
+          "bioguideId": "G000596",
+          "points": 66.93
+        },
+        {
+          "bioguideId": "W000826",
+          "points": -10.95
+        },
+        {
+          "bioguideId": "P000621",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "G000596"
+    },
+    {
+      "week": 1,
+      "teamId": "league-capitol-team-2",
+      "points": 195.79,
+      "politicianPoints": [
+        {
+          "bioguideId": "P000197",
+          "points": -45.9
+        },
+        {
+          "bioguideId": "M001166",
+          "points": 0
+        },
+        {
+          "bioguideId": "Y000033",
+          "points": 270.03
+        },
+        {
+          "bioguideId": "C000174",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001127",
+          "points": 101
+        },
+        {
+          "bioguideId": "R000614",
+          "points": -83.91
+        },
+        {
+          "bioguideId": "S001148",
+          "points": 108.5
+        },
+        {
+          "bioguideId": "H001074",
+          "points": -153.93
+        }
+      ],
+      "mvpBioguideId": "Y000033"
+    },
+    {
+      "week": 1,
+      "teamId": "league-capitol-team-3",
+      "points": 507.48,
+      "politicianPoints": [
+        {
+          "bioguideId": "K000367",
+          "points": 298.64
+        },
+        {
+          "bioguideId": "M001193",
+          "points": 206
+        },
+        {
+          "bioguideId": "B001291",
+          "points": 34.92
+        },
+        {
+          "bioguideId": "B001313",
+          "points": 0
+        },
+        {
+          "bioguideId": "S001190",
+          "points": 0
+        },
+        {
+          "bioguideId": "S001215",
+          "points": 0
+        },
+        {
+          "bioguideId": "G000591",
+          "points": 53.88
+        },
+        {
+          "bioguideId": "O000173",
+          "points": -85.96
+        }
+      ],
+      "mvpBioguideId": "K000367"
+    },
+    {
+      "week": 1,
+      "teamId": "league-capitol-team-4",
+      "points": -63.2,
+      "politicianPoints": [
+        {
+          "bioguideId": "W000805",
+          "points": 31.66
+        },
+        {
+          "bioguideId": "H001064",
+          "points": 43.42
+        },
+        {
+          "bioguideId": "C001047",
+          "points": 0
+        },
+        {
+          "bioguideId": "C000880",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001117",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001131",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001121",
+          "points": -0.24
+        },
+        {
+          "bioguideId": "H001082",
+          "points": -138.04
+        }
+      ],
+      "mvpBioguideId": "H001064"
+    },
+    {
+      "week": 1,
+      "teamId": "league-capitol-team-5",
+      "points": 146.02,
+      "politicianPoints": [
+        {
+          "bioguideId": "T000484",
+          "points": -42.26
+        },
+        {
+          "bioguideId": "D000627",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001207",
+          "points": -31.71
+        },
+        {
+          "bioguideId": "V000133",
+          "points": 31.61
+        },
+        {
+          "bioguideId": "N000191",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001130",
+          "points": 72.24
+        },
+        {
+          "bioguideId": "P000608",
+          "points": 55.76
+        },
+        {
+          "bioguideId": "M001212",
+          "points": 60.38
+        }
+      ],
+      "mvpBioguideId": "C001130"
+    },
+    {
+      "week": 1,
+      "teamId": "league-capitol-team-6",
+      "points": -120.74,
+      "politicianPoints": [
+        {
+          "bioguideId": "A000376",
+          "points": 0
+        },
+        {
+          "bioguideId": "B001287",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001106",
+          "points": 0
+        },
+        {
+          "bioguideId": "W000827",
+          "points": -31.85
+        },
+        {
+          "bioguideId": "G000565",
+          "points": -72.72
+        },
+        {
+          "bioguideId": "O000172",
+          "points": 0
+        },
+        {
+          "bioguideId": "T000486",
+          "points": -16.17
+        },
+        {
+          "bioguideId": "P000622",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "A000376"
+    },
+    {
+      "week": 1,
+      "teamId": "league-capitol-team-7",
+      "points": -270.8,
+      "politicianPoints": [
+        {
+          "bioguideId": "K000375",
+          "points": 27.78
+        },
+        {
+          "bioguideId": "R000608",
+          "points": 0
+        },
+        {
+          "bioguideId": "L000591",
+          "points": -4.73
+        },
+        {
+          "bioguideId": "F000462",
+          "points": -118.39
+        },
+        {
+          "bioguideId": "M001215",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001196",
+          "points": -92.46
+        },
+        {
+          "bioguideId": "P000449",
+          "points": -83
+        },
+        {
+          "bioguideId": "B001295",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "K000375"
+    },
+    {
+      "week": 1,
+      "teamId": "league-capitol-team-8",
+      "points": 102.16,
+      "politicianPoints": [
+        {
+          "bioguideId": "W000817",
+          "points": 54.44
+        },
+        {
+          "bioguideId": "S001200",
+          "points": -35.52
+        },
+        {
+          "bioguideId": "P000603",
+          "points": -37.76
+        },
+        {
+          "bioguideId": "B001230",
+          "points": 31.14
+        },
+        {
+          "bioguideId": "J000293",
+          "points": 64.78
+        },
+        {
+          "bioguideId": "M000133",
+          "points": 25.08
+        },
+        {
+          "bioguideId": "M001111",
+          "points": 0
+        },
+        {
+          "bioguideId": "S001216",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "J000293"
+    },
+    {
+      "week": 2,
+      "teamId": "league-capitol-team-1",
+      "points": -223.55,
+      "politicianPoints": [
+        {
+          "bioguideId": "G000386",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001211",
+          "points": -188.92
+        },
+        {
+          "bioguideId": "R000595",
+          "points": 0
+        },
+        {
+          "bioguideId": "F000475",
+          "points": 11.03
+        },
+        {
+          "bioguideId": "L000590",
+          "points": 0
+        },
+        {
+          "bioguideId": "G000596",
+          "points": 0
+        },
+        {
+          "bioguideId": "W000826",
+          "points": -45.66
+        },
+        {
+          "bioguideId": "P000621",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "F000475"
+    },
+    {
+      "week": 2,
+      "teamId": "league-capitol-team-2",
+      "points": 132.32,
+      "politicianPoints": [
+        {
+          "bioguideId": "P000197",
+          "points": 64.41
+        },
+        {
+          "bioguideId": "M001166",
+          "points": 0
+        },
+        {
+          "bioguideId": "Y000033",
+          "points": 0
+        },
+        {
+          "bioguideId": "C000174",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001127",
+          "points": 0
+        },
+        {
+          "bioguideId": "R000614",
+          "points": -72.42
+        },
+        {
+          "bioguideId": "S001148",
+          "points": 94.37
+        },
+        {
+          "bioguideId": "H001074",
+          "points": 45.96
+        }
+      ],
+      "mvpBioguideId": "S001148"
+    },
+    {
+      "week": 2,
+      "teamId": "league-capitol-team-3",
+      "points": 38.38,
+      "politicianPoints": [
+        {
+          "bioguideId": "K000367",
+          "points": 86.38
+        },
+        {
+          "bioguideId": "M001193",
+          "points": 0
+        },
+        {
+          "bioguideId": "B001291",
+          "points": 0
+        },
+        {
+          "bioguideId": "B001313",
+          "points": -65.22
+        },
+        {
+          "bioguideId": "S001190",
+          "points": 0
+        },
+        {
+          "bioguideId": "S001215",
+          "points": 0
+        },
+        {
+          "bioguideId": "G000591",
+          "points": 17.22
+        },
+        {
+          "bioguideId": "O000173",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "K000367"
+    },
+    {
+      "week": 2,
+      "teamId": "league-capitol-team-4",
+      "points": -63.37,
+      "politicianPoints": [
+        {
+          "bioguideId": "W000805",
+          "points": 124.98
+        },
+        {
+          "bioguideId": "H001064",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001047",
+          "points": -0.69
+        },
+        {
+          "bioguideId": "C000880",
+          "points": -104.7
+        },
+        {
+          "bioguideId": "C001117",
+          "points": -15.09
+        },
+        {
+          "bioguideId": "C001131",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001121",
+          "points": -233.14
+        },
+        {
+          "bioguideId": "H001082",
+          "points": 165.27
+        }
+      ],
+      "mvpBioguideId": "H001082"
+    },
+    {
+      "week": 2,
+      "teamId": "league-capitol-team-5",
+      "points": -207.19,
+      "politicianPoints": [
+        {
+          "bioguideId": "T000484",
+          "points": -126.22
+        },
+        {
+          "bioguideId": "D000627",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001207",
+          "points": 33.81
+        },
+        {
+          "bioguideId": "V000133",
+          "points": -189.74
+        },
+        {
+          "bioguideId": "N000191",
+          "points": 74.96
+        },
+        {
+          "bioguideId": "C001130",
+          "points": 0
+        },
+        {
+          "bioguideId": "P000608",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001212",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "N000191"
+    },
+    {
+      "week": 2,
+      "teamId": "league-capitol-team-6",
+      "points": 405.83,
+      "politicianPoints": [
+        {
+          "bioguideId": "A000376",
+          "points": 219.77
+        },
+        {
+          "bioguideId": "B001287",
+          "points": -42.22
+        },
+        {
+          "bioguideId": "C001106",
+          "points": 75.92
+        },
+        {
+          "bioguideId": "W000827",
+          "points": 0
+        },
+        {
+          "bioguideId": "G000565",
+          "points": 0
+        },
+        {
+          "bioguideId": "O000172",
+          "points": 141.3
+        },
+        {
+          "bioguideId": "T000486",
+          "points": 11.06
+        },
+        {
+          "bioguideId": "P000622",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "A000376"
+    },
+    {
+      "week": 2,
+      "teamId": "league-capitol-team-7",
+      "points": -25.08,
+      "politicianPoints": [
+        {
+          "bioguideId": "K000375",
+          "points": 160.53
+        },
+        {
+          "bioguideId": "R000608",
+          "points": 20.25
+        },
+        {
+          "bioguideId": "L000591",
+          "points": 125.48
+        },
+        {
+          "bioguideId": "F000462",
+          "points": -26.71
+        },
+        {
+          "bioguideId": "M001215",
+          "points": -121.89
+        },
+        {
+          "bioguideId": "M001196",
+          "points": -165.22
+        },
+        {
+          "bioguideId": "P000449",
+          "points": -17.52
+        },
+        {
+          "bioguideId": "B001295",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "K000375"
+    },
+    {
+      "week": 2,
+      "teamId": "league-capitol-team-8",
+      "points": -83.03,
+      "politicianPoints": [
+        {
+          "bioguideId": "W000817",
+          "points": -19.18
+        },
+        {
+          "bioguideId": "S001200",
+          "points": -35.98
+        },
+        {
+          "bioguideId": "P000603",
+          "points": 31
+        },
+        {
+          "bioguideId": "B001230",
+          "points": -38.68
+        },
+        {
+          "bioguideId": "J000293",
+          "points": 0
+        },
+        {
+          "bioguideId": "M000133",
+          "points": -26.02
+        },
+        {
+          "bioguideId": "M001111",
+          "points": 55.59
+        },
+        {
+          "bioguideId": "S001216",
+          "points": -49.76
+        }
+      ],
+      "mvpBioguideId": "M001111"
+    },
+    {
+      "week": 3,
+      "teamId": "league-capitol-team-1",
+      "points": 204.03,
+      "politicianPoints": [
+        {
+          "bioguideId": "G000386",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001211",
+          "points": 352.65
+        },
+        {
+          "bioguideId": "R000595",
+          "points": -46.65
+        },
+        {
+          "bioguideId": "F000475",
+          "points": 41.71
+        },
+        {
+          "bioguideId": "L000590",
+          "points": 68.07
+        },
+        {
+          "bioguideId": "G000596",
+          "points": 0
+        },
+        {
+          "bioguideId": "W000826",
+          "points": -69.55
+        },
+        {
+          "bioguideId": "P000621",
+          "points": -142.2
+        }
+      ],
+      "mvpBioguideId": "M001211"
+    },
+    {
+      "week": 3,
+      "teamId": "league-capitol-team-2",
+      "points": 167.54,
+      "politicianPoints": [
+        {
+          "bioguideId": "P000197",
+          "points": -79.72
+        },
+        {
+          "bioguideId": "M001166",
+          "points": 74.08
+        },
+        {
+          "bioguideId": "Y000033",
+          "points": -27.6
+        },
+        {
+          "bioguideId": "C000174",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001127",
+          "points": 47.91
+        },
+        {
+          "bioguideId": "R000614",
+          "points": 52.24
+        },
+        {
+          "bioguideId": "S001148",
+          "points": 98.83
+        },
+        {
+          "bioguideId": "H001074",
+          "points": 1.8
+        }
+      ],
+      "mvpBioguideId": "S001148"
+    },
+    {
+      "week": 3,
+      "teamId": "league-capitol-team-3",
+      "points": 8.76,
+      "politicianPoints": [
+        {
+          "bioguideId": "K000367",
+          "points": -31.47
+        },
+        {
+          "bioguideId": "M001193",
+          "points": 0
+        },
+        {
+          "bioguideId": "B001291",
+          "points": 44.97
+        },
+        {
+          "bioguideId": "B001313",
+          "points": 124.1
+        },
+        {
+          "bioguideId": "S001190",
+          "points": 0
+        },
+        {
+          "bioguideId": "S001215",
+          "points": -54.72
+        },
+        {
+          "bioguideId": "G000591",
+          "points": -74.12
+        },
+        {
+          "bioguideId": "O000173",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "B001313"
+    },
+    {
+      "week": 3,
+      "teamId": "league-capitol-team-4",
+      "points": 329.61,
+      "politicianPoints": [
+        {
+          "bioguideId": "W000805",
+          "points": -24.6
+        },
+        {
+          "bioguideId": "H001064",
+          "points": -41.86
+        },
+        {
+          "bioguideId": "C001047",
+          "points": 122.1
+        },
+        {
+          "bioguideId": "C000880",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001117",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001131",
+          "points": 89.65
+        },
+        {
+          "bioguideId": "C001121",
+          "points": 184.32
+        },
+        {
+          "bioguideId": "H001082",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "C001121"
+    },
+    {
+      "week": 3,
+      "teamId": "league-capitol-team-5",
+      "points": -114.22,
+      "politicianPoints": [
+        {
+          "bioguideId": "T000484",
+          "points": 44.1
+        },
+        {
+          "bioguideId": "D000627",
+          "points": 36.3
+        },
+        {
+          "bioguideId": "M001207",
+          "points": 117.86
+        },
+        {
+          "bioguideId": "V000133",
+          "points": -24.78
+        },
+        {
+          "bioguideId": "N000191",
+          "points": -49.64
+        },
+        {
+          "bioguideId": "C001130",
+          "points": 0
+        },
+        {
+          "bioguideId": "P000608",
+          "points": -65.96
+        },
+        {
+          "bioguideId": "M001212",
+          "points": -172.1
+        }
+      ],
+      "mvpBioguideId": "M001207"
+    },
+    {
+      "week": 3,
+      "teamId": "league-capitol-team-6",
+      "points": 77.12,
+      "politicianPoints": [
+        {
+          "bioguideId": "A000376",
+          "points": 72.79
+        },
+        {
+          "bioguideId": "B001287",
+          "points": 76.72
+        },
+        {
+          "bioguideId": "C001106",
+          "points": 0
+        },
+        {
+          "bioguideId": "W000827",
+          "points": 14.55
+        },
+        {
+          "bioguideId": "G000565",
+          "points": -36.6
+        },
+        {
+          "bioguideId": "O000172",
+          "points": -50.34
+        },
+        {
+          "bioguideId": "T000486",
+          "points": 0
+        },
+        {
+          "bioguideId": "P000622",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "B001287"
+    },
+    {
+      "week": 3,
+      "teamId": "league-capitol-team-7",
+      "points": 495.58,
+      "politicianPoints": [
+        {
+          "bioguideId": "K000375",
+          "points": -2.88
+        },
+        {
+          "bioguideId": "R000608",
+          "points": 0
+        },
+        {
+          "bioguideId": "L000591",
+          "points": -19.59
+        },
+        {
+          "bioguideId": "F000462",
+          "points": 225.74
+        },
+        {
+          "bioguideId": "M001215",
+          "points": 122.58
+        },
+        {
+          "bioguideId": "M001196",
+          "points": 224.13
+        },
+        {
+          "bioguideId": "P000449",
+          "points": 41
+        },
+        {
+          "bioguideId": "B001295",
+          "points": -95.4
+        }
+      ],
+      "mvpBioguideId": "F000462"
+    },
+    {
+      "week": 3,
+      "teamId": "league-capitol-team-8",
+      "points": -211.79,
+      "politicianPoints": [
+        {
+          "bioguideId": "W000817",
+          "points": 149.99
+        },
+        {
+          "bioguideId": "S001200",
+          "points": -144.3
+        },
+        {
+          "bioguideId": "P000603",
+          "points": -125.37
+        },
+        {
+          "bioguideId": "B001230",
+          "points": 130.04
+        },
+        {
+          "bioguideId": "J000293",
+          "points": 34.7
+        },
+        {
+          "bioguideId": "M000133",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001111",
+          "points": -141.53
+        },
+        {
+          "bioguideId": "S001216",
+          "points": -115.32
+        }
+      ],
+      "mvpBioguideId": "W000817"
+    },
+    {
+      "week": 4,
+      "teamId": "league-capitol-team-1",
+      "points": 537.02,
+      "politicianPoints": [
+        {
+          "bioguideId": "G000386",
+          "points": 247.34
+        },
+        {
+          "bioguideId": "M001211",
+          "points": 238.61
+        },
+        {
+          "bioguideId": "R000595",
+          "points": 138.36
+        },
+        {
+          "bioguideId": "F000475",
+          "points": -67.37
+        },
+        {
+          "bioguideId": "L000590",
+          "points": -59.44
+        },
+        {
+          "bioguideId": "G000596",
+          "points": -40.48
+        },
+        {
+          "bioguideId": "W000826",
+          "points": 80
+        },
+        {
+          "bioguideId": "P000621",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "G000386"
+    },
+    {
+      "week": 4,
+      "teamId": "league-capitol-team-2",
+      "points": 405.35,
+      "politicianPoints": [
+        {
+          "bioguideId": "P000197",
+          "points": 141.28
+        },
+        {
+          "bioguideId": "M001166",
+          "points": 0
+        },
+        {
+          "bioguideId": "Y000033",
+          "points": 181.96
+        },
+        {
+          "bioguideId": "C000174",
+          "points": 56.48
+        },
+        {
+          "bioguideId": "C001127",
+          "points": 0
+        },
+        {
+          "bioguideId": "R000614",
+          "points": -5.12
+        },
+        {
+          "bioguideId": "S001148",
+          "points": -170.26
+        },
+        {
+          "bioguideId": "H001074",
+          "points": 201.01
+        }
+      ],
+      "mvpBioguideId": "H001074"
+    },
+    {
+      "week": 4,
+      "teamId": "league-capitol-team-3",
+      "points": 91.58,
+      "politicianPoints": [
+        {
+          "bioguideId": "K000367",
+          "points": 58.17
+        },
+        {
+          "bioguideId": "M001193",
+          "points": -44.8
+        },
+        {
+          "bioguideId": "B001291",
+          "points": 0
+        },
+        {
+          "bioguideId": "B001313",
+          "points": 0
+        },
+        {
+          "bioguideId": "S001190",
+          "points": 111.09
+        },
+        {
+          "bioguideId": "S001215",
+          "points": 0
+        },
+        {
+          "bioguideId": "G000591",
+          "points": -20.88
+        },
+        {
+          "bioguideId": "O000173",
+          "points": -12
+        }
+      ],
+      "mvpBioguideId": "S001190"
+    },
+    {
+      "week": 4,
+      "teamId": "league-capitol-team-4",
+      "points": -7.58,
+      "politicianPoints": [
+        {
+          "bioguideId": "W000805",
+          "points": 0
+        },
+        {
+          "bioguideId": "H001064",
+          "points": -55.3
+        },
+        {
+          "bioguideId": "C001047",
+          "points": -12.84
+        },
+        {
+          "bioguideId": "C000880",
+          "points": 168.66
+        },
+        {
+          "bioguideId": "C001117",
+          "points": 9.19
+        },
+        {
+          "bioguideId": "C001131",
+          "points": -27.94
+        },
+        {
+          "bioguideId": "C001121",
+          "points": 0
+        },
+        {
+          "bioguideId": "H001082",
+          "points": -89.35
+        }
+      ],
+      "mvpBioguideId": "C000880"
+    },
+    {
+      "week": 4,
+      "teamId": "league-capitol-team-5",
+      "points": 243.19,
+      "politicianPoints": [
+        {
+          "bioguideId": "T000484",
+          "points": 349.24
+        },
+        {
+          "bioguideId": "D000627",
+          "points": 65.72
+        },
+        {
+          "bioguideId": "M001207",
+          "points": 0
+        },
+        {
+          "bioguideId": "V000133",
+          "points": -43.18
+        },
+        {
+          "bioguideId": "N000191",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001130",
+          "points": -83.13
+        },
+        {
+          "bioguideId": "P000608",
+          "points": -45.46
+        },
+        {
+          "bioguideId": "M001212",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "T000484"
+    },
+    {
+      "week": 4,
+      "teamId": "league-capitol-team-6",
+      "points": -111.75,
+      "politicianPoints": [
+        {
+          "bioguideId": "A000376",
+          "points": -14.95
+        },
+        {
+          "bioguideId": "B001287",
+          "points": 34.29
+        },
+        {
+          "bioguideId": "C001106",
+          "points": 0
+        },
+        {
+          "bioguideId": "W000827",
+          "points": 157.01
+        },
+        {
+          "bioguideId": "G000565",
+          "points": 36.74
+        },
+        {
+          "bioguideId": "O000172",
+          "points": -74.6
+        },
+        {
+          "bioguideId": "T000486",
+          "points": -139.98
+        },
+        {
+          "bioguideId": "P000622",
+          "points": -110.26
+        }
+      ],
+      "mvpBioguideId": "W000827"
+    },
+    {
+      "week": 4,
+      "teamId": "league-capitol-team-7",
+      "points": -278.61,
+      "politicianPoints": [
+        {
+          "bioguideId": "K000375",
+          "points": 63.67
+        },
+        {
+          "bioguideId": "R000608",
+          "points": 0
+        },
+        {
+          "bioguideId": "L000591",
+          "points": -197.47
+        },
+        {
+          "bioguideId": "F000462",
+          "points": 19.53
+        },
+        {
+          "bioguideId": "M001215",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001196",
+          "points": -164.34
+        },
+        {
+          "bioguideId": "P000449",
+          "points": 0
+        },
+        {
+          "bioguideId": "B001295",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "K000375"
+    },
+    {
+      "week": 4,
+      "teamId": "league-capitol-team-8",
+      "points": 127.29,
+      "politicianPoints": [
+        {
+          "bioguideId": "W000817",
+          "points": -242.79
+        },
+        {
+          "bioguideId": "S001200",
+          "points": 130.52
+        },
+        {
+          "bioguideId": "P000603",
+          "points": 314.05
+        },
+        {
+          "bioguideId": "B001230",
+          "points": 0
+        },
+        {
+          "bioguideId": "J000293",
+          "points": -74.49
+        },
+        {
+          "bioguideId": "M000133",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001111",
+          "points": 0
+        },
+        {
+          "bioguideId": "S001216",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "P000603"
+    },
+    {
+      "week": 5,
+      "teamId": "league-capitol-team-1",
+      "points": 244.15,
+      "politicianPoints": [
+        {
+          "bioguideId": "G000386",
+          "points": 132.16
+        },
+        {
+          "bioguideId": "M001211",
+          "points": 18.62
+        },
+        {
+          "bioguideId": "R000595",
+          "points": 104.03
+        },
+        {
+          "bioguideId": "F000475",
+          "points": 8.9
+        },
+        {
+          "bioguideId": "L000590",
+          "points": 45.48
+        },
+        {
+          "bioguideId": "G000596",
+          "points": -53.28
+        },
+        {
+          "bioguideId": "W000826",
+          "points": 0
+        },
+        {
+          "bioguideId": "P000621",
+          "points": -11.76
+        }
+      ],
+      "mvpBioguideId": "G000386"
+    },
+    {
+      "week": 5,
+      "teamId": "league-capitol-team-2",
+      "points": -499.03,
+      "politicianPoints": [
+        {
+          "bioguideId": "P000197",
+          "points": -95.34
+        },
+        {
+          "bioguideId": "M001166",
+          "points": 121.92
+        },
+        {
+          "bioguideId": "Y000033",
+          "points": -315.24
+        },
+        {
+          "bioguideId": "C000174",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001127",
+          "points": -26.68
+        },
+        {
+          "bioguideId": "R000614",
+          "points": 0
+        },
+        {
+          "bioguideId": "S001148",
+          "points": -96.3
+        },
+        {
+          "bioguideId": "H001074",
+          "points": -87.39
+        }
+      ],
+      "mvpBioguideId": "M001166"
+    },
+    {
+      "week": 5,
+      "teamId": "league-capitol-team-3",
+      "points": -43.9,
+      "politicianPoints": [
+        {
+          "bioguideId": "K000367",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001193",
+          "points": 35.22
+        },
+        {
+          "bioguideId": "B001291",
+          "points": 29.85
+        },
+        {
+          "bioguideId": "B001313",
+          "points": 0
+        },
+        {
+          "bioguideId": "S001190",
+          "points": 0
+        },
+        {
+          "bioguideId": "S001215",
+          "points": 34.41
+        },
+        {
+          "bioguideId": "G000591",
+          "points": -24.58
+        },
+        {
+          "bioguideId": "O000173",
+          "points": -118.8
+        }
+      ],
+      "mvpBioguideId": "M001193"
+    },
+    {
+      "week": 5,
+      "teamId": "league-capitol-team-4",
+      "points": 3.97,
+      "politicianPoints": [
+        {
+          "bioguideId": "W000805",
+          "points": 59.47
+        },
+        {
+          "bioguideId": "H001064",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001047",
+          "points": 0
+        },
+        {
+          "bioguideId": "C000880",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001117",
+          "points": 37.3
+        },
+        {
+          "bioguideId": "C001131",
+          "points": -42.96
+        },
+        {
+          "bioguideId": "C001121",
+          "points": 0
+        },
+        {
+          "bioguideId": "H001082",
+          "points": -49.84
+        }
+      ],
+      "mvpBioguideId": "W000805"
+    },
+    {
+      "week": 5,
+      "teamId": "league-capitol-team-5",
+      "points": 338.2,
+      "politicianPoints": [
+        {
+          "bioguideId": "T000484",
+          "points": 66.94
+        },
+        {
+          "bioguideId": "D000627",
+          "points": 97.38
+        },
+        {
+          "bioguideId": "M001207",
+          "points": 0
+        },
+        {
+          "bioguideId": "V000133",
+          "points": 173.88
+        },
+        {
+          "bioguideId": "N000191",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001130",
+          "points": 0
+        },
+        {
+          "bioguideId": "P000608",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001212",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "V000133"
+    },
+    {
+      "week": 5,
+      "teamId": "league-capitol-team-6",
+      "points": 189,
+      "politicianPoints": [
+        {
+          "bioguideId": "A000376",
+          "points": -23.66
+        },
+        {
+          "bioguideId": "B001287",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001106",
+          "points": 24.28
+        },
+        {
+          "bioguideId": "W000827",
+          "points": -42.98
+        },
+        {
+          "bioguideId": "G000565",
+          "points": 0
+        },
+        {
+          "bioguideId": "O000172",
+          "points": -23.66
+        },
+        {
+          "bioguideId": "T000486",
+          "points": 255.02
+        },
+        {
+          "bioguideId": "P000622",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "T000486"
+    },
+    {
+      "week": 5,
+      "teamId": "league-capitol-team-7",
+      "points": 545.61,
+      "politicianPoints": [
+        {
+          "bioguideId": "K000375",
+          "points": 0
+        },
+        {
+          "bioguideId": "R000608",
+          "points": 198.8
+        },
+        {
+          "bioguideId": "L000591",
+          "points": 29.44
+        },
+        {
+          "bioguideId": "F000462",
+          "points": -5.65
+        },
+        {
+          "bioguideId": "M001215",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001196",
+          "points": 298.78
+        },
+        {
+          "bioguideId": "P000449",
+          "points": 24.24
+        },
+        {
+          "bioguideId": "B001295",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "M001196"
+    },
+    {
+      "week": 5,
+      "teamId": "league-capitol-team-8",
+      "points": 210.38,
+      "politicianPoints": [
+        {
+          "bioguideId": "W000817",
+          "points": 235.3
+        },
+        {
+          "bioguideId": "S001200",
+          "points": 122.56
+        },
+        {
+          "bioguideId": "P000603",
+          "points": 8.78
+        },
+        {
+          "bioguideId": "B001230",
+          "points": -40.06
+        },
+        {
+          "bioguideId": "J000293",
+          "points": -61.56
+        },
+        {
+          "bioguideId": "M000133",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001111",
+          "points": 0
+        },
+        {
+          "bioguideId": "S001216",
+          "points": -54.64
+        }
+      ],
+      "mvpBioguideId": "W000817"
+    },
+    {
+      "week": 6,
+      "teamId": "league-capitol-team-1",
+      "points": 123.4,
+      "politicianPoints": [
+        {
+          "bioguideId": "G000386",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001211",
+          "points": 74.14
+        },
+        {
+          "bioguideId": "R000595",
+          "points": -9.36
+        },
+        {
+          "bioguideId": "F000475",
+          "points": 61.86
+        },
+        {
+          "bioguideId": "L000590",
+          "points": -3.24
+        },
+        {
+          "bioguideId": "G000596",
+          "points": 0
+        },
+        {
+          "bioguideId": "W000826",
+          "points": 0
+        },
+        {
+          "bioguideId": "P000621",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "M001211"
+    },
+    {
+      "week": 6,
+      "teamId": "league-capitol-team-2",
+      "points": 234.55,
+      "politicianPoints": [
+        {
+          "bioguideId": "P000197",
+          "points": 380.26
+        },
+        {
+          "bioguideId": "M001166",
+          "points": 0
+        },
+        {
+          "bioguideId": "Y000033",
+          "points": 71.16
+        },
+        {
+          "bioguideId": "C000174",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001127",
+          "points": -71.52
+        },
+        {
+          "bioguideId": "R000614",
+          "points": 88.1
+        },
+        {
+          "bioguideId": "S001148",
+          "points": -83.16
+        },
+        {
+          "bioguideId": "H001074",
+          "points": -150.29
+        }
+      ],
+      "mvpBioguideId": "P000197"
+    },
+    {
+      "week": 6,
+      "teamId": "league-capitol-team-3",
+      "points": -44.79,
+      "politicianPoints": [
+        {
+          "bioguideId": "K000367",
+          "points": -65.04
+        },
+        {
+          "bioguideId": "M001193",
+          "points": 0
+        },
+        {
+          "bioguideId": "B001291",
+          "points": 0
+        },
+        {
+          "bioguideId": "B001313",
+          "points": 0
+        },
+        {
+          "bioguideId": "S001190",
+          "points": -61.92
+        },
+        {
+          "bioguideId": "S001215",
+          "points": 0
+        },
+        {
+          "bioguideId": "G000591",
+          "points": 0
+        },
+        {
+          "bioguideId": "O000173",
+          "points": 82.17
+        }
+      ],
+      "mvpBioguideId": "O000173"
+    },
+    {
+      "week": 6,
+      "teamId": "league-capitol-team-4",
+      "points": 372.52,
+      "politicianPoints": [
+        {
+          "bioguideId": "W000805",
+          "points": 153.08
+        },
+        {
+          "bioguideId": "H001064",
+          "points": 250.61
+        },
+        {
+          "bioguideId": "C001047",
+          "points": 0
+        },
+        {
+          "bioguideId": "C000880",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001117",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001131",
+          "points": -31.17
+        },
+        {
+          "bioguideId": "C001121",
+          "points": 0
+        },
+        {
+          "bioguideId": "H001082",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "H001064"
+    },
+    {
+      "week": 6,
+      "teamId": "league-capitol-team-5",
+      "points": 97.92,
+      "politicianPoints": [
+        {
+          "bioguideId": "T000484",
+          "points": 0
+        },
+        {
+          "bioguideId": "D000627",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001207",
+          "points": -18.66
+        },
+        {
+          "bioguideId": "V000133",
+          "points": 116.58
+        },
+        {
+          "bioguideId": "N000191",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001130",
+          "points": 0
+        },
+        {
+          "bioguideId": "P000608",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001212",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "V000133"
+    },
+    {
+      "week": 6,
+      "teamId": "league-capitol-team-6",
+      "points": 38.41,
+      "politicianPoints": [
+        {
+          "bioguideId": "A000376",
+          "points": 0
+        },
+        {
+          "bioguideId": "B001287",
+          "points": 145.23
+        },
+        {
+          "bioguideId": "C001106",
+          "points": 0
+        },
+        {
+          "bioguideId": "W000827",
+          "points": -29.01
+        },
+        {
+          "bioguideId": "G000565",
+          "points": 89.16
+        },
+        {
+          "bioguideId": "O000172",
+          "points": 0
+        },
+        {
+          "bioguideId": "T000486",
+          "points": -166.97
+        },
+        {
+          "bioguideId": "P000622",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "B001287"
+    },
+    {
+      "week": 6,
+      "teamId": "league-capitol-team-7",
+      "points": 5.27,
+      "politicianPoints": [
+        {
+          "bioguideId": "K000375",
+          "points": 0
+        },
+        {
+          "bioguideId": "R000608",
+          "points": 0
+        },
+        {
+          "bioguideId": "L000591",
+          "points": 164.81
+        },
+        {
+          "bioguideId": "F000462",
+          "points": -23.24
+        },
+        {
+          "bioguideId": "M001215",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001196",
+          "points": -107.4
+        },
+        {
+          "bioguideId": "P000449",
+          "points": -28.9
+        },
+        {
+          "bioguideId": "B001295",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "L000591"
+    },
+    {
+      "week": 6,
+      "teamId": "league-capitol-team-8",
+      "points": 334.61,
+      "politicianPoints": [
+        {
+          "bioguideId": "W000817",
+          "points": 68.44
+        },
+        {
+          "bioguideId": "S001200",
+          "points": 200.46
+        },
+        {
+          "bioguideId": "P000603",
+          "points": -97.89
+        },
+        {
+          "bioguideId": "B001230",
+          "points": 0
+        },
+        {
+          "bioguideId": "J000293",
+          "points": 35.67
+        },
+        {
+          "bioguideId": "M000133",
+          "points": -2.82
+        },
+        {
+          "bioguideId": "M001111",
+          "points": 0
+        },
+        {
+          "bioguideId": "S001216",
+          "points": 130.75
+        }
+      ],
+      "mvpBioguideId": "S001200"
+    },
+    {
+      "week": 1,
+      "teamId": "league-swamp-team-1",
+      "points": -248.6,
+      "politicianPoints": [
+        {
+          "bioguideId": "G000386",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001211",
+          "points": -305.9
+        },
+        {
+          "bioguideId": "R000595",
+          "points": 1.32
+        },
+        {
+          "bioguideId": "F000475",
+          "points": 0
+        },
+        {
+          "bioguideId": "L000590",
+          "points": 0
+        },
+        {
+          "bioguideId": "G000596",
+          "points": 66.93
+        },
+        {
+          "bioguideId": "W000826",
+          "points": -10.95
+        },
+        {
+          "bioguideId": "P000621",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "G000596"
+    },
+    {
+      "week": 1,
+      "teamId": "league-swamp-team-2",
+      "points": 195.79,
+      "politicianPoints": [
+        {
+          "bioguideId": "P000197",
+          "points": -45.9
+        },
+        {
+          "bioguideId": "M001166",
+          "points": 0
+        },
+        {
+          "bioguideId": "Y000033",
+          "points": 270.03
+        },
+        {
+          "bioguideId": "C000174",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001127",
+          "points": 101
+        },
+        {
+          "bioguideId": "R000614",
+          "points": -83.91
+        },
+        {
+          "bioguideId": "S001148",
+          "points": 108.5
+        },
+        {
+          "bioguideId": "H001074",
+          "points": -153.93
+        }
+      ],
+      "mvpBioguideId": "Y000033"
+    },
+    {
+      "week": 1,
+      "teamId": "league-swamp-team-3",
+      "points": 507.48,
+      "politicianPoints": [
+        {
+          "bioguideId": "K000367",
+          "points": 298.64
+        },
+        {
+          "bioguideId": "M001193",
+          "points": 206
+        },
+        {
+          "bioguideId": "B001291",
+          "points": 34.92
+        },
+        {
+          "bioguideId": "B001313",
+          "points": 0
+        },
+        {
+          "bioguideId": "S001190",
+          "points": 0
+        },
+        {
+          "bioguideId": "S001215",
+          "points": 0
+        },
+        {
+          "bioguideId": "G000591",
+          "points": 53.88
+        },
+        {
+          "bioguideId": "O000173",
+          "points": -85.96
+        }
+      ],
+      "mvpBioguideId": "K000367"
+    },
+    {
+      "week": 1,
+      "teamId": "league-swamp-team-4",
+      "points": -63.2,
+      "politicianPoints": [
+        {
+          "bioguideId": "W000805",
+          "points": 31.66
+        },
+        {
+          "bioguideId": "H001064",
+          "points": 43.42
+        },
+        {
+          "bioguideId": "C001047",
+          "points": 0
+        },
+        {
+          "bioguideId": "C000880",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001117",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001131",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001121",
+          "points": -0.24
+        },
+        {
+          "bioguideId": "H001082",
+          "points": -138.04
+        }
+      ],
+      "mvpBioguideId": "H001064"
+    },
+    {
+      "week": 1,
+      "teamId": "league-swamp-team-5",
+      "points": 146.02,
+      "politicianPoints": [
+        {
+          "bioguideId": "T000484",
+          "points": -42.26
+        },
+        {
+          "bioguideId": "D000627",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001207",
+          "points": -31.71
+        },
+        {
+          "bioguideId": "V000133",
+          "points": 31.61
+        },
+        {
+          "bioguideId": "N000191",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001130",
+          "points": 72.24
+        },
+        {
+          "bioguideId": "P000608",
+          "points": 55.76
+        },
+        {
+          "bioguideId": "M001212",
+          "points": 60.38
+        }
+      ],
+      "mvpBioguideId": "C001130"
+    },
+    {
+      "week": 1,
+      "teamId": "league-swamp-team-6",
+      "points": -120.74,
+      "politicianPoints": [
+        {
+          "bioguideId": "A000376",
+          "points": 0
+        },
+        {
+          "bioguideId": "B001287",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001106",
+          "points": 0
+        },
+        {
+          "bioguideId": "W000827",
+          "points": -31.85
+        },
+        {
+          "bioguideId": "G000565",
+          "points": -72.72
+        },
+        {
+          "bioguideId": "O000172",
+          "points": 0
+        },
+        {
+          "bioguideId": "T000486",
+          "points": -16.17
+        },
+        {
+          "bioguideId": "P000622",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "A000376"
+    },
+    {
+      "week": 1,
+      "teamId": "league-swamp-team-7",
+      "points": -270.8,
+      "politicianPoints": [
+        {
+          "bioguideId": "K000375",
+          "points": 27.78
+        },
+        {
+          "bioguideId": "R000608",
+          "points": 0
+        },
+        {
+          "bioguideId": "L000591",
+          "points": -4.73
+        },
+        {
+          "bioguideId": "F000462",
+          "points": -118.39
+        },
+        {
+          "bioguideId": "M001215",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001196",
+          "points": -92.46
+        },
+        {
+          "bioguideId": "P000449",
+          "points": -83
+        },
+        {
+          "bioguideId": "B001295",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "K000375"
+    },
+    {
+      "week": 1,
+      "teamId": "league-swamp-team-8",
+      "points": 102.16,
+      "politicianPoints": [
+        {
+          "bioguideId": "W000817",
+          "points": 54.44
+        },
+        {
+          "bioguideId": "S001200",
+          "points": -35.52
+        },
+        {
+          "bioguideId": "P000603",
+          "points": -37.76
+        },
+        {
+          "bioguideId": "B001230",
+          "points": 31.14
+        },
+        {
+          "bioguideId": "J000293",
+          "points": 64.78
+        },
+        {
+          "bioguideId": "M000133",
+          "points": 25.08
+        },
+        {
+          "bioguideId": "M001111",
+          "points": 0
+        },
+        {
+          "bioguideId": "S001216",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "J000293"
+    },
+    {
+      "week": 2,
+      "teamId": "league-swamp-team-1",
+      "points": -223.55,
+      "politicianPoints": [
+        {
+          "bioguideId": "G000386",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001211",
+          "points": -188.92
+        },
+        {
+          "bioguideId": "R000595",
+          "points": 0
+        },
+        {
+          "bioguideId": "F000475",
+          "points": 11.03
+        },
+        {
+          "bioguideId": "L000590",
+          "points": 0
+        },
+        {
+          "bioguideId": "G000596",
+          "points": 0
+        },
+        {
+          "bioguideId": "W000826",
+          "points": -45.66
+        },
+        {
+          "bioguideId": "P000621",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "F000475"
+    },
+    {
+      "week": 2,
+      "teamId": "league-swamp-team-2",
+      "points": 132.32,
+      "politicianPoints": [
+        {
+          "bioguideId": "P000197",
+          "points": 64.41
+        },
+        {
+          "bioguideId": "M001166",
+          "points": 0
+        },
+        {
+          "bioguideId": "Y000033",
+          "points": 0
+        },
+        {
+          "bioguideId": "C000174",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001127",
+          "points": 0
+        },
+        {
+          "bioguideId": "R000614",
+          "points": -72.42
+        },
+        {
+          "bioguideId": "S001148",
+          "points": 94.37
+        },
+        {
+          "bioguideId": "H001074",
+          "points": 45.96
+        }
+      ],
+      "mvpBioguideId": "S001148"
+    },
+    {
+      "week": 2,
+      "teamId": "league-swamp-team-3",
+      "points": 38.38,
+      "politicianPoints": [
+        {
+          "bioguideId": "K000367",
+          "points": 86.38
+        },
+        {
+          "bioguideId": "M001193",
+          "points": 0
+        },
+        {
+          "bioguideId": "B001291",
+          "points": 0
+        },
+        {
+          "bioguideId": "B001313",
+          "points": -65.22
+        },
+        {
+          "bioguideId": "S001190",
+          "points": 0
+        },
+        {
+          "bioguideId": "S001215",
+          "points": 0
+        },
+        {
+          "bioguideId": "G000591",
+          "points": 17.22
+        },
+        {
+          "bioguideId": "O000173",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "K000367"
+    },
+    {
+      "week": 2,
+      "teamId": "league-swamp-team-4",
+      "points": -63.37,
+      "politicianPoints": [
+        {
+          "bioguideId": "W000805",
+          "points": 124.98
+        },
+        {
+          "bioguideId": "H001064",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001047",
+          "points": -0.69
+        },
+        {
+          "bioguideId": "C000880",
+          "points": -104.7
+        },
+        {
+          "bioguideId": "C001117",
+          "points": -15.09
+        },
+        {
+          "bioguideId": "C001131",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001121",
+          "points": -233.14
+        },
+        {
+          "bioguideId": "H001082",
+          "points": 165.27
+        }
+      ],
+      "mvpBioguideId": "H001082"
+    },
+    {
+      "week": 2,
+      "teamId": "league-swamp-team-5",
+      "points": -207.19,
+      "politicianPoints": [
+        {
+          "bioguideId": "T000484",
+          "points": -126.22
+        },
+        {
+          "bioguideId": "D000627",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001207",
+          "points": 33.81
+        },
+        {
+          "bioguideId": "V000133",
+          "points": -189.74
+        },
+        {
+          "bioguideId": "N000191",
+          "points": 74.96
+        },
+        {
+          "bioguideId": "C001130",
+          "points": 0
+        },
+        {
+          "bioguideId": "P000608",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001212",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "N000191"
+    },
+    {
+      "week": 2,
+      "teamId": "league-swamp-team-6",
+      "points": 405.83,
+      "politicianPoints": [
+        {
+          "bioguideId": "A000376",
+          "points": 219.77
+        },
+        {
+          "bioguideId": "B001287",
+          "points": -42.22
+        },
+        {
+          "bioguideId": "C001106",
+          "points": 75.92
+        },
+        {
+          "bioguideId": "W000827",
+          "points": 0
+        },
+        {
+          "bioguideId": "G000565",
+          "points": 0
+        },
+        {
+          "bioguideId": "O000172",
+          "points": 141.3
+        },
+        {
+          "bioguideId": "T000486",
+          "points": 11.06
+        },
+        {
+          "bioguideId": "P000622",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "A000376"
+    },
+    {
+      "week": 2,
+      "teamId": "league-swamp-team-7",
+      "points": -25.08,
+      "politicianPoints": [
+        {
+          "bioguideId": "K000375",
+          "points": 160.53
+        },
+        {
+          "bioguideId": "R000608",
+          "points": 20.25
+        },
+        {
+          "bioguideId": "L000591",
+          "points": 125.48
+        },
+        {
+          "bioguideId": "F000462",
+          "points": -26.71
+        },
+        {
+          "bioguideId": "M001215",
+          "points": -121.89
+        },
+        {
+          "bioguideId": "M001196",
+          "points": -165.22
+        },
+        {
+          "bioguideId": "P000449",
+          "points": -17.52
+        },
+        {
+          "bioguideId": "B001295",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "K000375"
+    },
+    {
+      "week": 2,
+      "teamId": "league-swamp-team-8",
+      "points": -83.03,
+      "politicianPoints": [
+        {
+          "bioguideId": "W000817",
+          "points": -19.18
+        },
+        {
+          "bioguideId": "S001200",
+          "points": -35.98
+        },
+        {
+          "bioguideId": "P000603",
+          "points": 31
+        },
+        {
+          "bioguideId": "B001230",
+          "points": -38.68
+        },
+        {
+          "bioguideId": "J000293",
+          "points": 0
+        },
+        {
+          "bioguideId": "M000133",
+          "points": -26.02
+        },
+        {
+          "bioguideId": "M001111",
+          "points": 55.59
+        },
+        {
+          "bioguideId": "S001216",
+          "points": -49.76
+        }
+      ],
+      "mvpBioguideId": "M001111"
+    },
+    {
+      "week": 3,
+      "teamId": "league-swamp-team-1",
+      "points": 204.03,
+      "politicianPoints": [
+        {
+          "bioguideId": "G000386",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001211",
+          "points": 352.65
+        },
+        {
+          "bioguideId": "R000595",
+          "points": -46.65
+        },
+        {
+          "bioguideId": "F000475",
+          "points": 41.71
+        },
+        {
+          "bioguideId": "L000590",
+          "points": 68.07
+        },
+        {
+          "bioguideId": "G000596",
+          "points": 0
+        },
+        {
+          "bioguideId": "W000826",
+          "points": -69.55
+        },
+        {
+          "bioguideId": "P000621",
+          "points": -142.2
+        }
+      ],
+      "mvpBioguideId": "M001211"
+    },
+    {
+      "week": 3,
+      "teamId": "league-swamp-team-2",
+      "points": 167.54,
+      "politicianPoints": [
+        {
+          "bioguideId": "P000197",
+          "points": -79.72
+        },
+        {
+          "bioguideId": "M001166",
+          "points": 74.08
+        },
+        {
+          "bioguideId": "Y000033",
+          "points": -27.6
+        },
+        {
+          "bioguideId": "C000174",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001127",
+          "points": 47.91
+        },
+        {
+          "bioguideId": "R000614",
+          "points": 52.24
+        },
+        {
+          "bioguideId": "S001148",
+          "points": 98.83
+        },
+        {
+          "bioguideId": "H001074",
+          "points": 1.8
+        }
+      ],
+      "mvpBioguideId": "S001148"
+    },
+    {
+      "week": 3,
+      "teamId": "league-swamp-team-3",
+      "points": 8.76,
+      "politicianPoints": [
+        {
+          "bioguideId": "K000367",
+          "points": -31.47
+        },
+        {
+          "bioguideId": "M001193",
+          "points": 0
+        },
+        {
+          "bioguideId": "B001291",
+          "points": 44.97
+        },
+        {
+          "bioguideId": "B001313",
+          "points": 124.1
+        },
+        {
+          "bioguideId": "S001190",
+          "points": 0
+        },
+        {
+          "bioguideId": "S001215",
+          "points": -54.72
+        },
+        {
+          "bioguideId": "G000591",
+          "points": -74.12
+        },
+        {
+          "bioguideId": "O000173",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "B001313"
+    },
+    {
+      "week": 3,
+      "teamId": "league-swamp-team-4",
+      "points": 329.61,
+      "politicianPoints": [
+        {
+          "bioguideId": "W000805",
+          "points": -24.6
+        },
+        {
+          "bioguideId": "H001064",
+          "points": -41.86
+        },
+        {
+          "bioguideId": "C001047",
+          "points": 122.1
+        },
+        {
+          "bioguideId": "C000880",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001117",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001131",
+          "points": 89.65
+        },
+        {
+          "bioguideId": "C001121",
+          "points": 184.32
+        },
+        {
+          "bioguideId": "H001082",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "C001121"
+    },
+    {
+      "week": 3,
+      "teamId": "league-swamp-team-5",
+      "points": -114.22,
+      "politicianPoints": [
+        {
+          "bioguideId": "T000484",
+          "points": 44.1
+        },
+        {
+          "bioguideId": "D000627",
+          "points": 36.3
+        },
+        {
+          "bioguideId": "M001207",
+          "points": 117.86
+        },
+        {
+          "bioguideId": "V000133",
+          "points": -24.78
+        },
+        {
+          "bioguideId": "N000191",
+          "points": -49.64
+        },
+        {
+          "bioguideId": "C001130",
+          "points": 0
+        },
+        {
+          "bioguideId": "P000608",
+          "points": -65.96
+        },
+        {
+          "bioguideId": "M001212",
+          "points": -172.1
+        }
+      ],
+      "mvpBioguideId": "M001207"
+    },
+    {
+      "week": 3,
+      "teamId": "league-swamp-team-6",
+      "points": 77.12,
+      "politicianPoints": [
+        {
+          "bioguideId": "A000376",
+          "points": 72.79
+        },
+        {
+          "bioguideId": "B001287",
+          "points": 76.72
+        },
+        {
+          "bioguideId": "C001106",
+          "points": 0
+        },
+        {
+          "bioguideId": "W000827",
+          "points": 14.55
+        },
+        {
+          "bioguideId": "G000565",
+          "points": -36.6
+        },
+        {
+          "bioguideId": "O000172",
+          "points": -50.34
+        },
+        {
+          "bioguideId": "T000486",
+          "points": 0
+        },
+        {
+          "bioguideId": "P000622",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "B001287"
+    },
+    {
+      "week": 3,
+      "teamId": "league-swamp-team-7",
+      "points": 495.58,
+      "politicianPoints": [
+        {
+          "bioguideId": "K000375",
+          "points": -2.88
+        },
+        {
+          "bioguideId": "R000608",
+          "points": 0
+        },
+        {
+          "bioguideId": "L000591",
+          "points": -19.59
+        },
+        {
+          "bioguideId": "F000462",
+          "points": 225.74
+        },
+        {
+          "bioguideId": "M001215",
+          "points": 122.58
+        },
+        {
+          "bioguideId": "M001196",
+          "points": 224.13
+        },
+        {
+          "bioguideId": "P000449",
+          "points": 41
+        },
+        {
+          "bioguideId": "B001295",
+          "points": -95.4
+        }
+      ],
+      "mvpBioguideId": "F000462"
+    },
+    {
+      "week": 3,
+      "teamId": "league-swamp-team-8",
+      "points": -211.79,
+      "politicianPoints": [
+        {
+          "bioguideId": "W000817",
+          "points": 149.99
+        },
+        {
+          "bioguideId": "S001200",
+          "points": -144.3
+        },
+        {
+          "bioguideId": "P000603",
+          "points": -125.37
+        },
+        {
+          "bioguideId": "B001230",
+          "points": 130.04
+        },
+        {
+          "bioguideId": "J000293",
+          "points": 34.7
+        },
+        {
+          "bioguideId": "M000133",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001111",
+          "points": -141.53
+        },
+        {
+          "bioguideId": "S001216",
+          "points": -115.32
+        }
+      ],
+      "mvpBioguideId": "W000817"
+    },
+    {
+      "week": 4,
+      "teamId": "league-swamp-team-1",
+      "points": 537.02,
+      "politicianPoints": [
+        {
+          "bioguideId": "G000386",
+          "points": 247.34
+        },
+        {
+          "bioguideId": "M001211",
+          "points": 238.61
+        },
+        {
+          "bioguideId": "R000595",
+          "points": 138.36
+        },
+        {
+          "bioguideId": "F000475",
+          "points": -67.37
+        },
+        {
+          "bioguideId": "L000590",
+          "points": -59.44
+        },
+        {
+          "bioguideId": "G000596",
+          "points": -40.48
+        },
+        {
+          "bioguideId": "W000826",
+          "points": 80
+        },
+        {
+          "bioguideId": "P000621",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "G000386"
+    },
+    {
+      "week": 4,
+      "teamId": "league-swamp-team-2",
+      "points": 405.35,
+      "politicianPoints": [
+        {
+          "bioguideId": "P000197",
+          "points": 141.28
+        },
+        {
+          "bioguideId": "M001166",
+          "points": 0
+        },
+        {
+          "bioguideId": "Y000033",
+          "points": 181.96
+        },
+        {
+          "bioguideId": "C000174",
+          "points": 56.48
+        },
+        {
+          "bioguideId": "C001127",
+          "points": 0
+        },
+        {
+          "bioguideId": "R000614",
+          "points": -5.12
+        },
+        {
+          "bioguideId": "S001148",
+          "points": -170.26
+        },
+        {
+          "bioguideId": "H001074",
+          "points": 201.01
+        }
+      ],
+      "mvpBioguideId": "H001074"
+    },
+    {
+      "week": 4,
+      "teamId": "league-swamp-team-3",
+      "points": 91.58,
+      "politicianPoints": [
+        {
+          "bioguideId": "K000367",
+          "points": 58.17
+        },
+        {
+          "bioguideId": "M001193",
+          "points": -44.8
+        },
+        {
+          "bioguideId": "B001291",
+          "points": 0
+        },
+        {
+          "bioguideId": "B001313",
+          "points": 0
+        },
+        {
+          "bioguideId": "S001190",
+          "points": 111.09
+        },
+        {
+          "bioguideId": "S001215",
+          "points": 0
+        },
+        {
+          "bioguideId": "G000591",
+          "points": -20.88
+        },
+        {
+          "bioguideId": "O000173",
+          "points": -12
+        }
+      ],
+      "mvpBioguideId": "S001190"
+    },
+    {
+      "week": 4,
+      "teamId": "league-swamp-team-4",
+      "points": -7.58,
+      "politicianPoints": [
+        {
+          "bioguideId": "W000805",
+          "points": 0
+        },
+        {
+          "bioguideId": "H001064",
+          "points": -55.3
+        },
+        {
+          "bioguideId": "C001047",
+          "points": -12.84
+        },
+        {
+          "bioguideId": "C000880",
+          "points": 168.66
+        },
+        {
+          "bioguideId": "C001117",
+          "points": 9.19
+        },
+        {
+          "bioguideId": "C001131",
+          "points": -27.94
+        },
+        {
+          "bioguideId": "C001121",
+          "points": 0
+        },
+        {
+          "bioguideId": "H001082",
+          "points": -89.35
+        }
+      ],
+      "mvpBioguideId": "C000880"
+    },
+    {
+      "week": 4,
+      "teamId": "league-swamp-team-5",
+      "points": 243.19,
+      "politicianPoints": [
+        {
+          "bioguideId": "T000484",
+          "points": 349.24
+        },
+        {
+          "bioguideId": "D000627",
+          "points": 65.72
+        },
+        {
+          "bioguideId": "M001207",
+          "points": 0
+        },
+        {
+          "bioguideId": "V000133",
+          "points": -43.18
+        },
+        {
+          "bioguideId": "N000191",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001130",
+          "points": -83.13
+        },
+        {
+          "bioguideId": "P000608",
+          "points": -45.46
+        },
+        {
+          "bioguideId": "M001212",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "T000484"
+    },
+    {
+      "week": 4,
+      "teamId": "league-swamp-team-6",
+      "points": -111.75,
+      "politicianPoints": [
+        {
+          "bioguideId": "A000376",
+          "points": -14.95
+        },
+        {
+          "bioguideId": "B001287",
+          "points": 34.29
+        },
+        {
+          "bioguideId": "C001106",
+          "points": 0
+        },
+        {
+          "bioguideId": "W000827",
+          "points": 157.01
+        },
+        {
+          "bioguideId": "G000565",
+          "points": 36.74
+        },
+        {
+          "bioguideId": "O000172",
+          "points": -74.6
+        },
+        {
+          "bioguideId": "T000486",
+          "points": -139.98
+        },
+        {
+          "bioguideId": "P000622",
+          "points": -110.26
+        }
+      ],
+      "mvpBioguideId": "W000827"
+    },
+    {
+      "week": 4,
+      "teamId": "league-swamp-team-7",
+      "points": -278.61,
+      "politicianPoints": [
+        {
+          "bioguideId": "K000375",
+          "points": 63.67
+        },
+        {
+          "bioguideId": "R000608",
+          "points": 0
+        },
+        {
+          "bioguideId": "L000591",
+          "points": -197.47
+        },
+        {
+          "bioguideId": "F000462",
+          "points": 19.53
+        },
+        {
+          "bioguideId": "M001215",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001196",
+          "points": -164.34
+        },
+        {
+          "bioguideId": "P000449",
+          "points": 0
+        },
+        {
+          "bioguideId": "B001295",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "K000375"
+    },
+    {
+      "week": 4,
+      "teamId": "league-swamp-team-8",
+      "points": 127.29,
+      "politicianPoints": [
+        {
+          "bioguideId": "W000817",
+          "points": -242.79
+        },
+        {
+          "bioguideId": "S001200",
+          "points": 130.52
+        },
+        {
+          "bioguideId": "P000603",
+          "points": 314.05
+        },
+        {
+          "bioguideId": "B001230",
+          "points": 0
+        },
+        {
+          "bioguideId": "J000293",
+          "points": -74.49
+        },
+        {
+          "bioguideId": "M000133",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001111",
+          "points": 0
+        },
+        {
+          "bioguideId": "S001216",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "P000603"
+    },
+    {
+      "week": 5,
+      "teamId": "league-swamp-team-1",
+      "points": 244.15,
+      "politicianPoints": [
+        {
+          "bioguideId": "G000386",
+          "points": 132.16
+        },
+        {
+          "bioguideId": "M001211",
+          "points": 18.62
+        },
+        {
+          "bioguideId": "R000595",
+          "points": 104.03
+        },
+        {
+          "bioguideId": "F000475",
+          "points": 8.9
+        },
+        {
+          "bioguideId": "L000590",
+          "points": 45.48
+        },
+        {
+          "bioguideId": "G000596",
+          "points": -53.28
+        },
+        {
+          "bioguideId": "W000826",
+          "points": 0
+        },
+        {
+          "bioguideId": "P000621",
+          "points": -11.76
+        }
+      ],
+      "mvpBioguideId": "G000386"
+    },
+    {
+      "week": 5,
+      "teamId": "league-swamp-team-2",
+      "points": -499.03,
+      "politicianPoints": [
+        {
+          "bioguideId": "P000197",
+          "points": -95.34
+        },
+        {
+          "bioguideId": "M001166",
+          "points": 121.92
+        },
+        {
+          "bioguideId": "Y000033",
+          "points": -315.24
+        },
+        {
+          "bioguideId": "C000174",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001127",
+          "points": -26.68
+        },
+        {
+          "bioguideId": "R000614",
+          "points": 0
+        },
+        {
+          "bioguideId": "S001148",
+          "points": -96.3
+        },
+        {
+          "bioguideId": "H001074",
+          "points": -87.39
+        }
+      ],
+      "mvpBioguideId": "M001166"
+    },
+    {
+      "week": 5,
+      "teamId": "league-swamp-team-3",
+      "points": -43.9,
+      "politicianPoints": [
+        {
+          "bioguideId": "K000367",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001193",
+          "points": 35.22
+        },
+        {
+          "bioguideId": "B001291",
+          "points": 29.85
+        },
+        {
+          "bioguideId": "B001313",
+          "points": 0
+        },
+        {
+          "bioguideId": "S001190",
+          "points": 0
+        },
+        {
+          "bioguideId": "S001215",
+          "points": 34.41
+        },
+        {
+          "bioguideId": "G000591",
+          "points": -24.58
+        },
+        {
+          "bioguideId": "O000173",
+          "points": -118.8
+        }
+      ],
+      "mvpBioguideId": "M001193"
+    },
+    {
+      "week": 5,
+      "teamId": "league-swamp-team-4",
+      "points": 3.97,
+      "politicianPoints": [
+        {
+          "bioguideId": "W000805",
+          "points": 59.47
+        },
+        {
+          "bioguideId": "H001064",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001047",
+          "points": 0
+        },
+        {
+          "bioguideId": "C000880",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001117",
+          "points": 37.3
+        },
+        {
+          "bioguideId": "C001131",
+          "points": -42.96
+        },
+        {
+          "bioguideId": "C001121",
+          "points": 0
+        },
+        {
+          "bioguideId": "H001082",
+          "points": -49.84
+        }
+      ],
+      "mvpBioguideId": "W000805"
+    },
+    {
+      "week": 5,
+      "teamId": "league-swamp-team-5",
+      "points": 338.2,
+      "politicianPoints": [
+        {
+          "bioguideId": "T000484",
+          "points": 66.94
+        },
+        {
+          "bioguideId": "D000627",
+          "points": 97.38
+        },
+        {
+          "bioguideId": "M001207",
+          "points": 0
+        },
+        {
+          "bioguideId": "V000133",
+          "points": 173.88
+        },
+        {
+          "bioguideId": "N000191",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001130",
+          "points": 0
+        },
+        {
+          "bioguideId": "P000608",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001212",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "V000133"
+    },
+    {
+      "week": 5,
+      "teamId": "league-swamp-team-6",
+      "points": 189,
+      "politicianPoints": [
+        {
+          "bioguideId": "A000376",
+          "points": -23.66
+        },
+        {
+          "bioguideId": "B001287",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001106",
+          "points": 24.28
+        },
+        {
+          "bioguideId": "W000827",
+          "points": -42.98
+        },
+        {
+          "bioguideId": "G000565",
+          "points": 0
+        },
+        {
+          "bioguideId": "O000172",
+          "points": -23.66
+        },
+        {
+          "bioguideId": "T000486",
+          "points": 255.02
+        },
+        {
+          "bioguideId": "P000622",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "T000486"
+    },
+    {
+      "week": 5,
+      "teamId": "league-swamp-team-7",
+      "points": 545.61,
+      "politicianPoints": [
+        {
+          "bioguideId": "K000375",
+          "points": 0
+        },
+        {
+          "bioguideId": "R000608",
+          "points": 198.8
+        },
+        {
+          "bioguideId": "L000591",
+          "points": 29.44
+        },
+        {
+          "bioguideId": "F000462",
+          "points": -5.65
+        },
+        {
+          "bioguideId": "M001215",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001196",
+          "points": 298.78
+        },
+        {
+          "bioguideId": "P000449",
+          "points": 24.24
+        },
+        {
+          "bioguideId": "B001295",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "M001196"
+    },
+    {
+      "week": 5,
+      "teamId": "league-swamp-team-8",
+      "points": 210.38,
+      "politicianPoints": [
+        {
+          "bioguideId": "W000817",
+          "points": 235.3
+        },
+        {
+          "bioguideId": "S001200",
+          "points": 122.56
+        },
+        {
+          "bioguideId": "P000603",
+          "points": 8.78
+        },
+        {
+          "bioguideId": "B001230",
+          "points": -40.06
+        },
+        {
+          "bioguideId": "J000293",
+          "points": -61.56
+        },
+        {
+          "bioguideId": "M000133",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001111",
+          "points": 0
+        },
+        {
+          "bioguideId": "S001216",
+          "points": -54.64
+        }
+      ],
+      "mvpBioguideId": "W000817"
+    },
+    {
+      "week": 6,
+      "teamId": "league-swamp-team-1",
+      "points": 123.4,
+      "politicianPoints": [
+        {
+          "bioguideId": "G000386",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001211",
+          "points": 74.14
+        },
+        {
+          "bioguideId": "R000595",
+          "points": -9.36
+        },
+        {
+          "bioguideId": "F000475",
+          "points": 61.86
+        },
+        {
+          "bioguideId": "L000590",
+          "points": -3.24
+        },
+        {
+          "bioguideId": "G000596",
+          "points": 0
+        },
+        {
+          "bioguideId": "W000826",
+          "points": 0
+        },
+        {
+          "bioguideId": "P000621",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "M001211"
+    },
+    {
+      "week": 6,
+      "teamId": "league-swamp-team-2",
+      "points": 234.55,
+      "politicianPoints": [
+        {
+          "bioguideId": "P000197",
+          "points": 380.26
+        },
+        {
+          "bioguideId": "M001166",
+          "points": 0
+        },
+        {
+          "bioguideId": "Y000033",
+          "points": 71.16
+        },
+        {
+          "bioguideId": "C000174",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001127",
+          "points": -71.52
+        },
+        {
+          "bioguideId": "R000614",
+          "points": 88.1
+        },
+        {
+          "bioguideId": "S001148",
+          "points": -83.16
+        },
+        {
+          "bioguideId": "H001074",
+          "points": -150.29
+        }
+      ],
+      "mvpBioguideId": "P000197"
+    },
+    {
+      "week": 6,
+      "teamId": "league-swamp-team-3",
+      "points": -44.79,
+      "politicianPoints": [
+        {
+          "bioguideId": "K000367",
+          "points": -65.04
+        },
+        {
+          "bioguideId": "M001193",
+          "points": 0
+        },
+        {
+          "bioguideId": "B001291",
+          "points": 0
+        },
+        {
+          "bioguideId": "B001313",
+          "points": 0
+        },
+        {
+          "bioguideId": "S001190",
+          "points": -61.92
+        },
+        {
+          "bioguideId": "S001215",
+          "points": 0
+        },
+        {
+          "bioguideId": "G000591",
+          "points": 0
+        },
+        {
+          "bioguideId": "O000173",
+          "points": 82.17
+        }
+      ],
+      "mvpBioguideId": "O000173"
+    },
+    {
+      "week": 6,
+      "teamId": "league-swamp-team-4",
+      "points": 372.52,
+      "politicianPoints": [
+        {
+          "bioguideId": "W000805",
+          "points": 153.08
+        },
+        {
+          "bioguideId": "H001064",
+          "points": 250.61
+        },
+        {
+          "bioguideId": "C001047",
+          "points": 0
+        },
+        {
+          "bioguideId": "C000880",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001117",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001131",
+          "points": -31.17
+        },
+        {
+          "bioguideId": "C001121",
+          "points": 0
+        },
+        {
+          "bioguideId": "H001082",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "H001064"
+    },
+    {
+      "week": 6,
+      "teamId": "league-swamp-team-5",
+      "points": 97.92,
+      "politicianPoints": [
+        {
+          "bioguideId": "T000484",
+          "points": 0
+        },
+        {
+          "bioguideId": "D000627",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001207",
+          "points": -18.66
+        },
+        {
+          "bioguideId": "V000133",
+          "points": 116.58
+        },
+        {
+          "bioguideId": "N000191",
+          "points": 0
+        },
+        {
+          "bioguideId": "C001130",
+          "points": 0
+        },
+        {
+          "bioguideId": "P000608",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001212",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "V000133"
+    },
+    {
+      "week": 6,
+      "teamId": "league-swamp-team-6",
+      "points": 38.41,
+      "politicianPoints": [
+        {
+          "bioguideId": "A000376",
+          "points": 0
+        },
+        {
+          "bioguideId": "B001287",
+          "points": 145.23
+        },
+        {
+          "bioguideId": "C001106",
+          "points": 0
+        },
+        {
+          "bioguideId": "W000827",
+          "points": -29.01
+        },
+        {
+          "bioguideId": "G000565",
+          "points": 89.16
+        },
+        {
+          "bioguideId": "O000172",
+          "points": 0
+        },
+        {
+          "bioguideId": "T000486",
+          "points": -166.97
+        },
+        {
+          "bioguideId": "P000622",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "B001287"
+    },
+    {
+      "week": 6,
+      "teamId": "league-swamp-team-7",
+      "points": 5.27,
+      "politicianPoints": [
+        {
+          "bioguideId": "K000375",
+          "points": 0
+        },
+        {
+          "bioguideId": "R000608",
+          "points": 0
+        },
+        {
+          "bioguideId": "L000591",
+          "points": 164.81
+        },
+        {
+          "bioguideId": "F000462",
+          "points": -23.24
+        },
+        {
+          "bioguideId": "M001215",
+          "points": 0
+        },
+        {
+          "bioguideId": "M001196",
+          "points": -107.4
+        },
+        {
+          "bioguideId": "P000449",
+          "points": -28.9
+        },
+        {
+          "bioguideId": "B001295",
+          "points": 0
+        }
+      ],
+      "mvpBioguideId": "L000591"
+    },
+    {
+      "week": 6,
+      "teamId": "league-swamp-team-8",
+      "points": 334.61,
+      "politicianPoints": [
+        {
+          "bioguideId": "W000817",
+          "points": 68.44
+        },
+        {
+          "bioguideId": "S001200",
+          "points": 200.46
+        },
+        {
+          "bioguideId": "P000603",
+          "points": -97.89
+        },
+        {
+          "bioguideId": "B001230",
+          "points": 0
+        },
+        {
+          "bioguideId": "J000293",
+          "points": 35.67
+        },
+        {
+          "bioguideId": "M000133",
+          "points": -2.82
+        },
+        {
+          "bioguideId": "M001111",
+          "points": 0
+        },
+        {
+          "bioguideId": "S001216",
+          "points": 130.75
+        }
+      ],
+      "mvpBioguideId": "S001200"
+    }
+  ]
+}

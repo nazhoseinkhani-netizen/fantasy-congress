@@ -33,23 +33,28 @@ async function main() {
   console.log('╚════════════════════════════════════════════════════╝')
 
   run(
-    '[1/4] Fetching politicians from Congress.gov...',
+    '[1/5] Fetching politicians from Congress.gov...',
     join('scripts', 'fetch-politicians.ts')
   )
 
   run(
-    '[2/4] Generating trade data...',
+    '[2/5] Generating trade data...',
     join('scripts', 'fetch-trades.ts')
   )
 
   run(
-    '[3/4] Validating politician photos...',
+    '[3/5] Validating politician photos...',
     join('scripts', 'validate-photos.ts')
   )
 
   run(
-    '[4/4] Computing fantasy scores and risk assessments...',
+    '[4/5] Computing fantasy scores and risk assessments...',
     join('scripts', 'score-all.ts')
+  )
+
+  run(
+    '[5/5] Generating demo data...',
+    join('scripts', 'generate-demo.ts')
   )
 
   const elapsed = ((Date.now() - start) / 1000).toFixed(1)
