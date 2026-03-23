@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [ ] **Phase 1: Foundation** - Data pipeline, scoring engine, Corruption Index, demo data, and design system — everything downstream depends on this (gap closure in progress)
 - [ ] **Phase 2: Discovery** - Landing page, politician directory, profiles, trade feed, and leaderboard — the standalone Alva demo
 - [x] **Phase 3: Game Experience** - Dashboard, My Team roster management, and League standings with Zustand game state (completed 2026-03-23)
-- [ ] **Phase 4: Draft Room** - Full snake draft against AI opponents with pick animations and salary cap
+- [x] **Phase 4: Draft Room** - Full snake draft against AI opponents with pick animations and salary cap (completed 2026-03-23)
 - [ ] **Phase 5: Polish and Viral** - Animations, share cards, and platform showcase Easter egg
 
 ## Phase Details
@@ -107,7 +107,7 @@ Plans:
 Plans:
 - [x] 04-01-PLAN.md — Draft types, Zustand draft store, AI engine, grading algorithm, snake order utility
 - [x] 04-02-PLAN.md — Pre-draft lobby, active draft board (3-panel layout), AI turn orchestration, user pick timer
-- [ ] 04-03-PLAN.md — Post-draft results (pick grid, grades, sleepers), navigation update, roster persistence
+- [x] 04-03-PLAN.md — Post-draft results (pick grid, grades, sleepers), navigation update, roster persistence
 
 ### Phase 5: Polish and Viral
 **Goal**: Every major view has micro-interactions and animations, users can generate and share image cards for their team and favorite politicians, and the Alva platform showcase is visible throughout
@@ -130,5 +130,5 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | 2. Discovery | 4/7 | In Progress|  |
 | 2.1 Real Data Pipeline | 1/2 | In Progress|  |
 | 3. Game Experience | 4/4 | Complete   | 2026-03-23 |
-| 4. Draft Room | 2/3 | In Progress|  |
+| 4. Draft Room | 3/3 | Complete   | 2026-03-23 |
 | 5. Polish and Viral | 0/TBD | Not started | - |
