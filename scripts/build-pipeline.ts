@@ -3,10 +3,11 @@
  *
  * Orchestrates the full data pipeline in sequence:
  * 1. Fetch politicians from Congress.gov API
- * 2. Generate trade data (with realistic fallback)
+ * 2. Fetch real trade data from Alva API
  * 3. Validate politician photos with fallback chain
- * 4. Compute all fantasy scores and Insider Trading Risk Scores
- * 5. Write build report
+ * 4. Compute season window from real trade dates
+ * 5. Compute all fantasy scores and Insider Trading Risk Scores
+ * 6. Generate demo league data
  *
  * Run via: npx tsx scripts/build-pipeline.ts
  * Or via:  npm run fetch-data
@@ -33,27 +34,32 @@ async function main() {
   console.log('╚════════════════════════════════════════════════════╝')
 
   run(
-    '[1/5] Fetching politicians from Congress.gov...',
+    '[1/6] Fetching politicians from Congress.gov...',
     join('scripts', 'fetch-politicians.ts')
   )
 
   run(
-    '[2/5] Generating trade data...',
+    '[2/6] Fetching real trade data from Alva...',
     join('scripts', 'fetch-trades.ts')
   )
 
   run(
-    '[3/5] Validating politician photos...',
+    '[3/6] Validating politician photos...',
     join('scripts', 'validate-photos.ts')
   )
 
   run(
-    '[4/5] Computing fantasy scores and risk assessments...',
+    '[4/6] Computing season window from trade dates...',
+    join('scripts', 'compute-season.ts')
+  )
+
+  run(
+    '[5/6] Computing fantasy scores and risk assessments...',
     join('scripts', 'score-all.ts')
   )
 
   run(
-    '[5/5] Generating demo data...',
+    '[6/6] Generating demo data...',
     join('scripts', 'generate-demo.ts')
   )
 

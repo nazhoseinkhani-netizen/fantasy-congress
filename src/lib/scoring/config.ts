@@ -1,3 +1,5 @@
+import { readFileSync } from 'fs'
+import { join } from 'path'
 import type { ScoringConfig, InsiderRiskConfig, SeasonWeek } from '@/types/scoring'
 
 export const DEFAULT_SCORING_CONFIG: ScoringConfig = {
@@ -47,16 +49,29 @@ export const DEFAULT_INSIDER_RISK_CONFIG: InsiderRiskConfig = {
   },
 }
 
-/** Season week boundaries — 6 weeks covering the demo season. */
+/** Season week boundaries — dynamically computed at build time by compute-season.ts. */
 /** Trades are bucketed into weeks by comparing trade.tradeDate against these date ranges. */
 /** A trade falls into the week where startDate <= tradeDate <= endDate. */
 /** Trades outside all week ranges are excluded from weeklyPoints but still count toward seasonPoints. */
 
-export const SEASON_WEEKS: SeasonWeek[] = [
-  { week: 1, startDate: '2025-10-01', endDate: '2025-10-14' },
-  { week: 2, startDate: '2025-10-15', endDate: '2025-10-28' },
-  { week: 3, startDate: '2025-10-29', endDate: '2025-11-11' },
-  { week: 4, startDate: '2025-11-12', endDate: '2025-11-25' },
-  { week: 5, startDate: '2025-11-26', endDate: '2025-12-09' },
-  { week: 6, startDate: '2025-12-10', endDate: '2025-12-23' },
-]
+// Dynamic season weeks — computed at build time by compute-season.ts (scripts/compute-season.ts)
+// which reads _raw-trades.json and writes public/data/season-weeks.json.
+// Falls back to hardcoded defaults if season-weeks.json doesn't exist yet (first run).
+function loadSeasonWeeks(): SeasonWeek[] {
+  try {
+    const raw = readFileSync(join(process.cwd(), 'public', 'data', 'season-weeks.json'), 'utf8')
+    return JSON.parse(raw) as SeasonWeek[]
+  } catch {
+    // Fallback for first build or if season-weeks.json doesn't exist yet
+    return [
+      { week: 1, startDate: '2025-10-01', endDate: '2025-10-14' },
+      { week: 2, startDate: '2025-10-15', endDate: '2025-10-28' },
+      { week: 3, startDate: '2025-10-29', endDate: '2025-11-11' },
+      { week: 4, startDate: '2025-11-12', endDate: '2025-11-25' },
+      { week: 5, startDate: '2025-11-26', endDate: '2025-12-09' },
+      { week: 6, startDate: '2025-12-10', endDate: '2025-12-23' },
+    ]
+  }
+}
+
+export const SEASON_WEEKS: SeasonWeek[] = loadSeasonWeeks()
