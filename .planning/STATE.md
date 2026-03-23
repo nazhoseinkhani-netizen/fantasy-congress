@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: Ready to execute
-stopped_at: "Checkpoint: 01-03 visual verification pending"
-last_updated: "2026-03-23T15:14:30.982Z"
+stopped_at: Completed 01-foundation-02-PLAN.md
+last_updated: "2026-03-23T15:15:32.864Z"
 progress:
   total_phases: 5
   completed_phases: 0
   total_plans: 5
-  completed_plans: 2
+  completed_plans: 3
 ---
 
 # Project State
@@ -24,7 +24,7 @@ See: .planning/PROJECT.md (updated 2026-03-23)
 ## Current Position
 
 Phase: 01 (foundation) — EXECUTING
-Plan: 2 of 5
+Plan: 3 of 5
 
 ## Performance Metrics
 
@@ -47,6 +47,7 @@ Plan: 2 of 5
 
 *Updated after each plan completion*
 | Phase 01-foundation P01 | 4 | 2 tasks | 11 files |
+| Phase 01-foundation P02 | 18m | 2 tasks | 9 files |
 
 ## Accumulated Context
 
@@ -62,6 +63,8 @@ Recent decisions affecting current work:
 - [Phase 01-foundation]: Static export configured at project bootstrap: output: 'export' + images.unoptimized: true — all downstream plans build against this
 - [Phase 01-foundation]: Scoring config defined as TypeScript const (not JSON) for type safety and IDE autocomplete
 - [Phase 01-foundation]: All TypeScript types defined before implementation — stable contracts for Plans 02-05
+- [Phase 01-foundation]: activityBonus applied at politician level in scorePolitician(), not per-trade in detectBonuses()
+- [Phase 01-foundation]: stockActCompliance in InsiderRiskInput treated as pre-inverted risk signal (0=low risk, 100=high risk) — caller converts raw compliance before passing in
 
 ### Pending Todos
 
@@ -74,6 +77,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-23T15:14:30.979Z
-Stopped at: Checkpoint: 01-03 visual verification pending
+Last session: 2026-03-23T15:15:32.862Z
+Stopped at: Completed 01-foundation-02-PLAN.md
 Resume file: None

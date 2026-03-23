@@ -17,18 +17,18 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Scoring Engine
 
-- [ ] **SCORE-01**: Canonical scoring function calculates fantasy points per trade (base points for beating/losing to S&P 500 + excess return bonus/penalty)
-- [ ] **SCORE-02**: Trade amount multiplier applies based on disclosed amount range (1x to 4x)
-- [ ] **SCORE-03**: Bonus points awarded for Insider Timing (+15), Donor Darling (+10), Big Mover (+20), Bipartisan Bet (+25), Activity Bonus (+5/trade)
-- [ ] **SCORE-04**: Multipliers applied for Committee Chair (1.5x) and Leadership positions (1.3x)
-- [ ] **SCORE-05**: Negative events deduct points — Paper Hands (-15), Late Disclosure (-10), Wash Sale (-5)
+- [x] **SCORE-01**: Canonical scoring function calculates fantasy points per trade (base points for beating/losing to S&P 500 + excess return bonus/penalty)
+- [x] **SCORE-02**: Trade amount multiplier applies based on disclosed amount range (1x to 4x)
+- [x] **SCORE-03**: Bonus points awarded for Insider Timing (+15), Donor Darling (+10), Big Mover (+20), Bipartisan Bet (+25), Activity Bonus (+5/trade)
+- [x] **SCORE-04**: Multipliers applied for Committee Chair (1.5x) and Leadership positions (1.3x)
+- [x] **SCORE-05**: Negative events deduct points — Paper Hands (-15), Late Disclosure (-10), Wash Sale (-5)
 - [x] **SCORE-06**: Scoring engine is pure TypeScript with no React dependencies, unit-testable
 
 ### Corruption Index
 
-- [ ] **CORR-01**: Composite 0-100 score calculated from donor overlap, suspicious timing, committee conflict, STOCK Act compliance, and trade volume
-- [ ] **CORR-02**: Score maps to named tiers (Clean Record / Minor Concerns / Raised Eyebrows / Seriously Suspicious / Peak Swamp)
-- [ ] **CORR-03**: Per-politician breakdown shows individual component scores
+- [x] **CORR-01**: Composite 0-100 score calculated from donor overlap, suspicious timing, committee conflict, STOCK Act compliance, and trade volume
+- [x] **CORR-02**: Score maps to named tiers (Clean Record / Minor Concerns / Raised Eyebrows / Seriously Suspicious / Peak Swamp)
+- [x] **CORR-03**: Per-politician breakdown shows individual component scores
 
 ### Landing Page
 
@@ -174,15 +174,15 @@ Which phases cover which requirements. Updated during roadmap creation.
 | DATA-03 | Phase 1 | Complete |
 | DATA-04 | Phase 1 | Pending |
 | DATA-05 | Phase 1 | Complete |
-| SCORE-01 | Phase 1 | Pending |
-| SCORE-02 | Phase 1 | Pending |
-| SCORE-03 | Phase 1 | Pending |
-| SCORE-04 | Phase 1 | Pending |
-| SCORE-05 | Phase 1 | Pending |
+| SCORE-01 | Phase 1 | Complete |
+| SCORE-02 | Phase 1 | Complete |
+| SCORE-03 | Phase 1 | Complete |
+| SCORE-04 | Phase 1 | Complete |
+| SCORE-05 | Phase 1 | Complete |
 | SCORE-06 | Phase 1 | Complete |
-| CORR-01 | Phase 1 | Pending |
-| CORR-02 | Phase 1 | Pending |
-| CORR-03 | Phase 1 | Pending |
+| CORR-01 | Phase 1 | Complete |
+| CORR-02 | Phase 1 | Complete |
+| CORR-03 | Phase 1 | Complete |
 | DEMO-01 | Phase 1 | Pending |
 | DEMO-02 | Phase 1 | Pending |
 | DEMO-03 | Phase 1 | Pending |
