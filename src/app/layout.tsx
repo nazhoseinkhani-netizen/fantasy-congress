@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter, JetBrains_Mono } from 'next/font/google'
 import { ThemeProvider } from 'next-themes'
+import { RootLayout } from '@/components/layout/root-layout'
 import './globals.css'
 
 const inter = Inter({
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
   description: 'Draft politicians. Score their trades. Win your league.',
 }
 
-export default function RootLayout({
+export default function Layout({
   children,
 }: Readonly<{
   children: React.ReactNode
@@ -31,7 +32,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
-          {children}
+          <RootLayout>{children}</RootLayout>
         </ThemeProvider>
       </body>
     </html>
