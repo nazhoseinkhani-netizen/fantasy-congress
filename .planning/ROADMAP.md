@@ -12,7 +12,7 @@ Five phases that move from invisible infrastructure to a compelling standalone d
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [x] **Phase 1: Foundation** - Data pipeline, scoring engine, Corruption Index, demo data, and design system — everything downstream depends on this (completed 2026-03-23)
+- [ ] **Phase 1: Foundation** - Data pipeline, scoring engine, Corruption Index, demo data, and design system — everything downstream depends on this (gap closure in progress)
 - [ ] **Phase 2: Discovery** - Landing page, politician directory, profiles, trade feed, and leaderboard — the standalone Alva demo
 - [ ] **Phase 3: Game Experience** - Dashboard, My Team roster management, and League standings with Zustand game state
 - [ ] **Phase 4: Draft Room** - Full snake draft against AI opponents with pick animations and salary cap
@@ -30,7 +30,7 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Calling `scorePolitician(trades, rules)` in isolation returns a correct, deterministic breakdown including base points, bonuses, penalties, and multipliers — the same result every time for the same input
   4. The app renders in dark mode with the premium dark aesthetic, global nav, and responsive layout on both desktop and mobile
   5. Pre-populated demo data (3 leagues, 6 weeks of results, user pre-assigned to a team) loads immediately without any user setup
-**Plans:** 5/5 plans complete
+**Plans:** 7 plans (5 complete, 2 gap closure)
 
 Plans:
 - [x] 01-01-PLAN.md — Project bootstrap (Next.js 16, shadcn/ui, dependencies) and all TypeScript type contracts
@@ -38,6 +38,8 @@ Plans:
 - [x] 01-03-PLAN.md — Premium dark design system: theme CSS, global navigation, PoliticianCard/RiskBadge/StatCell components
 - [x] 01-04-PLAN.md — Data pipeline: fetch politicians, generate trades, validate photos, compute scores, output JSON
 - [x] 01-05-PLAN.md — Demo data: generate 3 leagues with rosters and 6 weeks of matchup results, plus data loader functions
+- [ ] 01-06-PLAN.md — Gap closure: Activity Bonus (+5/trade) scoring fix and pipeline regeneration (SCORE-03)
+- [ ] 01-07-PLAN.md — Gap closure: Fix bench roster underfill in demo data generation (DEMO-01)
 
 ### Phase 2: Discovery
 **Goal**: Users can explore the full politician universe, see who is trading what, understand the Insider Trading Risk Score, and find out who the biggest Congressional traders are — this is the complete P1 standalone demo
@@ -88,7 +90,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 5/5 | Complete   | 2026-03-23 |
+| 1. Foundation | 5/7 | Gap closure | - |
 | 2. Discovery | 0/TBD | Not started | - |
 | 3. Game Experience | 0/TBD | Not started | - |
 | 4. Draft Room | 0/TBD | Not started | - |
