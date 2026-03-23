@@ -30,12 +30,12 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Calling `scorePolitician(trades, rules)` in isolation returns a correct, deterministic breakdown including base points, bonuses, penalties, and multipliers — the same result every time for the same input
   4. The app renders in dark mode with the premium dark aesthetic, global nav, and responsive layout on both desktop and mobile
   5. Pre-populated demo data (3 leagues, 6 weeks of results, user pre-assigned to a team) loads immediately without any user setup
-**Plans:** 1/5 plans executed
+**Plans:** 2/5 plans executed
 
 Plans:
 - [x] 01-01-PLAN.md — Project bootstrap (Next.js 16, shadcn/ui, dependencies) and all TypeScript type contracts
 - [ ] 01-02-PLAN.md — Scoring engine (TDD): scoreTrade(), scorePolitician(), and Insider Trading Risk Score computation
-- [ ] 01-03-PLAN.md — Premium dark design system: theme CSS, global navigation, PoliticianCard/RiskBadge/StatCell components
+- [x] 01-03-PLAN.md — Premium dark design system: theme CSS, global navigation, PoliticianCard/RiskBadge/StatCell components
 - [ ] 01-04-PLAN.md — Data pipeline: fetch politicians, generate trades, validate photos, compute scores, output JSON
 - [ ] 01-05-PLAN.md — Demo data: generate 3 leagues with rosters and 6 weeks of matchup results, plus data loader functions
 
@@ -88,7 +88,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 1/5 | In Progress|  |
+| 1. Foundation | 2/5 | In Progress|  |
 | 2. Discovery | 0/TBD | Not started | - |
 | 3. Game Experience | 0/TBD | Not started | - |
 | 4. Draft Room | 0/TBD | Not started | - |
