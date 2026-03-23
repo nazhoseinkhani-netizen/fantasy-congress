@@ -103,9 +103,9 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Design System
 
-- [ ] **UI-01**: Dark mode default with specified color palette (near-black background, dark navy cards, party colors, gold accent)
-- [ ] **UI-02**: Global navigation bar with logo, nav items, user avatar
-- [ ] **UI-03**: Responsive layout — desktop multi-column, mobile stacked with bottom tab nav
+- [x] **UI-01**: Dark mode default with specified color palette (near-black background, dark navy cards, party colors, gold accent)
+- [x] **UI-02**: Global navigation bar with logo, nav items, user avatar
+- [x] **UI-03**: Responsive layout — desktop multi-column, mobile stacked with bottom tab nav
 - [ ] **UI-04**: Skeleton loading states for all data-heavy pages
 - [ ] **UI-05**: Tooltips on every metric, badge, and scoring element explaining what it means
 - [ ] **UI-06**: Empty states with contextual copy for all zero-data scenarios
@@ -187,9 +187,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | DEMO-02 | Phase 1 | Pending |
 | DEMO-03 | Phase 1 | Pending |
 | DEMO-04 | Phase 1 | Pending |
-| UI-01 | Phase 1 | Pending |
-| UI-02 | Phase 1 | Pending |
-| UI-03 | Phase 1 | Pending |
+| UI-01 | Phase 1 | Complete |
+| UI-02 | Phase 1 | Complete |
+| UI-03 | Phase 1 | Complete |
 | LAND-01 | Phase 2 | Pending |
 | LAND-02 | Phase 2 | Pending |
 | LAND-03 | Phase 2 | Pending |

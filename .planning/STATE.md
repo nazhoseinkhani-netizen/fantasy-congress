@@ -3,8 +3,8 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: Ready to execute
-stopped_at: Completed 01-foundation-02-PLAN.md
-last_updated: "2026-03-23T15:15:32.864Z"
+stopped_at: Completed 01-foundation-03-PLAN.md
+last_updated: "2026-03-23T15:18:23.741Z"
 progress:
   total_phases: 5
   completed_phases: 0
@@ -24,7 +24,7 @@ See: .planning/PROJECT.md (updated 2026-03-23)
 ## Current Position
 
 Phase: 01 (foundation) — EXECUTING
-Plan: 3 of 5
+Plan: 4 of 5
 
 ## Performance Metrics
 
@@ -48,6 +48,7 @@ Plan: 3 of 5
 *Updated after each plan completion*
 | Phase 01-foundation P01 | 4 | 2 tasks | 11 files |
 | Phase 01-foundation P02 | 18m | 2 tasks | 9 files |
+| Phase 01-foundation P03 | 295 | 4 tasks | 18 files |
 
 ## Accumulated Context
 
@@ -65,6 +66,8 @@ Recent decisions affecting current work:
 - [Phase 01-foundation]: All TypeScript types defined before implementation — stable contracts for Plans 02-05
 - [Phase 01-foundation]: activityBonus applied at politician level in scorePolitician(), not per-trade in detectBonuses()
 - [Phase 01-foundation]: stockActCompliance in InsiderRiskInput treated as pre-inverted risk signal (0=low risk, 100=high risk) — caller converts raw compliance before passing in
+- [Phase 01-foundation]: globals.css moved to src/styles/globals.css; src/app/globals.css imports it — keeps app directory clean
+- [Phase 01-foundation]: PoliticianCard uses <img> not next/image per CLAUDE.md constraint for static export
 
 ### Pending Todos
 
@@ -77,6 +80,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-23T15:15:32.862Z
-Stopped at: Completed 01-foundation-02-PLAN.md
+Last session: 2026-03-23T15:18:23.739Z
+Stopped at: Completed 01-foundation-03-PLAN.md
 Resume file: None
