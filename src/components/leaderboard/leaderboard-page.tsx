@@ -7,7 +7,6 @@ import { Podium } from './podium'
 import { ShameTable } from './shame-table'
 import { SwampLordsTable } from './swamp-lords-table'
 import { EmptyState } from '@/components/ui/empty-state'
-import { MetricTooltip } from '@/components/ui/metric-tooltip'
 import type { Politician, DemoState } from '@/types'
 
 // Trophy icon
@@ -125,12 +124,8 @@ export function LeaderboardPage() {
       {/* Main tabs */}
       <Tabs defaultValue="fantasy">
         <TabsList>
-          <TabsTrigger value="fantasy">
-            <MetricTooltip metric="seasonPoints">Fantasy Points</MetricTooltip>
-          </TabsTrigger>
-          <TabsTrigger value="risk">
-            <MetricTooltip metric="insiderRiskScore">Risk Score</MetricTooltip>
-          </TabsTrigger>
+          <TabsTrigger value="fantasy">Fantasy Points</TabsTrigger>
+          <TabsTrigger value="risk">Risk Score</TabsTrigger>
         </TabsList>
 
         {/* Fantasy Points tab */}
