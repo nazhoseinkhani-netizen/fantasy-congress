@@ -39,10 +39,10 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Politician Directory
 
-- [ ] **DIR-01**: Searchable, filterable grid of all politician cards with photos, party color, stats, and corruption index
-- [ ] **DIR-02**: Filters for party, chamber, state, committee, salary tier, corruption range, activity level
-- [ ] **DIR-03**: Sort by fantasy cost, win rate, avg return, corruption index, season points, trade volume
-- [ ] **DIR-04**: Grid/list view toggle
+- [x] **DIR-01**: Searchable, filterable grid of all politician cards with photos, party color, stats, and corruption index
+- [x] **DIR-02**: Filters for party, chamber, state, committee, salary tier, corruption range, activity level
+- [x] **DIR-03**: Sort by fantasy cost, win rate, avg return, corruption index, season points, trade volume
+- [x] **DIR-04**: Grid/list view toggle
 
 ### Politician Profile
 
@@ -194,10 +194,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | LAND-02 | Phase 2 | Pending |
 | LAND-03 | Phase 2 | Pending |
 | LAND-04 | Phase 2 | Pending |
-| DIR-01 | Phase 2 | Pending |
-| DIR-02 | Phase 2 | Pending |
-| DIR-03 | Phase 2 | Pending |
-| DIR-04 | Phase 2 | Pending |
+| DIR-01 | Phase 2 | Complete |
+| DIR-02 | Phase 2 | Complete |
+| DIR-03 | Phase 2 | Complete |
+| DIR-04 | Phase 2 | Complete |
 | PROF-01 | Phase 2 | Pending |
 | PROF-02 | Phase 2 | Pending |
 | PROF-03 | Phase 2 | Pending |

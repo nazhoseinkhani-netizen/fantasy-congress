@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: Ready to execute
-stopped_at: Completed 02-04-PLAN.md
-last_updated: "2026-03-23T18:07:35.388Z"
+stopped_at: Completed 02-05-PLAN.md
+last_updated: "2026-03-23T18:08:23.536Z"
 progress:
   total_phases: 5
   completed_phases: 1
   total_plans: 14
-  completed_plans: 9
+  completed_plans: 11
 ---
 
 # Project State
@@ -24,7 +24,7 @@ See: .planning/PROJECT.md (updated 2026-03-23)
 ## Current Position
 
 Phase: 02 (discovery) — EXECUTING
-Plan: 2 of 7
+Plan: 4 of 7
 
 ## Performance Metrics
 
@@ -54,6 +54,8 @@ Plan: 2 of 7
 | Phase 01-foundation P07 | 118 | 2 tasks | 3 files |
 | Phase 01-foundation P06 | 148 | 2 tasks | 5 files |
 | Phase 02-discovery P04 | 12 | 2 tasks | 5 files |
+| Phase 02-discovery P02 | 1 | 2 tasks | 5 files |
+| Phase 02-discovery P05 | 1 | 2 tasks | 5 files |
 
 ## Accumulated Context
 
@@ -81,6 +83,9 @@ Recent decisions affecting current work:
 - [Phase 01-foundation]: Pool exhaustion in snake draft handled by allowing same politician on multiple teams within a league when pool (82) < total picks needed (96)
 - [Phase 01-foundation]: activityBonus applied at politician level in scorePolitician() confirmed via TDD — engine.ts computes tradeTotal + (trades.length * config.bonuses.activityBonus)
 - [Phase 02-discovery]: Client-side filtering via useMemo for trade feed — all 815 trades loaded at once since static export
+- [Phase 02-discovery]: FilterSidebar rendered twice (mobile Sheet trigger + desktop sidebar) to avoid complex responsive state
+- [Phase 02-discovery]: Committee filter disabled with explanation rather than hidden — communicates data limitation
+- [Phase 02-discovery]: Inline sub-tab toggle for Swamp Lords instead of full shadcn Tabs to visually differentiate from main tabs
 
 ### Pending Todos
 
@@ -93,6 +98,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-23T18:07:35.385Z
-Stopped at: Completed 02-04-PLAN.md
+Last session: 2026-03-23T18:08:23.533Z
+Stopped at: Completed 02-05-PLAN.md
 Resume file: None

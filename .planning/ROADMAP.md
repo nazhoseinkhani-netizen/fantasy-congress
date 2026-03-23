@@ -55,10 +55,10 @@ Plans:
 
 Plans:
 - [x] 02-01-PLAN.md — Install Recharts, shared chart config, skeleton component, and complete landing page
-- [ ] 02-02-PLAN.md — Politician directory with filters, search, sort, and grid/list toggle
+- [x] 02-02-PLAN.md — Politician directory with filters, search, sort, and grid/list toggle
 - [ ] 02-03-PLAN.md — Politician profiles with generateStaticParams, hero banner, and 4 chart-rich tabs
 - [x] 02-04-PLAN.md — Trade feed with Twitter-style cards, filters, My Roster Only, and trending sidebar
-- [ ] 02-05-PLAN.md — Leaderboard with Hall of Shame podium, corruption rankings, and Swamp Lords
+- [x] 02-05-PLAN.md — Leaderboard with Hall of Shame podium, corruption rankings, and Swamp Lords
 - [ ] 02-06-PLAN.md — UI polish: skeleton loading, metric tooltips, and empty states across all pages
 - [ ] 02-07-PLAN.md — Visual verification checkpoint for complete P1 demo
 
