@@ -102,7 +102,12 @@ Plans:
   1. The pre-draft view shows draft order, a countdown, and a sortable politician board with salary cap values — a user can understand the format before the draft starts
   2. During the draft, AI opponents make realistic picks on their turns, the "On The Clock" banner shows whose turn it is, and the user can pick from the available politician pool without exceeding their salary cap
   3. The post-draft summary shows every pick by every team, assigns draft grades, and surfaces sleeper picks
-**Plans**: TBD
+**Plans**: 3 plans
+
+Plans:
+- [ ] 04-01-PLAN.md — Draft types, Zustand draft store, AI engine, grading algorithm, snake order utility
+- [ ] 04-02-PLAN.md — Pre-draft lobby, active draft board (3-panel layout), AI turn orchestration, user pick timer
+- [ ] 04-03-PLAN.md — Post-draft results (pick grid, grades, sleepers), navigation update, roster persistence
 
 ### Phase 5: Polish and Viral
 **Goal**: Every major view has micro-interactions and animations, users can generate and share image cards for their team and favorite politicians, and the Alva platform showcase is visible throughout
@@ -125,5 +130,5 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | 2. Discovery | 4/7 | In Progress|  |
 | 2.1 Real Data Pipeline | 1/2 | In Progress|  |
 | 3. Game Experience | 4/4 | Complete   | 2026-03-23 |
-| 4. Draft Room | 0/TBD | Not started | - |
+| 4. Draft Room | 0/3 | Not started | - |
 | 5. Polish and Viral | 0/TBD | Not started | - |
