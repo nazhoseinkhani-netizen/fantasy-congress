@@ -54,10 +54,10 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Trade Feed
 
-- [ ] **FEED-01**: Scrollable feed of politician trades as cards showing photo, name, party, trade details, return vs S&P, fantasy points, and bonus badges
-- [ ] **FEED-02**: Filters for party, chamber, trade type, points impact, time period
-- [ ] **FEED-03**: "My Roster Only" toggle filter
-- [ ] **FEED-04**: Trending Politicians sidebar — top by points this week, top by volume, hot waiver wire picks
+- [x] **FEED-01**: Scrollable feed of politician trades as cards showing photo, name, party, trade details, return vs S&P, fantasy points, and bonus badges
+- [x] **FEED-02**: Filters for party, chamber, trade type, points impact, time period
+- [x] **FEED-03**: "My Roster Only" toggle filter
+- [x] **FEED-04**: Trending Politicians sidebar — top by points this week, top by volume, hot waiver wire picks
 
 ### Leaderboard
 
@@ -203,10 +203,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | PROF-03 | Phase 2 | Pending |
 | PROF-04 | Phase 2 | Pending |
 | PROF-05 | Phase 2 | Pending |
-| FEED-01 | Phase 2 | Pending |
-| FEED-02 | Phase 2 | Pending |
-| FEED-03 | Phase 2 | Pending |
-| FEED-04 | Phase 2 | Pending |
+| FEED-01 | Phase 2 | Complete |
+| FEED-02 | Phase 2 | Complete |
+| FEED-03 | Phase 2 | Complete |
+| FEED-04 | Phase 2 | Complete |
 | LEAD-01 | Phase 2 | Pending |
 | LEAD-02 | Phase 2 | Pending |
 | LEAD-03 | Phase 2 | Pending |
