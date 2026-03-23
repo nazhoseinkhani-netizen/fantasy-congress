@@ -3,10 +3,10 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: Ready to execute
-stopped_at: Completed 02-06-PLAN.md
-last_updated: "2026-03-23T18:22:22.406Z"
+stopped_at: Phase 2.1 context gathered
+last_updated: "2026-03-23T19:24:14.759Z"
 progress:
-  total_phases: 5
+  total_phases: 6
   completed_phases: 1
   total_plans: 14
   completed_plans: 13
@@ -61,6 +61,10 @@ Plan: 6 of 7
 
 ## Accumulated Context
 
+### Roadmap Evolution
+
+- Phase 2.1 inserted after Phase 2: Real Data Pipeline — Replace simulated trades with real Congressional disclosures from Alva Skills API (URGENT)
+
 ### Decisions
 
 Decisions are logged in PROJECT.md Key Decisions table.
@@ -103,6 +107,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-23T18:22:22.403Z
-Stopped at: Completed 02-06-PLAN.md
-Resume file: None
+Last session: 2026-03-23T19:24:14.755Z
+Stopped at: Phase 2.1 context gathered
+Resume file: .planning/phases/02.1-real-data-pipeline/02.1-CONTEXT.md
