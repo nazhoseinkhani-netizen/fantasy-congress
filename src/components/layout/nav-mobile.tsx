@@ -9,6 +9,7 @@ import {
   Trophy,
   Shield,
   Medal,
+  Gavel,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
@@ -19,6 +20,7 @@ const navItems = [
   { href: '/leaderboard', label: 'Leaders', icon: Trophy },
   { href: '/team', label: 'Team', icon: Shield },
   { href: '/league', label: 'League', icon: Medal },
+  { href: '/draft', label: 'Draft', icon: Gavel },
 ]
 
 export function NavMobile() {

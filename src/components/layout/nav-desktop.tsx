@@ -12,6 +12,7 @@ const navLinks = [
   { href: '/leaderboard', label: 'Leaderboard' },
   { href: '/team', label: 'My Team' },
   { href: '/league', label: 'League' },
+  { href: '/draft', label: 'Draft' },
 ]
 
 export function NavDesktop() {
