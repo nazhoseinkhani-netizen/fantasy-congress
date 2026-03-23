@@ -78,6 +78,7 @@ export function MetricTooltip({ metric, children, className }: MetricTooltipProp
     <TooltipProvider>
       <Tooltip>
         <TooltipTrigger
+          render={<span />}
           className={cn(
             'border-b border-dashed border-muted-foreground/50 cursor-help',
             className
