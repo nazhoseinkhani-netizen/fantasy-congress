@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: Ready to execute
-stopped_at: Completed 04-01-PLAN.md
-last_updated: "2026-03-23T22:31:03.996Z"
+stopped_at: Completed 04-02-PLAN.md
+last_updated: "2026-03-23T22:37:15.412Z"
 progress:
   total_phases: 6
   completed_phases: 3
   total_plans: 23
-  completed_plans: 20
+  completed_plans: 21
 ---
 
 # Project State
@@ -24,7 +24,7 @@ See: .planning/PROJECT.md (updated 2026-03-23)
 ## Current Position
 
 Phase: 04 (draft-room) — EXECUTING
-Plan: 2 of 3
+Plan: 3 of 3
 
 ## Performance Metrics
 
@@ -65,6 +65,7 @@ Plan: 2 of 3
 | Phase 03-game-experience P03 | 137 | 2 tasks | 5 files |
 | Phase 03-game-experience P02 | 5 | 2 tasks | 7 files |
 | Phase 04-draft-room P01 | 3 | 2 tasks | 5 files |
+| Phase 04-draft-room P02 | 3 | 2 tasks | 8 files |
 
 ## Accumulated Context
 
@@ -116,6 +117,8 @@ Recent decisions affecting current work:
 - [Phase 04-draft-room]: DRAFT_CONFIG as TypeScript const for type safety — consistent with scoring-config Phase 1 pattern
 - [Phase 04-draft-room]: Draft store partialize excludes isAITurnPending and userPickTimer — runtime-only values that must reset on page load
 - [Phase 04-draft-room]: Grading composite: 50% salary efficiency + 25% roster balance + 25% ceiling — balances value, depth, and upside
+- [Phase 04-draft-room]: AI orchestration effect watches [phase, isAITurnPending, currentPickIndex] — phase change clears stale timeout via cleanup fn
+- [Phase 04-draft-room]: PoliticianPool uses local useState for filter state (not Zustand) — draft board panel-local UI state
 
 ### Pending Todos
 
@@ -128,6 +131,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-23T22:31:03.993Z
-Stopped at: Completed 04-01-PLAN.md
+Last session: 2026-03-23T22:37:15.408Z
+Stopped at: Completed 04-02-PLAN.md
 Resume file: None

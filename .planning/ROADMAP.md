@@ -106,7 +106,7 @@ Plans:
 
 Plans:
 - [x] 04-01-PLAN.md — Draft types, Zustand draft store, AI engine, grading algorithm, snake order utility
-- [ ] 04-02-PLAN.md — Pre-draft lobby, active draft board (3-panel layout), AI turn orchestration, user pick timer
+- [x] 04-02-PLAN.md — Pre-draft lobby, active draft board (3-panel layout), AI turn orchestration, user pick timer
 - [ ] 04-03-PLAN.md — Post-draft results (pick grid, grades, sleepers), navigation update, roster persistence
 
 ### Phase 5: Polish and Viral
@@ -130,5 +130,5 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | 2. Discovery | 4/7 | In Progress|  |
 | 2.1 Real Data Pipeline | 1/2 | In Progress|  |
 | 3. Game Experience | 4/4 | Complete   | 2026-03-23 |
-| 4. Draft Room | 1/3 | In Progress|  |
+| 4. Draft Room | 2/3 | In Progress|  |
 | 5. Polish and Viral | 0/TBD | Not started | - |

@@ -7,6 +7,7 @@ import { loadDemoState } from '@/lib/data/demo'
 import { useDraftStore } from '@/store/draft-store'
 import { PreDraftLobby } from './pre-draft-lobby'
 import { DraftBoard } from './draft-board'
+import { PostDraft } from './post-draft'
 
 export function DraftPage() {
   const [politicians, setPoliticians] = useState<Politician[]>([])
@@ -80,18 +81,7 @@ export function DraftPage() {
   }
 
   if (phase === 'complete') {
-    return (
-      <div className="min-h-screen bg-background flex flex-col items-center justify-center gap-6 p-8">
-        <h1 className="text-3xl font-bold text-foreground">Draft Complete!</h1>
-        <p className="text-muted-foreground">Post-draft results coming in Plan 03.</p>
-        <button
-          onClick={handleStartNewDraft}
-          className="px-6 py-2 rounded-lg bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors"
-        >
-          Start New Draft
-        </button>
-      </div>
-    )
+    return <PostDraft politicians={politicianMap.current} />
   }
 
   // phase === 'lobby' fallback (before initDraft called)
