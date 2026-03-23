@@ -35,15 +35,15 @@
           "ties": 0
         },
         "pointsFor": 584.83,
-        "pointsAgainst": 61.43,
+        "pointsAgainst": 124.67,
         "streak": "W1"
       },
       {
         "id": "league-beltway-team-2",
         "leagueId": "league-beltway",
         "name": "Capitol Gains",
-        "owner": "You",
-        "isUserTeam": true,
+        "owner": "DrainTheSwamp99",
+        "isUserTeam": false,
         "roster": {
           "active": [
             "W000817",
@@ -65,20 +65,20 @@
           "salaryUsed": 49370
         },
         "record": {
-          "wins": 3,
-          "losses": 3,
+          "wins": 4,
+          "losses": 2,
           "ties": 0
         },
         "pointsFor": 494.02,
-        "pointsAgainst": 275.36,
-        "streak": "W2"
+        "pointsAgainst": -59.36,
+        "streak": "W1"
       },
       {
         "id": "league-beltway-team-3",
         "leagueId": "league-beltway",
         "name": "The Lobbyists",
-        "owner": "PelicanBriefFan",
-        "isUserTeam": false,
+        "owner": "You",
+        "isUserTeam": true,
         "roster": {
           "active": [
             "W000805",
@@ -105,7 +105,7 @@
           "ties": 0
         },
         "pointsFor": 523.43,
-        "pointsAgainst": 628.68,
+        "pointsAgainst": 340.64,
         "streak": "L1"
       },
       {
@@ -135,13 +135,13 @@
           "salaryUsed": 50570
         },
         "record": {
-          "wins": 5,
-          "losses": 1,
+          "wins": 4,
+          "losses": 2,
           "ties": 0
         },
         "pointsFor": 616.07,
-        "pointsAgainst": -350.21,
-        "streak": "W3"
+        "pointsAgainst": 76.88,
+        "streak": "W2"
       },
       {
         "id": "league-beltway-team-5",
@@ -175,7 +175,7 @@
           "ties": 0
         },
         "pointsFor": 512.89,
-        "pointsAgainst": 513.52,
+        "pointsAgainst": 280.24,
         "streak": "W2"
       },
       {
@@ -205,13 +205,13 @@
           "salaryUsed": 50681
         },
         "record": {
-          "wins": 2,
-          "losses": 4,
+          "wins": 1,
+          "losses": 5,
           "ties": 0
         },
         "pointsFor": 395.21,
-        "pointsAgainst": 1495.92,
-        "streak": "L2"
+        "pointsAgainst": 1632.07,
+        "streak": "L3"
       },
       {
         "id": "league-beltway-team-7",
@@ -240,13 +240,13 @@
           "salaryUsed": 50548
         },
         "record": {
-          "wins": 2,
-          "losses": 4,
+          "wins": 1,
+          "losses": 5,
           "ties": 0
         },
         "pointsFor": 452.27,
-        "pointsAgainst": 842.7,
-        "streak": "L3"
+        "pointsAgainst": 1446.75,
+        "streak": "L5"
       },
       {
         "id": "league-beltway-team-8",
@@ -275,13 +275,13 @@
           "salaryUsed": 50665
         },
         "record": {
-          "wins": 2,
-          "losses": 4,
+          "wins": 4,
+          "losses": 2,
           "ties": 0
         },
         "pointsFor": 625.7,
-        "pointsAgainst": 737.02,
-        "streak": "L2"
+        "pointsAgainst": 362.53,
+        "streak": "L1"
       }
     ],
     "schedule": [
@@ -293,8 +293,8 @@
             "leagueId": "league-beltway",
             "homeTeamId": "league-beltway-team-1",
             "awayTeamId": "league-beltway-team-8",
-            "homeScore": -33.59,
-            "awayScore": -124.73,
+            "homeScore": 144.42,
+            "awayScore": 62.7,
             "completed": true
           },
           {
@@ -302,8 +302,8 @@
             "leagueId": "league-beltway",
             "homeTeamId": "league-beltway-team-2",
             "awayTeamId": "league-beltway-team-7",
-            "homeScore": -236.21,
-            "awayScore": -76.86,
+            "homeScore": -111.58,
+            "awayScore": 61.9,
             "completed": true
           },
           {
@@ -311,8 +311,8 @@
             "leagueId": "league-beltway",
             "homeTeamId": "league-beltway-team-3",
             "awayTeamId": "league-beltway-team-6",
-            "homeScore": 300.33,
-            "awayScore": -149.86,
+            "homeScore": 244.11,
+            "awayScore": 41.14,
             "completed": true
           },
           {
@@ -320,8 +320,8 @@
             "leagueId": "league-beltway",
             "homeTeamId": "league-beltway-team-4",
             "awayTeamId": "league-beltway-team-5",
-            "homeScore": 451.06,
-            "awayScore": -222.84,
+            "homeScore": 415.34,
+            "awayScore": 55.96,
             "completed": true
           }
         ]
@@ -334,8 +334,8 @@
             "leagueId": "league-beltway",
             "homeTeamId": "league-beltway-team-1",
             "awayTeamId": "league-beltway-team-2",
-            "homeScore": -27.52,
-            "awayScore": -34.54,
+            "homeScore": -207.24,
+            "awayScore": 37.98,
             "completed": true
           },
           {
@@ -343,8 +343,8 @@
             "leagueId": "league-beltway",
             "homeTeamId": "league-beltway-team-3",
             "awayTeamId": "league-beltway-team-8",
-            "homeScore": 102.34,
-            "awayScore": 514.31,
+            "homeScore": 30.89,
+            "awayScore": 125.68,
             "completed": true
           },
           {
@@ -352,8 +352,8 @@
             "leagueId": "league-beltway",
             "homeTeamId": "league-beltway-team-4",
             "awayTeamId": "league-beltway-team-7",
-            "homeScore": 10.03,
-            "awayScore": -133.97,
+            "homeScore": 117.43,
+            "awayScore": -396.71,
             "completed": true
           },
           {
@@ -361,8 +361,8 @@
             "leagueId": "league-beltway",
             "homeTeamId": "league-beltway-team-5",
             "awayTeamId": "league-beltway-team-6",
-            "homeScore": -361.5,
-            "awayScore": -75.27,
+            "homeScore": -430.38,
+            "awayScore": -475.53,
             "completed": true
           }
         ]
@@ -375,8 +375,8 @@
             "leagueId": "league-beltway",
             "homeTeamId": "league-beltway-team-1",
             "awayTeamId": "league-beltway-team-3",
-            "homeScore": 365.82,
-            "awayScore": -246.75,
+            "homeScore": 52.89,
+            "awayScore": -48.15,
             "completed": true
           },
           {
@@ -384,8 +384,8 @@
             "leagueId": "league-beltway",
             "homeTeamId": "league-beltway-team-4",
             "awayTeamId": "league-beltway-team-2",
-            "homeScore": -225.77,
-            "awayScore": 332.09,
+            "homeScore": -191.9,
+            "awayScore": 31.45,
             "completed": true
           },
           {
@@ -393,8 +393,8 @@
             "leagueId": "league-beltway",
             "homeTeamId": "league-beltway-team-5",
             "awayTeamId": "league-beltway-team-8",
-            "homeScore": 213.32,
-            "awayScore": 78.63,
+            "homeScore": -103.04,
+            "awayScore": 183.58,
             "completed": true
           },
           {
@@ -402,8 +402,8 @@
             "leagueId": "league-beltway",
             "homeTeamId": "league-beltway-team-6",
             "awayTeamId": "league-beltway-team-7",
-            "homeScore": 366.11,
-            "awayScore": 468.71,
+            "homeScore": 535.75,
+            "awayScore": 461.91,
             "completed": true
           }
         ]
@@ -416,8 +416,8 @@
             "leagueId": "league-beltway",
             "homeTeamId": "league-beltway-team-1",
             "awayTeamId": "league-beltway-team-4",
-            "homeScore": -17.56,
-            "awayScore": 10.11,
+            "homeScore": 220.99,
+            "awayScore": -151.12,
             "completed": true
           },
           {
@@ -425,8 +425,8 @@
             "leagueId": "league-beltway",
             "homeTeamId": "league-beltway-team-5",
             "awayTeamId": "league-beltway-team-3",
-            "homeScore": 76.18,
-            "awayScore": 129.27,
+            "homeScore": 126.62,
+            "awayScore": 136.42,
             "completed": true
           },
           {
@@ -434,8 +434,8 @@
             "leagueId": "league-beltway",
             "homeTeamId": "league-beltway-team-6",
             "awayTeamId": "league-beltway-team-2",
-            "homeScore": 689.68,
-            "awayScore": 182.17,
+            "homeScore": 303.2,
+            "awayScore": 583.48,
             "completed": true
           },
           {
@@ -443,8 +443,8 @@
             "leagueId": "league-beltway",
             "homeTeamId": "league-beltway-team-7",
             "awayTeamId": "league-beltway-team-8",
-            "homeScore": 58.45,
-            "awayScore": 85.46,
+            "homeScore": 50.51,
+            "awayScore": 129.99,
             "completed": true
           }
         ]
@@ -457,8 +457,8 @@
             "leagueId": "league-beltway",
             "homeTeamId": "league-beltway-team-1",
             "awayTeamId": "league-beltway-team-5",
-            "homeScore": -289.43,
-            "awayScore": 543.26,
+            "homeScore": -194.38,
+            "awayScore": 356.2,
             "completed": true
           },
           {
@@ -466,8 +466,8 @@
             "leagueId": "league-beltway",
             "homeTeamId": "league-beltway-team-6",
             "awayTeamId": "league-beltway-team-4",
-            "homeScore": -349.53,
-            "awayScore": 319.1,
+            "homeScore": 123.59,
+            "awayScore": 204.8,
             "completed": true
           },
           {
@@ -475,8 +475,8 @@
             "leagueId": "league-beltway",
             "homeTeamId": "league-beltway-team-7",
             "awayTeamId": "league-beltway-team-3",
-            "homeScore": -83.32,
-            "awayScore": 352.84,
+            "homeScore": 59.85,
+            "awayScore": 267.63,
             "completed": true
           },
           {
@@ -484,8 +484,8 @@
             "leagueId": "league-beltway",
             "homeTeamId": "league-beltway-team-8",
             "awayTeamId": "league-beltway-team-2",
-            "homeScore": 30.43,
-            "awayScore": 344.96,
+            "homeScore": 82.15,
+            "awayScore": 18.23,
             "completed": true
           }
         ]
@@ -498,8 +498,8 @@
             "leagueId": "league-beltway",
             "homeTeamId": "league-beltway-team-1",
             "awayTeamId": "league-beltway-team-6",
-            "homeScore": 587.11,
-            "awayScore": -85.92,
+            "homeScore": 568.15,
+            "awayScore": -132.94,
             "completed": true
           },
           {
@@ -507,8 +507,8 @@
             "leagueId": "league-beltway",
             "homeTeamId": "league-beltway-team-7",
             "awayTeamId": "league-beltway-team-5",
-            "homeScore": 219.26,
-            "awayScore": 264.47,
+            "homeScore": 214.81,
+            "awayScore": 507.53,
             "completed": true
           },
           {
@@ -517,7 +517,7 @@
             "homeTeamId": "league-beltway-team-8",
             "awayTeamId": "league-beltway-team-4",
             "homeScore": 41.6,
-            "awayScore": 51.54,
+            "awayScore": 221.52,
             "completed": true
           },
           {
@@ -525,8 +525,8 @@
             "leagueId": "league-beltway",
             "homeTeamId": "league-beltway-team-2",
             "awayTeamId": "league-beltway-team-3",
-            "homeScore": -94.45,
-            "awayScore": -114.6,
+            "homeScore": -65.54,
+            "awayScore": -107.47,
             "completed": true
           }
         ]
@@ -570,7 +570,7 @@
           "ties": 0
         },
         "pointsFor": 584.83,
-        "pointsAgainst": 61.43,
+        "pointsAgainst": 124.67,
         "streak": "W1"
       },
       {
@@ -600,13 +600,13 @@
           "salaryUsed": 49370
         },
         "record": {
-          "wins": 3,
-          "losses": 3,
+          "wins": 4,
+          "losses": 2,
           "ties": 0
         },
         "pointsFor": 494.02,
-        "pointsAgainst": 275.36,
-        "streak": "W2"
+        "pointsAgainst": -59.36,
+        "streak": "W1"
       },
       {
         "id": "league-capitol-team-3",
@@ -640,7 +640,7 @@
           "ties": 0
         },
         "pointsFor": 523.43,
-        "pointsAgainst": 628.68,
+        "pointsAgainst": 340.64,
         "streak": "L1"
       },
       {
@@ -670,13 +670,13 @@
           "salaryUsed": 50570
         },
         "record": {
-          "wins": 5,
-          "losses": 1,
+          "wins": 4,
+          "losses": 2,
           "ties": 0
         },
         "pointsFor": 616.07,
-        "pointsAgainst": -350.21,
-        "streak": "W3"
+        "pointsAgainst": 76.88,
+        "streak": "W2"
       },
       {
         "id": "league-capitol-team-5",
@@ -710,7 +710,7 @@
           "ties": 0
         },
         "pointsFor": 512.89,
-        "pointsAgainst": 513.52,
+        "pointsAgainst": 280.24,
         "streak": "W2"
       },
       {
@@ -740,13 +740,13 @@
           "salaryUsed": 50681
         },
         "record": {
-          "wins": 2,
-          "losses": 4,
+          "wins": 1,
+          "losses": 5,
           "ties": 0
         },
         "pointsFor": 395.21,
-        "pointsAgainst": 1495.92,
-        "streak": "L2"
+        "pointsAgainst": 1632.07,
+        "streak": "L3"
       },
       {
         "id": "league-capitol-team-7",
@@ -775,13 +775,13 @@
           "salaryUsed": 50548
         },
         "record": {
-          "wins": 2,
-          "losses": 4,
+          "wins": 1,
+          "losses": 5,
           "ties": 0
         },
         "pointsFor": 452.27,
-        "pointsAgainst": 842.7,
-        "streak": "L3"
+        "pointsAgainst": 1446.75,
+        "streak": "L5"
       },
       {
         "id": "league-capitol-team-8",
@@ -810,13 +810,13 @@
           "salaryUsed": 50665
         },
         "record": {
-          "wins": 2,
-          "losses": 4,
+          "wins": 4,
+          "losses": 2,
           "ties": 0
         },
         "pointsFor": 625.7,
-        "pointsAgainst": 737.02,
-        "streak": "L2"
+        "pointsAgainst": 362.53,
+        "streak": "L1"
       }
     ],
     "schedule": [
@@ -828,8 +828,8 @@
             "leagueId": "league-capitol",
             "homeTeamId": "league-capitol-team-1",
             "awayTeamId": "league-capitol-team-8",
-            "homeScore": -33.59,
-            "awayScore": -124.73,
+            "homeScore": 144.42,
+            "awayScore": 62.7,
             "completed": true
           },
           {
@@ -837,8 +837,8 @@
             "leagueId": "league-capitol",
             "homeTeamId": "league-capitol-team-2",
             "awayTeamId": "league-capitol-team-7",
-            "homeScore": -236.21,
-            "awayScore": -76.86,
+            "homeScore": -111.58,
+            "awayScore": 61.9,
             "completed": true
           },
           {
@@ -846,8 +846,8 @@
             "leagueId": "league-capitol",
             "homeTeamId": "league-capitol-team-3",
             "awayTeamId": "league-capitol-team-6",
-            "homeScore": 300.33,
-            "awayScore": -149.86,
+            "homeScore": 244.11,
+            "awayScore": 41.14,
             "completed": true
           },
           {
@@ -855,8 +855,8 @@
             "leagueId": "league-capitol",
             "homeTeamId": "league-capitol-team-4",
             "awayTeamId": "league-capitol-team-5",
-            "homeScore": 451.06,
-            "awayScore": -222.84,
+            "homeScore": 415.34,
+            "awayScore": 55.96,
             "completed": true
           }
         ]
@@ -869,8 +869,8 @@
             "leagueId": "league-capitol",
             "homeTeamId": "league-capitol-team-1",
             "awayTeamId": "league-capitol-team-2",
-            "homeScore": -27.52,
-            "awayScore": -34.54,
+            "homeScore": -207.24,
+            "awayScore": 37.98,
             "completed": true
           },
           {
@@ -878,8 +878,8 @@
             "leagueId": "league-capitol",
             "homeTeamId": "league-capitol-team-3",
             "awayTeamId": "league-capitol-team-8",
-            "homeScore": 102.34,
-            "awayScore": 514.31,
+            "homeScore": 30.89,
+            "awayScore": 125.68,
             "completed": true
           },
           {
@@ -887,8 +887,8 @@
             "leagueId": "league-capitol",
             "homeTeamId": "league-capitol-team-4",
             "awayTeamId": "league-capitol-team-7",
-            "homeScore": 10.03,
-            "awayScore": -133.97,
+            "homeScore": 117.43,
+            "awayScore": -396.71,
             "completed": true
           },
           {
@@ -896,8 +896,8 @@
             "leagueId": "league-capitol",
             "homeTeamId": "league-capitol-team-5",
             "awayTeamId": "league-capitol-team-6",
-            "homeScore": -361.5,
-            "awayScore": -75.27,
+            "homeScore": -430.38,
+            "awayScore": -475.53,
             "completed": true
           }
         ]
@@ -910,8 +910,8 @@
             "leagueId": "league-capitol",
             "homeTeamId": "league-capitol-team-1",
             "awayTeamId": "league-capitol-team-3",
-            "homeScore": 365.82,
-            "awayScore": -246.75,
+            "homeScore": 52.89,
+            "awayScore": -48.15,
             "completed": true
           },
           {
@@ -919,8 +919,8 @@
             "leagueId": "league-capitol",
             "homeTeamId": "league-capitol-team-4",
             "awayTeamId": "league-capitol-team-2",
-            "homeScore": -225.77,
-            "awayScore": 332.09,
+            "homeScore": -191.9,
+            "awayScore": 31.45,
             "completed": true
           },
           {
@@ -928,8 +928,8 @@
             "leagueId": "league-capitol",
             "homeTeamId": "league-capitol-team-5",
             "awayTeamId": "league-capitol-team-8",
-            "homeScore": 213.32,
-            "awayScore": 78.63,
+            "homeScore": -103.04,
+            "awayScore": 183.58,
             "completed": true
           },
           {
@@ -937,8 +937,8 @@
             "leagueId": "league-capitol",
             "homeTeamId": "league-capitol-team-6",
             "awayTeamId": "league-capitol-team-7",
-            "homeScore": 366.11,
-            "awayScore": 468.71,
+            "homeScore": 535.75,
+            "awayScore": 461.91,
             "completed": true
           }
         ]
@@ -951,8 +951,8 @@
             "leagueId": "league-capitol",
             "homeTeamId": "league-capitol-team-1",
             "awayTeamId": "league-capitol-team-4",
-            "homeScore": -17.56,
-            "awayScore": 10.11,
+            "homeScore": 220.99,
+            "awayScore": -151.12,
             "completed": true
           },
           {
@@ -960,8 +960,8 @@
             "leagueId": "league-capitol",
             "homeTeamId": "league-capitol-team-5",
             "awayTeamId": "league-capitol-team-3",
-            "homeScore": 76.18,
-            "awayScore": 129.27,
+            "homeScore": 126.62,
+            "awayScore": 136.42,
             "completed": true
           },
           {
@@ -969,8 +969,8 @@
             "leagueId": "league-capitol",
             "homeTeamId": "league-capitol-team-6",
             "awayTeamId": "league-capitol-team-2",
-            "homeScore": 689.68,
-            "awayScore": 182.17,
+            "homeScore": 303.2,
+            "awayScore": 583.48,
             "completed": true
           },
           {
@@ -978,8 +978,8 @@
             "leagueId": "league-capitol",
             "homeTeamId": "league-capitol-team-7",
             "awayTeamId": "league-capitol-team-8",
-            "homeScore": 58.45,
-            "awayScore": 85.46,
+            "homeScore": 50.51,
+            "awayScore": 129.99,
             "completed": true
           }
         ]
@@ -992,8 +992,8 @@
             "leagueId": "league-capitol",
             "homeTeamId": "league-capitol-team-1",
             "awayTeamId": "league-capitol-team-5",
-            "homeScore": -289.43,
-            "awayScore": 543.26,
+            "homeScore": -194.38,
+            "awayScore": 356.2,
             "completed": true
           },
           {
@@ -1001,8 +1001,8 @@
             "leagueId": "league-capitol",
             "homeTeamId": "league-capitol-team-6",
             "awayTeamId": "league-capitol-team-4",
-            "homeScore": -349.53,
-            "awayScore": 319.1,
+            "homeScore": 123.59,
+            "awayScore": 204.8,
             "completed": true
           },
           {
@@ -1010,8 +1010,8 @@
             "leagueId": "league-capitol",
             "homeTeamId": "league-capitol-team-7",
             "awayTeamId": "league-capitol-team-3",
-            "homeScore": -83.32,
-            "awayScore": 352.84,
+            "homeScore": 59.85,
+            "awayScore": 267.63,
             "completed": true
           },
           {
@@ -1019,8 +1019,8 @@
             "leagueId": "league-capitol",
             "homeTeamId": "league-capitol-team-8",
             "awayTeamId": "league-capitol-team-2",
-            "homeScore": 30.43,
-            "awayScore": 344.96,
+            "homeScore": 82.15,
+            "awayScore": 18.23,
             "completed": true
           }
         ]
@@ -1033,8 +1033,8 @@
             "leagueId": "league-capitol",
             "homeTeamId": "league-capitol-team-1",
             "awayTeamId": "league-capitol-team-6",
-            "homeScore": 587.11,
-            "awayScore": -85.92,
+            "homeScore": 568.15,
+            "awayScore": -132.94,
             "completed": true
           },
           {
@@ -1042,8 +1042,8 @@
             "leagueId": "league-capitol",
             "homeTeamId": "league-capitol-team-7",
             "awayTeamId": "league-capitol-team-5",
-            "homeScore": 219.26,
-            "awayScore": 264.47,
+            "homeScore": 214.81,
+            "awayScore": 507.53,
             "completed": true
           },
           {
@@ -1052,7 +1052,7 @@
             "homeTeamId": "league-capitol-team-8",
             "awayTeamId": "league-capitol-team-4",
             "homeScore": 41.6,
-            "awayScore": 51.54,
+            "awayScore": 221.52,
             "completed": true
           },
           {
@@ -1060,8 +1060,8 @@
             "leagueId": "league-capitol",
             "homeTeamId": "league-capitol-team-2",
             "awayTeamId": "league-capitol-team-3",
-            "homeScore": -94.45,
-            "awayScore": -114.6,
+            "homeScore": -65.54,
+            "awayScore": -107.47,
             "completed": true
           }
         ]
@@ -1105,7 +1105,7 @@
           "ties": 0
         },
         "pointsFor": 584.83,
-        "pointsAgainst": 61.43,
+        "pointsAgainst": 124.67,
         "streak": "W1"
       },
       {
@@ -1135,13 +1135,13 @@
           "salaryUsed": 49370
         },
         "record": {
-          "wins": 3,
-          "losses": 3,
+          "wins": 4,
+          "losses": 2,
           "ties": 0
         },
         "pointsFor": 494.02,
-        "pointsAgainst": 275.36,
-        "streak": "W2"
+        "pointsAgainst": -59.36,
+        "streak": "W1"
       },
       {
         "id": "league-swamp-team-3",
@@ -1175,7 +1175,7 @@
           "ties": 0
         },
         "pointsFor": 523.43,
-        "pointsAgainst": 628.68,
+        "pointsAgainst": 340.64,
         "streak": "L1"
       },
       {
@@ -1205,13 +1205,13 @@
           "salaryUsed": 50570
         },
         "record": {
-          "wins": 5,
-          "losses": 1,
+          "wins": 4,
+          "losses": 2,
           "ties": 0
         },
         "pointsFor": 616.07,
-        "pointsAgainst": -350.21,
-        "streak": "W3"
+        "pointsAgainst": 76.88,
+        "streak": "W2"
       },
       {
         "id": "league-swamp-team-5",
@@ -1245,7 +1245,7 @@
           "ties": 0
         },
         "pointsFor": 512.89,
-        "pointsAgainst": 513.52,
+        "pointsAgainst": 280.24,
         "streak": "W2"
       },
       {
@@ -1275,13 +1275,13 @@
           "salaryUsed": 50681
         },
         "record": {
-          "wins": 2,
-          "losses": 4,
+          "wins": 1,
+          "losses": 5,
           "ties": 0
         },
         "pointsFor": 395.21,
-        "pointsAgainst": 1495.92,
-        "streak": "L2"
+        "pointsAgainst": 1632.07,
+        "streak": "L3"
       },
       {
         "id": "league-swamp-team-7",
@@ -1310,13 +1310,13 @@
           "salaryUsed": 50548
         },
         "record": {
-          "wins": 2,
-          "losses": 4,
+          "wins": 1,
+          "losses": 5,
           "ties": 0
         },
         "pointsFor": 452.27,
-        "pointsAgainst": 842.7,
-        "streak": "L3"
+        "pointsAgainst": 1446.75,
+        "streak": "L5"
       },
       {
         "id": "league-swamp-team-8",
@@ -1345,13 +1345,13 @@
           "salaryUsed": 50665
         },
         "record": {
-          "wins": 2,
-          "losses": 4,
+          "wins": 4,
+          "losses": 2,
           "ties": 0
         },
         "pointsFor": 625.7,
-        "pointsAgainst": 737.02,
-        "streak": "L2"
+        "pointsAgainst": 362.53,
+        "streak": "L1"
       }
     ],
     "schedule": [
@@ -1363,8 +1363,8 @@
             "leagueId": "league-swamp",
             "homeTeamId": "league-swamp-team-1",
             "awayTeamId": "league-swamp-team-8",
-            "homeScore": -33.59,
-            "awayScore": -124.73,
+            "homeScore": 144.42,
+            "awayScore": 62.7,
             "completed": true
           },
           {
@@ -1372,8 +1372,8 @@
             "leagueId": "league-swamp",
             "homeTeamId": "league-swamp-team-2",
             "awayTeamId": "league-swamp-team-7",
-            "homeScore": -236.21,
-            "awayScore": -76.86,
+            "homeScore": -111.58,
+            "awayScore": 61.9,
             "completed": true
           },
           {
@@ -1381,8 +1381,8 @@
             "leagueId": "league-swamp",
             "homeTeamId": "league-swamp-team-3",
             "awayTeamId": "league-swamp-team-6",
-            "homeScore": 300.33,
-            "awayScore": -149.86,
+            "homeScore": 244.11,
+            "awayScore": 41.14,
             "completed": true
           },
           {
@@ -1390,8 +1390,8 @@
             "leagueId": "league-swamp",
             "homeTeamId": "league-swamp-team-4",
             "awayTeamId": "league-swamp-team-5",
-            "homeScore": 451.06,
-            "awayScore": -222.84,
+            "homeScore": 415.34,
+            "awayScore": 55.96,
             "completed": true
           }
         ]
@@ -1404,8 +1404,8 @@
             "leagueId": "league-swamp",
             "homeTeamId": "league-swamp-team-1",
             "awayTeamId": "league-swamp-team-2",
-            "homeScore": -27.52,
-            "awayScore": -34.54,
+            "homeScore": -207.24,
+            "awayScore": 37.98,
             "completed": true
           },
           {
@@ -1413,8 +1413,8 @@
             "leagueId": "league-swamp",
             "homeTeamId": "league-swamp-team-3",
             "awayTeamId": "league-swamp-team-8",
-            "homeScore": 102.34,
-            "awayScore": 514.31,
+            "homeScore": 30.89,
+            "awayScore": 125.68,
             "completed": true
           },
           {
@@ -1422,8 +1422,8 @@
             "leagueId": "league-swamp",
             "homeTeamId": "league-swamp-team-4",
             "awayTeamId": "league-swamp-team-7",
-            "homeScore": 10.03,
-            "awayScore": -133.97,
+            "homeScore": 117.43,
+            "awayScore": -396.71,
             "completed": true
           },
           {
@@ -1431,8 +1431,8 @@
             "leagueId": "league-swamp",
             "homeTeamId": "league-swamp-team-5",
             "awayTeamId": "league-swamp-team-6",
-            "homeScore": -361.5,
-            "awayScore": -75.27,
+            "homeScore": -430.38,
+            "awayScore": -475.53,
             "completed": true
           }
         ]
@@ -1445,8 +1445,8 @@
             "leagueId": "league-swamp",
             "homeTeamId": "league-swamp-team-1",
             "awayTeamId": "league-swamp-team-3",
-            "homeScore": 365.82,
-            "awayScore": -246.75,
+            "homeScore": 52.89,
+            "awayScore": -48.15,
             "completed": true
           },
           {
@@ -1454,8 +1454,8 @@
             "leagueId": "league-swamp",
             "homeTeamId": "league-swamp-team-4",
             "awayTeamId": "league-swamp-team-2",
-            "homeScore": -225.77,
-            "awayScore": 332.09,
+            "homeScore": -191.9,
+            "awayScore": 31.45,
             "completed": true
           },
           {
@@ -1463,8 +1463,8 @@
             "leagueId": "league-swamp",
             "homeTeamId": "league-swamp-team-5",
             "awayTeamId": "league-swamp-team-8",
-            "homeScore": 213.32,
-            "awayScore": 78.63,
+            "homeScore": -103.04,
+            "awayScore": 183.58,
             "completed": true
           },
           {
@@ -1472,8 +1472,8 @@
             "leagueId": "league-swamp",
             "homeTeamId": "league-swamp-team-6",
             "awayTeamId": "league-swamp-team-7",
-            "homeScore": 366.11,
-            "awayScore": 468.71,
+            "homeScore": 535.75,
+            "awayScore": 461.91,
             "completed": true
           }
         ]
@@ -1486,8 +1486,8 @@
             "leagueId": "league-swamp",
             "homeTeamId": "league-swamp-team-1",
             "awayTeamId": "league-swamp-team-4",
-            "homeScore": -17.56,
-            "awayScore": 10.11,
+            "homeScore": 220.99,
+            "awayScore": -151.12,
             "completed": true
           },
           {
@@ -1495,8 +1495,8 @@
             "leagueId": "league-swamp",
             "homeTeamId": "league-swamp-team-5",
             "awayTeamId": "league-swamp-team-3",
-            "homeScore": 76.18,
-            "awayScore": 129.27,
+            "homeScore": 126.62,
+            "awayScore": 136.42,
             "completed": true
           },
           {
@@ -1504,8 +1504,8 @@
             "leagueId": "league-swamp",
             "homeTeamId": "league-swamp-team-6",
             "awayTeamId": "league-swamp-team-2",
-            "homeScore": 689.68,
-            "awayScore": 182.17,
+            "homeScore": 303.2,
+            "awayScore": 583.48,
             "completed": true
           },
           {
@@ -1513,8 +1513,8 @@
             "leagueId": "league-swamp",
             "homeTeamId": "league-swamp-team-7",
             "awayTeamId": "league-swamp-team-8",
-            "homeScore": 58.45,
-            "awayScore": 85.46,
+            "homeScore": 50.51,
+            "awayScore": 129.99,
             "completed": true
           }
         ]
@@ -1527,8 +1527,8 @@
             "leagueId": "league-swamp",
             "homeTeamId": "league-swamp-team-1",
             "awayTeamId": "league-swamp-team-5",
-            "homeScore": -289.43,
-            "awayScore": 543.26,
+            "homeScore": -194.38,
+            "awayScore": 356.2,
             "completed": true
           },
           {
@@ -1536,8 +1536,8 @@
             "leagueId": "league-swamp",
             "homeTeamId": "league-swamp-team-6",
             "awayTeamId": "league-swamp-team-4",
-            "homeScore": -349.53,
-            "awayScore": 319.1,
+            "homeScore": 123.59,
+            "awayScore": 204.8,
             "completed": true
           },
           {
@@ -1545,8 +1545,8 @@
             "leagueId": "league-swamp",
             "homeTeamId": "league-swamp-team-7",
             "awayTeamId": "league-swamp-team-3",
-            "homeScore": -83.32,
-            "awayScore": 352.84,
+            "homeScore": 59.85,
+            "awayScore": 267.63,
             "completed": true
           },
           {
@@ -1554,8 +1554,8 @@
             "leagueId": "league-swamp",
             "homeTeamId": "league-swamp-team-8",
             "awayTeamId": "league-swamp-team-2",
-            "homeScore": 30.43,
-            "awayScore": 344.96,
+            "homeScore": 82.15,
+            "awayScore": 18.23,
             "completed": true
           }
         ]
@@ -1568,8 +1568,8 @@
             "leagueId": "league-swamp",
             "homeTeamId": "league-swamp-team-1",
             "awayTeamId": "league-swamp-team-6",
-            "homeScore": 587.11,
-            "awayScore": -85.92,
+            "homeScore": 568.15,
+            "awayScore": -132.94,
             "completed": true
           },
           {
@@ -1577,8 +1577,8 @@
             "leagueId": "league-swamp",
             "homeTeamId": "league-swamp-team-7",
             "awayTeamId": "league-swamp-team-5",
-            "homeScore": 219.26,
-            "awayScore": 264.47,
+            "homeScore": 214.81,
+            "awayScore": 507.53,
             "completed": true
           },
           {
@@ -1587,7 +1587,7 @@
             "homeTeamId": "league-swamp-team-8",
             "awayTeamId": "league-swamp-team-4",
             "homeScore": 41.6,
-            "awayScore": 51.54,
+            "awayScore": 221.52,
             "completed": true
           },
           {
@@ -1595,8 +1595,8 @@
             "leagueId": "league-swamp",
             "homeTeamId": "league-swamp-team-2",
             "awayTeamId": "league-swamp-team-3",
-            "homeScore": -94.45,
-            "awayScore": -114.6,
+            "homeScore": -65.54,
+            "awayScore": -107.47,
             "completed": true
           }
         ]
