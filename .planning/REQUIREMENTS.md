@@ -10,10 +10,10 @@ Requirements for initial release. Each maps to roadmap phases.
 ### Data Pipeline
 
 - [ ] **DATA-01**: Build-time scripts fetch politician trade data from Alva Skills API (or pre-cached fallback) and output static JSON files
-- [ ] **DATA-02**: Politician dataset includes 50-100+ members of Congress with disclosed stock trades, including name, party, chamber, state, committees, photo URL, and trading stats
-- [ ] **DATA-03**: Trade dataset includes ticker, company, sector, trade type, disclosure date, amount range, and calculated returns vs S&P 500
+- [x] **DATA-02**: Politician dataset includes 50-100+ members of Congress with disclosed stock trades, including name, party, chamber, state, committees, photo URL, and trading stats
+- [x] **DATA-03**: Trade dataset includes ticker, company, sector, trade type, disclosure date, amount range, and calculated returns vs S&P 500
 - [ ] **DATA-04**: Official Congressional portrait photos are validated and served for every politician — no placeholders
-- [ ] **DATA-05**: Committee assignment data is included for each politician
+- [x] **DATA-05**: Committee assignment data is included for each politician
 
 ### Scoring Engine
 
@@ -22,7 +22,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **SCORE-03**: Bonus points awarded for Insider Timing (+15), Donor Darling (+10), Big Mover (+20), Bipartisan Bet (+25), Activity Bonus (+5/trade)
 - [ ] **SCORE-04**: Multipliers applied for Committee Chair (1.5x) and Leadership positions (1.3x)
 - [ ] **SCORE-05**: Negative events deduct points — Paper Hands (-15), Late Disclosure (-10), Wash Sale (-5)
-- [ ] **SCORE-06**: Scoring engine is pure TypeScript with no React dependencies, unit-testable
+- [x] **SCORE-06**: Scoring engine is pure TypeScript with no React dependencies, unit-testable
 
 ### Corruption Index
 
@@ -170,16 +170,16 @@ Which phases cover which requirements. Updated during roadmap creation.
 | Requirement | Phase | Status |
 |-------------|-------|--------|
 | DATA-01 | Phase 1 | Pending |
-| DATA-02 | Phase 1 | Pending |
-| DATA-03 | Phase 1 | Pending |
+| DATA-02 | Phase 1 | Complete |
+| DATA-03 | Phase 1 | Complete |
 | DATA-04 | Phase 1 | Pending |
-| DATA-05 | Phase 1 | Pending |
+| DATA-05 | Phase 1 | Complete |
 | SCORE-01 | Phase 1 | Pending |
 | SCORE-02 | Phase 1 | Pending |
 | SCORE-03 | Phase 1 | Pending |
 | SCORE-04 | Phase 1 | Pending |
 | SCORE-05 | Phase 1 | Pending |
-| SCORE-06 | Phase 1 | Pending |
+| SCORE-06 | Phase 1 | Complete |
 | CORR-01 | Phase 1 | Pending |
 | CORR-02 | Phase 1 | Pending |
 | CORR-03 | Phase 1 | Pending |
