@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "prebuild": "npx tsx scripts/build-pipeline.ts",
     "build": "next build",
     "start": "next start",
+    "fetch-data": "npx tsx scripts/build-pipeline.ts",
+    "dev": "next dev --turbopack",
     "lint": "eslint"
   },
   "dependencies": {
