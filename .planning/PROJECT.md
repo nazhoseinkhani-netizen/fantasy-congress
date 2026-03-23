@@ -26,7 +26,7 @@ Fantasy football mechanics applied to Congressional stock trading — making pol
 - [x] Dashboard with pre-populated team, matchup scoreboard, and season KPIs — Validated in Phase 3: Game Experience
 - [x] My Team roster management with active/bench slots and scoring breakdown — Validated in Phase 3: Game Experience
 - [x] League standings, schedule, and activity feed — Validated in Phase 3: Game Experience
-- [ ] Draft room with simulated snake draft against AI-controlled teams
+- [x] Draft room with simulated snake draft against AI-controlled teams — Validated in Phase 4: Draft Room
 - [ ] Share card generation for teams, trades, and corruption data
 - [ ] Developer mode / API visualization Easter egg showing Alva data sources
 
