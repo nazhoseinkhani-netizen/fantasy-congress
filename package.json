@@ -8,7 +8,9 @@
     "start": "next start",
     "fetch-data": "npx tsx scripts/build-pipeline.ts",
     "dev": "next dev --turbopack",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "@base-ui/react": "^1.3.0",
@@ -32,10 +34,12 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@vitest/runner": "^4.1.1",
     "eslint": "^9",
     "eslint-config-next": "16.2.1",
     "tailwindcss": "^4",
     "tsx": "^4.21.0",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vitest": "^4.1.1"
   }
 }
