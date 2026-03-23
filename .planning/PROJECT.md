@@ -12,7 +12,9 @@ Fantasy football mechanics applied to Congressional stock trading — making pol
 
 ### Validated
 
-(None yet — ship to validate)
+- [x] Scoring engine implementing full scoring system (base, bonuses, penalties, multipliers) — Validated in Phase 1: Foundation
+- [x] Pre-populated demo data — 3 leagues, 6 weeks of simulated results, 50-100+ politicians with real trade data — Validated in Phase 1: Foundation
+- [x] Responsive design (desktop primary, mobile secondary) — Validated in Phase 1: Foundation (design system + nav)
 
 ### Active
 
@@ -25,11 +27,8 @@ Fantasy football mechanics applied to Congressional stock trading — making pol
 - [ ] My Team roster management with active/bench slots and scoring breakdown
 - [ ] League standings, schedule, and activity feed
 - [ ] Draft room with simulated snake draft against AI-controlled teams
-- [ ] Scoring engine implementing full scoring system (base, bonuses, penalties, multipliers)
 - [ ] Share card generation for teams, trades, and corruption data
 - [ ] Developer mode / API visualization Easter egg showing Alva data sources
-- [ ] Responsive design (desktop primary, mobile secondary)
-- [ ] Pre-populated demo data — 3 leagues, 6 weeks of simulated results, 50-100+ politicians with real trade data
 
 ### Out of Scope
 
@@ -84,4 +83,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-03-23 after initialization*
+*Last updated: 2026-03-23 after Phase 1 (Foundation) completion*
