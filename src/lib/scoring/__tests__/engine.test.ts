@@ -121,7 +121,7 @@ describe('scorePolitician()', () => {
     tradeDate: '2025-10-20',
   }
 
-  it('aggregates trade scores into season total', () => {
+  it('aggregates trade scores into season total (including activityBonus)', () => {
     const result = scorePolitician([trade1, trade2], {
       isCommitteeChair: false,
       isLeadership: false,
@@ -129,7 +129,10 @@ describe('scorePolitician()', () => {
     })
     // trade1: base=10, excessReturn=10, amountMult=1 => 20
     // trade2: base=-5, excessReturn=-4, amountMult=1 => -9
-    expect(result.seasonPoints).toBeCloseTo(11) // 20 + (-9)
+    // tradeTotal = 20 + (-9) = 11
+    // activityBonus = 2 * 5 = 10
+    // seasonPoints = 11 + 10 = 21
+    expect(result.seasonPoints).toBeCloseTo(21) // 20 + (-9) + activityBonus(2*5)
     expect(result.tradeCount).toBe(2)
   })
 

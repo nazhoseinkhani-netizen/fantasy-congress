@@ -104,8 +104,10 @@ export function scorePolitician(
     return scoreTrade(trade, tradeContext, config)
   })
 
-  // Season total
-  const seasonPoints = tradeScores.reduce((sum, s) => sum + s.total, 0)
+  // Season total — includes per-trade activity bonus
+  const tradeTotal = tradeScores.reduce((sum, s) => sum + s.total, 0)
+  const activityBonus = trades.length * config.bonuses.activityBonus
+  const seasonPoints = tradeTotal + activityBonus
 
   // Weekly breakdown — 6-element array initialized to 0
   const weeklyPoints = new Array<number>(6).fill(0)
