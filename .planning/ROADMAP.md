@@ -36,7 +36,7 @@ Plans:
 - [x] 01-01-PLAN.md — Project bootstrap (Next.js 16, shadcn/ui, dependencies) and all TypeScript type contracts
 - [x] 01-02-PLAN.md — Scoring engine (TDD): scoreTrade(), scorePolitician(), and Insider Trading Risk Score computation
 - [x] 01-03-PLAN.md — Premium dark design system: theme CSS, global navigation, PoliticianCard/RiskBadge/StatCell components
-- [ ] 01-04-PLAN.md — Data pipeline: fetch politicians, generate trades, validate photos, compute scores, output JSON
+- [x] 01-04-PLAN.md — Data pipeline: fetch politicians, generate trades, validate photos, compute scores, output JSON
 - [ ] 01-05-PLAN.md — Demo data: generate 3 leagues with rosters and 6 weeks of matchup results, plus data loader functions
 
 ### Phase 2: Discovery

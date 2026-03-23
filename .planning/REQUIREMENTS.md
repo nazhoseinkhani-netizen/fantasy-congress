@@ -9,10 +9,10 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Data Pipeline
 
-- [ ] **DATA-01**: Build-time scripts fetch politician trade data from Alva Skills API (or pre-cached fallback) and output static JSON files
+- [x] **DATA-01**: Build-time scripts fetch politician trade data from Alva Skills API (or pre-cached fallback) and output static JSON files
 - [x] **DATA-02**: Politician dataset includes 50-100+ members of Congress with disclosed stock trades, including name, party, chamber, state, committees, photo URL, and trading stats
 - [x] **DATA-03**: Trade dataset includes ticker, company, sector, trade type, disclosure date, amount range, and calculated returns vs S&P 500
-- [ ] **DATA-04**: Official Congressional portrait photos are validated and served for every politician — no placeholders
+- [x] **DATA-04**: Official Congressional portrait photos are validated and served for every politician — no placeholders
 - [x] **DATA-05**: Committee assignment data is included for each politician
 
 ### Scoring Engine
@@ -169,10 +169,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| DATA-01 | Phase 1 | Pending |
+| DATA-01 | Phase 1 | Complete |
 | DATA-02 | Phase 1 | Complete |
 | DATA-03 | Phase 1 | Complete |
-| DATA-04 | Phase 1 | Pending |
+| DATA-04 | Phase 1 | Complete |
 | DATA-05 | Phase 1 | Complete |
 | SCORE-01 | Phase 1 | Complete |
 | SCORE-02 | Phase 1 | Complete |

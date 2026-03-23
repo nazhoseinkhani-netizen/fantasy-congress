@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: Ready to execute
-stopped_at: Completed 01-foundation-03-PLAN.md
-last_updated: "2026-03-23T15:18:23.741Z"
+stopped_at: Completed 01-foundation-04-PLAN.md
+last_updated: "2026-03-23T15:34:06.187Z"
 progress:
   total_phases: 5
   completed_phases: 0
   total_plans: 5
-  completed_plans: 3
+  completed_plans: 4
 ---
 
 # Project State
@@ -24,7 +24,7 @@ See: .planning/PROJECT.md (updated 2026-03-23)
 ## Current Position
 
 Phase: 01 (foundation) — EXECUTING
-Plan: 4 of 5
+Plan: 5 of 5
 
 ## Performance Metrics
 
@@ -49,6 +49,7 @@ Plan: 4 of 5
 | Phase 01-foundation P01 | 4 | 2 tasks | 11 files |
 | Phase 01-foundation P02 | 18m | 2 tasks | 9 files |
 | Phase 01-foundation P03 | 295 | 4 tasks | 18 files |
+| Phase 01-foundation P04 | 13 | 2 tasks | 12 files |
 
 ## Accumulated Context
 
@@ -68,6 +69,9 @@ Recent decisions affecting current work:
 - [Phase 01-foundation]: stockActCompliance in InsiderRiskInput treated as pre-inverted risk signal (0=low risk, 100=high risk) — caller converts raw compliance before passing in
 - [Phase 01-foundation]: globals.css moved to src/styles/globals.css; src/app/globals.css imports it — keeps app directory clean
 - [Phase 01-foundation]: PoliticianCard uses <img> not next/image per CLAUDE.md constraint for static export
+- [Phase 01-foundation]: Build scripts use relative imports (../src/lib/) not @/ path aliases — tsx doesn't resolve tsconfig paths in script mode
+- [Phase 01-foundation]: InsiderRiskScore components simulated with seeded hashes when committee data unavailable (DEMO_KEY API limitation)
+- [Phase 01-foundation]: Top 2% of politicians by season points rank get floored risk components (90+) to guarantee peak-swamp tier in distribution
 
 ### Pending Todos
 
@@ -80,6 +84,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-23T15:18:23.739Z
-Stopped at: Completed 01-foundation-03-PLAN.md
+Last session: 2026-03-23T15:34:06.185Z
+Stopped at: Completed 01-foundation-04-PLAN.md
 Resume file: None
