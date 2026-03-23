@@ -1,0 +1,88 @@
+# Roadmap: Fantasy Congress
+
+## Overview
+
+Five phases that move from invisible infrastructure to a compelling standalone demo to a full fantasy sports product. Phases 1 and 2 together deliver the P1 demo sufficient for the Alva leadership pitch. Phases 3 through 5 add fantasy sports depth, the draft ritual, and viral shareability. The scoring engine and data pipeline are locked before any UI displays a score — this is non-negotiable per the research dependency chain.
+
+## Phases
+
+**Phase Numbering:**
+- Integer phases (1, 2, 3): Planned milestone work
+- Decimal phases (2.1, 2.2): Urgent insertions (marked with INSERTED)
+
+Decimal phases appear between their surrounding integers in numeric order.
+
+- [ ] **Phase 1: Foundation** - Data pipeline, scoring engine, Corruption Index, demo data, and design system — everything downstream depends on this
+- [ ] **Phase 2: Discovery** - Landing page, politician directory, profiles, trade feed, and leaderboard — the standalone Alva demo
+- [ ] **Phase 3: Game Experience** - Dashboard, My Team roster management, and League standings with Zustand game state
+- [ ] **Phase 4: Draft Room** - Full snake draft against AI opponents with pick animations and salary cap
+- [ ] **Phase 5: Polish and Viral** - Animations, share cards, and platform showcase Easter egg
+
+## Phase Details
+
+### Phase 1: Foundation
+**Goal**: The app has a complete data layer, a locked scoring engine, and a design system — any page built after this phase can display real politician data with correct scores
+**Depends on**: Nothing (first phase)
+**Requirements**: DATA-01, DATA-02, DATA-03, DATA-04, DATA-05, SCORE-01, SCORE-02, SCORE-03, SCORE-04, SCORE-05, SCORE-06, CORR-01, CORR-02, CORR-03, DEMO-01, DEMO-02, DEMO-03, DEMO-04, UI-01, UI-02, UI-03
+**Success Criteria** (what must be TRUE):
+  1. Running the build scripts produces `public/data/` JSON files with 50-100+ politicians, their trade histories, computed fantasy scores, and Insider Trading Risk Scores — no manual data entry required
+  2. Every politician in the dataset has a validated official portrait photo (HTTP 200 confirmed) with a working fallback chain — zero broken image placeholders at build time
+  3. Calling `scorePolitician(trades, rules)` in isolation returns a correct, deterministic breakdown including base points, bonuses, penalties, and multipliers — the same result every time for the same input
+  4. The app renders in dark mode with the premium dark aesthetic, global nav, and responsive layout on both desktop and mobile
+  5. Pre-populated demo data (3 leagues, 6 weeks of results, user pre-assigned to a team) loads immediately without any user setup
+**Plans**: TBD
+
+### Phase 2: Discovery
+**Goal**: Users can explore the full politician universe, see who is trading what, understand the Insider Trading Risk Score, and find out who the biggest Congressional traders are — this is the complete P1 standalone demo
+**Depends on**: Phase 1
+**Requirements**: LAND-01, LAND-02, LAND-03, LAND-04, DIR-01, DIR-02, DIR-03, DIR-04, PROF-01, PROF-02, PROF-03, PROF-04, PROF-05, FEED-01, FEED-02, FEED-03, FEED-04, LEAD-01, LEAD-02, LEAD-03, UI-04, UI-05, UI-06
+**Success Criteria** (what must be TRUE):
+  1. A visitor to the landing page immediately understands the product concept, sees real politician photos, and has a prominent CTA to explore
+  2. A user can find any politician by filtering on party, chamber, state, or committee, and sort by fantasy cost, return, or Insider Trading Risk Score
+  3. Clicking a politician opens a profile with four working tabs — Fantasy Stats, Trading Profile, Corruption Dossier, and News — each showing real data from the build-time pipeline
+  4. The trade feed shows recent Congressional stock disclosures with bonus badges, return vs S&P 500, and fantasy points — filterable by party, chamber, and trade type
+  5. The Hall of Shame leaderboard ranks politicians by fantasy points and by Insider Trading Risk Score with tier colors and methodology visible on score cards
+**Plans**: TBD
+
+### Phase 3: Game Experience
+**Goal**: Users can experience the full fantasy sports product loop — check their weekly matchup, manage their roster, see league standings — all powered by pre-populated demo data that feels like a live season
+**Depends on**: Phase 2
+**Requirements**: DASH-01, DASH-02, DASH-03, DASH-04, DASH-05, TEAM-01, TEAM-02, TEAM-03, TEAM-04, TEAM-05, LEAG-01, LEAG-02, LEAG-03
+**Success Criteria** (what must be TRUE):
+  1. The dashboard loads immediately with the user's pre-assigned team, shows this week's matchup score vs opponent, season KPIs, and a compact trade feed sidebar
+  2. On My Team, a user can drag active politicians to bench and bench politicians to active slots, see each politician's scoring breakdown, and view their team's salary cap usage
+  3. The league page shows the full standings table, complete season schedule, and a league activity feed with trades and matchup results
+**Plans**: TBD
+
+### Phase 4: Draft Room
+**Goal**: Users can run a full simulated snake draft against AI-controlled opponents, make picks with the salary cap live, and receive draft grades when the draft completes
+**Depends on**: Phase 3
+**Requirements**: DRAFT-01, DRAFT-02, DRAFT-03, DRAFT-04
+**Success Criteria** (what must be TRUE):
+  1. The pre-draft view shows draft order, a countdown, and a sortable politician board with salary cap values — a user can understand the format before the draft starts
+  2. During the draft, AI opponents make realistic picks on their turns, the "On The Clock" banner shows whose turn it is, and the user can pick from the available politician pool without exceeding their salary cap
+  3. The post-draft summary shows every pick by every team, assigns draft grades, and surfaces sleeper picks
+**Plans**: TBD
+
+### Phase 5: Polish and Viral
+**Goal**: Every major view has micro-interactions and animations, users can generate and share image cards for their team and favorite politicians, and the Alva platform showcase is visible throughout
+**Depends on**: Phase 4
+**Requirements**: ANIM-01, ANIM-02, ANIM-03, ANIM-04, ANIM-05, SHARE-01, SHARE-02, SHARE-03, SHARE-04, PLAT-01, PLAT-02, PLAT-03
+**Success Criteria** (what must be TRUE):
+  1. Draft picks, trade alerts, points counters, and the Insider Trading Risk Score gauge all animate — the app feels alive rather than static
+  2. A user can tap Share on any politician card or their team and receive a downloadable image card with "Powered by Alva" branding, verified working on both desktop and iOS Safari
+  3. The Developer Mode Easter egg (keyboard shortcut) reveals which Alva Skill powers each data element with dashed borders and tooltips — every data-driven element is attributed
+**Plans**: TBD
+
+## Progress
+
+**Execution Order:**
+Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
+
+| Phase | Plans Complete | Status | Completed |
+|-------|----------------|--------|-----------|
+| 1. Foundation | 0/TBD | Not started | - |
+| 2. Discovery | 0/TBD | Not started | - |
+| 3. Game Experience | 0/TBD | Not started | - |
+| 4. Draft Room | 0/TBD | Not started | - |
+| 5. Polish and Viral | 0/TBD | Not started | - |
