@@ -1,0 +1,32 @@
+{
+  "generatedAt": "2026-03-23T15:31:54.978Z",
+  "politicianCount": 82,
+  "tradeCount": 815,
+  "excludedTradeCount": 0,
+  "excludedTradeReasons": [],
+  "photoValidation": {
+    "validated": 0,
+    "fallbackUsed": 100,
+    "initialsGenerated": 3
+  },
+  "scoringStats": {
+    "avgSeasonPoints": -31.05,
+    "maxSeasonPoints": 379.5,
+    "minSeasonPoints": -771.31
+  },
+  "riskScoreDistribution": {
+    "clean-record": 2,
+    "minor-concerns": 19,
+    "raised-eyebrows": 49,
+    "seriously-suspicious": 11,
+    "peak-swamp": 1
+  },
+  "salaryTierDistribution": {
+    "elite": 9,
+    "starter": 12,
+    "mid-tier": 20,
+    "bench": 21,
+    "sleeper": 12,
+    "unranked": 8
+  }
+}
