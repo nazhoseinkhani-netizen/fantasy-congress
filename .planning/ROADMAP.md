@@ -84,7 +84,7 @@ Plans:
 **Requirements**: DASH-01, DASH-02, DASH-03, DASH-04, DASH-05, TEAM-01, TEAM-02, TEAM-03, TEAM-04, TEAM-05, LEAG-01, LEAG-02, LEAG-03
 **Success Criteria** (what must be TRUE):
   1. The dashboard loads immediately with the user's pre-assigned team, shows this week's matchup score vs opponent, season KPIs, and a compact trade feed sidebar
-  2. On My Team, a user can drag active politicians to bench and bench politicians to active slots, see each politician's scoring breakdown, and view their team's salary cap usage
+  2. On My Team, a user can click to swap active politicians with bench slots and bench politicians to active slots, see each politician's scoring breakdown, and view their team's salary cap usage
   3. The league page shows the full standings table, complete season schedule, and a league activity feed with trades and matchup results
 **Plans**: 4 plans
 
