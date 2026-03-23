@@ -217,12 +217,18 @@ function simulateSnakeDraft(
 
     for (const teamIdx of order) {
       const team = teams[teamIdx]
-      // Find the best available player that fits the remaining salary cap
+      // Find the best available player that fits the remaining salary cap.
+      // For bench rounds (picks 9-12), use a lower reserve per remaining pick (200 instead
+      // of 644) so the exhausted cheap-player pool doesn't block bench slots.
+      const picksRemaining = TOTAL_PICKS - team.picks.length - 1
+      const reservePerPick = team.picks.length >= ACTIVE_SLOTS ? 200 : 644
+      const salaryReserve = picksRemaining * reservePerPick
+
       const pick = available.find(
         (p) =>
           p.salaryCap <= team.salaryRemaining &&
           // Ensure we can fill remaining picks — reserve minimum salary for remaining rounds
-          p.salaryCap <= team.salaryRemaining - (TOTAL_PICKS - team.picks.length - 1) * 644
+          p.salaryCap <= team.salaryRemaining - salaryReserve
       )
 
       if (pick) {
@@ -230,14 +236,24 @@ function simulateSnakeDraft(
         team.salaryRemaining -= pick.salaryCap
         available.splice(available.indexOf(pick), 1)
       } else {
-        // Fallback: take the cheapest available
+        // Fallback: take the cheapest available.
+        // For the last pick, bypass salary check — a team must never have fewer than TOTAL_PICKS.
         const cheapest = available[available.length - 1]
-        if (cheapest && cheapest.salaryCap <= team.salaryRemaining) {
+        const isLastPick = team.picks.length === TOTAL_PICKS - 1
+        if (cheapest && (isLastPick || cheapest.salaryCap <= team.salaryRemaining)) {
           team.picks.push(cheapest)
           team.salaryRemaining -= cheapest.salaryCap
           available.splice(available.indexOf(cheapest), 1)
         }
       }
+    }
+  }
+
+  // Validate all teams have a full roster before proceeding
+  for (const team of teams) {
+    if (team.picks.length < TOTAL_PICKS) {
+      console.error(`FATAL: ${team.name} only has ${team.picks.length}/${TOTAL_PICKS} picks`)
+      process.exit(1)
     }
   }
 
