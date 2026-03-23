@@ -62,9 +62,25 @@ Plans:
 - [x] 02-06-PLAN.md — UI polish: skeleton loading, metric tooltips, and empty states across all pages
 - [ ] 02-07-PLAN.md — Visual verification checkpoint for complete P1 demo
 
+### Phase 2.1: Real Data Pipeline (INSERTED)
+**Goal**: Replace all simulated trade data with real Congressional stock disclosures from the Alva Skills API (`getSenatorTrades`), fetch real stock prices for return calculations, recompute all scoring from real data, and regenerate demo league matchups from real scores — the app shows actual Congressional corruption, not fake data
+**Depends on**: Phase 2
+**Requirements**: DATA-01, DATA-02, DATA-03, DATA-04, DATA-05, SCORE-01
+**Success Criteria** (what must be TRUE):
+  1. `public/data/trades.json` contains only real Congressional stock trade disclosures sourced from the Alva `getSenatorTrades` SDK — zero simulated trades
+  2. `public/data/politicians.json` contains real politicians derived from actual trade records, with real trade counts, real return calculations using Alva stock price data, and real Insider Trading Risk Scores computed from actual trading patterns
+  3. Fantasy scores are calculated by applying the existing scoring engine to real trade data — same bonuses/penalties, real returns vs S&P 500
+  4. Demo league data (rosters, matchups, weekly results) is the only simulated layer — built on top of real politician scores
+  5. All Phase 2 pages still render correctly with the new real data (no broken references, missing fields, or empty states)
+**Plans**: 2 plans
+
+Plans:
+- [ ] 02.1-01-PLAN.md — Rewrite fetch-trades.ts with Alva API integration, mapping layer, and stock price lookups
+- [ ] 02.1-02-PLAN.md — Dynamic season window, pipeline orchestration update, and end-to-end verification
+
 ### Phase 3: Game Experience
 **Goal**: Users can experience the full fantasy sports product loop — check their weekly matchup, manage their roster, see league standings — all powered by pre-populated demo data that feels like a live season
-**Depends on**: Phase 2
+**Depends on**: Phase 2.1
 **Requirements**: DASH-01, DASH-02, DASH-03, DASH-04, DASH-05, TEAM-01, TEAM-02, TEAM-03, TEAM-04, TEAM-05, LEAG-01, LEAG-02, LEAG-03
 **Success Criteria** (what must be TRUE):
   1. The dashboard loads immediately with the user's pre-assigned team, shows this week's matchup score vs opponent, season KPIs, and a compact trade feed sidebar
@@ -101,6 +117,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 |-------|----------------|--------|-----------|
 | 1. Foundation | 6/7 | In Progress|  |
 | 2. Discovery | 4/7 | In Progress|  |
+| 2.1 Real Data Pipeline | 0/2 | Not started | - |
 | 3. Game Experience | 0/TBD | Not started | - |
 | 4. Draft Room | 0/TBD | Not started | - |
 | 5. Polish and Viral | 0/TBD | Not started | - |
