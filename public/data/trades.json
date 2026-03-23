@@ -12734,7 +12734,7 @@
     "bioguideId": "S001148",
     "politicianName": "James Risch",
     "party": "R",
-    "chamber": "house",
+    "chamber": "senate",
     "ticker": "HON",
     "company": "Honeywell International Inc.",
     "sector": "Industrials",
@@ -12768,7 +12768,7 @@
     "bioguideId": "S001148",
     "politicianName": "James Risch",
     "party": "R",
-    "chamber": "house",
+    "chamber": "senate",
     "ticker": "NOC",
     "company": "Northrop Grumman Corporation",
     "sector": "Defense",
@@ -12797,7 +12797,7 @@
     "bioguideId": "S001148",
     "politicianName": "James Risch",
     "party": "R",
-    "chamber": "house",
+    "chamber": "senate",
     "ticker": "DE",
     "company": "Deere & Company",
     "sector": "Industrials",
@@ -12831,7 +12831,7 @@
     "bioguideId": "S001148",
     "politicianName": "James Risch",
     "party": "R",
-    "chamber": "house",
+    "chamber": "senate",
     "ticker": "NUE",
     "company": "Nucor Corporation",
     "sector": "Materials",
@@ -12865,7 +12865,7 @@
     "bioguideId": "S001148",
     "politicianName": "James Risch",
     "party": "R",
-    "chamber": "house",
+    "chamber": "senate",
     "ticker": "HON",
     "company": "Honeywell International Inc.",
     "sector": "Industrials",
@@ -12903,7 +12903,7 @@
     "bioguideId": "S001148",
     "politicianName": "James Risch",
     "party": "R",
-    "chamber": "house",
+    "chamber": "senate",
     "ticker": "HON",
     "company": "Honeywell International Inc.",
     "sector": "Industrials",
@@ -12932,7 +12932,7 @@
     "bioguideId": "S001148",
     "politicianName": "James Risch",
     "party": "R",
-    "chamber": "house",
+    "chamber": "senate",
     "ticker": "DIS",
     "company": "The Walt Disney Company",
     "sector": "Media",
@@ -12961,7 +12961,7 @@
     "bioguideId": "S001148",
     "politicianName": "James Risch",
     "party": "R",
-    "chamber": "house",
+    "chamber": "senate",
     "ticker": "CAT",
     "company": "Caterpillar Inc.",
     "sector": "Industrials",
@@ -12990,7 +12990,7 @@
     "bioguideId": "S001148",
     "politicianName": "James Risch",
     "party": "R",
-    "chamber": "house",
+    "chamber": "senate",
     "ticker": "AMD",
     "company": "Advanced Micro Devices",
     "sector": "Technology",
@@ -13019,7 +13019,7 @@
     "bioguideId": "S001148",
     "politicianName": "James Risch",
     "party": "R",
-    "chamber": "house",
+    "chamber": "senate",
     "ticker": "AMD",
     "company": "Advanced Micro Devices",
     "sector": "Technology",
@@ -13048,7 +13048,7 @@
     "bioguideId": "S001148",
     "politicianName": "James Risch",
     "party": "R",
-    "chamber": "house",
+    "chamber": "senate",
     "ticker": "UPS",
     "company": "United Parcel Service Inc.",
     "sector": "Industrials",
@@ -13087,7 +13087,7 @@
     "bioguideId": "S001148",
     "politicianName": "James Risch",
     "party": "R",
-    "chamber": "house",
+    "chamber": "senate",
     "ticker": "PXD",
     "company": "Pioneer Natural Resources",
     "sector": "Energy",
@@ -13116,7 +13116,7 @@
     "bioguideId": "S001148",
     "politicianName": "James Risch",
     "party": "R",
-    "chamber": "house",
+    "chamber": "senate",
     "ticker": "DE",
     "company": "Deere & Company",
     "sector": "Industrials",
@@ -13145,7 +13145,7 @@
     "bioguideId": "S001148",
     "politicianName": "James Risch",
     "party": "R",
-    "chamber": "house",
+    "chamber": "senate",
     "ticker": "CAT",
     "company": "Caterpillar Inc.",
     "sector": "Industrials",
@@ -13174,7 +13174,7 @@
     "bioguideId": "S001148",
     "politicianName": "James Risch",
     "party": "R",
-    "chamber": "house",
+    "chamber": "senate",
     "ticker": "UPS",
     "company": "United Parcel Service Inc.",
     "sector": "Industrials",
@@ -13208,7 +13208,7 @@
     "bioguideId": "S001148",
     "politicianName": "James Risch",
     "party": "R",
-    "chamber": "house",
+    "chamber": "senate",
     "ticker": "TMUS",
     "company": "T-Mobile US Inc.",
     "sector": "Telecommunications",
@@ -13242,7 +13242,7 @@
     "bioguideId": "S001148",
     "politicianName": "James Risch",
     "party": "R",
-    "chamber": "house",
+    "chamber": "senate",
     "ticker": "HON",
     "company": "Honeywell International Inc.",
     "sector": "Industrials",
@@ -20437,7 +20437,7 @@
     "absoluteReturn": 22.78,
     "sp500Return": -6.89,
     "daysToDisclose": 84,
-    "fantasyPoints": 180.34,
+    "fantasyPoints": 138.72,
     "scoreBreakdown": {
       "basePoints": 10,
       "excessReturnPoints": 59.36,
@@ -20454,9 +20454,9 @@
           "points": -10
         }
       ],
-      "positionMultiplier": 1.3,
+      "positionMultiplier": 1,
       "totalBeforeMultiplier": 138.72,
-      "total": 180.34
+      "total": 138.72
     }
   },
   {
@@ -20476,16 +20476,16 @@
     "absoluteReturn": 4.42,
     "sp500Return": -4.91,
     "daysToDisclose": 17,
-    "fantasyPoints": 37.26,
+    "fantasyPoints": 28.66,
     "scoreBreakdown": {
       "basePoints": 10,
       "excessReturnPoints": 18.66,
       "amountMultiplier": 1,
       "bonuses": [],
       "penalties": [],
-      "positionMultiplier": 1.3,
+      "positionMultiplier": 1,
       "totalBeforeMultiplier": 28.66,
-      "total": 37.26
+      "total": 28.66
     }
   },
   {
@@ -20505,16 +20505,16 @@
     "absoluteReturn": 20.23,
     "sp500Return": 10.63,
     "daysToDisclose": 41,
-    "fantasyPoints": 94.9,
+    "fantasyPoints": 73,
     "scoreBreakdown": {
       "basePoints": 10,
       "excessReturnPoints": 19.2,
       "amountMultiplier": 2.5,
       "bonuses": [],
       "penalties": [],
-      "positionMultiplier": 1.3,
+      "positionMultiplier": 1,
       "totalBeforeMultiplier": 73,
-      "total": 94.9
+      "total": 73
     }
   },
   {
@@ -20534,7 +20534,7 @@
     "absoluteReturn": 22.53,
     "sp500Return": 6.76,
     "daysToDisclose": 13,
-    "fantasyPoints": 67,
+    "fantasyPoints": 51.54,
     "scoreBreakdown": {
       "basePoints": 10,
       "excessReturnPoints": 31.54,
@@ -20546,9 +20546,9 @@
         }
       ],
       "penalties": [],
-      "positionMultiplier": 1.3,
+      "positionMultiplier": 1,
       "totalBeforeMultiplier": 51.54,
-      "total": 67
+      "total": 51.54
     }
   },
   {
@@ -26232,16 +26232,16 @@
     "absoluteReturn": 12.23,
     "sp500Return": 6.54,
     "daysToDisclose": 10,
-    "fantasyPoints": 55.59,
+    "fantasyPoints": 42.76,
     "scoreBreakdown": {
       "basePoints": 10,
       "excessReturnPoints": 11.38,
       "amountMultiplier": 2,
       "bonuses": [],
       "penalties": [],
-      "positionMultiplier": 1.3,
+      "positionMultiplier": 1,
       "totalBeforeMultiplier": 42.76,
-      "total": 55.59
+      "total": 42.76
     }
   },
   {
@@ -26261,16 +26261,16 @@
     "absoluteReturn": -14.81,
     "sp500Return": 18.98,
     "daysToDisclose": 7,
-    "fantasyPoints": -141.53,
+    "fantasyPoints": -108.87,
     "scoreBreakdown": {
       "basePoints": -5,
       "excessReturnPoints": -67.58,
       "amountMultiplier": 1.5,
       "bonuses": [],
       "penalties": [],
-      "positionMultiplier": 1.3,
+      "positionMultiplier": 1,
       "totalBeforeMultiplier": -108.87,
-      "total": -141.53
+      "total": -108.87
     }
   },
   {
