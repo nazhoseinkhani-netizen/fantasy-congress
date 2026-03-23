@@ -46,11 +46,11 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Politician Profile
 
-- [ ] **PROF-01**: Header with photo, name, party, state, committees as badges, fantasy cost, season points
-- [ ] **PROF-02**: Fantasy Stats tab — season performance chart, full trade log with scoring details, projected season total
-- [ ] **PROF-03**: Trading Profile tab — sector pie chart, win rate by sector, biggest wins/losses, performance vs S&P equity curve
-- [ ] **PROF-04**: Corruption Dossier tab — radar chart of index components, donor overlap details, trade-vs-legislation timeline, committee connection map
-- [ ] **PROF-05**: News & Disclosures tab — recent STOCK Act filings and committee hearing schedule
+- [x] **PROF-01**: Header with photo, name, party, state, committees as badges, fantasy cost, season points
+- [x] **PROF-02**: Fantasy Stats tab — season performance chart, full trade log with scoring details, projected season total
+- [x] **PROF-03**: Trading Profile tab — sector pie chart, win rate by sector, biggest wins/losses, performance vs S&P equity curve
+- [x] **PROF-04**: Corruption Dossier tab — radar chart of index components, donor overlap details, trade-vs-legislation timeline, committee connection map
+- [x] **PROF-05**: News & Disclosures tab — recent STOCK Act filings and committee hearing schedule
 
 ### Trade Feed
 
@@ -198,11 +198,11 @@ Which phases cover which requirements. Updated during roadmap creation.
 | DIR-02 | Phase 2 | Complete |
 | DIR-03 | Phase 2 | Complete |
 | DIR-04 | Phase 2 | Complete |
-| PROF-01 | Phase 2 | Pending |
-| PROF-02 | Phase 2 | Pending |
-| PROF-03 | Phase 2 | Pending |
-| PROF-04 | Phase 2 | Pending |
-| PROF-05 | Phase 2 | Pending |
+| PROF-01 | Phase 2 | Complete |
+| PROF-02 | Phase 2 | Complete |
+| PROF-03 | Phase 2 | Complete |
+| PROF-04 | Phase 2 | Complete |
+| PROF-05 | Phase 2 | Complete |
 | FEED-01 | Phase 2 | Complete |
 | FEED-02 | Phase 2 | Complete |
 | FEED-03 | Phase 2 | Complete |
