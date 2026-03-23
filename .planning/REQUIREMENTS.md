@@ -83,9 +83,9 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### League
 
-- [ ] **LEAG-01**: Full standings table with rank, team name, owner, record, points for/against, streak
-- [ ] **LEAG-02**: Full season schedule showing every matchup for every week
-- [ ] **LEAG-03**: League activity feed — trades, draft picks, matchup results
+- [x] **LEAG-01**: Full standings table with rank, team name, owner, record, points for/against, streak
+- [x] **LEAG-02**: Full season schedule showing every matchup for every week
+- [x] **LEAG-03**: League activity feed — trades, draft picks, matchup results
 
 ### Draft Room
 
@@ -223,9 +223,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | TEAM-03 | Phase 3 | Pending |
 | TEAM-04 | Phase 3 | Pending |
 | TEAM-05 | Phase 3 | Pending |
-| LEAG-01 | Phase 3 | Pending |
-| LEAG-02 | Phase 3 | Pending |
-| LEAG-03 | Phase 3 | Pending |
+| LEAG-01 | Phase 3 | Complete |
+| LEAG-02 | Phase 3 | Complete |
+| LEAG-03 | Phase 3 | Complete |
 | DRAFT-01 | Phase 4 | Pending |
 | DRAFT-02 | Phase 4 | Pending |
 | DRAFT-03 | Phase 4 | Pending |
