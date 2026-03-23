@@ -2,14 +2,14 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: Ready to execute
-stopped_at: Completed 02.1-01-PLAN.md
-last_updated: "2026-03-23T20:05:11.394Z"
+status: Phase complete — ready for verification
+stopped_at: Completed 02.1-02-PLAN.md
+last_updated: "2026-03-23T20:12:45.369Z"
 progress:
   total_phases: 6
-  completed_phases: 1
+  completed_phases: 2
   total_plans: 16
-  completed_plans: 14
+  completed_plans: 15
 ---
 
 # Project State
@@ -59,6 +59,7 @@ Plan: 2 of 2
 | Phase 02-discovery P03 | 366 | 3 tasks | 7 files |
 | Phase 02-discovery P06 | 3 | 2 tasks | 6 files |
 | Phase 02.1-real-data-pipeline P01 | 239 | 1 tasks | 1 files |
+| Phase 02.1-real-data-pipeline P02 | 264 | 2 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -99,6 +100,8 @@ Recent decisions affecting current work:
 - [Phase 02.1-01]: Alva V8 sandbox: require('@arrays/...') goes inside code strings passed to POST /api/v1/run — not importable in Node.js script scope
 - [Phase 02.1-01]: Defensive Alva response field mapping: try resp.result, resp.output, then raw — multiple container shapes handled
 - [Phase 02.1-01]: Set price returns to 0 (not null) for missing Alva price data — score-all.ts existing NaN exclusion handles 0-return trades per D-06
+- [Phase 02.1-02]: Standalone compute-season.ts script avoids circular dependency between generate-demo (needs politicians.json) and score-all (needs season-weeks.json)
+- [Phase 02.1-02]: config.ts reads season-weeks.json via readFileSync at module load time — SEASON_WEEKS is a synchronous const export, safe in all Node.js build contexts
 
 ### Pending Todos
 
@@ -111,6 +114,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-23T20:05:11.391Z
-Stopped at: Completed 02.1-01-PLAN.md
+Last session: 2026-03-23T20:12:45.366Z
+Stopped at: Completed 02.1-02-PLAN.md
 Resume file: None

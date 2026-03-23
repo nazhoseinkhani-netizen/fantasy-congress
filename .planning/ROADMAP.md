@@ -76,7 +76,7 @@ Plans:
 
 Plans:
 - [x] 02.1-01-PLAN.md — Rewrite fetch-trades.ts with Alva API integration, mapping layer, and stock price lookups
-- [ ] 02.1-02-PLAN.md — Dynamic season window, pipeline orchestration update, and end-to-end verification
+- [x] 02.1-02-PLAN.md — Dynamic season window, pipeline orchestration update, and end-to-end verification
 
 ### Phase 3: Game Experience
 **Goal**: Users can experience the full fantasy sports product loop — check their weekly matchup, manage their roster, see league standings — all powered by pre-populated demo data that feels like a live season
