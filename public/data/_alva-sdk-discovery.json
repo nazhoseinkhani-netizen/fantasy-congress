@@ -1,0 +1,3 @@
+{
+  "summary": "@arrays/data/stock/institution/holdings:v1.0.0: [DATA] Institutional holdings by stock symbol & quarter: historical/current institutional positions, ownership concentration and investor performance trends for investor behavior analysis\n@arrays/data/stock/person/senator-trading:v1.0.0: [DATA] U.S. congressional stock trading disclosures - query by politician name or stock symbol, chamber (senate/house/all), time_type (transaction/disclosure/observed), and date range\n@arrays/data/stock/trade/insider-trades:v1.0.0: [DATA] Insider trades (SEC disclosures) by symbol or reporting person's name; filter by time_type (TRANSACTION_DATE, OBSERVED_AT, FILING_DATE) plus start/end range to find buys/sells, amounts, security\n"
+}

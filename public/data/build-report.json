@@ -1,32 +1,32 @@
 {
-  "generatedAt": "2026-03-23T20:08:38.423Z",
-  "politicianCount": 82,
-  "tradeCount": 815,
+  "generatedAt": "2026-03-23T20:51:45.163Z",
+  "politicianCount": 18,
+  "tradeCount": 10000,
   "excludedTradeCount": 0,
   "excludedTradeReasons": [],
   "photoValidation": {
     "validated": 0,
     "fallbackUsed": 100,
-    "initialsGenerated": 3
+    "initialsGenerated": 19
   },
   "scoringStats": {
-    "avgSeasonPoints": 17.82,
-    "maxSeasonPoints": 474.99,
-    "minSeasonPoints": -676.31
+    "avgSeasonPoints": 10144.86,
+    "maxSeasonPoints": 41986,
+    "minSeasonPoints": -685
   },
   "riskScoreDistribution": {
-    "clean-record": 3,
-    "minor-concerns": 17,
-    "raised-eyebrows": 48,
-    "seriously-suspicious": 12,
+    "clean-record": 1,
+    "minor-concerns": 6,
+    "raised-eyebrows": 8,
+    "seriously-suspicious": 1,
     "peak-swamp": 2
   },
   "salaryTierDistribution": {
-    "elite": 9,
-    "starter": 12,
-    "mid-tier": 20,
-    "bench": 21,
-    "sleeper": 12,
-    "unranked": 8
+    "elite": 2,
+    "starter": 3,
+    "mid-tier": 4,
+    "bench": 5,
+    "sleeper": 3,
+    "unranked": 1
   }
 }

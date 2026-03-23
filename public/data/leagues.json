@@ -8,35 +8,27 @@
         "leagueId": "league-beltway",
         "name": "The Filibusters",
         "owner": "You",
-        "isUserTeam": false,
+        "isUserTeam": true,
         "roster": {
           "active": [
-            "P000197",
-            "H001064",
-            "F000462",
-            "C001127",
-            "B001313",
-            "C001131",
-            "C001130",
-            "O000173"
+            "ALVA-JOHNBOOZMAN",
+            "ALVA-THOMASSUOZZI",
+            "C001047"
           ],
           "bench": [
-            "C001063",
-            "B001304",
-            "J000298",
-            "L000591"
+            "ALVA-MITCHMCCONNE"
           ],
           "salaryCap": 50000,
-          "salaryUsed": 49840
+          "salaryUsed": 23215
         },
         "record": {
-          "wins": 4,
+          "wins": 1,
           "losses": 2,
-          "ties": 0
+          "ties": 3
         },
-        "pointsFor": 584.83,
-        "pointsAgainst": 124.67,
-        "streak": "W1"
+        "pointsFor": 38792,
+        "pointsAgainst": 50430,
+        "streak": "L2"
       },
       {
         "id": "league-beltway-team-2",
@@ -46,67 +38,51 @@
         "isUserTeam": false,
         "roster": {
           "active": [
-            "W000817",
-            "R000595",
-            "D000627",
-            "C000880",
-            "L000590",
-            "M001215",
-            "H001074",
-            "H001082"
+            "ALVA-TONYWIED",
+            "ALVA-JOSHGOTTHEIM",
+            "K000375"
           ],
           "bench": [
-            "P000621",
-            "K000382",
-            "G000574",
-            "M001207"
+            "ALVA-SHELDONWHITE"
           ],
           "salaryCap": 50000,
-          "salaryUsed": 49370
+          "salaryUsed": 18196
         },
         "record": {
-          "wins": 4,
-          "losses": 2,
-          "ties": 0
+          "wins": 2,
+          "losses": 1,
+          "ties": 3
         },
-        "pointsFor": 494.02,
-        "pointsAgainst": -59.36,
-        "streak": "W1"
+        "pointsFor": 32924,
+        "pointsAgainst": 8622,
+        "streak": "W2"
       },
       {
         "id": "league-beltway-team-3",
         "leagueId": "league-beltway",
         "name": "The Lobbyists",
-        "owner": "You",
-        "isUserTeam": true,
+        "owner": "PelicanBriefFan",
+        "isUserTeam": false,
         "roster": {
           "active": [
-            "W000805",
-            "P000603",
-            "M001193",
-            "B001230",
-            "T000486",
-            "M000133",
-            "S001215",
-            "M001212"
+            "ALVA-JULIALETLOW",
+            "ALVA-MARKWAYNEMUL",
+            "ALVA-JOHNWHICKENL"
           ],
           "bench": [
-            "E000296",
-            "J000304",
-            "J000293",
-            "D000619"
+            "ALVA-AUGUSTLEEPFL"
           ],
           "salaryCap": 50000,
-          "salaryUsed": 50745
+          "salaryUsed": 18310
         },
         "record": {
-          "wins": 3,
-          "losses": 3,
-          "ties": 0
+          "wins": 2,
+          "losses": 1,
+          "ties": 3
         },
-        "pointsFor": 523.43,
-        "pointsAgainst": 340.64,
-        "streak": "L1"
+        "pointsFor": 30851,
+        "pointsAgainst": 26734.5,
+        "streak": "W1"
       },
       {
         "id": "league-beltway-team-4",
@@ -116,171 +92,23 @@
         "isUserTeam": false,
         "roster": {
           "active": [
-            "K000367",
-            "R000608",
-            "V000133",
-            "C001106",
-            "C000174",
-            "G000596",
-            "G000591",
-            "B001295"
+            "ALVA-RICHARDWALLE",
+            "ALVA-JONATHANJACK",
+            "ALVA-AUSTINSCOTT"
           ],
           "bench": [
-            "W000798",
-            "S001191",
-            "H001082",
-            "S001191"
+            "ALVA-THOMASHKEAN"
           ],
           "salaryCap": 50000,
-          "salaryUsed": 50570
-        },
-        "record": {
-          "wins": 4,
-          "losses": 2,
-          "ties": 0
-        },
-        "pointsFor": 616.07,
-        "pointsAgainst": 76.88,
-        "streak": "W2"
-      },
-      {
-        "id": "league-beltway-team-5",
-        "leagueId": "league-beltway",
-        "name": "The Gerrymanders",
-        "owner": "HillaryHater2024",
-        "isUserTeam": false,
-        "roster": {
-          "active": [
-            "S001200",
-            "B001287",
-            "M001166",
-            "M001196",
-            "S001190",
-            "R000614",
-            "W000826",
-            "P000622"
-          ],
-          "bench": [
-            "C001035",
-            "D000619",
-            "R000576",
-            "K000382"
-          ],
-          "salaryCap": 50000,
-          "salaryUsed": 50107
-        },
-        "record": {
-          "wins": 3,
-          "losses": 3,
-          "ties": 0
-        },
-        "pointsFor": 512.89,
-        "pointsAgainst": 280.24,
-        "streak": "W2"
-      },
-      {
-        "id": "league-beltway-team-6",
-        "leagueId": "league-beltway",
-        "name": "Bribe Squad",
-        "owner": "LobbyistLarry",
-        "isUserTeam": false,
-        "roster": {
-          "active": [
-            "T000484",
-            "Y000033",
-            "L000591",
-            "W000827",
-            "C001117",
-            "O000172",
-            "C001121",
-            "G000595"
-          ],
-          "bench": [
-            "T000460",
-            "R000576",
-            "D000627",
-            "B001304"
-          ],
-          "salaryCap": 50000,
-          "salaryUsed": 50681
+          "salaryUsed": 20177
         },
         "record": {
           "wins": 1,
-          "losses": 5,
-          "ties": 0
-        },
-        "pointsFor": 395.21,
-        "pointsAgainst": 1632.07,
-        "streak": "L3"
-      },
-      {
-        "id": "league-beltway-team-7",
-        "leagueId": "league-beltway",
-        "name": "The Earmarks",
-        "owner": "CloakAndDagger",
-        "isUserTeam": false,
-        "roster": {
-          "active": [
-            "G000386",
-            "M001211",
-            "F000475",
-            "C001047",
-            "S001148",
-            "J000293",
-            "P000608",
-            "S001216"
-          ],
-          "bench": [
-            "S000250",
-            "C001088",
-            "R000595",
-            "J000298"
-          ],
-          "salaryCap": 50000,
-          "salaryUsed": 50548
-        },
-        "record": {
-          "wins": 1,
-          "losses": 5,
-          "ties": 0
-        },
-        "pointsFor": 452.27,
-        "pointsAgainst": 1446.75,
-        "streak": "L5"
-      },
-      {
-        "id": "league-beltway-team-8",
-        "leagueId": "league-beltway",
-        "name": "Insider Traders",
-        "owner": "FilibustaMove",
-        "isUserTeam": false,
-        "roster": {
-          "active": [
-            "A000376",
-            "K000375",
-            "B001291",
-            "M001207",
-            "G000565",
-            "N000191",
-            "P000449",
-            "M001111"
-          ],
-          "bench": [
-            "C001112",
-            "B001307",
-            "C001130",
-            "G000574"
-          ],
-          "salaryCap": 50000,
-          "salaryUsed": 50665
-        },
-        "record": {
-          "wins": 4,
           "losses": 2,
-          "ties": 0
+          "ties": 3
         },
-        "pointsFor": 625.7,
-        "pointsAgainst": 362.53,
+        "pointsFor": 28661.5,
+        "pointsAgainst": 45442,
         "streak": "L1"
       }
     ],
@@ -292,36 +120,18 @@
             "week": 1,
             "leagueId": "league-beltway",
             "homeTeamId": "league-beltway-team-1",
-            "awayTeamId": "league-beltway-team-8",
-            "homeScore": 144.42,
-            "awayScore": 62.7,
+            "awayTeamId": "league-beltway-team-4",
+            "homeScore": 0,
+            "awayScore": 0,
             "completed": true
           },
           {
             "week": 1,
             "leagueId": "league-beltway",
             "homeTeamId": "league-beltway-team-2",
-            "awayTeamId": "league-beltway-team-7",
-            "homeScore": -111.58,
-            "awayScore": 61.9,
-            "completed": true
-          },
-          {
-            "week": 1,
-            "leagueId": "league-beltway",
-            "homeTeamId": "league-beltway-team-3",
-            "awayTeamId": "league-beltway-team-6",
-            "homeScore": 244.11,
-            "awayScore": 41.14,
-            "completed": true
-          },
-          {
-            "week": 1,
-            "leagueId": "league-beltway",
-            "homeTeamId": "league-beltway-team-4",
-            "awayTeamId": "league-beltway-team-5",
-            "homeScore": 415.34,
-            "awayScore": 55.96,
+            "awayTeamId": "league-beltway-team-3",
+            "homeScore": 0,
+            "awayScore": 0,
             "completed": true
           }
         ]
@@ -334,35 +144,17 @@
             "leagueId": "league-beltway",
             "homeTeamId": "league-beltway-team-1",
             "awayTeamId": "league-beltway-team-2",
-            "homeScore": -207.24,
-            "awayScore": 37.98,
+            "homeScore": 0,
+            "awayScore": 0,
             "completed": true
           },
           {
             "week": 2,
             "leagueId": "league-beltway",
             "homeTeamId": "league-beltway-team-3",
-            "awayTeamId": "league-beltway-team-8",
-            "homeScore": 30.89,
-            "awayScore": 125.68,
-            "completed": true
-          },
-          {
-            "week": 2,
-            "leagueId": "league-beltway",
-            "homeTeamId": "league-beltway-team-4",
-            "awayTeamId": "league-beltway-team-7",
-            "homeScore": 117.43,
-            "awayScore": -396.71,
-            "completed": true
-          },
-          {
-            "week": 2,
-            "leagueId": "league-beltway",
-            "homeTeamId": "league-beltway-team-5",
-            "awayTeamId": "league-beltway-team-6",
-            "homeScore": -430.38,
-            "awayScore": -475.53,
+            "awayTeamId": "league-beltway-team-4",
+            "homeScore": 0,
+            "awayScore": 0,
             "completed": true
           }
         ]
@@ -375,8 +167,8 @@
             "leagueId": "league-beltway",
             "homeTeamId": "league-beltway-team-1",
             "awayTeamId": "league-beltway-team-3",
-            "homeScore": 52.89,
-            "awayScore": -48.15,
+            "homeScore": 0,
+            "awayScore": 0,
             "completed": true
           },
           {
@@ -384,26 +176,8 @@
             "leagueId": "league-beltway",
             "homeTeamId": "league-beltway-team-4",
             "awayTeamId": "league-beltway-team-2",
-            "homeScore": -191.9,
-            "awayScore": 31.45,
-            "completed": true
-          },
-          {
-            "week": 3,
-            "leagueId": "league-beltway",
-            "homeTeamId": "league-beltway-team-5",
-            "awayTeamId": "league-beltway-team-8",
-            "homeScore": -103.04,
-            "awayScore": 183.58,
-            "completed": true
-          },
-          {
-            "week": 3,
-            "leagueId": "league-beltway",
-            "homeTeamId": "league-beltway-team-6",
-            "awayTeamId": "league-beltway-team-7",
-            "homeScore": 535.75,
-            "awayScore": 461.91,
+            "homeScore": 0,
+            "awayScore": 0,
             "completed": true
           }
         ]
@@ -416,35 +190,17 @@
             "leagueId": "league-beltway",
             "homeTeamId": "league-beltway-team-1",
             "awayTeamId": "league-beltway-team-4",
-            "homeScore": 220.99,
-            "awayScore": -151.12,
+            "homeScore": 24739,
+            "awayScore": 3994,
             "completed": true
           },
           {
             "week": 4,
             "leagueId": "league-beltway",
-            "homeTeamId": "league-beltway-team-5",
+            "homeTeamId": "league-beltway-team-2",
             "awayTeamId": "league-beltway-team-3",
-            "homeScore": 126.62,
-            "awayScore": 136.42,
-            "completed": true
-          },
-          {
-            "week": 4,
-            "leagueId": "league-beltway",
-            "homeTeamId": "league-beltway-team-6",
-            "awayTeamId": "league-beltway-team-2",
-            "homeScore": 303.2,
-            "awayScore": 583.48,
-            "completed": true
-          },
-          {
-            "week": 4,
-            "leagueId": "league-beltway",
-            "homeTeamId": "league-beltway-team-7",
-            "awayTeamId": "league-beltway-team-8",
-            "homeScore": 50.51,
-            "awayScore": 129.99,
+            "homeScore": -5020,
+            "awayScore": 1656,
             "completed": true
           }
         ]
@@ -456,36 +212,18 @@
             "week": 5,
             "leagueId": "league-beltway",
             "homeTeamId": "league-beltway-team-1",
-            "awayTeamId": "league-beltway-team-5",
-            "homeScore": -194.38,
-            "awayScore": 356.2,
-            "completed": true
-          },
-          {
-            "week": 5,
-            "leagueId": "league-beltway",
-            "homeTeamId": "league-beltway-team-6",
-            "awayTeamId": "league-beltway-team-4",
-            "homeScore": 123.59,
-            "awayScore": 204.8,
-            "completed": true
-          },
-          {
-            "week": 5,
-            "leagueId": "league-beltway",
-            "homeTeamId": "league-beltway-team-7",
-            "awayTeamId": "league-beltway-team-3",
-            "homeScore": 59.85,
-            "awayScore": 267.63,
-            "completed": true
-          },
-          {
-            "week": 5,
-            "leagueId": "league-beltway",
-            "homeTeamId": "league-beltway-team-8",
             "awayTeamId": "league-beltway-team-2",
-            "homeScore": 82.15,
-            "awayScore": 18.23,
+            "homeScore": 6966,
+            "awayScore": 35086,
+            "completed": true
+          },
+          {
+            "week": 5,
+            "leagueId": "league-beltway",
+            "homeTeamId": "league-beltway-team-3",
+            "awayTeamId": "league-beltway-team-4",
+            "homeScore": 17845,
+            "awayScore": 24667.5,
             "completed": true
           }
         ]
@@ -497,36 +235,18 @@
             "week": 6,
             "leagueId": "league-beltway",
             "homeTeamId": "league-beltway-team-1",
-            "awayTeamId": "league-beltway-team-6",
-            "homeScore": 568.15,
-            "awayScore": -132.94,
-            "completed": true
-          },
-          {
-            "week": 6,
-            "leagueId": "league-beltway",
-            "homeTeamId": "league-beltway-team-7",
-            "awayTeamId": "league-beltway-team-5",
-            "homeScore": 214.81,
-            "awayScore": 507.53,
-            "completed": true
-          },
-          {
-            "week": 6,
-            "leagueId": "league-beltway",
-            "homeTeamId": "league-beltway-team-8",
-            "awayTeamId": "league-beltway-team-4",
-            "homeScore": 41.6,
-            "awayScore": 221.52,
-            "completed": true
-          },
-          {
-            "week": 6,
-            "leagueId": "league-beltway",
-            "homeTeamId": "league-beltway-team-2",
             "awayTeamId": "league-beltway-team-3",
-            "homeScore": -65.54,
-            "awayScore": -107.47,
+            "homeScore": 7087,
+            "awayScore": 11350,
+            "completed": true
+          },
+          {
+            "week": 6,
+            "leagueId": "league-beltway",
+            "homeTeamId": "league-beltway-team-4",
+            "awayTeamId": "league-beltway-team-2",
+            "homeScore": 0,
+            "awayScore": 2858,
             "completed": true
           }
         ]
@@ -546,32 +266,24 @@
         "isUserTeam": false,
         "roster": {
           "active": [
-            "P000197",
-            "H001064",
-            "F000462",
-            "C001127",
-            "B001313",
-            "C001131",
-            "C001130",
-            "O000173"
+            "ALVA-JOHNBOOZMAN",
+            "ALVA-THOMASSUOZZI",
+            "C001047"
           ],
           "bench": [
-            "C001063",
-            "B001304",
-            "J000298",
-            "L000591"
+            "ALVA-MITCHMCCONNE"
           ],
           "salaryCap": 50000,
-          "salaryUsed": 49840
+          "salaryUsed": 23215
         },
         "record": {
-          "wins": 4,
+          "wins": 1,
           "losses": 2,
-          "ties": 0
+          "ties": 3
         },
-        "pointsFor": 584.83,
-        "pointsAgainst": 124.67,
-        "streak": "W1"
+        "pointsFor": 38792,
+        "pointsAgainst": 50430,
+        "streak": "L2"
       },
       {
         "id": "league-capitol-team-2",
@@ -581,32 +293,24 @@
         "isUserTeam": false,
         "roster": {
           "active": [
-            "W000817",
-            "R000595",
-            "D000627",
-            "C000880",
-            "L000590",
-            "M001215",
-            "H001074",
-            "H001082"
+            "ALVA-TONYWIED",
+            "ALVA-JOSHGOTTHEIM",
+            "K000375"
           ],
           "bench": [
-            "P000621",
-            "K000382",
-            "G000574",
-            "M001207"
+            "ALVA-SHELDONWHITE"
           ],
           "salaryCap": 50000,
-          "salaryUsed": 49370
+          "salaryUsed": 18196
         },
         "record": {
-          "wins": 4,
-          "losses": 2,
-          "ties": 0
+          "wins": 2,
+          "losses": 1,
+          "ties": 3
         },
-        "pointsFor": 494.02,
-        "pointsAgainst": -59.36,
-        "streak": "W1"
+        "pointsFor": 32924,
+        "pointsAgainst": 8622,
+        "streak": "W2"
       },
       {
         "id": "league-capitol-team-3",
@@ -616,32 +320,24 @@
         "isUserTeam": false,
         "roster": {
           "active": [
-            "W000805",
-            "P000603",
-            "M001193",
-            "B001230",
-            "T000486",
-            "M000133",
-            "S001215",
-            "M001212"
+            "ALVA-JULIALETLOW",
+            "ALVA-MARKWAYNEMUL",
+            "ALVA-JOHNWHICKENL"
           ],
           "bench": [
-            "E000296",
-            "J000304",
-            "J000293",
-            "D000619"
+            "ALVA-AUGUSTLEEPFL"
           ],
           "salaryCap": 50000,
-          "salaryUsed": 50745
+          "salaryUsed": 18310
         },
         "record": {
-          "wins": 3,
-          "losses": 3,
-          "ties": 0
+          "wins": 2,
+          "losses": 1,
+          "ties": 3
         },
-        "pointsFor": 523.43,
-        "pointsAgainst": 340.64,
-        "streak": "L1"
+        "pointsFor": 30851,
+        "pointsAgainst": 26734.5,
+        "streak": "W1"
       },
       {
         "id": "league-capitol-team-4",
@@ -651,171 +347,23 @@
         "isUserTeam": false,
         "roster": {
           "active": [
-            "K000367",
-            "R000608",
-            "V000133",
-            "C001106",
-            "C000174",
-            "G000596",
-            "G000591",
-            "B001295"
+            "ALVA-RICHARDWALLE",
+            "ALVA-JONATHANJACK",
+            "ALVA-AUSTINSCOTT"
           ],
           "bench": [
-            "W000798",
-            "S001191",
-            "H001082",
-            "S001191"
+            "ALVA-THOMASHKEAN"
           ],
           "salaryCap": 50000,
-          "salaryUsed": 50570
-        },
-        "record": {
-          "wins": 4,
-          "losses": 2,
-          "ties": 0
-        },
-        "pointsFor": 616.07,
-        "pointsAgainst": 76.88,
-        "streak": "W2"
-      },
-      {
-        "id": "league-capitol-team-5",
-        "leagueId": "league-capitol",
-        "name": "The Caucus",
-        "owner": "DebtCeilingDan",
-        "isUserTeam": false,
-        "roster": {
-          "active": [
-            "S001200",
-            "B001287",
-            "M001166",
-            "M001196",
-            "S001190",
-            "R000614",
-            "W000826",
-            "P000622"
-          ],
-          "bench": [
-            "C001035",
-            "D000619",
-            "R000576",
-            "K000382"
-          ],
-          "salaryCap": 50000,
-          "salaryUsed": 50107
-        },
-        "record": {
-          "wins": 3,
-          "losses": 3,
-          "ties": 0
-        },
-        "pointsFor": 512.89,
-        "pointsAgainst": 280.24,
-        "streak": "W2"
-      },
-      {
-        "id": "league-capitol-team-6",
-        "leagueId": "league-capitol",
-        "name": "K Street Kings",
-        "owner": "PACAttackPat",
-        "isUserTeam": false,
-        "roster": {
-          "active": [
-            "T000484",
-            "Y000033",
-            "L000591",
-            "W000827",
-            "C001117",
-            "O000172",
-            "C001121",
-            "G000595"
-          ],
-          "bench": [
-            "T000460",
-            "R000576",
-            "D000627",
-            "B001304"
-          ],
-          "salaryCap": 50000,
-          "salaryUsed": 50681
+          "salaryUsed": 20177
         },
         "record": {
           "wins": 1,
-          "losses": 5,
-          "ties": 0
-        },
-        "pointsFor": 395.21,
-        "pointsAgainst": 1632.07,
-        "streak": "L3"
-      },
-      {
-        "id": "league-capitol-team-7",
-        "leagueId": "league-capitol",
-        "name": "The Debt Ceilings",
-        "owner": "WashingtonWhip",
-        "isUserTeam": false,
-        "roster": {
-          "active": [
-            "G000386",
-            "M001211",
-            "F000475",
-            "C001047",
-            "S001148",
-            "J000293",
-            "P000608",
-            "S001216"
-          ],
-          "bench": [
-            "S000250",
-            "C001088",
-            "R000595",
-            "J000298"
-          ],
-          "salaryCap": 50000,
-          "salaryUsed": 50548
-        },
-        "record": {
-          "wins": 1,
-          "losses": 5,
-          "ties": 0
-        },
-        "pointsFor": 452.27,
-        "pointsAgainst": 1446.75,
-        "streak": "L5"
-      },
-      {
-        "id": "league-capitol-team-8",
-        "leagueId": "league-capitol",
-        "name": "PAC Attack",
-        "owner": "HouseClubMember",
-        "isUserTeam": false,
-        "roster": {
-          "active": [
-            "A000376",
-            "K000375",
-            "B001291",
-            "M001207",
-            "G000565",
-            "N000191",
-            "P000449",
-            "M001111"
-          ],
-          "bench": [
-            "C001112",
-            "B001307",
-            "C001130",
-            "G000574"
-          ],
-          "salaryCap": 50000,
-          "salaryUsed": 50665
-        },
-        "record": {
-          "wins": 4,
           "losses": 2,
-          "ties": 0
+          "ties": 3
         },
-        "pointsFor": 625.7,
-        "pointsAgainst": 362.53,
+        "pointsFor": 28661.5,
+        "pointsAgainst": 45442,
         "streak": "L1"
       }
     ],
@@ -827,36 +375,18 @@
             "week": 1,
             "leagueId": "league-capitol",
             "homeTeamId": "league-capitol-team-1",
-            "awayTeamId": "league-capitol-team-8",
-            "homeScore": 144.42,
-            "awayScore": 62.7,
+            "awayTeamId": "league-capitol-team-4",
+            "homeScore": 0,
+            "awayScore": 0,
             "completed": true
           },
           {
             "week": 1,
             "leagueId": "league-capitol",
             "homeTeamId": "league-capitol-team-2",
-            "awayTeamId": "league-capitol-team-7",
-            "homeScore": -111.58,
-            "awayScore": 61.9,
-            "completed": true
-          },
-          {
-            "week": 1,
-            "leagueId": "league-capitol",
-            "homeTeamId": "league-capitol-team-3",
-            "awayTeamId": "league-capitol-team-6",
-            "homeScore": 244.11,
-            "awayScore": 41.14,
-            "completed": true
-          },
-          {
-            "week": 1,
-            "leagueId": "league-capitol",
-            "homeTeamId": "league-capitol-team-4",
-            "awayTeamId": "league-capitol-team-5",
-            "homeScore": 415.34,
-            "awayScore": 55.96,
+            "awayTeamId": "league-capitol-team-3",
+            "homeScore": 0,
+            "awayScore": 0,
             "completed": true
           }
         ]
@@ -869,35 +399,17 @@
             "leagueId": "league-capitol",
             "homeTeamId": "league-capitol-team-1",
             "awayTeamId": "league-capitol-team-2",
-            "homeScore": -207.24,
-            "awayScore": 37.98,
+            "homeScore": 0,
+            "awayScore": 0,
             "completed": true
           },
           {
             "week": 2,
             "leagueId": "league-capitol",
             "homeTeamId": "league-capitol-team-3",
-            "awayTeamId": "league-capitol-team-8",
-            "homeScore": 30.89,
-            "awayScore": 125.68,
-            "completed": true
-          },
-          {
-            "week": 2,
-            "leagueId": "league-capitol",
-            "homeTeamId": "league-capitol-team-4",
-            "awayTeamId": "league-capitol-team-7",
-            "homeScore": 117.43,
-            "awayScore": -396.71,
-            "completed": true
-          },
-          {
-            "week": 2,
-            "leagueId": "league-capitol",
-            "homeTeamId": "league-capitol-team-5",
-            "awayTeamId": "league-capitol-team-6",
-            "homeScore": -430.38,
-            "awayScore": -475.53,
+            "awayTeamId": "league-capitol-team-4",
+            "homeScore": 0,
+            "awayScore": 0,
             "completed": true
           }
         ]
@@ -910,8 +422,8 @@
             "leagueId": "league-capitol",
             "homeTeamId": "league-capitol-team-1",
             "awayTeamId": "league-capitol-team-3",
-            "homeScore": 52.89,
-            "awayScore": -48.15,
+            "homeScore": 0,
+            "awayScore": 0,
             "completed": true
           },
           {
@@ -919,26 +431,8 @@
             "leagueId": "league-capitol",
             "homeTeamId": "league-capitol-team-4",
             "awayTeamId": "league-capitol-team-2",
-            "homeScore": -191.9,
-            "awayScore": 31.45,
-            "completed": true
-          },
-          {
-            "week": 3,
-            "leagueId": "league-capitol",
-            "homeTeamId": "league-capitol-team-5",
-            "awayTeamId": "league-capitol-team-8",
-            "homeScore": -103.04,
-            "awayScore": 183.58,
-            "completed": true
-          },
-          {
-            "week": 3,
-            "leagueId": "league-capitol",
-            "homeTeamId": "league-capitol-team-6",
-            "awayTeamId": "league-capitol-team-7",
-            "homeScore": 535.75,
-            "awayScore": 461.91,
+            "homeScore": 0,
+            "awayScore": 0,
             "completed": true
           }
         ]
@@ -951,35 +445,17 @@
             "leagueId": "league-capitol",
             "homeTeamId": "league-capitol-team-1",
             "awayTeamId": "league-capitol-team-4",
-            "homeScore": 220.99,
-            "awayScore": -151.12,
+            "homeScore": 24739,
+            "awayScore": 3994,
             "completed": true
           },
           {
             "week": 4,
             "leagueId": "league-capitol",
-            "homeTeamId": "league-capitol-team-5",
+            "homeTeamId": "league-capitol-team-2",
             "awayTeamId": "league-capitol-team-3",
-            "homeScore": 126.62,
-            "awayScore": 136.42,
-            "completed": true
-          },
-          {
-            "week": 4,
-            "leagueId": "league-capitol",
-            "homeTeamId": "league-capitol-team-6",
-            "awayTeamId": "league-capitol-team-2",
-            "homeScore": 303.2,
-            "awayScore": 583.48,
-            "completed": true
-          },
-          {
-            "week": 4,
-            "leagueId": "league-capitol",
-            "homeTeamId": "league-capitol-team-7",
-            "awayTeamId": "league-capitol-team-8",
-            "homeScore": 50.51,
-            "awayScore": 129.99,
+            "homeScore": -5020,
+            "awayScore": 1656,
             "completed": true
           }
         ]
@@ -991,36 +467,18 @@
             "week": 5,
             "leagueId": "league-capitol",
             "homeTeamId": "league-capitol-team-1",
-            "awayTeamId": "league-capitol-team-5",
-            "homeScore": -194.38,
-            "awayScore": 356.2,
-            "completed": true
-          },
-          {
-            "week": 5,
-            "leagueId": "league-capitol",
-            "homeTeamId": "league-capitol-team-6",
-            "awayTeamId": "league-capitol-team-4",
-            "homeScore": 123.59,
-            "awayScore": 204.8,
-            "completed": true
-          },
-          {
-            "week": 5,
-            "leagueId": "league-capitol",
-            "homeTeamId": "league-capitol-team-7",
-            "awayTeamId": "league-capitol-team-3",
-            "homeScore": 59.85,
-            "awayScore": 267.63,
-            "completed": true
-          },
-          {
-            "week": 5,
-            "leagueId": "league-capitol",
-            "homeTeamId": "league-capitol-team-8",
             "awayTeamId": "league-capitol-team-2",
-            "homeScore": 82.15,
-            "awayScore": 18.23,
+            "homeScore": 6966,
+            "awayScore": 35086,
+            "completed": true
+          },
+          {
+            "week": 5,
+            "leagueId": "league-capitol",
+            "homeTeamId": "league-capitol-team-3",
+            "awayTeamId": "league-capitol-team-4",
+            "homeScore": 17845,
+            "awayScore": 24667.5,
             "completed": true
           }
         ]
@@ -1032,36 +490,18 @@
             "week": 6,
             "leagueId": "league-capitol",
             "homeTeamId": "league-capitol-team-1",
-            "awayTeamId": "league-capitol-team-6",
-            "homeScore": 568.15,
-            "awayScore": -132.94,
-            "completed": true
-          },
-          {
-            "week": 6,
-            "leagueId": "league-capitol",
-            "homeTeamId": "league-capitol-team-7",
-            "awayTeamId": "league-capitol-team-5",
-            "homeScore": 214.81,
-            "awayScore": 507.53,
-            "completed": true
-          },
-          {
-            "week": 6,
-            "leagueId": "league-capitol",
-            "homeTeamId": "league-capitol-team-8",
-            "awayTeamId": "league-capitol-team-4",
-            "homeScore": 41.6,
-            "awayScore": 221.52,
-            "completed": true
-          },
-          {
-            "week": 6,
-            "leagueId": "league-capitol",
-            "homeTeamId": "league-capitol-team-2",
             "awayTeamId": "league-capitol-team-3",
-            "homeScore": -65.54,
-            "awayScore": -107.47,
+            "homeScore": 7087,
+            "awayScore": 11350,
+            "completed": true
+          },
+          {
+            "week": 6,
+            "leagueId": "league-capitol",
+            "homeTeamId": "league-capitol-team-4",
+            "awayTeamId": "league-capitol-team-2",
+            "homeScore": 0,
+            "awayScore": 2858,
             "completed": true
           }
         ]
@@ -1081,32 +521,24 @@
         "isUserTeam": false,
         "roster": {
           "active": [
-            "P000197",
-            "H001064",
-            "F000462",
-            "C001127",
-            "B001313",
-            "C001131",
-            "C001130",
-            "O000173"
+            "ALVA-JOHNBOOZMAN",
+            "ALVA-THOMASSUOZZI",
+            "C001047"
           ],
           "bench": [
-            "C001063",
-            "B001304",
-            "J000298",
-            "L000591"
+            "ALVA-MITCHMCCONNE"
           ],
           "salaryCap": 50000,
-          "salaryUsed": 49840
+          "salaryUsed": 23215
         },
         "record": {
-          "wins": 4,
+          "wins": 1,
           "losses": 2,
-          "ties": 0
+          "ties": 3
         },
-        "pointsFor": 584.83,
-        "pointsAgainst": 124.67,
-        "streak": "W1"
+        "pointsFor": 38792,
+        "pointsAgainst": 50430,
+        "streak": "L2"
       },
       {
         "id": "league-swamp-team-2",
@@ -1116,32 +548,24 @@
         "isUserTeam": false,
         "roster": {
           "active": [
-            "W000817",
-            "R000595",
-            "D000627",
-            "C000880",
-            "L000590",
-            "M001215",
-            "H001074",
-            "H001082"
+            "ALVA-TONYWIED",
+            "ALVA-JOSHGOTTHEIM",
+            "K000375"
           ],
           "bench": [
-            "P000621",
-            "K000382",
-            "G000574",
-            "M001207"
+            "ALVA-SHELDONWHITE"
           ],
           "salaryCap": 50000,
-          "salaryUsed": 49370
+          "salaryUsed": 18196
         },
         "record": {
-          "wins": 4,
-          "losses": 2,
-          "ties": 0
+          "wins": 2,
+          "losses": 1,
+          "ties": 3
         },
-        "pointsFor": 494.02,
-        "pointsAgainst": -59.36,
-        "streak": "W1"
+        "pointsFor": 32924,
+        "pointsAgainst": 8622,
+        "streak": "W2"
       },
       {
         "id": "league-swamp-team-3",
@@ -1151,32 +575,24 @@
         "isUserTeam": false,
         "roster": {
           "active": [
-            "W000805",
-            "P000603",
-            "M001193",
-            "B001230",
-            "T000486",
-            "M000133",
-            "S001215",
-            "M001212"
+            "ALVA-JULIALETLOW",
+            "ALVA-MARKWAYNEMUL",
+            "ALVA-JOHNWHICKENL"
           ],
           "bench": [
-            "E000296",
-            "J000304",
-            "J000293",
-            "D000619"
+            "ALVA-AUGUSTLEEPFL"
           ],
           "salaryCap": 50000,
-          "salaryUsed": 50745
+          "salaryUsed": 18310
         },
         "record": {
-          "wins": 3,
-          "losses": 3,
-          "ties": 0
+          "wins": 2,
+          "losses": 1,
+          "ties": 3
         },
-        "pointsFor": 523.43,
-        "pointsAgainst": 340.64,
-        "streak": "L1"
+        "pointsFor": 30851,
+        "pointsAgainst": 26734.5,
+        "streak": "W1"
       },
       {
         "id": "league-swamp-team-4",
@@ -1186,171 +602,23 @@
         "isUserTeam": false,
         "roster": {
           "active": [
-            "K000367",
-            "R000608",
-            "V000133",
-            "C001106",
-            "C000174",
-            "G000596",
-            "G000591",
-            "B001295"
+            "ALVA-RICHARDWALLE",
+            "ALVA-JONATHANJACK",
+            "ALVA-AUSTINSCOTT"
           ],
           "bench": [
-            "W000798",
-            "S001191",
-            "H001082",
-            "S001191"
+            "ALVA-THOMASHKEAN"
           ],
           "salaryCap": 50000,
-          "salaryUsed": 50570
-        },
-        "record": {
-          "wins": 4,
-          "losses": 2,
-          "ties": 0
-        },
-        "pointsFor": 616.07,
-        "pointsAgainst": 76.88,
-        "streak": "W2"
-      },
-      {
-        "id": "league-swamp-team-5",
-        "leagueId": "league-swamp",
-        "name": "Super PACs",
-        "owner": "SuperPACSteve",
-        "isUserTeam": false,
-        "roster": {
-          "active": [
-            "S001200",
-            "B001287",
-            "M001166",
-            "M001196",
-            "S001190",
-            "R000614",
-            "W000826",
-            "P000622"
-          ],
-          "bench": [
-            "C001035",
-            "D000619",
-            "R000576",
-            "K000382"
-          ],
-          "salaryCap": 50000,
-          "salaryUsed": 50107
-        },
-        "record": {
-          "wins": 3,
-          "losses": 3,
-          "ties": 0
-        },
-        "pointsFor": 512.89,
-        "pointsAgainst": 280.24,
-        "streak": "W2"
-      },
-      {
-        "id": "league-swamp-team-6",
-        "leagueId": "league-swamp",
-        "name": "The Riders",
-        "owner": "RiderRandy",
-        "isUserTeam": false,
-        "roster": {
-          "active": [
-            "T000484",
-            "Y000033",
-            "L000591",
-            "W000827",
-            "C001117",
-            "O000172",
-            "C001121",
-            "G000595"
-          ],
-          "bench": [
-            "T000460",
-            "R000576",
-            "D000627",
-            "B001304"
-          ],
-          "salaryCap": 50000,
-          "salaryUsed": 50681
+          "salaryUsed": 20177
         },
         "record": {
           "wins": 1,
-          "losses": 5,
-          "ties": 0
-        },
-        "pointsFor": 395.21,
-        "pointsAgainst": 1632.07,
-        "streak": "L3"
-      },
-      {
-        "id": "league-swamp-team-7",
-        "leagueId": "league-swamp",
-        "name": "Floor Crossers",
-        "owner": "FloorCrosserFrank",
-        "isUserTeam": false,
-        "roster": {
-          "active": [
-            "G000386",
-            "M001211",
-            "F000475",
-            "C001047",
-            "S001148",
-            "J000293",
-            "P000608",
-            "S001216"
-          ],
-          "bench": [
-            "S000250",
-            "C001088",
-            "R000595",
-            "J000298"
-          ],
-          "salaryCap": 50000,
-          "salaryUsed": 50548
-        },
-        "record": {
-          "wins": 1,
-          "losses": 5,
-          "ties": 0
-        },
-        "pointsFor": 452.27,
-        "pointsAgainst": 1446.75,
-        "streak": "L5"
-      },
-      {
-        "id": "league-swamp-team-8",
-        "leagueId": "league-swamp",
-        "name": "The Cloture Club",
-        "owner": "ClotureClubb",
-        "isUserTeam": false,
-        "roster": {
-          "active": [
-            "A000376",
-            "K000375",
-            "B001291",
-            "M001207",
-            "G000565",
-            "N000191",
-            "P000449",
-            "M001111"
-          ],
-          "bench": [
-            "C001112",
-            "B001307",
-            "C001130",
-            "G000574"
-          ],
-          "salaryCap": 50000,
-          "salaryUsed": 50665
-        },
-        "record": {
-          "wins": 4,
           "losses": 2,
-          "ties": 0
+          "ties": 3
         },
-        "pointsFor": 625.7,
-        "pointsAgainst": 362.53,
+        "pointsFor": 28661.5,
+        "pointsAgainst": 45442,
         "streak": "L1"
       }
     ],
@@ -1362,36 +630,18 @@
             "week": 1,
             "leagueId": "league-swamp",
             "homeTeamId": "league-swamp-team-1",
-            "awayTeamId": "league-swamp-team-8",
-            "homeScore": 144.42,
-            "awayScore": 62.7,
+            "awayTeamId": "league-swamp-team-4",
+            "homeScore": 0,
+            "awayScore": 0,
             "completed": true
           },
           {
             "week": 1,
             "leagueId": "league-swamp",
             "homeTeamId": "league-swamp-team-2",
-            "awayTeamId": "league-swamp-team-7",
-            "homeScore": -111.58,
-            "awayScore": 61.9,
-            "completed": true
-          },
-          {
-            "week": 1,
-            "leagueId": "league-swamp",
-            "homeTeamId": "league-swamp-team-3",
-            "awayTeamId": "league-swamp-team-6",
-            "homeScore": 244.11,
-            "awayScore": 41.14,
-            "completed": true
-          },
-          {
-            "week": 1,
-            "leagueId": "league-swamp",
-            "homeTeamId": "league-swamp-team-4",
-            "awayTeamId": "league-swamp-team-5",
-            "homeScore": 415.34,
-            "awayScore": 55.96,
+            "awayTeamId": "league-swamp-team-3",
+            "homeScore": 0,
+            "awayScore": 0,
             "completed": true
           }
         ]
@@ -1404,35 +654,17 @@
             "leagueId": "league-swamp",
             "homeTeamId": "league-swamp-team-1",
             "awayTeamId": "league-swamp-team-2",
-            "homeScore": -207.24,
-            "awayScore": 37.98,
+            "homeScore": 0,
+            "awayScore": 0,
             "completed": true
           },
           {
             "week": 2,
             "leagueId": "league-swamp",
             "homeTeamId": "league-swamp-team-3",
-            "awayTeamId": "league-swamp-team-8",
-            "homeScore": 30.89,
-            "awayScore": 125.68,
-            "completed": true
-          },
-          {
-            "week": 2,
-            "leagueId": "league-swamp",
-            "homeTeamId": "league-swamp-team-4",
-            "awayTeamId": "league-swamp-team-7",
-            "homeScore": 117.43,
-            "awayScore": -396.71,
-            "completed": true
-          },
-          {
-            "week": 2,
-            "leagueId": "league-swamp",
-            "homeTeamId": "league-swamp-team-5",
-            "awayTeamId": "league-swamp-team-6",
-            "homeScore": -430.38,
-            "awayScore": -475.53,
+            "awayTeamId": "league-swamp-team-4",
+            "homeScore": 0,
+            "awayScore": 0,
             "completed": true
           }
         ]
@@ -1445,8 +677,8 @@
             "leagueId": "league-swamp",
             "homeTeamId": "league-swamp-team-1",
             "awayTeamId": "league-swamp-team-3",
-            "homeScore": 52.89,
-            "awayScore": -48.15,
+            "homeScore": 0,
+            "awayScore": 0,
             "completed": true
           },
           {
@@ -1454,26 +686,8 @@
             "leagueId": "league-swamp",
             "homeTeamId": "league-swamp-team-4",
             "awayTeamId": "league-swamp-team-2",
-            "homeScore": -191.9,
-            "awayScore": 31.45,
-            "completed": true
-          },
-          {
-            "week": 3,
-            "leagueId": "league-swamp",
-            "homeTeamId": "league-swamp-team-5",
-            "awayTeamId": "league-swamp-team-8",
-            "homeScore": -103.04,
-            "awayScore": 183.58,
-            "completed": true
-          },
-          {
-            "week": 3,
-            "leagueId": "league-swamp",
-            "homeTeamId": "league-swamp-team-6",
-            "awayTeamId": "league-swamp-team-7",
-            "homeScore": 535.75,
-            "awayScore": 461.91,
+            "homeScore": 0,
+            "awayScore": 0,
             "completed": true
           }
         ]
@@ -1486,35 +700,17 @@
             "leagueId": "league-swamp",
             "homeTeamId": "league-swamp-team-1",
             "awayTeamId": "league-swamp-team-4",
-            "homeScore": 220.99,
-            "awayScore": -151.12,
+            "homeScore": 24739,
+            "awayScore": 3994,
             "completed": true
           },
           {
             "week": 4,
             "leagueId": "league-swamp",
-            "homeTeamId": "league-swamp-team-5",
+            "homeTeamId": "league-swamp-team-2",
             "awayTeamId": "league-swamp-team-3",
-            "homeScore": 126.62,
-            "awayScore": 136.42,
-            "completed": true
-          },
-          {
-            "week": 4,
-            "leagueId": "league-swamp",
-            "homeTeamId": "league-swamp-team-6",
-            "awayTeamId": "league-swamp-team-2",
-            "homeScore": 303.2,
-            "awayScore": 583.48,
-            "completed": true
-          },
-          {
-            "week": 4,
-            "leagueId": "league-swamp",
-            "homeTeamId": "league-swamp-team-7",
-            "awayTeamId": "league-swamp-team-8",
-            "homeScore": 50.51,
-            "awayScore": 129.99,
+            "homeScore": -5020,
+            "awayScore": 1656,
             "completed": true
           }
         ]
@@ -1526,36 +722,18 @@
             "week": 5,
             "leagueId": "league-swamp",
             "homeTeamId": "league-swamp-team-1",
-            "awayTeamId": "league-swamp-team-5",
-            "homeScore": -194.38,
-            "awayScore": 356.2,
-            "completed": true
-          },
-          {
-            "week": 5,
-            "leagueId": "league-swamp",
-            "homeTeamId": "league-swamp-team-6",
-            "awayTeamId": "league-swamp-team-4",
-            "homeScore": 123.59,
-            "awayScore": 204.8,
-            "completed": true
-          },
-          {
-            "week": 5,
-            "leagueId": "league-swamp",
-            "homeTeamId": "league-swamp-team-7",
-            "awayTeamId": "league-swamp-team-3",
-            "homeScore": 59.85,
-            "awayScore": 267.63,
-            "completed": true
-          },
-          {
-            "week": 5,
-            "leagueId": "league-swamp",
-            "homeTeamId": "league-swamp-team-8",
             "awayTeamId": "league-swamp-team-2",
-            "homeScore": 82.15,
-            "awayScore": 18.23,
+            "homeScore": 6966,
+            "awayScore": 35086,
+            "completed": true
+          },
+          {
+            "week": 5,
+            "leagueId": "league-swamp",
+            "homeTeamId": "league-swamp-team-3",
+            "awayTeamId": "league-swamp-team-4",
+            "homeScore": 17845,
+            "awayScore": 24667.5,
             "completed": true
           }
         ]
@@ -1567,36 +745,18 @@
             "week": 6,
             "leagueId": "league-swamp",
             "homeTeamId": "league-swamp-team-1",
-            "awayTeamId": "league-swamp-team-6",
-            "homeScore": 568.15,
-            "awayScore": -132.94,
-            "completed": true
-          },
-          {
-            "week": 6,
-            "leagueId": "league-swamp",
-            "homeTeamId": "league-swamp-team-7",
-            "awayTeamId": "league-swamp-team-5",
-            "homeScore": 214.81,
-            "awayScore": 507.53,
-            "completed": true
-          },
-          {
-            "week": 6,
-            "leagueId": "league-swamp",
-            "homeTeamId": "league-swamp-team-8",
-            "awayTeamId": "league-swamp-team-4",
-            "homeScore": 41.6,
-            "awayScore": 221.52,
-            "completed": true
-          },
-          {
-            "week": 6,
-            "leagueId": "league-swamp",
-            "homeTeamId": "league-swamp-team-2",
             "awayTeamId": "league-swamp-team-3",
-            "homeScore": -65.54,
-            "awayScore": -107.47,
+            "homeScore": 7087,
+            "awayScore": 11350,
+            "completed": true
+          },
+          {
+            "week": 6,
+            "leagueId": "league-swamp",
+            "homeTeamId": "league-swamp-team-4",
+            "awayTeamId": "league-swamp-team-2",
+            "homeScore": 0,
+            "awayScore": 2858,
             "completed": true
           }
         ]

@@ -82,11 +82,30 @@ interface League {
 // ------ Config ------
 
 const NUM_WEEKS = 6
-const TEAMS_PER_LEAGUE = 8
-const ACTIVE_SLOTS = 8
-const BENCH_SLOTS = 4
-const TOTAL_PICKS = ACTIVE_SLOTS + BENCH_SLOTS
 const SALARY_CAP = 50_000
+
+// Dynamic roster sizing based on available politicians
+// With 16 real politicians, we can't fill 3 leagues × 8 teams × 12 slots = 288
+// Scale down to fit: politicians are shared across leagues (each league drafts independently)
+function computeLeagueSize(totalPoliticians: number) {
+  // Each league needs TEAMS × (ACTIVE + BENCH) unique politicians
+  // Try 8 teams first, then scale down
+  for (const teams of [8, 4, 2]) {
+    for (const active of [8, 6, 4, 3, 2]) {
+      const bench = Math.max(1, Math.floor(active / 2))
+      const needed = teams * (active + bench)
+      if (needed <= totalPoliticians) {
+        return { teams, active, bench }
+      }
+    }
+  }
+  return { teams: 2, active: 2, bench: 1 } // minimum viable
+}
+
+let TEAMS_PER_LEAGUE = 8
+let ACTIVE_SLOTS = 8
+let BENCH_SLOTS = 4
+let TOTAL_PICKS = ACTIVE_SLOTS + BENCH_SLOTS
 
 const LEAGUES_CONFIG = [
   { id: 'league-beltway', name: 'The Beltway Bandits' },
@@ -184,8 +203,8 @@ function simulateSnakeDraft(
   leagueId: string,
   leagueIndex: number
 ): Team[] {
-  const teamNames = TEAM_NAMES_BY_LEAGUE[leagueIndex]
-  const owners = OWNERS_BY_LEAGUE[leagueIndex]
+  const teamNames = TEAM_NAMES_BY_LEAGUE[leagueIndex].slice(0, TEAMS_PER_LEAGUE)
+  const owners = OWNERS_BY_LEAGUE[leagueIndex].slice(0, TEAMS_PER_LEAGUE)
 
   // Sort pool by seasonPoints descending — best players drafted first.
   // NOTE: pool has fewer politicians than total picks needed (8 teams × 12 = 96 > pool size).
@@ -370,6 +389,14 @@ function generateDemoData() {
   const politicians = loadPoliticians()
   console.log(`Loaded ${politicians.length} politicians`)
 
+  // Dynamically size leagues based on available politicians
+  const sizing = computeLeagueSize(politicians.length)
+  TEAMS_PER_LEAGUE = sizing.teams
+  ACTIVE_SLOTS = sizing.active
+  BENCH_SLOTS = sizing.bench
+  TOTAL_PICKS = ACTIVE_SLOTS + BENCH_SLOTS
+  console.log(`League sizing: ${TEAMS_PER_LEAGUE} teams × ${ACTIVE_SLOTS}+${BENCH_SLOTS} roster (${politicians.length} politicians available)`)
+
   const politicianMap = new Map(politicians.map((p) => [p.bioguideId, p]))
 
   // Draft the same pool for all leagues (real fantasy sports allows same player in different leagues)
@@ -543,7 +570,7 @@ function generateDemoData() {
   const userTeamCheck = league1Check.teams.find((t) => t.isUserTeam)!
   console.log('\nVerification:')
   console.log(`  Leagues: ${allLeagues.length} (expected 3)`)
-  console.log(`  Teams per league: ${allLeagues.map((l) => l.teams.length).join(', ')} (expected 8,8,8)`)
+  console.log(`  Teams per league: ${allLeagues.map((l) => l.teams.length).join(', ')} (expected ${TEAMS_PER_LEAGUE} each)`)
   console.log(`  User team: ${userTeamCheck.name} — record ${userTeamCheck.record.wins}-${userTeamCheck.record.losses}-${userTeamCheck.record.ties}`)
   console.log(`  Schedule weeks: ${uniqueSchedules.length} (expected 6)`)
   console.log(`  WeekResults: ${allWeekResults.length} (expected ${NUM_WEEKS * TEAMS_PER_LEAGUE * LEAGUES_CONFIG.length})`)

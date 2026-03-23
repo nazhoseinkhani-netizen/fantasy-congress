@@ -15,6 +15,21 @@
 
 import { execSync } from 'child_process'
 import { join } from 'path'
+import { readFileSync } from 'fs'
+
+// Load .env file if present
+try {
+  const envFile = readFileSync(join(process.cwd(), '.env'), 'utf8')
+  for (const line of envFile.split('\n')) {
+    const trimmed = line.trim()
+    if (!trimmed || trimmed.startsWith('#')) continue
+    const eqIdx = trimmed.indexOf('=')
+    if (eqIdx === -1) continue
+    const key = trimmed.slice(0, eqIdx).trim()
+    const value = trimmed.slice(eqIdx + 1).trim()
+    if (!process.env[key]) process.env[key] = value
+  }
+} catch { /* .env not required */ }
 
 const PROJECT_ROOT = process.cwd()
 

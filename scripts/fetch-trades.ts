@@ -16,6 +16,20 @@
 import { readFileSync, writeFileSync, mkdirSync } from 'fs'
 import { join } from 'path'
 
+// Load .env file if present
+try {
+  const envFile = readFileSync(join(process.cwd(), '.env'), 'utf8')
+  for (const line of envFile.split('\n')) {
+    const trimmed = line.trim()
+    if (!trimmed || trimmed.startsWith('#')) continue
+    const eqIdx = trimmed.indexOf('=')
+    if (eqIdx === -1) continue
+    const key = trimmed.slice(0, eqIdx).trim()
+    const value = trimmed.slice(eqIdx + 1).trim()
+    if (!process.env[key]) process.env[key] = value
+  }
+} catch { /* .env not required */ }
+
 const OUT_DIR = join(process.cwd(), 'public', 'data')
 const OUT_FILE = join(OUT_DIR, '_raw-trades.json')
 const POLITICIANS_FILE = join(OUT_DIR, '_raw-politicians.json')
@@ -207,7 +221,7 @@ async function callAlvaScript(code: string): Promise<unknown> {
         if (shouldRetry && attempt < MAX_RETRIES) {
           console.warn(`[fetch-trades] Attempt ${attempt} failed (${res.status}), retrying in 2s...`)
           lastError = err
-          await sleep(2000)
+          await sleep(5000)
           continue
         }
         throw err
@@ -258,80 +272,85 @@ async function discoverSdkPartition(): Promise<void> {
 // ---------------------------------------------------------------------------
 
 async function fetchAlvaTrades(): Promise<unknown[]> {
-  // The Alva V8 sandbox script — pulls all available senator trades
-  const tradeScript = `
+  console.log('[fetch-trades] Fetching senator trades from Alva...')
+
+  const PAGE_SIZE = 100
+  const MAX_TRADES = 10000
+  const allItems: unknown[] = []
+
+  // Use Unix timestamps — Alva requires integer seconds
+  const startTime = Math.floor(new Date('2024-01-01').getTime() / 1000)
+  const endTime = Math.floor(Date.now() / 1000)
+
+  let offset = 0
+  while (allItems.length < MAX_TRADES) {
+    const tradeScript = `
 (async () => {
   try {
-    const mod = require("@arrays/equity/senator-trades:v1.0.0")
-    const getSenatorTrades = mod.getSenatorTrades || mod.default?.getSenatorTrades
-    if (!getSenatorTrades) {
-      return JSON.stringify({ error: "getSenatorTrades not found in module", keys: Object.keys(mod) })
-    }
-    const result = getSenatorTrades({})
+    const mod = require("@arrays/data/stock/person/senator-trading:v1.0.0")
+    const result = await mod.getSenatorTrades({
+      start_time: ${startTime},
+      end_time: ${endTime},
+      time_type: "DISCLOSURE_DATE",
+      limit: ${PAGE_SIZE},
+      offset: ${offset}
+    })
     return JSON.stringify(result)
   } catch (err) {
     return JSON.stringify({ error: String(err), stack: String(err && err.stack) })
   }
 })()
 `
-
-  console.log('[fetch-trades] Fetching senator trades from Alva...')
-  const rawResponse = await callAlvaScript(tradeScript)
-
-  // Alva wraps the returned value; parse accordingly
-  let trades: unknown[] = []
-
-  try {
-    // The response from /api/v1/run may be { result: "..." } where result is a JSON string
+    const rawResponse = await callAlvaScript(tradeScript)
     const resp = rawResponse as Record<string, unknown>
 
-    // Try to unwrap the result
+    // Alva double-wraps: { result: "\"{ ... }\"" } — parse until we get an object
     let parsed: unknown = rawResponse
     if (resp && typeof resp.result === 'string') {
       parsed = JSON.parse(resp.result)
-    } else if (resp && typeof resp.output === 'string') {
-      parsed = JSON.parse(resp.output)
+    }
+    // May still be a string after first parse — unwrap again
+    if (typeof parsed === 'string') {
+      parsed = JSON.parse(parsed)
     }
 
-    // Write raw for debugging
-    writeFileSync(ALVA_RAW_FILE, JSON.stringify(rawResponse, null, 2))
-    console.log(`[fetch-trades] Raw Alva response written to ${ALVA_RAW_FILE}`)
+    // Write first page raw for debugging
+    if (offset === 0) {
+      writeFileSync(ALVA_RAW_FILE, JSON.stringify(rawResponse, null, 2))
+      console.log(`[fetch-trades] Raw Alva response written to ${ALVA_RAW_FILE}`)
+    }
 
-    // Check for error response from our script
+    // Check for error
     if (parsed && typeof parsed === 'object' && !Array.isArray(parsed)) {
       const p = parsed as Record<string, unknown>
       if (p.error) {
         console.error(`[fetch-trades] Alva script error: ${p.error}`)
-        if (p.keys) console.error(`[fetch-trades] Module keys: ${JSON.stringify(p.keys)}`)
-        // Fall through — trades will be empty, which triggers FATAL below
+        break
       }
     }
 
-    // Normalize to array
-    if (Array.isArray(parsed)) {
-      trades = parsed
-    } else if (parsed && typeof parsed === 'object') {
-      const p = parsed as Record<string, unknown>
-      // Try common container fields
-      const containerKeys = ['trades', 'data', 'results', 'records', 'items', 'rows']
-      for (const key of containerKeys) {
-        if (Array.isArray(p[key])) {
-          trades = p[key] as unknown[]
-          break
-        }
-      }
+    // Extract items from { success, data: { count, items } }
+    const p = parsed as Record<string, unknown>
+    const data = p?.data as Record<string, unknown> | undefined
+    const items = data?.items
+    if (!Array.isArray(items) || items.length === 0) {
+      break
     }
-  } catch (parseErr) {
-    console.warn(`[fetch-trades] Failed to parse Alva response: ${parseErr}`)
-    writeFileSync(ALVA_RAW_FILE, JSON.stringify(rawResponse, null, 2))
+
+    allItems.push(...items)
+    console.log(`[fetch-trades] Fetched ${allItems.length} trades (page offset=${offset})...`)
+
+    if (items.length < PAGE_SIZE) break // last page
+    offset += PAGE_SIZE
+    await sleep(1000) // rate limit courtesy — Alva enforces aggressive limits
   }
 
   // Log first record for field name debugging
-  if (trades.length > 0) {
-    console.log(`[fetch-trades] First raw Alva trade: ${JSON.stringify(trades[0])}`)
+  if (allItems.length > 0) {
+    console.log(`[fetch-trades] First raw Alva trade: ${JSON.stringify(allItems[0])}`)
   }
 
-  return trades
+  return allItems
 }
 
 // ---------------------------------------------------------------------------
@@ -347,19 +366,32 @@ function normalizeName(name: string): string {
     const parts = normalized.split(',').map((s) => s.trim())
     normalized = parts.reverse().join(' ')
   }
+  // Strip middle initials (e.g., "Richard W. Allen" -> "Richard Allen")
+  normalized = normalized.replace(/\s+[A-Z]\.\s+/g, ' ')
+  // Strip "Moore", "Louise" etc middle names for matching — keep only first + last
   return normalized.toLowerCase().trim()
+}
+
+function simplifyName(name: string): string {
+  // Reduce to just first + last name for fuzzy matching
+  const parts = normalizeName(name).split(/\s+/)
+  if (parts.length <= 2) return parts.join(' ')
+  return `${parts[0]} ${parts[parts.length - 1]}`
 }
 
 function buildNameIndex(politicians: RawPolitician[]): {
   byFullName: Map<string, RawPolitician>
+  bySimpleName: Map<string, RawPolitician>
   byLastName: Map<string, RawPolitician[]>
 } {
   const byFullName = new Map<string, RawPolitician>()
+  const bySimpleName = new Map<string, RawPolitician>()
   const byLastName = new Map<string, RawPolitician[]>()
 
   for (const p of politicians) {
     const normalized = normalizeName(p.name)
     byFullName.set(normalized, p)
+    bySimpleName.set(simplifyName(p.name), p)
 
     // Also index by last name for fuzzy fallback
     const parts = normalized.split(' ')
@@ -368,12 +400,13 @@ function buildNameIndex(politicians: RawPolitician[]): {
     byLastName.get(lastName)!.push(p)
   }
 
-  return { byFullName, byLastName }
+  return { byFullName, bySimpleName, byLastName }
 }
 
 function lookupPolitician(
   alvaName: string,
   byFullName: Map<string, RawPolitician>,
+  bySimpleName: Map<string, RawPolitician>,
   byLastName: Map<string, RawPolitician[]>
 ): RawPolitician | null {
   const normalized = normalizeName(alvaName)
@@ -381,6 +414,10 @@ function lookupPolitician(
 
   // Exact normalized name match
   if (byFullName.has(normalized)) return byFullName.get(normalized)!
+
+  // Simplified name match (first + last only)
+  const simplified = simplifyName(alvaName)
+  if (bySimpleName.has(simplified)) return bySimpleName.get(simplified)!
 
   // Last-name-only fallback (only if unique)
   const parts = normalized.split(' ')
@@ -488,15 +525,13 @@ async function fetchStockPrices(
   fromDate: string,
   toDate: string
 ): Promise<OHLCVBar[]> {
+  const startTs = Math.floor(new Date(fromDate).getTime() / 1000)
+  const endTs = Math.floor(new Date(toDate).getTime() / 1000)
   const priceScript = `
 (async () => {
   try {
-    const mod = require("@arrays/data/stock/ohlcv:v1.0.0")
-    const getStockOHLCV = mod.getStockOHLCV || mod.default?.getStockOHLCV
-    if (!getStockOHLCV) {
-      return JSON.stringify({ error: "getStockOHLCV not found", keys: Object.keys(mod) })
-    }
-    const result = getStockOHLCV({ symbol: "${ticker}", from: "${fromDate}", to: "${toDate}", interval: "1d" })
+    const mod = require("@arrays/data/stock/spot/ohlcv:v1.0.0")
+    const result = await mod.getStockKline({ ticker: "${ticker}", start_time: ${startTs}, end_time: ${endTs}, interval: "1d" })
     return JSON.stringify(result)
   } catch (err) {
     return JSON.stringify({ error: String(err) })
@@ -514,40 +549,36 @@ async function fetchStockPrices(
     } else if (resp && typeof resp.output === 'string') {
       parsed = JSON.parse(resp.output)
     }
-
-    // Check for error
-    if (parsed && typeof parsed === 'object' && !Array.isArray(parsed)) {
-      const p = parsed as Record<string, unknown>
-      if (p.error) {
-        console.warn(`[fetch-trades] Price lookup error for ${ticker}: ${p.error}`)
-        return []
-      }
+    // Alva double-wraps — unwrap again if still a string
+    if (typeof parsed === 'string') {
+      parsed = JSON.parse(parsed)
     }
 
-    // Normalize to OHLCVBar[]
+    // Alva OHLCV returns { success, response: { data: [{ date: epochMs, close, ... }] } }
+    const p = parsed as Record<string, unknown>
+    if (p?.error || (p as any)?.success === false) {
+      console.warn(`[fetch-trades] Price lookup error for ${ticker}: ${p.error ?? 'success=false'}`)
+      return []
+    }
+
     let bars: OHLCVBar[] = []
-    if (Array.isArray(parsed)) {
-      bars = parsed.map((bar: unknown) => {
+    const responseData = (p?.response as Record<string, unknown>)?.data
+      ?? (p as Record<string, unknown>)?.data
+    if (Array.isArray(responseData)) {
+      bars = responseData.map((bar: unknown) => {
         const b = bar as Record<string, unknown>
+        // date can be epoch ms or ISO string
+        let dateStr = ''
+        if (typeof b.date === 'number') {
+          dateStr = new Date(b.date).toISOString().split('T')[0]
+        } else {
+          dateStr = extractDate(b, 'date', 't', 'timestamp', 'datetime')
+        }
         return {
-          date: extractDate(b, 'date', 't', 'timestamp', 'datetime'),
+          date: dateStr,
           close: Number(b.close ?? b.c ?? b.closing ?? b.price ?? 0),
         }
       }).filter((b) => b.date && b.close > 0)
-    } else if (parsed && typeof parsed === 'object') {
-      const p = parsed as Record<string, unknown>
-      // Try common container formats
-      const containerKey = ['bars', 'data', 'results', 'ohlcv', 'candles', 'quotes']
-        .find((k) => Array.isArray(p[k]))
-      if (containerKey) {
-        bars = (p[containerKey] as unknown[]).map((bar: unknown) => {
-          const b = bar as Record<string, unknown>
-          return {
-            date: extractDate(b, 'date', 't', 'timestamp', 'datetime'),
-            close: Number(b.close ?? b.c ?? b.closing ?? b.price ?? 0),
-          }
-        }).filter((b) => b.date && b.close > 0)
-      }
     }
 
     return bars.sort((a, b) => a.date.localeCompare(b.date))
@@ -588,7 +619,7 @@ async function fetchAllPrices(
   tradeDateMap: Map<string, string[]>  // ticker -> [tradeDate, ...]
 ): Promise<Map<string, OHLCVBar[]>> {
   const priceCache = new Map<string, OHLCVBar[]>()
-  const CONCURRENCY = 5
+  const CONCURRENCY = 3
   const today = toISODate(new Date())
 
   const queue = [...tickers]
@@ -713,7 +744,7 @@ async function main() {
     process.exit(1)
   }
 
-  const { byFullName, byLastName } = buildNameIndex(politicians)
+  const { byFullName, bySimpleName, byLastName } = buildNameIndex(politicians)
 
   // Step 3: Fetch trades from Alva
   const alvaRaw = await fetchAlvaTrades()
@@ -727,11 +758,7 @@ async function main() {
 
   console.log(`[fetch-trades] Alva returned ${alvaRaw.length} raw trade records`)
 
-  // Cap at sanity limit
-  const MAX_TRADES = 10000
-  const tradeRecords = alvaRaw.length > MAX_TRADES
-    ? (console.warn(`[fetch-trades] WARNING: Capping at ${MAX_TRADES} trades (got ${alvaRaw.length})`), alvaRaw.slice(0, MAX_TRADES))
-    : alvaRaw
+  const tradeRecords = alvaRaw
 
   // Step 4: Match politicians and extract tickers
   const matchedTrades: Array<{
@@ -751,28 +778,41 @@ async function main() {
   for (const rawRecord of tradeRecords) {
     const record = rawRecord as Record<string, unknown>
 
-    const alvaName = extractField(
-      record,
-      'name',
-      'senator',
-      'politician',
-      'representative',
-      'member',
-      'full_name',
-      'fullName',
-      'legislator'
-    )
+    // Alva provides firstName + lastName as separate fields
+    const firstName = extractField(record, 'firstName', 'first_name')
+    const lastName = extractField(record, 'lastName', 'last_name')
+    const alvaName = firstName && lastName
+      ? `${firstName} ${lastName}`
+      : extractField(record, 'name', 'office', 'senator', 'politician', 'full_name', 'fullName')
 
     if (!alvaName) {
       unmatchedCount++
       continue
     }
 
-    const politician = lookupPolitician(alvaName, byFullName, byLastName)
+    let politician = lookupPolitician(alvaName, byFullName, bySimpleName, byLastName)
     if (!politician) {
-      unmatchedCount++
-      unmatchedNames.add(alvaName)
-      continue
+      // Auto-create politician record from Alva trade data
+      const district = extractField(record, 'district', 'state')
+      const stateCode = district ? district.replace(/\d+/g, '').slice(0, 2) : 'XX'
+      const isHouse = district && /\d/.test(district) // e.g. "LA06" has digits = house
+      const chamber = isHouse ? 'house' : 'senate'
+      const bioguideId = `ALVA-${alvaName.replace(/[^a-zA-Z]/g, '').toUpperCase().slice(0, 12)}`
+
+      politician = {
+        bioguideId,
+        name: alvaName,
+        party: 'I' as const, // Unknown party from Alva, default to Independent
+        chamber: chamber as 'senate' | 'house',
+        state: stateCode,
+        committees: [],
+      }
+
+      // Register for future lookups in this run
+      const normalized = normalizeName(alvaName)
+      byFullName.set(normalized, politician)
+      bySimpleName.set(simplifyName(alvaName), politician)
+      unmatchedNames.add(`${alvaName} (auto-created)`)
     }
 
     const ticker = extractTicker(record)
@@ -846,6 +886,38 @@ async function main() {
       `[fetch-trades] FATAL: Only ${matchedTrades.length} trades matched politicians — insufficient data`
     )
     process.exit(1)
+  }
+
+  // Step 4b: Merge auto-created politicians back into _raw-politicians.json
+  // so validate-photos and score-all can process them
+  const autoCreatedPols = [...byFullName.values()].filter(
+    (p) => p.bioguideId.startsWith('ALVA-')
+  )
+  if (autoCreatedPols.length > 0) {
+    const existingBioguides = new Set(politicians.map((p) => p.bioguideId))
+    const newPols = autoCreatedPols.filter((p) => !existingBioguides.has(p.bioguideId))
+    if (newPols.length > 0) {
+      // Read full shape from existing file and merge
+      const fullPols = JSON.parse(readFileSync(POLITICIANS_FILE, 'utf8')) as Record<string, unknown>[]
+      for (const p of newPols) {
+        const nameParts = p.name.split(' ')
+        fullPols.push({
+          bioguideId: p.bioguideId,
+          name: p.name,
+          firstName: nameParts[0],
+          lastName: nameParts[nameParts.length - 1],
+          party: p.party,
+          chamber: p.chamber,
+          state: p.state,
+          committees: [],
+          isCommitteeChair: false,
+          isLeadership: false,
+          photoUrl: '',
+        })
+      }
+      writeFileSync(POLITICIANS_FILE, JSON.stringify(fullPols, null, 2))
+      console.log(`[fetch-trades] Added ${newPols.length} auto-created politicians to ${POLITICIANS_FILE}`)
+    }
   }
 
   // Step 5: Fetch stock prices for all unique tickers + SPY benchmark
