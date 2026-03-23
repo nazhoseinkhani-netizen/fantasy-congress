@@ -78,7 +78,7 @@ export function PoliticianCard({
         <div className="flex-1 min-w-0">
           <p className="text-sm font-medium truncate">{politician.name}</p>
           <p className="text-xs text-muted-foreground">
-            {partyLabel} &middot; {politician.state}
+            <span style={{ color: partyColor }} className="font-semibold">{partyLabel}</span> &middot; {politician.state}
           </p>
         </div>
         <StatCell

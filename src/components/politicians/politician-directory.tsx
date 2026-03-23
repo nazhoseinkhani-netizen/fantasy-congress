@@ -155,16 +155,18 @@ export function PoliticianDirectory() {
 
         {/* Top controls bar */}
         <div className="flex items-center gap-3 mb-6 flex-wrap">
-          {/* Mobile filter trigger — FilterSidebar renders this internally for lg:hidden */}
-          <FilterSidebar
-            filters={filters}
-            onFilterChange={setFilters}
-            politicians={politicians}
-            resultCount={resultCount}
-          />
+          {/* Mobile filter trigger only */}
+          <div className="lg:hidden">
+            <FilterSidebar
+              filters={filters}
+              onFilterChange={setFilters}
+              politicians={politicians}
+              resultCount={resultCount}
+            />
+          </div>
 
           {/* Result count */}
-          <span className="text-sm text-muted-foreground hidden lg:block">
+          <span className="text-sm text-muted-foreground">
             {resultCount === totalCount
               ? `${totalCount} Politicians`
               : `${resultCount} of ${totalCount}`}
@@ -229,7 +231,7 @@ export function PoliticianDirectory() {
         {/* Main content area */}
         <div className="flex gap-6">
           {/* Desktop sidebar */}
-          <div className="hidden lg:block w-56 shrink-0">
+          <div className="hidden lg:block">
             <FilterSidebar
               filters={filters}
               onFilterChange={setFilters}

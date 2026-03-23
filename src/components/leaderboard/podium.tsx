@@ -34,21 +34,21 @@ const positions: PodiumPosition[] = [
     rank: 2,
     medalColor: silverColor,
     medalLabel: '2',
-    heightClass: 'pt-4',
+    heightClass: 'mt-10',
     orderClass: 'order-1 md:order-1',
   },
   {
     rank: 1,
     medalColor: goldColor,
     medalLabel: '1',
-    heightClass: 'pt-0',
+    heightClass: 'mt-0',
     orderClass: 'order-first md:order-2',
   },
   {
     rank: 3,
     medalColor: bronzeColor,
     medalLabel: '3',
-    heightClass: 'pt-8',
+    heightClass: 'mt-14',
     orderClass: 'order-last md:order-3',
   },
 ]
@@ -74,12 +74,13 @@ function PodiumCard({
     <Link
       href={`/politicians/${politician.bioguideId}`}
       className={cn(
-        'flex flex-col items-center gap-2 p-4 rounded-xl border border-border transition-transform hover:scale-105',
-        isFirst && 'ring-2 ring-primary/30 bg-primary/5',
-        !isFirst && 'bg-card',
+        'flex flex-col items-center gap-2 p-4 rounded-xl border transition-transform hover:scale-105',
+        isFirst && 'ring-2 bg-card border-transparent',
+        !isFirst && 'bg-card border-border',
         position.heightClass,
         position.orderClass
       )}
+      style={isFirst ? { boxShadow: `0 0 20px color-mix(in oklch, ${goldColor} 30%, transparent), inset 0 0 0 2px ${goldColor}`, borderColor: goldColor } : undefined}
     >
       {/* Rank medal */}
       <div
@@ -115,8 +116,8 @@ function PodiumCard({
       {/* Name and info */}
       <div className="text-center">
         <p className="font-bold text-sm leading-tight">{politician.name}</p>
-        <p className="text-xs text-muted-foreground mt-0.5" style={{ color: partyColor }}>
-          {politician.party} &middot; {politician.state}
+        <p className="text-xs text-muted-foreground mt-0.5">
+          <span style={{ color: partyColor }} className="font-semibold">{politician.party}</span> &middot; {politician.state}
         </p>
       </div>
 

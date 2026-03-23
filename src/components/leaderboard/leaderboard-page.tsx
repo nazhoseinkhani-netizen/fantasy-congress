@@ -118,7 +118,7 @@ export function LeaderboardPage() {
           Hall of Shame
         </h1>
         <p className="mt-2 text-muted-foreground max-w-xl">
-          The definitive ranking of Congressional stock traders. The more they trade, the more they score.
+          The definitive ranking of Congressional stock traders. Ranked by fantasy points earned from their trades — the best returns win.
         </p>
       </div>
 

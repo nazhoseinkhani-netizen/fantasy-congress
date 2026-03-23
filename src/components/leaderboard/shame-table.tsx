@@ -3,7 +3,6 @@
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
 import type { Politician, InsiderRiskTier } from '@/types'
-import { RiskBadge } from '@/components/design/risk-badge'
 
 interface ShameTableProps {
   politicians: Politician[]
@@ -69,10 +68,18 @@ function FeatureCard({
       <div className="flex-1 min-w-0">
         <p className="text-sm font-semibold truncate">{politician.name}</p>
         <p className="text-xs text-muted-foreground">
-          {politician.party} &middot; {politician.state}
+          <span style={{ color: partyColorVars[politician.party] ?? partyColorVars['I'] }} className="font-semibold">{politician.party}</span> &middot; {politician.state}
         </p>
       </div>
-      <RiskBadge tier={politician.insiderRiskTier} score={politician.insiderRiskScore} size="sm" />
+      <span
+        className="inline-flex items-center justify-center min-w-[2rem] px-1.5 py-0.5 rounded text-xs font-bold tabular-nums shrink-0"
+        style={{
+          color: tierColor,
+          backgroundColor: `color-mix(in oklch, ${tierColor} 15%, transparent)`,
+        }}
+      >
+        {politician.insiderRiskScore}
+      </span>
     </Link>
   )
 }
@@ -243,14 +250,18 @@ export function ShameTable({ politicians, rankBy, startRank }: ShameTableProps) 
                       </Link>
                     </td>
 
-                    {/* Risk Badge */}
+                    {/* Risk Score */}
                     <td className="px-4 py-3 text-right">
-                      <Link href={`/politicians/${politician.bioguideId}`} className="block flex justify-end">
-                        <RiskBadge
-                          tier={politician.insiderRiskTier}
-                          score={politician.insiderRiskScore}
-                          size="sm"
-                        />
+                      <Link href={`/politicians/${politician.bioguideId}`} className="block">
+                        <span
+                          className="inline-flex items-center justify-center min-w-[2rem] px-1.5 py-0.5 rounded text-xs font-bold tabular-nums"
+                          style={{
+                            color: tierColor,
+                            backgroundColor: `color-mix(in oklch, ${tierColor} 15%, transparent)`,
+                          }}
+                        >
+                          {politician.insiderRiskScore}
+                        </span>
                       </Link>
                     </td>
                   </tr>
