@@ -96,10 +96,10 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Demo Data
 
-- [ ] **DEMO-01**: 3 pre-built leagues with 8 teams each, pre-drafted with realistic rosters
-- [ ] **DEMO-02**: 6 weeks of simulated matchup results based on actual trade data
-- [ ] **DEMO-03**: User pre-assigned to a team in one league for immediate exploration
-- [ ] **DEMO-04**: Salary cap pricing calculated from historical performance tiers (5 tiers + unranked)
+- [x] **DEMO-01**: 3 pre-built leagues with 8 teams each, pre-drafted with realistic rosters
+- [x] **DEMO-02**: 6 weeks of simulated matchup results based on actual trade data
+- [x] **DEMO-03**: User pre-assigned to a team in one league for immediate exploration
+- [x] **DEMO-04**: Salary cap pricing calculated from historical performance tiers (5 tiers + unranked)
 
 ### Design System
 
@@ -183,10 +183,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CORR-01 | Phase 1 | Complete |
 | CORR-02 | Phase 1 | Complete |
 | CORR-03 | Phase 1 | Complete |
-| DEMO-01 | Phase 1 | Pending |
-| DEMO-02 | Phase 1 | Pending |
-| DEMO-03 | Phase 1 | Pending |
-| DEMO-04 | Phase 1 | Pending |
+| DEMO-01 | Phase 1 | Complete |
+| DEMO-02 | Phase 1 | Complete |
+| DEMO-03 | Phase 1 | Complete |
+| DEMO-04 | Phase 1 | Complete |
 | UI-01 | Phase 1 | Complete |
 | UI-02 | Phase 1 | Complete |
 | UI-03 | Phase 1 | Complete |
