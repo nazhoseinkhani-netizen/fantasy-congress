@@ -23,9 +23,9 @@ Fantasy football mechanics applied to Congressional stock trading — making pol
 - [ ] Live trade feed showing real Congressional stock trades with scoring and bonus badges
 - [ ] Individual politician profile pages with Fantasy Stats, Trading Profile, Corruption Dossier, and News tabs
 - [ ] Global leaderboard — politician rankings (Hall of Shame) and corruption rankings
-- [ ] Dashboard with pre-populated team, matchup scoreboard, and season KPIs
-- [ ] My Team roster management with active/bench slots and scoring breakdown
-- [ ] League standings, schedule, and activity feed
+- [x] Dashboard with pre-populated team, matchup scoreboard, and season KPIs — Validated in Phase 3: Game Experience
+- [x] My Team roster management with active/bench slots and scoring breakdown — Validated in Phase 3: Game Experience
+- [x] League standings, schedule, and activity feed — Validated in Phase 3: Game Experience
 - [ ] Draft room with simulated snake draft against AI-controlled teams
 - [ ] Share card generation for teams, trades, and corruption data
 - [ ] Developer mode / API visualization Easter egg showing Alva data sources
