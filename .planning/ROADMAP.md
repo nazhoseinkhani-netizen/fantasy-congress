@@ -89,7 +89,7 @@ Plans:
 **Plans**: 4 plans
 
 Plans:
-- [ ] 03-01-PLAN.md — Zustand game store with persist middleware, route scaffolds, and navigation updates
+- [x] 03-01-PLAN.md — Zustand game store with persist middleware, route scaffolds, and navigation updates
 - [ ] 03-02-PLAN.md — Dashboard page: KPIs, matchup scoreboard, trade feed sidebar, standings compact
 - [ ] 03-03-PLAN.md — League page: standings table, schedule grid, activity feed
 - [ ] 03-04-PLAN.md — My Team page: click-to-swap roster grid, inline expand with charts, team stats panel
@@ -124,6 +124,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | 1. Foundation | 6/7 | In Progress|  |
 | 2. Discovery | 4/7 | In Progress|  |
 | 2.1 Real Data Pipeline | 1/2 | In Progress|  |
-| 3. Game Experience | 0/4 | Not started | - |
+| 3. Game Experience | 1/4 | In Progress|  |
 | 4. Draft Room | 0/TBD | Not started | - |
 | 5. Polish and Viral | 0/TBD | Not started | - |
