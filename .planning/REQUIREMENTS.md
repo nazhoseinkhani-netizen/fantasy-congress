@@ -75,11 +75,11 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### My Team
 
-- [ ] **TEAM-01**: 8 active roster slots in 2x4 grid of politician cards with photo, stats, corruption badge
-- [ ] **TEAM-02**: 4 bench slots in compact format below active roster
-- [ ] **TEAM-03**: Drag-and-drop swap between active and bench
-- [ ] **TEAM-04**: Click politician card to expand scoring breakdown with full trade log and season timeline chart
-- [ ] **TEAM-05**: Team stats panel — salary cap used/remaining, team win rate, avg points/week, best/worst week
+- [x] **TEAM-01**: 8 active roster slots in 2x4 grid of politician cards with photo, stats, corruption badge
+- [x] **TEAM-02**: 4 bench slots in compact format below active roster
+- [x] **TEAM-03**: Drag-and-drop swap between active and bench
+- [x] **TEAM-04**: Click politician card to expand scoring breakdown with full trade log and season timeline chart
+- [x] **TEAM-05**: Team stats panel — salary cap used/remaining, team win rate, avg points/week, best/worst week
 
 ### League
 
@@ -218,11 +218,11 @@ Which phases cover which requirements. Updated during roadmap creation.
 | DASH-03 | Phase 3 | Pending |
 | DASH-04 | Phase 3 | Pending |
 | DASH-05 | Phase 3 | Pending |
-| TEAM-01 | Phase 3 | Pending |
-| TEAM-02 | Phase 3 | Pending |
-| TEAM-03 | Phase 3 | Pending |
-| TEAM-04 | Phase 3 | Pending |
-| TEAM-05 | Phase 3 | Pending |
+| TEAM-01 | Phase 3 | Complete |
+| TEAM-02 | Phase 3 | Complete |
+| TEAM-03 | Phase 3 | Complete |
+| TEAM-04 | Phase 3 | Complete |
+| TEAM-05 | Phase 3 | Complete |
 | LEAG-01 | Phase 3 | Complete |
 | LEAG-02 | Phase 3 | Complete |
 | LEAG-03 | Phase 3 | Complete |
