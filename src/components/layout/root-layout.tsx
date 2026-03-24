@@ -1,13 +1,18 @@
 'use client'
 
+import { usePathname } from 'next/navigation'
 import { NavDesktop } from './nav-desktop'
 import { NavMobile } from './nav-mobile'
+import { AlvaFooter } from '@/components/landing/alva-footer'
 
 interface RootLayoutProps {
   children: React.ReactNode
 }
 
 export function RootLayout({ children }: RootLayoutProps) {
+  const pathname = usePathname()
+  const isDraftActive = pathname === '/draft'
+
   return (
     <>
       <NavDesktop />
@@ -16,6 +21,7 @@ export function RootLayout({ children }: RootLayoutProps) {
           {children}
         </div>
       </main>
+      {!isDraftActive && <AlvaFooter variant="compact" />}
       <NavMobile />
     </>
   )
