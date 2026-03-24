@@ -188,3 +188,29 @@
     background: var(--muted-foreground);
   }
 }
+
+/* Developer Mode — data attribution borders */
+.dev-mode [data-alva-skill] {
+  outline: 2px dashed oklch(0.78 0.165 85 / 0.5);
+  outline-offset: 2px;
+  position: relative;
+  cursor: help;
+}
+
+.dev-mode [data-alva-skill]:hover::after {
+  content: 'Alva Skill: ' attr(data-alva-skill);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: oklch(0.115 0.008 265);
+  border: 1px solid oklch(0.78 0.165 85 / 0.4);
+  color: oklch(0.78 0.165 85);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  z-index: 50;
+  pointer-events: none;
+}
