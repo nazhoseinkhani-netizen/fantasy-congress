@@ -15,7 +15,7 @@
 
 import { execSync } from 'child_process'
 import { join } from 'path'
-import { readFileSync } from 'fs'
+import { readFileSync, existsSync } from 'fs'
 
 // Load .env file if present
 try {
@@ -43,6 +43,15 @@ function run(label: string, scriptPath: string) {
 }
 
 async function main() {
+  // Skip pipeline if pre-built data exists and no ALVA_API_KEY is set
+  // (Vercel deployments use committed data files)
+  const dataDir = join(process.cwd(), 'public', 'data')
+  const hasData = existsSync(join(dataDir, 'politicians.json')) && existsSync(join(dataDir, 'trades.json'))
+  if (hasData && !process.env.ALVA_API_KEY) {
+    console.log('\n[build-pipeline] Pre-built data found and no ALVA_API_KEY set — skipping pipeline.\n')
+    return
+  }
+
   const start = Date.now()
   console.log('\n╔════════════════════════════════════════════════════╗')
   console.log('║         Fantasy Congress Data Pipeline              ║')
