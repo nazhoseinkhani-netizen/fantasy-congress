@@ -123,7 +123,7 @@ Plans:
 - [x] 05-01-PLAN.md — Animation primitives (AnimatedCounter, AnimatedGauge) and global AlvaFooter with Build Your Own CTA
 - [x] 05-02-PLAN.md — Developer Mode Easter egg (Ctrl+Shift+D) with dashed borders, tooltips, and data-alva-skill attributes
 - [x] 05-03-PLAN.md — Wire animations into pages: draft pick fly, trade slide-ins, digit-flip counters, Swamp-o-meter
-- [ ] 05-04-PLAN.md — Share card system: html-to-image PNG generation, politician/team cards, share modal
+- [x] 05-04-PLAN.md — Share card system: html-to-image PNG generation, politician/team cards, share modal
 - [ ] 05-05-PLAN.md — Weekly recap mockup, corruption gauge wiring, and full Phase 5 visual verification
 
 ## Progress
