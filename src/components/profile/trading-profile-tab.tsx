@@ -222,17 +222,25 @@ function TradeCard({ trade }: { trade: Trade }) {
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-2">
           <span className="font-mono font-bold">{trade.ticker}</span>
+          <span className={`text-[10px] font-medium px-1 py-0.5 rounded ${trade.tradeType === 'buy' ? 'bg-emerald-500/20 text-emerald-400' : 'bg-red-500/20 text-red-400'}`}>
+            {trade.tradeType.toUpperCase()}
+          </span>
           <span className="text-xs text-muted-foreground truncate">{trade.company}</span>
         </div>
         <p className="text-xs text-muted-foreground mt-0.5">
-          {format(new Date(trade.tradeDate), 'MMM d, yyyy')}
+          {format(new Date(trade.tradeDate), 'MMM d, yyyy')} · {trade.amountRange}
         </p>
       </div>
-      <div className="text-right shrink-0">
-        <p className="font-mono text-sm" style={{ color: trade.returnVsSP500 >= 0 ? CHART_COLORS.positive : CHART_COLORS.negative }}>
-          {trade.returnVsSP500 >= 0 ? '+' : ''}{trade.returnVsSP500.toFixed(1)}%
+      <div className="text-right shrink-0 space-y-0.5">
+        <p className="font-mono text-sm font-semibold" style={{ color: trade.returnVsSP500 >= 0 ? CHART_COLORS.positive : CHART_COLORS.negative }}>
+          {trade.fantasyPoints.toFixed(1)} pts
         </p>
-        <p className="font-mono text-xs font-semibold">{trade.fantasyPoints.toFixed(1)} pts</p>
+        <p className="font-mono text-[11px]" style={{ color: trade.absoluteReturn >= 0 ? CHART_COLORS.positive : CHART_COLORS.negative }}>
+          Return: {trade.absoluteReturn >= 0 ? '+' : ''}{trade.absoluteReturn.toFixed(1)}%
+        </p>
+        <p className="font-mono text-[11px] text-muted-foreground">
+          vs S&P: {trade.returnVsSP500 >= 0 ? '+' : ''}{trade.returnVsSP500.toFixed(1)}%
+        </p>
       </div>
     </div>
   )

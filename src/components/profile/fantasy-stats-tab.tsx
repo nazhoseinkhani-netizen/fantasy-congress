@@ -98,6 +98,7 @@ export function FantasyStatsTab({ politician, trades }: FantasyStatsTabProps) {
                 <th className="text-left px-3 py-2 font-medium text-muted-foreground hidden md:table-cell">Company</th>
                 <th className="text-left px-3 py-2 font-medium text-muted-foreground">Type</th>
                 <th className="text-left px-3 py-2 font-medium text-muted-foreground hidden sm:table-cell">Amount</th>
+                <th className="text-right px-3 py-2 font-medium text-muted-foreground hidden sm:table-cell">Return</th>
                 <th className="text-right px-3 py-2 font-medium text-muted-foreground">vs S&P</th>
                 <th className="text-right px-3 py-2 font-medium text-muted-foreground">Points</th>
                 <th className="text-left px-3 py-2 font-medium text-muted-foreground hidden lg:table-cell">Bonuses</th>
@@ -114,7 +115,7 @@ export function FantasyStatsTab({ politician, trades }: FantasyStatsTabProps) {
               ))}
               {sortedTrades.length === 0 && (
                 <tr>
-                  <td colSpan={8} className="text-center py-8 text-muted-foreground">
+                  <td colSpan={9} className="text-center py-8 text-muted-foreground">
                     No trades recorded
                   </td>
                 </tr>
@@ -161,6 +162,11 @@ function TradeRow({
           </span>
         </td>
         <td className="px-3 py-2 hidden sm:table-cell text-muted-foreground">{trade.amountRange}</td>
+        <td className="px-3 py-2 text-right tabular-nums font-mono hidden sm:table-cell">
+          <span style={{ color: trade.absoluteReturn >= 0 ? CHART_COLORS.positive : CHART_COLORS.negative }}>
+            {trade.absoluteReturn >= 0 ? '+' : ''}{trade.absoluteReturn.toFixed(1)}%
+          </span>
+        </td>
         <td className="px-3 py-2 text-right tabular-nums font-mono">
           <span style={{ color: trade.returnVsSP500 >= 0 ? CHART_COLORS.positive : CHART_COLORS.negative }}>
             {trade.returnVsSP500 >= 0 ? '+' : ''}{trade.returnVsSP500.toFixed(1)}%
@@ -187,7 +193,7 @@ function TradeRow({
       </tr>
       {expanded && (
         <tr className="border-b border-border bg-muted/30">
-          <td colSpan={8} className="px-3 py-3">
+          <td colSpan={9} className="px-3 py-3">
             <ScoreBreakdown breakdown={trade.scoreBreakdown} />
           </td>
         </tr>
