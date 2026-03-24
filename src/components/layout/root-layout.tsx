@@ -4,6 +4,7 @@ import { usePathname } from 'next/navigation'
 import { NavDesktop } from './nav-desktop'
 import { NavMobile } from './nav-mobile'
 import { AlvaFooter } from '@/components/landing/alva-footer'
+import { DevModeBanner } from '@/components/dev-mode/dev-mode-banner'
 
 interface RootLayoutProps {
   children: React.ReactNode
@@ -15,6 +16,7 @@ export function RootLayout({ children }: RootLayoutProps) {
 
   return (
     <>
+      <DevModeBanner />
       <NavDesktop />
       <main className="min-h-screen pt-0 pb-20 lg:pt-16 lg:pb-0">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

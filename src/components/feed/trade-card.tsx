@@ -77,6 +77,7 @@ export function TradeCard({ trade, politicianPhotoUrl }: TradeCardProps) {
     <div
       className="bg-card rounded-xl ring-1 ring-foreground/10 p-4 hover:ring-foreground/20 transition-all"
       style={{ borderLeft: `3px solid ${partyColor}` }}
+      data-alva-skill="getSenatorTrades"
     >
       <div className="flex gap-3">
         {/* Left column: photo */}

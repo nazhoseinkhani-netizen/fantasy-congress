@@ -167,7 +167,7 @@ export function ShameTable({ politicians, rankBy, startRank }: ShameTableProps) 
                     </td>
 
                     {/* Name + Photo */}
-                    <td className="px-4 py-3">
+                    <td className="px-4 py-3" data-alva-skill="getPoliticianMetadata">
                       <Link href={`/politicians/${politician.bioguideId}`} className="flex items-center gap-3">
                         <div className="size-8 rounded-full overflow-hidden bg-muted shrink-0">
                           <img
@@ -211,7 +211,7 @@ export function ShameTable({ politicians, rankBy, startRank }: ShameTableProps) 
                     </td>
 
                     {/* Season Points */}
-                    <td className="px-4 py-3 text-right">
+                    <td className="px-4 py-3 text-right" data-alva-skill="getSenatorTrades">
                       <Link href={`/politicians/${politician.bioguideId}`} className="block">
                         <span className="font-bold tabular-nums">{politician.seasonPoints}</span>
                         <span className="text-xs text-muted-foreground ml-1">pts</span>

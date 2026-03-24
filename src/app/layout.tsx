@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter, JetBrains_Mono } from 'next/font/google'
 import { ThemeProvider } from 'next-themes'
 import { RootLayout } from '@/components/layout/root-layout'
+import { DevModeProvider } from '@/components/dev-mode/dev-mode-provider'
 import './globals.css'
 
 const inter = Inter({
@@ -32,7 +33,9 @@ export default function Layout({
     >
       <body className="min-h-full flex flex-col">
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
-          <RootLayout>{children}</RootLayout>
+          <DevModeProvider>
+            <RootLayout>{children}</RootLayout>
+          </DevModeProvider>
         </ThemeProvider>
       </body>
     </html>

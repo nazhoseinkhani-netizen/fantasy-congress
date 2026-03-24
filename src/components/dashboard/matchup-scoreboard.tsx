@@ -209,7 +209,7 @@ export function MatchupScoreboard({
   const isCompleted = matchup?.completed ?? false
 
   return (
-    <div className="bg-card rounded-xl border border-border overflow-hidden">
+    <div className="bg-card rounded-xl border border-border overflow-hidden" data-alva-skill="getSenatorTrades">
       {/* Score header */}
       <div className="px-6 py-4 border-b border-border bg-muted/20">
         <div className="flex items-center justify-center gap-4">

@@ -32,7 +32,7 @@ export function KpiRow({ userTeam, weekResult, leagueRank, totalTeams, nextOppon
   const recordStr = ties > 0 ? `${wins}-${losses}-${ties}` : `${wins}-${losses}`
 
   return (
-    <div className="flex gap-4 flex-wrap">
+    <div className="flex gap-4 flex-wrap" data-alva-skill="getSenatorTrades">
       <KpiCard
         label="This Week"
         value={`${weekPoints.toFixed(1)} pts`}
