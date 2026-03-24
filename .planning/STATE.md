@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: Ready to execute
-stopped_at: Completed 05-polish-and-viral-02-PLAN.md
-last_updated: "2026-03-24T01:16:19.913Z"
+stopped_at: Completed 05-polish-and-viral-03-PLAN.md
+last_updated: "2026-03-24T01:21:28.512Z"
 progress:
   total_phases: 6
   completed_phases: 4
   total_plans: 28
-  completed_plans: 24
+  completed_plans: 25
 ---
 
 # Project State
@@ -24,7 +24,7 @@ See: .planning/PROJECT.md (updated 2026-03-23)
 ## Current Position
 
 Phase: 05 (polish-and-viral) — EXECUTING
-Plan: 3 of 5
+Plan: 4 of 5
 
 ## Performance Metrics
 
@@ -69,6 +69,7 @@ Plan: 3 of 5
 | Phase 04-draft-room P03 | 340 | 2 tasks | 4 files |
 | Phase 05-polish-and-viral P01 | 3 | 2 tasks | 5 files |
 | Phase 05-polish-and-viral P02 | 2 | 2 tasks | 7 files |
+| Phase 05-polish-and-viral P03 | 189 | 2 tasks | 7 files |
 
 ## Accumulated Context
 
@@ -129,6 +130,8 @@ Recent decisions affecting current work:
 - [Phase 05-polish-and-viral]: AnimatedGauge uses animate() imperative spring (stiffness:120, damping:10) for theatrical overshoot per D-04; showScore delayed until 95% of target via progress.on('change')
 - [Phase 05-polish-and-viral]: data-alva-skill attributes unconditionally in DOM (no devMode conditional) to avoid React hydration mismatch
 - [Phase 05-polish-and-viral]: DevModeProvider documentElement.classList.toggle for global CSS targeting without prop drilling
+- [Phase 05-polish-and-viral]: handleUserPick accepts optional MouseEvent for getBoundingClientRect capture — PoliticianPool onPick signature extended to pass event from DRAFT button
+- [Phase 05-polish-and-viral]: Swamp-o-meter placed as hero element inside Risk Score tab with whileInView scroll-trigger; motion.tr used for shame-table staggered row animations
 
 ### Pending Todos
 
@@ -141,6 +144,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-24T01:16:19.910Z
-Stopped at: Completed 05-polish-and-viral-02-PLAN.md
+Last session: 2026-03-24T01:21:28.510Z
+Stopped at: Completed 05-polish-and-viral-03-PLAN.md
 Resume file: None
