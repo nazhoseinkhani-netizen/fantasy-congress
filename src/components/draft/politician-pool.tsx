@@ -132,19 +132,24 @@ export function PoliticianPool({
             onChange={(e) => setSortBy(e.target.value as SortField)}
             className="flex-1 text-xs bg-muted border border-border rounded px-2 py-1 focus:outline-none focus:ring-1 focus:ring-ring"
           >
-            <option value="seasonPoints">Season Points</option>
-            <option value="salaryCap">Salary</option>
+            <option value="seasonPoints">Projected Pts</option>
+            <option value="salaryCap">Salary Cap</option>
             <option value="insiderRiskScore">Risk Score</option>
             <option value="value">Value (pts/$)</option>
           </select>
         </div>
 
-        <p className="text-[11px] text-muted-foreground">
-          {sorted.length} available
-          {!isUserTurn && (
-            <span className="ml-2 text-muted-foreground/60">— waiting for AI pick</span>
-          )}
-        </p>
+        <div className="flex items-center justify-between text-[11px] text-muted-foreground">
+          <span>
+            {sorted.length} available
+            {!isUserTurn && (
+              <span className="ml-2 text-muted-foreground/60">— waiting for AI pick</span>
+            )}
+          </span>
+          <span className="font-mono font-bold text-primary">
+            Budget: ${salaryRemaining.toLocaleString()}
+          </span>
+        </div>
       </div>
 
       {/* Politician list */}
@@ -169,6 +174,7 @@ export function PoliticianPool({
                     <PoliticianCard
                       politician={politician}
                       variant="compact"
+                      draftMode
                       className="border-0 shadow-none hover:scale-100 p-0"
                     />
                   </div>

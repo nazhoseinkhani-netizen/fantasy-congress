@@ -11,6 +11,8 @@ interface OnTheClockProps {
   userPickTimer: number
   currentPickNumber: number
   totalPicks: number
+  salaryRemaining?: number
+  totalCap?: number
 }
 
 const ARCHETYPE_LABELS: Record<string, string> = {
@@ -27,6 +29,8 @@ export function OnTheClock({
   userPickTimer,
   currentPickNumber,
   totalPicks,
+  salaryRemaining,
+  totalCap,
 }: OnTheClockProps) {
   const round = Math.floor(currentPickNumber / DRAFT_CONFIG.TEAM_COUNT) + 1
   const timerColor =
@@ -109,6 +113,33 @@ export function OnTheClock({
             Round {round} of {DRAFT_CONFIG.ROUNDS}
           </p>
         </div>
+
+        {/* Salary cap — shown when it's user's turn */}
+        {isUserTurn && salaryRemaining !== undefined && totalCap !== undefined && (
+          <div className="w-full px-2 space-y-1.5">
+            <div className="flex items-center justify-between text-xs">
+              <span className="font-medium text-muted-foreground">Salary Cap</span>
+              <span className={cn(
+                'font-mono font-bold',
+                salaryRemaining < totalCap * 0.2 ? 'text-red-400' : 'text-emerald-400'
+              )}>
+                ${salaryRemaining.toLocaleString()} left
+              </span>
+            </div>
+            <div className="h-1.5 bg-muted rounded-full overflow-hidden">
+              <div
+                className={cn(
+                  'h-full rounded-full transition-all',
+                  salaryRemaining < totalCap * 0.2 ? 'bg-red-500' : 'bg-emerald-500'
+                )}
+                style={{ width: `${Math.max(0, (salaryRemaining / totalCap) * 100)}%` }}
+              />
+            </div>
+            <p className="text-[10px] text-muted-foreground/60 text-center">
+              ${currentTeam.salaryUsed.toLocaleString()} / ${totalCap.toLocaleString()} used
+            </p>
+          </div>
+        )}
       </div>
     </div>
   )

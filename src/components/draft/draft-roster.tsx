@@ -80,7 +80,7 @@ export function DraftRoster({ team, politicians, totalCap }: DraftRosterProps) {
                     animate={{ opacity: 1, scale: 1 }}
                     className="border-l-2 border-emerald-500 rounded-lg overflow-hidden"
                   >
-                    <PoliticianCard politician={politician} variant="mini" />
+                    <PoliticianCard politician={politician} variant="mini" draftMode />
                   </motion.div>
                 )
               }
@@ -124,7 +124,7 @@ export function DraftRoster({ team, politicians, totalCap }: DraftRosterProps) {
                     animate={{ opacity: 1, scale: 1 }}
                     className="border-l-2 border-muted rounded-lg overflow-hidden"
                   >
-                    <PoliticianCard politician={politician} variant="mini" />
+                    <PoliticianCard politician={politician} variant="mini" draftMode />
                   </motion.div>
                 )
               }

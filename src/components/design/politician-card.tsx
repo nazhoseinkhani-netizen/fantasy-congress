@@ -12,6 +12,8 @@ interface PoliticianCardProps {
   variant?: 'full' | 'compact' | 'mini'
   onClick?: () => void
   className?: string
+  /** When true, shows salary cap and labels points as "Proj." (for draft context) */
+  draftMode?: boolean
 }
 
 function PoliticianPhoto({
@@ -50,6 +52,7 @@ export function PoliticianCard({
   variant = 'full',
   onClick,
   className,
+  draftMode = false,
 }: PoliticianCardProps) {
   const partyColor = PARTY_COLORS[politician.party] ?? PARTY_COLORS['I']
   const partyLabel = politician.party
@@ -70,13 +73,20 @@ export function PoliticianCard({
             <span style={{ color: partyColor }} className="font-semibold">{partyLabel}</span> &middot; {politician.state}
           </p>
         </div>
-        <StatCell
-          label="PTS"
-          value={politician.seasonPoints}
-          format="points"
-          size="sm"
-          className="shrink-0 items-end"
-        />
+        <div className="shrink-0 flex flex-col items-end gap-0.5">
+          {draftMode && (
+            <span className="text-[10px] font-mono font-bold text-primary">
+              ${politician.salaryCap.toLocaleString()}
+            </span>
+          )}
+          <StatCell
+            label={draftMode ? 'Proj.' : 'PTS'}
+            value={politician.seasonPoints}
+            format="points"
+            size="sm"
+            className="items-end"
+          />
+        </div>
       </div>
     )
   }
@@ -115,13 +125,20 @@ export function PoliticianCard({
               size="sm"
             />
           </div>
-          <StatCell
-            label="Season"
-            value={politician.seasonPoints}
-            format="points"
-            size="sm"
-            className="shrink-0 items-end"
-          />
+          <div className="shrink-0 flex flex-col items-end gap-0.5">
+            {draftMode && (
+              <span className="text-[10px] font-mono font-bold text-primary">
+                ${politician.salaryCap.toLocaleString()}
+              </span>
+            )}
+            <StatCell
+              label={draftMode ? 'Proj.' : 'Season'}
+              value={politician.seasonPoints}
+              format="points"
+              size="sm"
+              className="items-end"
+            />
+          </div>
         </CardContent>
       </Card>
     )

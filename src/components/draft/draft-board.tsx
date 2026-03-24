@@ -64,16 +64,28 @@ export function DraftBoard({ politicians, politicianMap }: DraftBoardProps) {
       if (!team) return
 
       const salaryRemaining = DRAFT_CONFIG.SALARY_CAP - team.salaryUsed
+      // Filter available pool to only IDs that exist in politicianMap
+      // (handles stale persisted state from ID changes)
+      const validPool = currentState.availablePool.filter((id) => politicianMap.has(id))
+      if (validPool.length === 0) {
+        setAITurnPending(false)
+        return
+      }
+
       const bioguideId = selectAIPick(
         team.archetype === 'human' ? 'balanced' : team.archetype,
-        currentState.availablePool,
+        validPool,
         team.roster,
         salaryRemaining,
         politicianMap
       )
 
       const politician = politicianMap.get(bioguideId)
-      if (!politician) return
+      if (!politician) {
+        // Reset pending flag so effect can retry
+        setAITurnPending(false)
+        return
+      }
 
       recordPick(bioguideId, politician.salaryCap)
     }, delay)
@@ -177,6 +189,8 @@ export function DraftBoard({ politicians, politicianMap }: DraftBoardProps) {
               userPickTimer={userPickTimer}
               currentPickNumber={currentPickIndex}
               totalPicks={DRAFT_CONFIG.TOTAL_PICKS}
+              salaryRemaining={salaryRemaining}
+              totalCap={DRAFT_CONFIG.SALARY_CAP}
             />
           )}
         </div>
@@ -204,6 +218,8 @@ export function DraftBoard({ politicians, politicianMap }: DraftBoardProps) {
               userPickTimer={userPickTimer}
               currentPickNumber={currentPickIndex}
               totalPicks={DRAFT_CONFIG.TOTAL_PICKS}
+              salaryRemaining={salaryRemaining}
+              totalCap={DRAFT_CONFIG.SALARY_CAP}
             />
           )}
         </div>
