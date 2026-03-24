@@ -112,18 +112,18 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Animations & Polish
 
-- [ ] **ANIM-01**: Draft pick animation — card flies to roster with burst effect
-- [ ] **ANIM-02**: Trade alert animation — slide in from right with green/red glow, badges bounce in
+- [x] **ANIM-01**: Draft pick animation — card flies to roster with burst effect
+- [x] **ANIM-02**: Trade alert animation — slide in from right with green/red glow, badges bounce in
 - [x] **ANIM-03**: Points counter — animated number ticker like a sports scoreboard
 - [x] **ANIM-04**: Corruption Index reveal — gauge fills up with color transitions
-- [ ] **ANIM-05**: Swamp-o-meter animated gauge on leaderboard page
+- [x] **ANIM-05**: Swamp-o-meter animated gauge on leaderboard page
 
 ### Viral & Sharing
 
-- [ ] **SHARE-01**: Shareable image cards for team, politician, standings, trade, and corruption data
-- [ ] **SHARE-02**: "Powered by Alva" branding on all share cards
-- [ ] **SHARE-03**: Invite friends flow — create league, get shareable link
-- [ ] **SHARE-04**: Weekly recap email mockup (design only)
+- [x] **SHARE-01**: Shareable image cards for team, politician, standings, trade, and corruption data
+- [x] **SHARE-02**: "Powered by Alva" branding on all share cards
+- [x] **SHARE-03**: Invite friends flow — create league, get shareable link
+- [x] **SHARE-04**: Weekly recap email mockup (design only)
 
 ### Platform Showcase
 
@@ -230,15 +230,15 @@ Which phases cover which requirements. Updated during roadmap creation.
 | DRAFT-02 | Phase 4 | Complete |
 | DRAFT-03 | Phase 4 | Complete |
 | DRAFT-04 | Phase 4 | Complete |
-| ANIM-01 | Phase 5 | Pending |
-| ANIM-02 | Phase 5 | Pending |
+| ANIM-01 | Phase 5 | Complete |
+| ANIM-02 | Phase 5 | Complete |
 | ANIM-03 | Phase 5 | Complete |
 | ANIM-04 | Phase 5 | Complete |
-| ANIM-05 | Phase 5 | Pending |
-| SHARE-01 | Phase 5 | Pending |
-| SHARE-02 | Phase 5 | Pending |
-| SHARE-03 | Phase 5 | Pending |
-| SHARE-04 | Phase 5 | Pending |
+| ANIM-05 | Phase 5 | Complete |
+| SHARE-01 | Phase 5 | Complete |
+| SHARE-02 | Phase 5 | Complete |
+| SHARE-03 | Phase 5 | Complete |
+| SHARE-04 | Phase 5 | Complete |
 | PLAT-01 | Phase 5 | Complete |
 | PLAT-02 | Phase 5 | Complete |
 | PLAT-03 | Phase 5 | Complete |
