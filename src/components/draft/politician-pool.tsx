@@ -16,7 +16,7 @@ interface PoliticianPoolProps {
   availablePool: string[]
   salaryRemaining: number
   isUserTurn: boolean
-  onPick: (bioguideId: string) => void
+  onPick: (bioguideId: string, event?: React.MouseEvent) => void
 }
 
 export function PoliticianPool({
@@ -183,7 +183,7 @@ export function PoliticianPool({
                       <Button
                         size="sm"
                         disabled={overCap}
-                        onClick={() => onPick(politician.bioguideId)}
+                        onClick={(e) => onPick(politician.bioguideId, e)}
                         className={cn(
                           'text-xs h-7 px-3 font-bold',
                           overCap && 'opacity-40 pointer-events-none'

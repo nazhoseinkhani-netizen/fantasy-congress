@@ -45,13 +45,17 @@ export function PickTicker({ picks, teams, politicians }: PickTickerProps) {
               return (
                 <motion.div
                   key={pick.pickNumber}
-                  initial={{ opacity: 0, x: 20 }}
+                  initial={{ opacity: 0, x: 60 }}
                   animate={{ opacity: 1, x: 0 }}
+                  transition={{ type: 'spring', stiffness: 300, damping: 28 }}
                   className="flex items-center gap-1.5 shrink-0 rounded-md px-2 py-1 bg-background border border-border text-xs"
                   style={{
                     borderLeft: `3px solid ${partyColor}`,
                     outline: isUserTeam ? '1px solid hsl(var(--primary))' : undefined,
                     minWidth: '160px',
+                    boxShadow: isUserTeam
+                      ? '0 0 12px rgba(34,197,94,0.25)'
+                      : '0 0 12px rgba(234,179,8,0.2)',
                   }}
                 >
                   <span className="text-[10px] font-bold text-muted-foreground shrink-0">

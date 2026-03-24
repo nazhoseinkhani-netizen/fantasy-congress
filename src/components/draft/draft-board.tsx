@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
+import { motion, AnimatePresence } from 'motion/react'
 import type { Politician } from '@/types'
 import { useDraftStore } from '@/store/draft-store'
 import { DRAFT_CONFIG } from '@/types/draft'
@@ -10,6 +11,11 @@ import { OnTheClock } from './on-the-clock'
 import { DraftRoster } from './draft-roster'
 import { PickTicker } from './pick-ticker'
 import { cn } from '@/lib/utils'
+
+interface FlyAnimation {
+  politicianName: string
+  fromRect: DOMRect
+}
 
 interface DraftBoardProps {
   politicians: Politician[]
@@ -31,6 +37,8 @@ export function DraftBoard({ politicians, politicianMap }: DraftBoardProps) {
   const getCurrentTeamIndex = useDraftStore((s) => s.getCurrentTeamIndex)
 
   const [mobileTab, setMobileTab] = useState<'pool' | 'roster'>('pool')
+  const [flyAnimation, setFlyAnimation] = useState<FlyAnimation | null>(null)
+  const [burstActive, setBurstActive] = useState(false)
   const aiTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
   const userTimerIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null)
 
@@ -125,10 +133,20 @@ export function DraftBoard({ politicians, politicianMap }: DraftBoardProps) {
   const currentTeam = teams[currentTeamIndex]
   const isUserTurn = phase === 'user-turn'
 
-  function handleUserPick(bioguideId: string) {
+  function handleUserPick(bioguideId: string, event?: React.MouseEvent) {
     const politician = politicianMap.get(bioguideId)
     if (!politician) return
-    recordPick(bioguideId, politician.salaryCap)
+
+    // Capture pick source position for fly animation
+    if (event?.currentTarget) {
+      const fromRect = (event.currentTarget as HTMLElement).getBoundingClientRect()
+      setFlyAnimation({ politicianName: politician.name, fromRect })
+    }
+
+    // Delay pick slightly so animation starts before card leaves pool
+    setTimeout(() => {
+      recordPick(bioguideId, politician.salaryCap)
+    }, 50)
   }
 
   const salaryRemaining = userTeam
@@ -146,7 +164,7 @@ export function DraftBoard({ politicians, politicianMap }: DraftBoardProps) {
             availablePool={availablePool}
             salaryRemaining={salaryRemaining}
             isUserTurn={isUserTurn}
-            onPick={handleUserPick}
+            onPick={(id, e) => handleUserPick(id, e)}
           />
         </div>
 
@@ -224,7 +242,7 @@ export function DraftBoard({ politicians, politicianMap }: DraftBoardProps) {
               availablePool={availablePool}
               salaryRemaining={salaryRemaining}
               isUserTurn={isUserTurn}
-              onPick={handleUserPick}
+              onPick={(id, e) => handleUserPick(id, e)}
             />
           )}
           {mobileTab === 'roster' && userTeam && (
@@ -243,6 +261,61 @@ export function DraftBoard({ politicians, politicianMap }: DraftBoardProps) {
         teams={teams}
         politicians={politicianMap}
       />
+
+      {/* Fly-to-roster animation overlay */}
+      <AnimatePresence>
+        {flyAnimation && (
+          <motion.div
+            className="fixed z-50 pointer-events-none"
+            style={{
+              left: flyAnimation.fromRect.left,
+              top: flyAnimation.fromRect.top,
+              width: flyAnimation.fromRect.width,
+              height: flyAnimation.fromRect.height,
+            }}
+            initial={{ scale: 1, opacity: 1, x: 0, y: 0 }}
+            animate={{
+              x: [0, -50, -200],
+              y: [0, -30, 100],
+              scale: [1, 1.15, 0.3],
+              opacity: [1, 1, 0],
+            }}
+            transition={{ duration: 0.6, ease: 'easeInOut' }}
+            onAnimationComplete={() => {
+              setFlyAnimation(null)
+              setBurstActive(true)
+              setTimeout(() => setBurstActive(false), 500)
+            }}
+          >
+            <div className="bg-card border border-primary rounded-lg p-2 shadow-lg shadow-primary/20 text-sm font-semibold text-center truncate h-full flex items-center justify-center">
+              {flyAnimation.politicianName}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Burst particle effect */}
+      <AnimatePresence>
+        {burstActive && flyAnimation === null && (
+          <>
+            {[0, 60, 120, 180, 240, 300].map((angle) => (
+              <motion.div
+                key={angle}
+                className="fixed z-50 pointer-events-none size-1.5 rounded-full bg-yellow-400"
+                style={{ left: '50%', top: '50%' }}
+                initial={{ scale: 0, opacity: 1, x: 0, y: 0 }}
+                animate={{
+                  scale: [0, 1, 0.5],
+                  opacity: [1, 1, 0],
+                  x: Math.cos((angle * Math.PI) / 180) * 40,
+                  y: Math.sin((angle * Math.PI) / 180) * 40,
+                }}
+                transition={{ duration: 0.4, ease: 'easeOut' }}
+              />
+            ))}
+          </>
+        )}
+      </AnimatePresence>
     </div>
   )
 }
