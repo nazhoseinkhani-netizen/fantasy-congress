@@ -1,7 +1,9 @@
 'use client'
 
 import Link from 'next/link'
+import { motion } from 'motion/react'
 import { cn } from '@/lib/utils'
+import { AnimatedCounter } from '@/components/animations/animated-counter'
 import type { Politician, InsiderRiskTier } from '@/types'
 
 interface ShameTableProps {
@@ -147,8 +149,11 @@ export function ShameTable({ politicians, rankBy, startRank }: ShameTableProps) 
                 const isOdd = index % 2 === 0
 
                 return (
-                  <tr
+                  <motion.tr
                     key={politician.bioguideId}
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: index * 0.05 }}
                     className={cn(
                       'border-b border-border/50 transition-colors hover:bg-muted/20 cursor-pointer',
                       isOdd && 'bg-muted/30'
@@ -256,11 +261,11 @@ export function ShameTable({ politicians, rankBy, startRank }: ShameTableProps) 
                             backgroundColor: `${tierColor}26`,
                           }}
                         >
-                          {politician.insiderRiskScore}
+                          <AnimatedCounter value={politician.insiderRiskScore} className="tabular-nums" />
                         </span>
                       </Link>
                     </td>
-                  </tr>
+                  </motion.tr>
                 )
               })}
             </tbody>

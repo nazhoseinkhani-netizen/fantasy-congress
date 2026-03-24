@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { Star, ChevronDown, ChevronUp } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { PARTY_COLORS } from '@/lib/party-colors'
+import { DigitFlipCounter } from '@/components/animations/animated-counter'
 import type { Matchup, Team, WeekResult } from '@/types'
 import type { Politician } from '@/types/politician'
 import type { Trade } from '@/types/trade'
@@ -215,7 +216,7 @@ export function MatchupScoreboard({
         <div className="flex items-center justify-center gap-4">
           <div className="text-right flex-1 min-w-0">
             <p className="font-bold text-lg truncate">{userTeam.name}</p>
-            <p className="text-3xl font-black text-primary tabular-nums">{userScore.toFixed(1)}</p>
+            <DigitFlipCounter value={Math.round(userScore * 10) / 10} className="text-3xl font-black text-primary tabular-nums" />
           </div>
 
           <div className="text-center shrink-0 px-3">
@@ -227,7 +228,7 @@ export function MatchupScoreboard({
 
           <div className="text-left flex-1 min-w-0">
             <p className="font-bold text-lg truncate">{opponentTeam?.name ?? 'No opponent'}</p>
-            <p className="text-3xl font-black text-muted-foreground tabular-nums">{opponentScore.toFixed(1)}</p>
+            <DigitFlipCounter value={Math.round(opponentScore * 10) / 10} className="text-3xl font-black text-muted-foreground tabular-nums" />
           </div>
         </div>
       </div>

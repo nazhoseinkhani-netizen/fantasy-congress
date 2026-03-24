@@ -1,8 +1,10 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { motion } from 'motion/react'
 import { loadPoliticians, loadDemoState } from '@/lib/data'
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
+import { AnimatedGauge } from '@/components/animations/animated-gauge'
 import { Podium } from './podium'
 import { ShameTable } from './shame-table'
 import { SwampLordsTable } from './swamp-lords-table'
@@ -108,6 +110,11 @@ export function LeaderboardPage() {
   const riskTop3 = byRiskScore.slice(0, 3)
   const riskRemaining = byRiskScore.slice(3)
 
+  // Average corruption score for Swamp-o-meter
+  const avgCorruptionScore = politicians.length > 0
+    ? Math.round(politicians.reduce((sum, p) => sum + p.insiderRiskScore, 0) / politicians.length)
+    : 0
+
   return (
     <div className="max-w-5xl mx-auto px-4 py-8 space-y-10">
       {/* Header */}
@@ -162,6 +169,27 @@ export function LeaderboardPage() {
             />
           ) : (
             <>
+              {/* Swamp-o-meter */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true, amount: 0.3 }}
+                className="flex flex-col items-center py-6 mb-6 bg-card rounded-xl border border-border"
+              >
+                <h3 className="text-sm font-semibold uppercase tracking-widest text-muted-foreground mb-2">
+                  Congressional Swamp-o-Meter
+                </h3>
+                <AnimatedGauge
+                  score={avgCorruptionScore}
+                  size="lg"
+                  showLabel
+                  labelText="Avg Insider Risk"
+                />
+                <p className="text-xs text-muted-foreground mt-2">
+                  Average Insider Trading Risk Score across {politicians.length} members of Congress
+                </p>
+              </motion.div>
+
               <Podium politicians={riskTop3} rankBy="insiderRiskScore" />
               <ShameTable politicians={riskRemaining} rankBy="insiderRiskScore" startRank={4} />
             </>
