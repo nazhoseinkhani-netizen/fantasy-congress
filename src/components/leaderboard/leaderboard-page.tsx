@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import { motion } from 'motion/react'
 import { loadPoliticians, loadDemoState } from '@/lib/data'
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
-import { AnimatedGauge } from '@/components/animations/animated-gauge'
+import { AnimatedGauge, getTierLabel } from '@/components/animations/animated-gauge'
 import { Podium } from './podium'
 import { ShameTable } from './shame-table'
 import { SwampLordsTable } from './swamp-lords-table'
@@ -189,6 +189,46 @@ export function LeaderboardPage() {
                   Average Insider Trading Risk Score across {politicians.length} members of Congress
                 </p>
               </motion.div>
+
+              {/* Per-politician corruption gauge cards — animate on scroll-into-view (ANIM-04) */}
+              <div className="mb-6">
+                <h3 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-3">
+                  Corruption Rankings
+                </h3>
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+                  {byRiskScore.slice(0, 12).map((politician) => (
+                    <motion.div
+                      key={politician.bioguideId}
+                      whileInView={{ opacity: 1 }}
+                      initial={{ opacity: 0 }}
+                      viewport={{ once: true, amount: 0.5 }}
+                      className="flex flex-col items-center gap-2 p-3 rounded-xl border border-border bg-card"
+                    >
+                      <div className="size-8 rounded-full overflow-hidden bg-muted shrink-0">
+                        <img
+                          src={politician.photoUrl}
+                          alt={politician.name}
+                          loading="lazy"
+                          className="size-full object-cover object-center"
+                          onError={(e) => {
+                            const target = e.target as HTMLImageElement
+                            target.style.display = 'none'
+                          }}
+                        />
+                      </div>
+                      <AnimatedGauge
+                        score={politician.insiderRiskScore}
+                        size="sm"
+                        showLabel
+                        labelText={getTierLabel(politician.insiderRiskScore)}
+                      />
+                      <p className="text-xs font-medium text-center truncate w-full leading-tight">
+                        {politician.name}
+                      </p>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
 
               <Podium politicians={riskTop3} rankBy="insiderRiskScore" />
               <ShameTable politicians={riskRemaining} rankBy="insiderRiskScore" startRank={4} />
