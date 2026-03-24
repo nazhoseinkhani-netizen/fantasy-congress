@@ -114,8 +114,8 @@ Requirements for initial release. Each maps to roadmap phases.
 
 - [ ] **ANIM-01**: Draft pick animation — card flies to roster with burst effect
 - [ ] **ANIM-02**: Trade alert animation — slide in from right with green/red glow, badges bounce in
-- [ ] **ANIM-03**: Points counter — animated number ticker like a sports scoreboard
-- [ ] **ANIM-04**: Corruption Index reveal — gauge fills up with color transitions
+- [x] **ANIM-03**: Points counter — animated number ticker like a sports scoreboard
+- [x] **ANIM-04**: Corruption Index reveal — gauge fills up with color transitions
 - [ ] **ANIM-05**: Swamp-o-meter animated gauge on leaderboard page
 
 ### Viral & Sharing
@@ -127,9 +127,9 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Platform Showcase
 
-- [ ] **PLAT-01**: "Data Sources" footer on every page showing Alva Skills used
-- [ ] **PLAT-02**: "Build Your Own" CTA linking to alva.ai/skills
-- [ ] **PLAT-03**: Developer mode toggle showing which Alva Skill powers each data element with dashed borders and tooltips
+- [x] **PLAT-01**: "Data Sources" footer on every page showing Alva Skills used
+- [x] **PLAT-02**: "Build Your Own" CTA linking to alva.ai/skills
+- [x] **PLAT-03**: Developer mode toggle showing which Alva Skill powers each data element with dashed borders and tooltips
 
 ## v2 Requirements
 
@@ -232,16 +232,16 @@ Which phases cover which requirements. Updated during roadmap creation.
 | DRAFT-04 | Phase 4 | Complete |
 | ANIM-01 | Phase 5 | Pending |
 | ANIM-02 | Phase 5 | Pending |
-| ANIM-03 | Phase 5 | Pending |
-| ANIM-04 | Phase 5 | Pending |
+| ANIM-03 | Phase 5 | Complete |
+| ANIM-04 | Phase 5 | Complete |
 | ANIM-05 | Phase 5 | Pending |
 | SHARE-01 | Phase 5 | Pending |
 | SHARE-02 | Phase 5 | Pending |
 | SHARE-03 | Phase 5 | Pending |
 | SHARE-04 | Phase 5 | Pending |
-| PLAT-01 | Phase 5 | Pending |
-| PLAT-02 | Phase 5 | Pending |
-| PLAT-03 | Phase 5 | Pending |
+| PLAT-01 | Phase 5 | Complete |
+| PLAT-02 | Phase 5 | Complete |
+| PLAT-03 | Phase 5 | Complete |
 
 **Coverage:**
 - v1 requirements: 62 total
