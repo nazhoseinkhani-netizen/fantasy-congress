@@ -1,10 +1,15 @@
 'use client'
 
+import { useState } from 'react'
 import Link from 'next/link'
 import { motion } from 'motion/react'
 import { cn } from '@/lib/utils'
 import { AnimatedCounter } from '@/components/animations/animated-counter'
 import type { Politician, InsiderRiskTier } from '@/types'
+import { ShareButton } from '@/components/share/share-button'
+import { ShareModal } from '@/components/share/share-modal'
+import { PoliticianShareCard } from '@/components/share/politician-share-card'
+import { useShareCard } from '@/components/share/use-share-card'
 
 interface ShameTableProps {
   politicians: Politician[]
@@ -83,6 +88,11 @@ function FeatureCard({
 }
 
 export function ShameTable({ politicians, rankBy, startRank }: ShameTableProps) {
+  const [shareTarget, setShareTarget] = useState<Politician | null>(null)
+  const [shareImageUrl, setShareImageUrl] = useState<string | null>(null)
+  const [shareModalOpen, setShareModalOpen] = useState(false)
+  const { cardRef, generate, generating } = useShareCard()
+
   if (politicians.length === 0) return null
 
   // Sort by rankBy descending (already sorted by parent, but re-sort for safety)
@@ -139,6 +149,7 @@ export function ShameTable({ politicians, rankBy, startRank }: ShameTableProps) 
                 <th className="text-right px-4 py-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground hidden lg:table-cell">Avg Return</th>
                 <th className="text-right px-4 py-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground hidden md:table-cell">Trades</th>
                 <th className="text-right px-4 py-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">Risk</th>
+                <th className="text-right px-4 py-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground hidden sm:table-cell"></th>
               </tr>
             </thead>
             <tbody>
@@ -265,6 +276,20 @@ export function ShameTable({ politicians, rankBy, startRank }: ShameTableProps) 
                         </span>
                       </Link>
                     </td>
+
+                    {/* Share */}
+                    <td className="px-4 py-3 text-right hidden sm:table-cell">
+                      <ShareButton
+                        size="sm"
+                        generating={generating && shareTarget?.bioguideId === politician.bioguideId}
+                        onClick={async () => {
+                          setShareTarget(politician)
+                          const url = await generate()
+                          setShareImageUrl(url)
+                          setShareModalOpen(true)
+                        }}
+                      />
+                    </td>
                   </motion.tr>
                 )
               })}
@@ -296,6 +321,20 @@ export function ShameTable({ politicians, rankBy, startRank }: ShameTableProps) 
           </div>
         </div>
       )}
+
+      {/* Off-screen share card renderer */}
+      {shareTarget && (
+        <PoliticianShareCard ref={cardRef} politician={shareTarget} />
+      )}
+
+      {/* Share modal */}
+      <ShareModal
+        isOpen={shareModalOpen}
+        onClose={() => setShareModalOpen(false)}
+        imageUrl={shareImageUrl}
+        title={shareTarget?.name ?? 'Politician'}
+        filename={`fantasy-congress-${shareTarget?.bioguideId ?? 'card'}.png`}
+      />
     </div>
   )
 }

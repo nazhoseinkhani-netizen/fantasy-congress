@@ -10,11 +10,18 @@ import { loadPoliticiansByIds } from '@/lib/data/politicians'
 import { loadTrades } from '@/lib/data/trades'
 import { RosterGrid } from './roster-grid'
 import { TeamStatsPanel } from './team-stats-panel'
+import { ShareButton } from '@/components/share/share-button'
+import { ShareModal } from '@/components/share/share-modal'
+import { TeamShareCard } from '@/components/share/team-share-card'
+import { useShareCard } from '@/components/share/use-share-card'
 
 export function TeamPage() {
   const [demoState, setDemoState] = useState<DemoState | null>(null)
   const [politicians, setPoliticians] = useState<Politician[]>([])
   const [trades, setTrades] = useState<Trade[]>([])
+  const [shareModalOpen, setShareModalOpen] = useState(false)
+  const [shareImageUrl, setShareImageUrl] = useState<string | null>(null)
+  const { cardRef, generate, generating } = useShareCard()
 
   const rosterOverrides = useGameStore((s) => s.rosterOverrides)
   const resetRoster = useGameStore((s) => s.resetRoster)
@@ -55,9 +62,27 @@ export function TeamPage() {
   const currentRoster = rosterOverrides[userTeam.id] ?? originalRoster
   const teamWeekResults = demoState.weekResults.filter((wr) => wr.teamId === userTeam.id)
 
+  // Compute league rank by pointsFor descending
+  const sortedTeams = [...userLeague.teams].sort((a, b) => b.pointsFor - a.pointsFor)
+  const leagueRank = sortedTeams.findIndex((t) => t.id === userTeam.id) + 1
+  const record = `${userTeam.record.wins}-${userTeam.record.losses}`
+  const activePoliticians = politicians.filter((p) =>
+    currentRoster.active.includes(p.bioguideId)
+  )
+  const totalPoints = teamWeekResults.reduce((sum, wr) => sum + wr.points, 0)
+
+  async function handleShareTeam() {
+    const url = await generate()
+    setShareImageUrl(url)
+    setShareModalOpen(true)
+  }
+
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-2xl font-bold mb-1">{userTeam.name}</h1>
+      <div className="flex items-start justify-between mb-1">
+        <h1 className="text-2xl font-bold">{userTeam.name}</h1>
+        <ShareButton generating={generating} onClick={handleShareTeam} />
+      </div>
       <p className="text-muted-foreground text-sm mb-6">Managed by {userTeam.owner}</p>
 
       <div className="lg:grid lg:grid-cols-[1fr_280px] gap-6">
@@ -80,6 +105,25 @@ export function TeamPage() {
           />
         </div>
       </div>
+
+      {/* Off-screen team share card renderer */}
+      <TeamShareCard
+        ref={cardRef}
+        teamName={userTeam.name}
+        record={record}
+        leagueRank={leagueRank}
+        roster={activePoliticians}
+        totalPoints={totalPoints}
+      />
+
+      {/* Share modal */}
+      <ShareModal
+        isOpen={shareModalOpen}
+        onClose={() => setShareModalOpen(false)}
+        imageUrl={shareImageUrl}
+        title={`${userTeam.name} — Fantasy Congress`}
+        filename={`fantasy-congress-team-${userTeam.id}.png`}
+      />
     </div>
   )
 }
