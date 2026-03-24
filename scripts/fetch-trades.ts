@@ -881,6 +881,22 @@ async function main() {
     )
   }
 
+  // Step 4a: Deduplicate trades by content (same politician + ticker + date + type + amount)
+  const dedupSeen = new Set<string>()
+  const dedupedTrades: typeof matchedTrades = []
+  for (const t of matchedTrades) {
+    const key = `${t.politician.bioguideId}-${t.ticker}-${t.tradeDate}-${t.tradeType}-${t.amountRange}`
+    if (dedupSeen.has(key)) continue
+    dedupSeen.add(key)
+    dedupedTrades.push(t)
+  }
+  console.log(
+    `[fetch-trades] Deduplicated: ${matchedTrades.length} → ${dedupedTrades.length} unique trades`
+  )
+  // Replace matchedTrades with deduplicated version
+  matchedTrades.length = 0
+  matchedTrades.push(...dedupedTrades)
+
   if (matchedTrades.length < 10) {
     console.error(
       `[fetch-trades] FATAL: Only ${matchedTrades.length} trades matched politicians — insufficient data`
@@ -968,7 +984,7 @@ async function main() {
       ? 0
       : daysToDisclosureRaw
 
-    const id = `${politician.bioguideId}-${ticker}-${tradeDate}-${i}`
+    const id = `${politician.bioguideId}-${ticker}-${tradeDate}-${tradeType}-${amountRange.replace(/[^0-9kM]/g, '')}`
 
     rawTrades.push({
       id,

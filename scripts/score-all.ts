@@ -157,9 +157,22 @@ async function main() {
   const politicians: ValidatedPolitician[] = JSON.parse(
     readFileSync(join(DATA_DIR, '_validated-politicians.json'), 'utf8')
   )
-  const rawTrades: RawTrade[] = JSON.parse(
+  const rawTradesAll: RawTrade[] = JSON.parse(
     readFileSync(join(DATA_DIR, '_raw-trades.json'), 'utf8')
   )
+
+  // Deduplicate trades by content (same politician + ticker + date + type + amount)
+  const seenTradeKeys = new Set<string>()
+  const rawTrades: RawTrade[] = []
+  for (const t of rawTradesAll) {
+    const key = `${t.bioguideId}-${t.ticker}-${t.tradeDate}-${t.tradeType}-${t.amountRange}`
+    if (seenTradeKeys.has(key)) continue
+    seenTradeKeys.add(key)
+    rawTrades.push(t)
+  }
+  if (rawTrades.length < rawTradesAll.length) {
+    console.log(`[score-all] Deduplicated trades: ${rawTradesAll.length} → ${rawTrades.length}`)
+  }
 
   let photoStats = { validated: 0, fallbackUsed: 0, initialsGenerated: 0 }
   try {
@@ -367,12 +380,13 @@ async function main() {
     return bPoints - aPoints
   })
 
-  // Build final Politician[] — only include politicians who have trades
+  // Build final Politician[] — include ALL politicians (traders get real scores, non-traders get defaults)
   const finalPoliticians: Politician[] = []
 
   const tradingPoliticians = ranked.filter((p) => p.score != null)
   const totalTraders = tradingPoliticians.length
 
+  // First: add all trading politicians with real scores
   tradingPoliticians.forEach(({ politician, score }, rank) => {
     if (!score) return
 
@@ -511,13 +525,54 @@ async function main() {
     finalPoliticians.push(finalPolitician)
   })
 
-  console.log(`[score-all] Built ${finalPoliticians.length} scored politicians`)
+  // Second: add non-trading politicians with default zero scores
+  const nonTradingPoliticians = ranked.filter((p) => p.score == null)
+  for (const { politician } of nonTradingPoliticians) {
+    const defaultRisk = computeInsiderRiskScore(
+      { donorOverlap: 0, suspiciousTiming: 0, committeeConflict: 0, stockActCompliance: 0, tradeVolume: 0 },
+      DEFAULT_INSIDER_RISK_CONFIG
+    )
 
-  // Verify all photoUrls are set
+    const finalPolitician: Politician = {
+      bioguideId: politician.bioguideId,
+      name: politician.name,
+      firstName: politician.firstName,
+      lastName: politician.lastName,
+      party: politician.party,
+      chamber: politician.chamber,
+      state: politician.state,
+      district: politician.district,
+      committees: politician.committees,
+      photoUrl: politician.photoUrl,
+      isCommitteeChair: politician.isCommitteeChair,
+      isLeadership: politician.isLeadership,
+      seasonPoints: 0,
+      weeklyPoints: [],
+      tradeCount: 0,
+      winRate: 0,
+      avgReturn: 0,
+      insiderRiskScore: Math.round(defaultRisk.score * 10) / 10,
+      insiderRiskTier: defaultRisk.tier as InsiderRiskTier,
+      insiderRiskBreakdown: defaultRisk.breakdown as InsiderRiskBreakdown,
+      salaryCap: 500,
+      salaryTier: 'unranked',
+    }
+    finalPoliticians.push(finalPolitician)
+  }
+
+  console.log(`[score-all] Built ${finalPoliticians.length} politicians (${tradingPoliticians.length} with trades, ${nonTradingPoliticians.length} without)`)
+
+  // Verify all photoUrls are set — warn but don't fail for missing photos
   const missingPhotos = finalPoliticians.filter((p) => !p.photoUrl)
   if (missingPhotos.length > 0) {
-    console.error(`[score-all] ${missingPhotos.length} politicians missing photoUrl!`)
-    process.exit(1)
+    console.warn(`[score-all] WARNING: ${missingPhotos.length} politicians missing photoUrl — generating initials`)
+    // Generate initials SVG for any missing photos
+    for (const p of missingPhotos) {
+      const initials = `${(p.firstName || '')[0] || ''}${(p.lastName || '')[0] || ''}`.toUpperCase() || '?'
+      const color = p.party === 'D' ? '#3B82F6' : p.party === 'R' ? '#EF4444' : '#22C55E'
+      const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><rect fill="${color}" width="200" height="200"/><text x="50%" y="50%" fill="white" font-size="72" font-family="sans-serif" text-anchor="middle" dominant-baseline="central">${initials}</text></svg>`
+      p.photoUrl = `data:image/svg+xml,${encodeURIComponent(svg)}`
+    }
   }
 
   // Compute build statistics
